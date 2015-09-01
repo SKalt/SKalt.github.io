@@ -8,22 +8,22 @@
     "link": ""
   },
   "text": {
-    "title": "Patent suits as a method for detecting patent thickets",
-    "more": "This graph is based on data scraped from wolfram mathworld, an action allowed under their robots.txt\n\n",
-    "intro": "Links between pages of wolfram mathworld"
+    "title": "Amherst College Course Requirements",
+    "more": "This is an incomplete visualization of which classes are required by which other classes at Amherst College.  I haven\u0027t yet included which classes are core requirements of each major, nor links to the most recent version of each class, nor which classes are substitutable.  I believe 99% of prereqs are included in the edges.\n\n",
+    "intro": "Which classes lead to which at Amherst College ."
   },
   "legend": {
-    "edgeLabel": "Patent litigation",
-    "colorLabel": "Clustering Coefficient",
-    "nodeLabel": "Company"
+    "edgeLabel": "class A is required by Class B",
+    "colorLabel": "Department",
+    "nodeLabel": "Class"
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": false,
+    "groupSelectorAttribute": "dept",
     "hoverBehavior": "default"
   },
   "informationPanel": {
-    "imageAttribute": false,
+    "imageAttribute": "level",
     "groupByEdgeDirection": true
   },
   "sigma": {
