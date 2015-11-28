@@ -1,0 +1,44 @@
+---
+title: "graphlayout"
+author: "Steven Kalt"
+date: "9/5/2015"
+output: html_document
+---
+```{r importblock}
+require(igraph)
+```
+```{r}
+# read in the edgelist and create an igraph object
+edgelist <- read.delim('./courseEdgelist.tsv')[,c(2,3)]
+# nodeAttrs <- read.delim('./courseAttrs.tsv')
+G <- graph.data.frame(edgelist)
+
+# identify each course's main department code and level
+temp <- strsplit(V(G)$name, '-')
+tempLevel <- c()
+tempDept <- c()
+for (i in temp){
+  tempLevel <- c(tempLevel, substr(i[2], 1, 1))
+  tempDept <- c(tempDept, i[1])
+}
+V(G)$level <- unlist(as.integer(tempLevel))
+V(G)$dept <- unlist(tempDept)
+
+# run the sugiyama layout algorithm and incrase the coordinates for future readability
+lyt <- layout.sugiyama(G, layers = V(G)$level )
+biggerX <- lyt$layout[,1]*10
+biggerY <- lyt$layout[,2]*100
+
+# create and eport a tsv of the layout's coordinates
+nodes <- get.data.frame(G, what = "vertices")
+nodes["X"] <- biggerX
+nodes["Y"] <- biggerY
+nodes["Id"] <- nodes["name"]
+nodes["name"] <- NULL
+write.table(nodes, file = "newCourseLayout.tsv", sep = '\t', row.names = F)
+```
+```{r}
+# visualize the layout to get a sense of the general structure
+lyt <- layout.sugiyama(G, layers = V(G)$level )
+plot(lyt$extd_graph, vertex.label.cex = .01)
+```
