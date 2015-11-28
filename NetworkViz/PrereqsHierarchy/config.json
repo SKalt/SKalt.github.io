@@ -9,7 +9,7 @@
   },
   "text": {
     "title": "Amherst College Course Requirements",
-    "more": "This is an incomplete visualization of which classes are required by which other classes at Amherst College.  I haven\u0027t yet included which classes are core requirements of each major,  nor which classes are substitutable.  I believe 99% of prereqs are included in the edges.\n\n",
+    "more": "This is a visualization of which classes are required by which other classes at Amherst College.  Each link represents a requirement of a higher-level course by a lower-level course. Some courses have substitutable requirements such as Ecology requiring BIOL-181 or ENST-120, in wich case both requirements are shown.  Some courses might belong to multiple departments, in which case they will be colored by their main department.  \nTry selecting a class by clicking on it or searching it in the search bar: a sidebar will appear with a link to the most recent course page, the text describing the requirements, and a list of all the majors the class counts towards.  \nI haven\u0027t yet included which classes are core requirements of each major, but I believe 99% of prereqs are included in the edges. \n\n",
     "intro": "Which classes lead to which at Amherst College . It\u0027s worth verifying the information here on the course scheduler"
   },
   "legend": {
@@ -20,7 +20,7 @@
   "features": {
     "search": true,
     "groupSelectorAttribute": "dept",
-    "hoverBehavior": "default"
+    "hoverBehavior": "dim"
   },
   "informationPanel": {
     "imageAttribute": "level",
@@ -34,7 +34,7 @@
       "minNodeSize": 1
     },
     "drawingProperties": {
-      "labelThreshold": 20,
+      "labelThreshold": 10,
       "hoverFontStyle": "bold",
       "defaultEdgeType": "curve",
       "defaultLabelColor": "#000",
