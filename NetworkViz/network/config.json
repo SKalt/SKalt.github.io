@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "Steven Kalt",
+    "file": "",
+    "link": ""
+  },
+  "text": {
+    "title": "Amherst College Course Requirements",
+    "more": "This is a visualization of which classes are required by which other classes at Amherst College.  Each link represents a requirement of a higher-level course by a lower-level course. Some courses have substitutable requirements such as Ecology requiring BIOL-181 or ENST-120, in wich case both requirements are shown.  Some courses might belong to multiple departments, in which case they will be colored by their main department.  \nTry selecting a class by clicking on it or searching it in the search bar: a sidebar will appear with a link to the most recent course page, the text describing the requirements, and a list of all the majors the class counts towards.  \nI haven\u0027t yet included which classes are core requirements of each major, but I believe 99% of prereqs are included in the edges. \n\n",
+    "intro": "Which classes lead to which at Amherst College . It\u0027s worth verifying the information here on the course scheduler"
+  },
+  "legend": {
+    "edgeLabel": "class A is required by Class B",
+    "colorLabel": "Department",
+    "nodeLabel": "Class"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "imageAttribute": "level",
+    "groupByEdgeDirection": true
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 7,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
