@@ -1,0 +1,3 @@
+[submodule "AmherstGraph"]
+	path = AmherstGraph
+	url = https://github.com/SKalt/AmherstGraph.git
