@@ -16,7 +16,6 @@
         <h1 class="project-name">Skalt.GitHub.io</h1>
         <h2 class="project-tagline">A website to showcase my projects</h2>
     </section>
-
     <section class="main-content">
         <h3>
 	<a id="quick-bio" class="anchor" href="http://skalt.github.io/#quick-bio" aria-hidden="true"><span class="octicon octicon-link"></span></a>About Me</h3>
@@ -31,15 +30,92 @@
         </footer>
     </section>
     <section>
+        <h2>Planning for Majors: Automatic Visualization of the Prerequisites Network at Amherst College</h2>
+        <p>I scraped Amherst College's well-formatted departmental course catalogs to create interactive maps of which courses are required by which others at Amherst College.</p>
+        <p>As a senior who has completed both my majors, I was inspired to start this project as a christmas present for my brother, who is navigating Bates college &#40;<a href='http://www3.amherst.edu/~skalt16/Bates/BIO/index.html'>example here</a>&#41;. I hope this will be useful to those at my alma mater as well. </p>
+        <h3> Links to departmental maps </h3>
+        <table style="width:100%">
+            <tr>
+                <td><a href="./AmherstGraph/american_studies/index.html">american_studies</a></td>
+                <td><a href="./AmherstGraph/economics/index.html">economics</a></td>
+                <td><a href="./AmherstGraph/neuroscience/index.html">neuroscience</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/anthropology_sociology/index.html">anthropology_sociology</a></td>
+                <td><a href="./AmherstGraph/english/index.html">english</a></td>
+                <td><a href="./AmherstGraph/philosophy/index.html">philosophy</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/architectural_studies/index.html">architectural_studies</a></td>
+                <td><a href="./AmherstGraph/environmental_studies/index.html">environmental_studies</a></td>
+                <td><a href="./AmherstGraph/physics/index.html">physics</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/art/index.html">art</a></td>
+                <td><a href="./AmherstGraph/european_studies/index.html">european_studies</a></td>
+                <td><a href="./AmherstGraph/political_science/index.html">political_science</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/asian/index.html">asian</a></td>
+                <td><a href="./AmherstGraph/film/index.html">film</a></td>
+                <td><a href="./AmherstGraph/psychology/index.html">psychology</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/astronomy/index.html">astronomy</a></td>
+                <td><a href="./AmherstGraph/french/index.html">french</a></td>
+                <td><a href="./AmherstGraph/religion/index.html">religion</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/biochemistry-biophysics/index.html">biochemistry-biophysics</a></td>
+                <td><a href="./AmherstGraph/geology/index.html">geology</a></td>
+                <td><a href="./AmherstGraph/russian/index.html">russian</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/biology/index.html">biology</a></td>
+                <td><a href="./AmherstGraph/german/index.html">german</a></td>
+                <td><a href="./AmherstGraph/sexuality_womens_gender_studies/index.html">sexuality_womens_gender_studies</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/black_studies/index.html">black_studies</a></td>
+                <td><a href="./AmherstGraph/history/index.html">history</a></td>
+                <td><a href="./AmherstGraph/spanish/index.html">spanish</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/chemistry/index.html">chemistry</a></td>
+                <td><a href="./AmherstGraph/ljst/index.html">ljst</a></td>
+                <td><a href="./AmherstGraph/theater_dance/index.html">theater_dance</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/classics/index.html">classics</a></td>
+                <td><a href="./AmherstGraph/mathematics/index.html">mathematics</a></td>
+            </tr>
+            <tr>
+                <td><a href="./AmherstGraph/computer_science/index.html">computer_science</a></td>
+                <td><a href="./AmherstGraph/music/index.html">music</a></td>
+        </table>
+        <p> Click and drag to pan, scroll to zoom, and click on course nodes to view their descriptions, their neighbors, and links to their most recent course description pages.</p>
+        <p> Please report any bugs on <a href='https://github.com/SKalt/AmherstGraph'>my Github repo</a>. This project was done in Python using igraph to generate the layouts, then passing them as json files to the Oxford Internet Institute's excellent <a href='https://github.com/oxfordinternetinstitute/InteractiveVis/'>network visualization template</a>.</p>
+    </section>
+    <section>
         <h2> Patent Litigation Visualizations </h2>
-        <p>Patents have been among the dominant forms of intellectual property internationally since the signing of the Patent Cooperation Treaty in 1970.  For a patent to be 'valid,' a device or techniqe must be novel, useful, and nonobvious.  In theory, patents provide an incentive to innovate by giving the patent holder a monopoly over the technology for a limited time (20 years after the filing of the patent application in the US).  However, it is difficult to verify if a patent is valid. As a result, the patent system is notoriously inefficient, with an enormous backlog and numerous issuances of invalid patents.  This means groups of patent holders find themselves holding patents with overlapping claims that may or may not be valid.  In some cases, the patent holders behave and compete within the market.  Other times, they assert their patents against each other, preventing products from coming to market altogether.  If too many entities hold overlapping patent rights to set of foundational technologies, it becomes nearly impossible to negotiate licenses to build those technologies.  This is called a patent thicket</p>
-        <p>My senior project involved researching possible patent thickets in renewable energy technologies (check out my formal work <a href="https://github.com/SKalt/RenewableEnergyPatentThicketDetection">here</a>.  However, I did a more general search for patent thickets by scraping all the US patent litigation from 1980-2005 at <a href="https://patents.justia.com">patents.justia.com</a>, which is allowed under their robots.txt.  I coded each lawsuit as a link in a network, known as an "edge" in graph theory, and each entity as a node in that network.  Then, I looked for groups that traded lawsuits among themselves mor than others.  These groups are more likely to own sets of overlapping patents, and so constitute patent thickets. To do this, I used the modularity-class community detection algorithm.  The result is the image below.</p>
+        <p>Patents have been among the dominant forms of intellectual property internationally since the signing of the Patent Cooperation Treaty in 1970. For a patent to be 'valid,' a device or techniqe must be novel, useful, and nonobvious. In theory, patents provide an incentive to innovate by giving the patent holder a monopoly over the technology for a limited time (20 years after the filing of the patent application in the US). However, it is difficult to verify if a patent is valid. As a result, the patent system is notoriously inefficient, with an enormous backlog and numerous issuances of invalid patents. This means groups of patent holders find themselves holding patents with overlapping claims that may or may not be valid. In some cases, the patent holders behave and compete within the market. Other times, they assert their patents against each other, preventing products from coming to market altogether. If too many entities hold overlapping patent rights to set of foundational technologies, it becomes nearly impossible to negotiate licenses to build those technologies. This is called a patent thicket</p>
+        <p>My senior project involved researching possible patent thickets in renewable energy technologies (check out my formal work <a href="https://github.com/SKalt/RenewableEnergyPatentThicketDetection">here</a>. However, I did a more general search for patent thickets by scraping all the US patent litigation from 1980-2005 at <a href="https://patents.justia.com">patents.justia.com</a>, which is allowed under their robots.txt. I coded each lawsuit as a link in a network, known as an "edge" in graph theory, and each entity as a node in that network. Then, I looked for groups that traded lawsuits among themselves mor than others. These groups are more likely to own sets of overlapping patents, and so constitute patent thickets. To do this, I used the modularity-class community detection algorithm. The result is the image below.</p>
         <p><img src="./thicket.png"></p>
-        <p> Above, only the giant weakly connected component is shown: you can get to any of the entities traviling backwards or forwards along lawsuits. Litigating entities are closer if they sue each other more based on the Yifan Hu force-directed graph layout algorithm.  Litigating entities are larger based on the number of times they sued or were sued.  Each 'community' of litigants is colored differently. There are three main groups of litigants: the central ball with its dark purple nucleus (computers and technology), and the green blob and the blue lump (both pharmaceuticals and chemicals). There are several nodes with plumes billowing outwards: these are 'patent trolls' that over-aggressively sue many others for profit, rather than by pure neccessity. To explore the structure of the groups of litigants, I used <a href = "http://blogs.oii.ox.ac.uk/vis/2012/11/15/build-your-own-interactive-network/">Gephi's Sigma.js exporter plugin</a> to make interactive maps of who sued whom. </p>
-        <p><li><a href="./network/patentball1.html"> Interactive visualization of a pharmaceutical patent thicket </a></li>
-        <li><a href="./network2/patentball2.html"> Interactive visualization of a software patent thicket </a></li></p>
-            <p> In both, drag to pan, scroll to zoom, and click on a node to view its name, neighborhood, and network statistics. Node size is proportional to the number of lawsuits related to an entity, and the warmth of a node's color is related to the fraction of a node's neighbors that sue each other</p>
-        <p>Unfortunately, my scraper code is too messy to put up at this time. However, here's the general recipe: I used <a href = "https://www.kimonolabs.com/">Kimono</a> to build a scraper, used the python JSON and Pandas packages to make an edgelist of who sued whom. I ran them through <a href="https://gephi.org/">Gephi</a>, an open-source network analysis program, to do the rest.</p>
+        <p> Above, only the giant weakly connected component is shown: you can get to any of the entities traviling backwards or forwards along lawsuits. Litigating entities are closer if they sue each other more based on the Yifan Hu force-directed graph layout algorithm. Litigating entities are larger based on the number of times they sued or were sued. Each 'community' of litigants is colored differently. There are three main groups of litigants: the central ball with its dark purple nucleus (computers and technology), and the green blob and the blue lump (both pharmaceuticals and chemicals). There are several nodes with plumes billowing outwards: these are 'patent trolls' that over-aggressively sue many others for profit, rather than by pure neccessity. To explore the structure of the groups of litigants, I used <a href="http://blogs.oii.ox.ac.uk/vis/2012/11/15/build-your-own-interactive-network/">Gephi's Sigma.js exporter plugin</a> to make interactive maps of who sued whom. </p>
+        <p>
+            <li><a href="www3.amherst.edu/~skalt16/network/patentball1.html">Interactive visualization of a pharmaceutical patent thicket </a></li>
+            <li><a href="www3.amherst.edu/~skalt16/network2/patentball2.html">Interactive visualization of a software patent thicket</a></li>
+        </p>
+        <p> In both, drag to pan, scroll to zoom, and click on a node to view its name, neighborhood, and network statistics. Node size is proportional to the number of lawsuits related to an entity, and the warmth of a node's color is related to the fraction of a node's neighbors that sue each other</p>
+        <p>Unfortunately, my scraper code is too messy to put up at this time. However, here's the general recipe: I used <a href="https://www.kimonolabs.com/">Kimono</a> to build a scraper, used the python JSON and Pandas packages to make an edgelist of who sued whom. I ran them through <a href="https://gephi.org/">Gephi</a>, an open-source network analysis program, to do the rest.</p>
+    </section>
+    <section>
+        <h2> Visualizing the Network of Correspondence in <i>Les Liaisons dangereuses</i></h2>
+        <p><i>Les Liaisons dangereuses</i> is an epistolatory novel: it is composed entirely of letters between its main characters. Thus, the letters between them trace the evolution of their relations, and what the reader knows of the characters' relations. I wrote a python script to scrape an ordered list of senders and recipients from <a href="https://fr.wikisource.org/wiki/Les_Liaisons_dangereuses"><i>Les Liaisons dangereuses</i> on wikisource</a>, and then used the NDTV package in R to visualize how the dangerous relations evolve.</p>
+        <p>You can view the interactive video <a href="https://www3.amherst.edu/~skalt16/LiaisonsNetwork.html"> here </a>. Each node is a character and each arrow represents that one character has sent a letter to the other. The first number of the time at the bottom of the screen is the letter number, which you can use to look up what is going on.</p>
+        <p>Without revealing the plot, this visualization reveals a structure that is central to the plot of <i>Les Liaisons dangereuses</i> and the lesson it was meant to convey: Cecile is the furthest away from her mother.
+        </p>
+        <p>You can view my code at <a href="https://github.com/SKalt/LiaisonsViz">SKalt/LiaisonsViz</a></p>
     </section>
 </body>
 
