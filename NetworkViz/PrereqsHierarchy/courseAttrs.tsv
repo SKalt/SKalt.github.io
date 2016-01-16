@@ -1,0 +1,978 @@
+	rLine	depts	url	Id
+AMST-111		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516F/AMST/AMST-111-1516F	AMST-111
+AMST-112		['american_studies']	www.amherst.edu/academiclife/departments/courses/1415S/AMST/AMST-112-1415S	AMST-112
+AMST-201		['american_studies']	www.amherst.edu/academiclife/departments/courses/1415S/AMST/AMST-201-1415S	AMST-201
+AMST-205		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516S/AMST/AMST-205-1516S	AMST-205
+AMST-210		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516F/AMST/AMST-210-1516F	AMST-210
+AMST-215		['american_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415S/AMST/AMST-215-1415S	AMST-215
+AMST-217		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516S/AMST/AMST-217-1516S	AMST-217
+AMST-221		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516S/AMST/AMST-221-1516S	AMST-221
+AMST-224		['american_studies']	www.amherst.edu/academiclife/departments/courses/1415S/AMST/AMST-224-1415S	AMST-224
+AMST-232		['american_studies']	www.amherst.edu/academiclife/departments/courses/1415F/AMST/AMST-232-1415F	AMST-232
+AMST-240		['american_studies']	www.amherst.edu/academiclife/departments/courses/1415F/AMST/AMST-240-1415F	AMST-240
+AMST-260		['american_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/AMST/AMST-260-1516S	AMST-260
+AMST-302		['american_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/AMST/AMST-302-1516F	AMST-302
+AMST-305		['american_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415S/AMST/AMST-305-1415S	AMST-305
+AMST-311		['black_studies', 'american_studies']	www.amherst.edu/academiclife/departments/courses/1516S/AMST/AMST-311-1516S	AMST-311
+AMST-317		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516F/AMST/AMST-317-1516F	AMST-317
+AMST-322		['american_studies']	www.amherst.edu/academiclife/departments/courses/1415S/AMST/AMST-322-1415S	AMST-322
+AMST-326	Requisite: Previous course(s) in Sociology, Anthropology, American Studies, Black Studies or Latin American History. Limited to 18 students. Fall semester.  Professor Schmalzbauer.	['american_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/AMST/AMST-326-1516F	AMST-326
+AMST-336		['american_studies']	www.amherst.edu/academiclife/departments/courses/1415S/AMST/AMST-336-1415S	AMST-336
+AMST-372		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516F/AMST/AMST-372-1516F	AMST-372
+AMST-374		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516S/AMST/AMST-374-1516S	AMST-374
+AMST-468		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516S/AMST/AMST-468-1516S	AMST-468
+AMST-490		['american_studies']	www.amherst.edu/academiclife/departments/courses/1516F/AMST/AMST-490-02-1516F	AMST-490
+AMST-496		['american_studies']	www.amherst.edu/academiclife/departments/courses/1415F/AMST/AMST-496-1415F	AMST-496
+ANTH-112		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/ANTH/ANTH-112-1516F	ANTH-112
+ANTH-200		['anthropology_sociology', 'asian']	www.amherst.edu/academiclife/departments/courses/1415S/ANTH/ANTH-200-1415S	ANTH-200
+ANTH-205		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/ANTH/ANTH-205-1516S	ANTH-205
+ANTH-206		['anthropology_sociology', 'film']	www.amherst.edu/academiclife/departments/courses/1415S/ANTH/ANTH-206-1415S	ANTH-206
+ANTH-220		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415S/ANTH/ANTH-220-1415S	ANTH-220
+ANTH-224		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/ANTH/ANTH-224-1516S	ANTH-224
+ANTH-230	Requisite:  ANTH 112.  Not open to first-year students.  Admission with consent of the instructor. Limited to 15 students.  Fall semester.  Professor Fong.	['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415F/ANTH/ANTH-230-1415F	ANTH-230
+ANTH-241		['anthropology_sociology', 'film']	www.amherst.edu/academiclife/departments/courses/1516S/ANTH/ANTH-241-1516S	ANTH-241
+ANTH-245		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/ANTH/ANTH-245-1516S	ANTH-245
+ANTH-251		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415F/ANTH/ANTH-251-1415F	ANTH-251
+ANTH-253		['anthropology_sociology', 'asian']	www.amherst.edu/academiclife/departments/courses/1415S/ANTH/ANTH-253-1415S	ANTH-253
+ANTH-255		['anthropology_sociology', 'asian']	www.amherst.edu/academiclife/departments/courses/1415F/ANTH/ANTH-255-1415F	ANTH-255
+ANTH-305		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415F/ANTH/ANTH-305-1415F	ANTH-305
+ANTH-306		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415S/ANTH/ANTH-306-1415S	ANTH-306
+ANTH-310		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415F/ANTH/ANTH-310-1415F	ANTH-310
+ANTH-318		['anthropology_sociology', 'asian']	www.amherst.edu/academiclife/departments/courses/1516F/ANTH/ANTH-318-1516F	ANTH-318
+ANTH-323		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/ANTH/ANTH-323-1516F	ANTH-323
+ANTH-330		['anthropology_sociology', 'asian']	www.amherst.edu/academiclife/departments/courses/1415F/ANTH/ANTH-330-1415F	ANTH-330
+ANTH-331		['anthropology_sociology', 'asian']	www.amherst.edu/academiclife/departments/courses/1516F/ANTH/ANTH-331-1516F	ANTH-331
+ANTH-332		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/ANTH/ANTH-332-1516S	ANTH-332
+ANTH-335		['sexuality_womens_gender_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/ANTH/ANTH-335-1516S	ANTH-335
+ANTH-339		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/ANTH/ANTH-339-1516F	ANTH-339
+ANTH-343		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/ANTH/ANTH-343-1516F	ANTH-343
+ARAB-101		['asian']	www.amherst.edu/academiclife/departments/courses/1516F/ARAB/ARAB-101-1516F	ARAB-101
+ARAB-102	Requisite: ARAB 101 or equivalent. Limited to 18 students. Spring semester. Five College Senior Lecturer Hassan.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/ARAB/ARAB-102-1516S	ARAB-102
+ARAB-201	Requisite: ARAB 102 or equivalent. Limited to 18 students. Fall semester.  Five College Lecturer Al-Shalchi. 	['asian']	www.amherst.edu/academiclife/departments/courses/1516F/ARAB/ARAB-201-1516F	ARAB-201
+ARAB-202	Requisite: ARAB 201 or equivalent or consent of the instructor. Limited to 18 students. Spring semester. Five College Lecturer Al-Shalchi.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/ARAB/ARAB-202-1516S	ARAB-202
+ARAB-401	Requisite: ARAB 302 or equivalent. Limited to 18 students. Fall semester.  Five College Senior Lecturer Hassan.	['asian']	www.amherst.edu/academiclife/departments/courses/1516F/ARAB/ARAB-401-1516F	ARAB-401
+ARAB-402	Requisite: ARAB 302 or equivalent.  Limited to 18 students.  Spring semester.  Five College Senior Lecturer Hassan.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/ARAB/ARAB-402-1516S	ARAB-402
+ARCH-104		['architectural_studies']	www.amherst.edu/academiclife/departments/courses/1516S/ARCH/ARCH-104-1516S	ARCH-104
+ARCH-106		['music', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ARCH/ARCH-106-1516F	ARCH-106
+ARCH-206		['music', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1415F/ARCH/ARCH-206-1415F	ARCH-206
+ARCH-208		['architectural_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ARCH/ARCH-208-1516F	ARCH-208
+ARCH-216	Requisite: ARHA 111. Admission with consent of the instructor. Limited to 12 students. Fall and spring semesters. Lecturer Jaminet.	['art', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1516S/ARCH/ARCH-216-1516S	ARCH-216
+ARHA-102		['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-102-1516S	ARHA-102
+ARHA-111		['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-111-1516S	ARHA-111
+ARHA-135		['art', 'european_studies', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-135-1516S	ARHA-135
+ARHA-137		['art']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-137-1415S	ARHA-137
+ARHA-149		['black_studies', 'art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-149-1516S	ARHA-149
+ARHA-151		['art']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-151-1415S	ARHA-151
+ARHA-152		['art', 'asian']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-152-1516F	ARHA-152
+ARHA-154		['art', 'asian']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-154-1516S	ARHA-154
+ARHA-213	Requisite: ARHA 102 or 111, or consent of the instructor. Limited to 12 students. Fall and Spring semesters. Senior Resident Artist Garand.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-213-1516S	ARHA-213
+ARHA-214	Requisite: ARHA 102 or 111 or consent of the instructor. Limited to 14 students. Fall semester:  Visiting Lecturer Culhane. Spring semester:  Professor Keller.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-214-1516S	ARHA-214
+ARHA-215	Requisite: ARHA 102 or 111 or consent of the instructor. Limited to 18 students. Fall semester. Professor Sweeney.	['art']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-215-1516F	ARHA-215
+ARHA-217	Requisite: One prior course in studio arts, architecture, or film production, or permission of the instructor. Limited to 12 students. Fall semester. Professor Keller.	['art']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-217-1516F	ARHA-217
+ARHA-218	Requisite: ARHA 102 or 111, or consent of the instructor. Limited to 12 students. Fall semester: Visiting Lecturer Meyer. Spring semester: Professor Kimball.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-218-1516S	ARHA-218
+ARHA-221		['art', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-221-1516F	ARHA-221
+ARHA-222	Requisite: ARHA 102 or 111, or consent of the instructor. Limited to 18 students. Fall semester. Professor Sweeney.	['art']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-222-1516F	ARHA-222
+ARHA-223		['art']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-223-1415S	ARHA-223
+ARHA-224	Requisite: One of Drawing 1, Painting 1, or Sculpture1 (because of the diversity of subject and materials used).  Limited to 8 students. Spring semester. Senior Resident Artist Gloman.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-224-1516S	ARHA-224
+ARHA-251		['art']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-251-1516F	ARHA-251
+ARHA-252		['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-252-1516S	ARHA-252
+ARHA-253		['art', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-253-1415F	ARHA-253
+ARHA-256		['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-256-1516S	ARHA-256
+ARHA-261		['art', 'asian']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-261-1415F	ARHA-261
+ARHA-266		['art', 'asian']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-266-1415S	ARHA-266
+ARHA-267		['art', 'asian']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-267-1516F	ARHA-267
+ARHA-270		['black_studies', 'art']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-270-1516F	ARHA-270
+ARHA-274		['art']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-274-1415F	ARHA-274
+ARHA-275		['art']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-275-1415S	ARHA-275
+ARHA-276		['art']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-276-1415S	ARHA-276
+ARHA-277	Requisite: At least one other course in the arts and humanities, or consent of the instructor. Limited to 24 students. Spring semester. Five College Visiting Professor Falk.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-277-1516S	ARHA-277
+ARHA-281		['art', 'asian']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-281-1415S	ARHA-281
+ARHA-284		['sexuality_womens_gender_studies', 'art', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-284-1415F	ARHA-284
+ARHA-301		['art']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-301-1415F	ARHA-301
+ARHA-306	Requisite: Introductory Photography, at least one other intermediate photography course or equivalent, and permission of the instructor.  Limited to 8 students. Enrollment is determined by interview with the professor. Fall semester.  Professor Kimball.	['art']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-306-1415F	ARHA-306
+ARHA-307	Requisite: ARHA 306 or equivalent, and permission of the instructor.  Limited to 8 students. Enrollment is determined by interview with the professor. Spring semester.  Professor Kimball.	['art']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-307-1415S	ARHA-307
+ARHA-319	Requisite: Introductory level Drawing or Printmaking 1 or permission of the instructor. Limited to 10 students. Spring semester. Senior Resident Artist Garand.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-319-1516S	ARHA-319
+ARHA-323	Requisite: ARHA 222, 326 or 327. Limited to 8 students. Spring semester. Professor Sweeney.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-323-1516S	ARHA-323
+ARHA-324	Requisite: ARHA 214 or consent of the instructor. Limited to 12 students. Spring semester. Professor Keller.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-324-1516S	ARHA-324
+ARHA-326	Requisite: ARHA 215 or consent of the instructor. Limited to 18 students. Spring semester.  Professor Sweeney.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-326-1516S	ARHA-326
+ARHA-327	Requisite: ARHA 213 or consent of the instructor. Limited to 12 students. Fall semester.  Resident Artist Garand.	['art']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-327-1516F	ARHA-327
+ARHA-328	Requisite: ARHA 218 or consent of the instructor. Limited to 12 students.  Spring semester.  Visiting Lecturer Young.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-328-1516S	ARHA-328
+ARHA-332	Requisite: ARHA 214 or permission of the instructor.  Limited to 14 students. Spring semester. Visiting Lecturer Culhane.	['art']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-332-1415F	ARHA-332
+ARHA-335	Requisite:  One 200-level production course or relevant experience (to be discussed with the instructor in advance of the first class).  Limited to 12 students. Spring semester. Professor Levine.	['art', 'film']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-335-1516S	ARHA-335
+ARHA-343		['art', 'film']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-343-1415S	ARHA-343
+ARHA-350		['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-350-1516S	ARHA-350
+ARHA-351		['art']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-351-1516F	ARHA-351
+ARHA-354	Requisite: One course in ARHA, FAMS, or ARCH, or with permission of the instructor. Fall semester. Professor Courtright.	['art', 'european_studies', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-354-1516F	ARHA-354
+ARHA-357		['art']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-357-1516F	ARHA-357
+ARHA-358	Requisite: Previous courses in ARHA, or with permission of the instructor. Limited to 20 students. Spring semester. Visiting Associate Professor Cohen.	['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-358-1516S	ARHA-358
+ARHA-361		['art', 'asian']	www.amherst.edu/academiclife/departments/courses/1415S/ARHA/ARHA-361-1415S	ARHA-361
+ARHA-374	Requisite: One course in modern art or consent of the instructor.  Limited to 15 students.  Fall semester. Professor Staller.	['sexuality_womens_gender_studies', 'art', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-374-1415F	ARHA-374
+ARHA-381	Requisite: One course in History of Art, History, Anthropology, or Religion. Limited to 20 students. Permission required for first-year students. Fall semester. Visiting Professor Rice.	['art', 'asian']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-381-1415F	ARHA-381
+ARHA-385		['sexuality_womens_gender_studies', 'art', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-385-1415F	ARHA-385
+ARHA-386		['art']	www.amherst.edu/academiclife/departments/courses/1516S/ARHA/ARHA-386-1516S	ARHA-386
+ARHA-441	Requisite: A prior 200-level production course or relevant experience (to be discussed with the instructor in advance of the first class). Limited to 12 students. Fall semester. Professor Levine.	['art', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/ARHA/ARHA-441-1516F	ARHA-441
+ARHA-444	Requisite:  One 200-level production course or relevant experience (to be discussed with the instructor in advance of the first class). Limited to 12 students.  Fall semester. Professor Levine.	['art', 'film']	www.amherst.edu/academiclife/departments/courses/1415F/ARHA/ARHA-444-1415F	ARHA-444
+ASLC-220		['asian', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1415F/ASLC/ASLC-220-1415F	ASLC-220
+ASLC-233		['asian']	www.amherst.edu/academiclife/departments/courses/1415S/ASLC/ASLC-233-1415S	ASLC-233
+ASLC-234		['film', 'asian']	www.amherst.edu/academiclife/departments/courses/1516S/ASLC/ASLC-234-1516S	ASLC-234
+ASLC-336		['asian']	www.amherst.edu/academiclife/departments/courses/1415S/ASLC/ASLC-336-1415S	ASLC-336
+ASLC-338		['asian', 'french']	www.amherst.edu/academiclife/departments/courses/1516S/ASLC/ASLC-338-1516S	ASLC-338
+ASLC-467		['asian']	www.amherst.edu/academiclife/departments/courses/1415F/ASLC/ASLC-467-1415F	ASLC-467
+ASTR-111		['physics', 'astronomy']	www.amherst.edu/academiclife/departments/courses/1516F/ASTR/ASTR-111-1516F	ASTR-111
+ASTR-112		['physics']	www.amherst.edu/academiclife/departments/courses/1415S/ASTR/ASTR-112-1415S	ASTR-112
+ASTR-220	Requisite: MATH 111 and PHYS 123 or 116, concurrent enrollment acceptable. Spring semester. Professor Haggard.	['physics']	www.amherst.edu/academiclife/departments/courses/1415S/ASTR/ASTR-220-1415S	ASTR-220
+ASTR-226		['physics']	www.amherst.edu/academiclife/departments/courses/1516S/ASTR/ASTR-226-1516S	ASTR-226
+ASTR-228	Requisite: MATH 121 and PHYS 124 or 117, concurrent enrollment acceptable. Spring semester. Professor TBA.	['physics']	www.amherst.edu/academiclife/departments/courses/1516S/ASTR/ASTR-228-1516S	ASTR-228
+ASTR-335	Requisite: MATH 121 and PHYS 124 or 117. Fall semester. Professor TBA.	['physics', 'astronomy']	www.amherst.edu/academiclife/departments/courses/1516F/ASTR/ASTR-335-1516F	ASTR-335
+BIOL-104		['Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-104-1516F	BIOL-104
+BIOL-106		['Biology']	www.amherst.edu/academiclife/departments/courses/1415S/BIOL/BIOL-106-1415S	BIOL-106
+BIOL-114		['anthropology_sociology', 'Biology']	www.amherst.edu/academiclife/departments/courses/1516S/BIOL/BIOL-114-1516S	BIOL-114
+BIOL-181		['Biology']	www.amherst.edu/academiclife/departments/courses/1516S/BIOL/BIOL-181-1516S	BIOL-181
+BIOL-191	Requisite: Prior completion of, or concurrent registration in, CHEM 161. Fall semester. Professors Goutte and Williamson and Lab Coordinator Emerson.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-191-1516F	BIOL-191
+BIOL-201	Requisite: BIOL 181. Limited to 16 students. Fall semester.  Professor Hood.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-201-1516F	BIOL-201
+BIOL-211	Requisite: BIOL 181. Limited to 16 students.  Fall semester.  Professor Hood.	['Biology']	www.amherst.edu/academiclife/departments/courses/1415F/BIOL/BIOL-211-1415F	BIOL-211
+BIOL-221	Requisite: BIOL 191. Not open to first-year students. Limited to 16 students. Spring semester. Professor Poccia.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516S/BIOL/BIOL-221-1516S	BIOL-221
+BIOL-230	Requisite: BIOL 181 or ENST 120 or equivalent. Not open to first-year students. Limited to 65 students. Fall semester. Professor Temeles.	['Biology', 'environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-230-1516F	BIOL-230
+BIOL-241	Requisite: BIOL 191. Limited to 24 students. Not open to first-year students. Spring semester. Professor Goutte.	['Biology']	www.amherst.edu/academiclife/departments/courses/1415S/BIOL/BIOL-241-1415S	BIOL-241
+BIOL-251	Requisite: BIOL 191 or equivalent. Limited to 30 students. Not open to first-year students.  Fall semester. Professors Jeong and Ratner.	['courses', 'Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-251-1516F	BIOL-251
+BIOL-271	Requisite: BIOL 181 and 191. Limited to 28 students. Not open to first-year students. Spring semester. Professor Purdy.	['Biology']	www.amherst.edu/academiclife/departments/courses/1415S/BIOL/BIOL-271-1415S	BIOL-271
+BIOL-280	Requisite: BIOL 181. Limited to 14 students. Not open to first-year students. Fall semester. Professor Clotfelter.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-280-1516F	BIOL-280
+BIOL-281	Requisite: BIOL 181. Limited to 16 students. Not open to first-year students. Fall semester. Professor Clotfelter.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-281-1516F	BIOL-281
+BIOL-291	Requisite: BIOL 191 and completion of, or concurrent registration in, CHEM 161.  Limited to 24 students. Spring semester. Professor Graf.	['courses', 'Biology']	www.amherst.edu/academiclife/departments/courses/1516S/BIOL/BIOL-291-1516S	BIOL-291
+BIOL-301	Requisite:  BIOL 191 and CHEM 161.  Not open to first year students. Limited to 24 students. Fall semester.  Professor Graf.	['neuroscience', 'Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-301-1516F	BIOL-301
+BIOL-320	Requisite: BIOL 181; BIOL 191 recommended. Limited to 30 students. Not open to first-year students. Spring semester.  Professor Miller.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516S/BIOL/BIOL-320-1516S	BIOL-320
+BIOL-321	Requisite: BIOL 181; BIOL 191 recommended. Limited to 16 students. Not open to first-year students. Spring semester.  Professor Miller.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516S/BIOL/BIOL-321-1516S	BIOL-321
+BIOL-331	Requisite: CHEM 221 and BIOL 191; or consent of the instructor. CHEM 231 is a co-requisite. Limited to 45 students. Spring semester. Professor Bishop (Chemistry) and Professor Williamson (Biology).	['courses', 'chemistry', 'Biology']	www.amherst.edu/academiclife/departments/courses/1516S/BIOL/BIOL-331-1516S	BIOL-331
+BIOL-420	Requisite: BIOL 251; alternatively, any two of the following courses: BIOL 220, 241, 291, 331, and 380/1.  Limited to 15 students.  Spring semester.  Professor Ratner.	['Biology']	www.amherst.edu/academiclife/departments/courses/1415S/BIOL/BIOL-420-1415S	BIOL-420
+BIOL-424	Requisite: BIOL181, BIOL 191, and one upper-level course in Biology. Limited to 16 students. Fall semester. Professor Miller.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-424-1516F	BIOL-424
+BIOL-434	Requisite: One of the following Biology courses: BIOL 201, 211, 230, 280/1, 320/1, or instructor permission. Limited to 15 students. Not open to first-year students. Spring 2016. Lecturer Levin.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516S/BIOL/BIOL-434-1516S	BIOL-434
+BIOL-440	Requisite: BIOL 230/ENST 210 or permission of the instructor.  Not open to first-year students.  Limited to 14 students.  Fall semester. Lecturer Levin. 	['Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-440-1516F	BIOL-440
+BIOL-454	Requisite: Two or more of the following courses: Biology 181, 230, 281 or 320/321.  Not open to first-year students.  Limited to 12 students.  Spring semester. Professor Clotfelter and Lecturer Levin.	['Biology']	www.amherst.edu/academiclife/departments/courses/1415S/BIOL/BIOL-454-1415S	BIOL-454
+BIOL-464		['Biology']	www.amherst.edu/academiclife/departments/courses/1415F/BIOL/BIOL-464-1415F	BIOL-464
+BIOL-470	Requisite: One of the following courses, BIOL 241, 251, 291, 330, 331, OR permission from instructor. Limited to 15 students. Spring semester. Assistant Professor Jeong.	['Biology']	www.amherst.edu/academiclife/departments/courses/1516S/BIOL/BIOL-470-1516S	BIOL-470
+BIOL-498		['Biology']	www.amherst.edu/academiclife/departments/courses/1516F/BIOL/BIOL-498-1516F	BIOL-498
+BLST-111		['black_studies']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-111-1516S	BLST-111
+BLST-200		['black_studies']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-200-1516S	BLST-200
+BLST-201		['black_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/BLST/BLST-201-1516F	BLST-201
+BLST-203		['sexuality_womens_gender_studies', 'black_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1415S/BLST/BLST-203-1415S	BLST-203
+BLST-204		['black_studies', 'music']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-204-1516S	BLST-204
+BLST-214		['black_studies', 'music']	www.amherst.edu/academiclife/departments/courses/1415F/BLST/BLST-214-1415F	BLST-214
+BLST-236		['sexuality_womens_gender_studies', 'black_studies']	www.amherst.edu/academiclife/departments/courses/1516F/BLST/BLST-236-1516F	BLST-236
+BLST-237		['black_studies']	www.amherst.edu/academiclife/departments/courses/1516F/BLST/BLST-237-1516F	BLST-237
+BLST-247		['black_studies']	www.amherst.edu/academiclife/departments/courses/1415F/BLST/BLST-247-1415F	BLST-247
+BLST-291		['black_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/BLST/BLST-291-1516F	BLST-291
+BLST-294		['black_studies', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1516F/BLST/BLST-294-1516F	BLST-294
+BLST-295		['black_studies']	www.amherst.edu/academiclife/departments/courses/1415F/BLST/BLST-295-1415F	BLST-295
+BLST-296		['black_studies']	www.amherst.edu/academiclife/departments/courses/1516F/BLST/BLST-296-1516F	BLST-296
+BLST-298		['black_studies', 'anthropology_sociology', 'political_science']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-298-1516S	BLST-298
+BLST-300		['black_studies']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-300-1516S	BLST-300
+BLST-313		['black_studies', 'art']	www.amherst.edu/academiclife/departments/courses/1516F/BLST/BLST-313-1516F	BLST-313
+BLST-315		['black_studies', 'art']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-315-1516S	BLST-315
+BLST-316	Requisite: At least three Five-College courses in African Studies or permission of the instructor. Limited to 20 students. Open to juniors and seniors. Spring semester.  Professor Abiodun and Five College Africanist Faculty.	['black_studies']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-316-1516S	BLST-316
+BLST-331		['black_studies', 'american_studies']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-331-1516S	BLST-331
+BLST-336	Requisite: SOCI 112 or equivalent. Open to juniors and seniors. Limited to 20 students. Spring semester. Professor Lembo.	['black_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-336-1516S	BLST-336
+BLST-342		['black_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415F/BLST/BLST-342-1415F	BLST-342
+BLST-347		['sexuality_womens_gender_studies', 'black_studies']	www.amherst.edu/academiclife/departments/courses/1516S/BLST/BLST-347-1516S	BLST-347
+BLST-381		['black_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/BLST/BLST-381-1516F	BLST-381
+BLST-432		['black_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1516F/BLST/BLST-432-1516F	BLST-432
+CHEM-100		['chemistry']	www.amherst.edu/academiclife/departments/courses/1516S/CHEM/CHEM-100-1516S	CHEM-100
+CHEM-151		['chemistry']	www.amherst.edu/academiclife/departments/courses/1516S/CHEM/CHEM-151-1516S	CHEM-151
+CHEM-155		['chemistry']	www.amherst.edu/academiclife/departments/courses/1516F/CHEM/CHEM-155-1516F	CHEM-155
+CHEM-161	Requisite: CHEM 151 or 155 (this requirement may be waived for exceptionally well-prepared students; consent of the instructor is required); and MATH 111 or placement by the Mathematics department into MATH 121 or higher.  Fall semester: Professor Kushick. Spring semester: Professor Leung.	['chemistry']	www.amherst.edu/academiclife/departments/courses/1516S/CHEM/CHEM-161-1516S	CHEM-161
+CHEM-191		['chemistry']	www.amherst.edu/academiclife/departments/courses/1415S/CHEM/CHEM-191-1415S	CHEM-191
+CHEM-221	Requisite: CHEM 161 or equivalent.  Fall semester. Professors Bishop and Hansen.	['chemistry']	www.amherst.edu/academiclife/departments/courses/1516F/CHEM/CHEM-221-1516F	CHEM-221
+CHEM-231F		['chemistry']	www.amherst.edu/academiclife/departments/courses/1516S/CHEM/CHEM-231F-1516S	CHEM-231F
+CHEM-330	Requisite:  BIOL 191 and CHEM  221.  Limited to 30 students.  Fall semester.  Professor Jaswal.	['chemistry', 'Biology']	www.amherst.edu/academiclife/departments/courses/1516F/CHEM/CHEM-330-1516F	CHEM-330
+CHEM-351	Requisite: CHEM 161, MATH 121, PHYS 116 or 123.  Limited to 24 students. Fall semester. Professor Leung.	['chemistry']	www.amherst.edu/academiclife/departments/courses/1516F/CHEM/CHEM-351-1516F	CHEM-351
+CHEM-361	Requisite: CHEM 161, PHYS 116 or 123, and MATH 121. MATH 211 is recommended.  Limited to 24 students. Spring semester.  Professor Marshall.	['chemistry']	www.amherst.edu/academiclife/departments/courses/1516S/CHEM/CHEM-361-1516S	CHEM-361
+CHEM-371	Requisite: CHEM 221 or consent of the instructor. Limited to 24 students. Spring semester.  Professor Burkett.	['chemistry']	www.amherst.edu/academiclife/departments/courses/1516S/CHEM/CHEM-371-1516S	CHEM-371
+CHEM-418	Requisite:  CHEM 231. Limited to 20 students. Fall semester.  Visiting Professor Collins.	['chemistry']	www.amherst.edu/academiclife/departments/courses/1415F/CHEM/CHEM-418-1415F	CHEM-418
+CHEM-498		['chemistry']	www.amherst.edu/academiclife/departments/courses/1516F/CHEM/CHEM-498-1516F	CHEM-498
+CHIN-101		['asian']	www.amherst.edu/academiclife/departments/courses/1516F/CHIN/CHIN-101-1516F	CHIN-101
+CHIN-102	Requisite: CHIN 101 or equivalent. Limited to 30 students. Discussion sections limited to 8 students. Spring semester. Senior Lecturer Teng.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/CHIN/CHIN-102-1516S	CHIN-102
+CHIN-201	Requisite: CHIN 102 or equivalent. Limited to 30 students, maximum enrollment of 8 students per section. Fall semester. Senior Lecturer Shen.	['asian']	www.amherst.edu/academiclife/departments/courses/1516F/CHIN/CHIN-201-1516F	CHIN-201
+CHIN-202	Requisite: CHIN 201 or equivalent. Limited to 30 students, maximum enrollment of 8 students per discussion section. Spring semester. Senior Lecturer Shen.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/CHIN/CHIN-202-1516S	CHIN-202
+CHIN-290		['asian']	www.amherst.edu/academiclife/departments/courses/1516F/CHIN/CHIN-290-1516F	CHIN-290
+CHIN-301	Requisite: CHIN 104, 202 or equivalent. Fall semester. Senior Lecturer Li.	['asian']	www.amherst.edu/academiclife/departments/courses/1516F/CHIN/CHIN-301-1516F	CHIN-301
+CHIN-302	Requisite: CHIN 301 or equivalent. Spring semester. Senior Lecturers Li.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/CHIN/CHIN-302-1516S	CHIN-302
+CHIN-401	Requisite: CHIN 302 or equivalent. Admission with the consent of the instructor. Fall semester. Senior Lecturer Li.	['asian']	www.amherst.edu/academiclife/departments/courses/1516F/CHIN/CHIN-401-1516F	CHIN-401
+CHIN-402	Requisite: CHIN 401 or equivalent. Admission with consent of the instructor. Spring semester. Senior Lecturer Li.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/CHIN/CHIN-402-1516S	CHIN-402
+CHIN-490		['asian']	www.amherst.edu/academiclife/departments/courses/1415S/CHIN/CHIN-490-02-1415S	CHIN-490
+CLAS-123		['sexuality_womens_gender_studies', 'classics']	www.amherst.edu/academiclife/departments/courses/1415S/CLAS/CLAS-123-1415S	CLAS-123
+CLAS-124		['classics']	www.amherst.edu/academiclife/departments/courses/1516S/CLAS/CLAS-124-1516S	CLAS-124
+CLAS-132		['classics']	www.amherst.edu/academiclife/departments/courses/1516S/CLAS/CLAS-132-1516S	CLAS-132
+CLAS-134		['classics']	www.amherst.edu/academiclife/departments/courses/1415F/CLAS/CLAS-134-1415F	CLAS-134
+CLAS-135		['classics']	www.amherst.edu/academiclife/departments/courses/1516F/CLAS/CLAS-135-1516F	CLAS-135
+CLAS-137		['classics']	www.amherst.edu/academiclife/departments/courses/1415S/CLAS/CLAS-137-1415S	CLAS-137
+CLAS-138		['sexuality_womens_gender_studies', 'classics']	www.amherst.edu/academiclife/departments/courses/1516S/CLAS/CLAS-138-1516S	CLAS-138
+COSC-111		['computer_science']	www.amherst.edu/academiclife/departments/courses/1516S/COSC/COSC-111-1516S	COSC-111
+COSC-112	Requisite: COSC 111 or consent of the instructor. This course is the appropriate starting point for most students with some prior programming experience. Fall and spring semester. Professor Rager.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1516S/COSC/COSC-112-1516S	COSC-112
+COSC-161		['computer_science']	www.amherst.edu/academiclife/departments/courses/1516F/COSC/COSC-161-1516F	COSC-161
+COSC-201	Requisite: COSC 111. Spring semester. Professors L. McGeoch and Glenn.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1516S/COSC/COSC-201-1516S	COSC-201
+COSC-231	Requisite: COSC 112.  Spring semester.  Professor Glenn.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1516S/COSC/COSC-231-1516S	COSC-231
+COSC-241	Requisite: COSC 112. Fall semester.  Professor Rager.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1516F/COSC/COSC-241-1516F	COSC-241
+COSC-251	Requisite: COSC 112 and COSC 201. Spring semester. Professor Valentine.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1516S/COSC/COSC-251-1516S	COSC-251
+COSC-261	Requisite: COSC 112 and 161. Spring semester. Professor Kaplan.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1516S/COSC/COSC-261-1516S	COSC-261
+COSC-281	Requisite: COSC 112 or 201. Spring semester.  Profesor Kaplan.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1415S/COSC/COSC-281-1415S	COSC-281
+COSC-301	Requisite: COSC 112 and 201. Fall semester.  Professor Glenn.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1516F/COSC/COSC-301-1516F	COSC-301
+COSC-331		['computer_science']	www.amherst.edu/academiclife/departments/courses/1415F/COSC/COSC-331-1415F	COSC-331
+COSC-352		['computer_science']	www.amherst.edu/academiclife/departments/courses/1415S/COSC/COSC-352-1415S	COSC-352
+COSC-371	Requisite: COSC 112 and 161. Fall semester.  Professor L. McGeoch.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1516F/COSC/COSC-371-1516F	COSC-371
+COSC-401	Requisite: None, although analytical aptitude is essential. Spring semester.  Professor Glenn.	['computer_science']	www.amherst.edu/academiclife/departments/courses/1415S/COSC/COSC-401-1415S	COSC-401
+COSC-450		['computer_science']	www.amherst.edu/academiclife/departments/courses/1415S/COSC/COSC-450-1415S	COSC-450
+ECON-111		['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-111-1516S	ECON-111
+ECON-111E		['economics', 'environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-111E-1516F	ECON-111E
+ECON-210	Requisite: ECON 111/111E. Limited to 30 students. Spring semester. Professor Sims.	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-210-1516S	ECON-210
+ECON-214	Requisite: ECON 111/111E. Recommended: any one of Microeconomics (ECON 300/301), Econometrics (ECON 360/361), or Statistics (MATH 130). Limited to 35 students. Spring semester.  Professor Reyes.	['economics']	www.amherst.edu/academiclife/departments/courses/1415S/ECON/ECON-214-1415S	ECON-214
+ECON-223	Requisite: ECON 111/111E. Limited to 35 students. Fall semester. Professor Theoharides.	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-223-1516F	ECON-223
+ECON-225	Requisite: ECON 111/111E. Limited to 50 students.  Spring semester.  Professor Ishii.	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-225-1516S	ECON-225
+ECON-227	Requisite: ECON 111/111E. Limited to 50 students. Spring semester.  Professor B. Yarbrough.	['economics']	www.amherst.edu/academiclife/departments/courses/1415S/ECON/ECON-227-1415S	ECON-227
+ECON-235	Requisite: ECON 111/111E. Limited to 50 students. Fall semester. Professor B. Yarbrough.	['economics']	www.amherst.edu/academiclife/departments/courses/1415F/ECON/ECON-235-1415F	ECON-235
+ECON-237	Requisite: ECON 111/111E.  Limited to 50 students. Consent of the instructor required for students who have taken ECON 435.  Spring semester.  Professor Honig.	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-237-1516S	ECON-237
+ECON-245	Requisite: ECON 111/111E. Limited to 50 students. Fall semester.  Professor Singh.	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-245-1516F	ECON-245
+ECON-265	Requisite: ECON 111/111E. Limited to 50 students. Fall semester. Professor Woglom.	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-265-1516S	ECON-265
+ECON-271	Requisite: ECON 111/111E. Limited to 35 students. Fall semester. Professor Barbezat.	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-271-1516F	ECON-271
+ECON-272	Requisite: ECON 111/111E. Limited to 35 students. Spring semester. Professor Barbezat.	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-272-1516S	ECON-272
+ECON-300	"Requisite: MATH 111, or equivalent and at least a ""B"" grade in ECON 111/111E or a ""B-"" in ECON 200-290, or equivalent. Limited to 50 students. Fall semester: Professor Baisa. Spring semester: Professor Singh."	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-300-1516S	ECON-300
+ECON-301	"Requisite: At least a ""B"" grade in ECON 111/111E or a ""B-"" grade in ECON 200-290, or equivalent, and MATH 211 or equivalent, or consent of the instructor. Fall semester. Professor Baisa."	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-301-1516F	ECON-301
+ECON-330	"Requisite: Math 111 or equivalent and at least a ""B"" grade in ECON 111/111E or a ""B-"" in ECON 200-290, or equivalent. Limited to 50 students.  Fall semester: Professor Honig. Spring semester: Professor Honig."	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-330-1516S	ECON-330
+ECON-331	"Requisite: At least a ""B"" grade in ECON 111/111E or a ""B-"" grade in ECON 200-290, or equivalent, and MATH 121 or equivalent, or consent of the instructor. Spring semester. Professor Woglom."	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-331-1516S	ECON-331
+ECON-360	"Requisite: MATH 111, or equivalent and at least a ""B"" grade in ECON 111/111E or a ""B-"" in ECON 200-290, or equivalent. Limited to 50 students.  Fall semester: Professor Westhoff.  Spring semester: Professors Sims and Theoharides."	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-360-1516S	ECON-360
+ECON-361	"Requisite: At least a ""B"" grade in ECON 111/111E or a ""B-"" grade in ECON 200-290, or equivalent, and MATH 211 or equivalent, and STAT 111 (previously MATH 130) or STAT 135 or equivalent. Fall semester.  Professor Ishii."	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-361-1516F	ECON-361
+ECON-408	Requisite: ECON 300/301 and Math 121.  Limited to 35 students. Spring semester. Professor Raymond.	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-408-1516S	ECON-408
+ECON-410	Requisite: Economics 360/361 or permission of instructor. Limited to 15 students. Fall semester. Professor Singh.	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-410-1516F	ECON-410
+ECON-412	Requisite: ECON 300/301 (Microeconomics) and ECON 360/361 (Econometrics). Limited to 15 students. Fall semester. Professor Reyes.	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-412-1516F	ECON-412
+ECON-416	Requisite: Microeconomics (ECON 300/301) and Econometrics (ECON 360/361). Limited to 15 students. Spring semester. Professor Reyes.	['economics']	www.amherst.edu/academiclife/departments/courses/1415S/ECON/ECON-416-1415S	ECON-416
+ECON-420	Requisite: ECON 300 or 301 or consent of the instructor. Limited to 40 students. Fall semester. Professor Kingston.	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-420-1516F	ECON-420
+ECON-423	Requisite: MATH 211 AND ECON 300 or 301; or consent of instructor. Limited to 35 students. Fall semester. Professor Woglom.	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-423-1516F	ECON-423
+ECON-425	Requisite: ECON 300 or 301.  Not open to students who have taken ECON 275.  Limited to 40 students. Spring semester.  Professor Barbezat.	['economics']	www.amherst.edu/academiclife/departments/courses/1415S/ECON/ECON-425-1415S	ECON-425
+ECON-435	Requisite: ECON 330/331, or ECON 235/237 with permission of the instructor.  Limited to 35 students. Fall semester. Professor Honig.	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-435-1516F	ECON-435
+ECON-441	Requisite: ECON 300/301, ECON 330/331, and MATH 211 (or MATH 121 with consent of instructor). This course will routinely use multivariable calculus. Limited to 15 students. Spring semester. Professor Rabinovich.	['economics']	www.amherst.edu/academiclife/departments/courses/1415S/ECON/ECON-441-1415S	ECON-441
+ECON-470	Mechanism design uses game theory to design systems, institutions, and mechanisms to achieve desired outcomes. We will study the theory of mechanism design and how it is used to design auctions, tax schemes, and matching mechanisms. The course will approach these issues from a theoretical perspective and also examine real-world applications. Examples will include how Google sells advertising space, how medical students are matched to residencies, and how governments sell bonds. Students will read and discuss current research on these topics and also complete an independent research project related to the course material.Requisite: ECON 301 or 420, MATH 211.  Limited to 18 students.  Spring semester.  Professor Baisa.	['economics']	www.amherst.edu/academiclife/departments/courses/1415S/ECON/ECON-470-1415S	ECON-470
+ECON-471	Requisite: ECON 300 or 301 and 330 or 331. Limited to 15 students. Fall semester. Professor Barbezat.	['economics']	www.amherst.edu/academiclife/departments/courses/1415F/ECON/ECON-471-1415F	ECON-471
+ECON-473	Requisite: ECON 300 or 301 and 330 or 331.  Limited to 15 students.  Spring semester.  Professor Barbezat.	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-473-1516S	ECON-473
+ECON-479	Requisite: ECON 420 or consent of the instructor. Limited to 15 students. Spring semester. Professor Kingston.	['economics']	www.amherst.edu/academiclife/departments/courses/1516S/ECON/ECON-479-1516S	ECON-479
+ECON-498	Requisite: An average grade of 11.00 or higher in ECON 300/301, 330/331, and 360/361. Fall semester. Professor Reyes.	['economics']	www.amherst.edu/academiclife/departments/courses/1516F/ECON/ECON-498-1516F	ECON-498
+ENGL-105		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-105-1516F	ENGL-105
+ENGL-106		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-106-1516S	ENGL-106
+ENGL-111		['sexuality_womens_gender_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-111-1516S	ENGL-111
+ENGL-112		['sexuality_womens_gender_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-112-1516S	ENGL-112
+ENGL-117		['english', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-117-1516F	ENGL-117
+ENGL-119		['english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-119-1415F	ENGL-119
+ENGL-120		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-120-1516S	ENGL-120
+ENGL-125		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-125-1516S	ENGL-125
+ENGL-153		['sexuality_womens_gender_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-153-1415F	ENGL-153
+ENGL-159		['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-159-1415S	ENGL-159
+ENGL-180		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-180-1516S	ENGL-180
+ENGL-213		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-213-1516S	ENGL-213
+ENGL-217		['english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-217-1415F	ENGL-217
+ENGL-218		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-218-1516F	ENGL-218
+ENGL-221		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-221-1516S	ENGL-221
+ENGL-225		['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-225-1415S	ENGL-225
+ENGL-226		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-226-1516S	ENGL-226
+ENGL-232		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-232-1516F	ENGL-232
+ENGL-240		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-240-1516S	ENGL-240
+ENGL-242		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-242-1516F	ENGL-242
+ENGL-250		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-250-1516S	ENGL-250
+ENGL-255		['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-255-1415S	ENGL-255
+ENGL-256		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-256-1516S	ENGL-256
+ENGL-257		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-257-1516F	ENGL-257
+ENGL-272		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-272-1516S	ENGL-272
+ENGL-274		['english', 'american_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-274-1516F	ENGL-274
+ENGL-275		['black_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-275-1415F	ENGL-275
+ENGL-277		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-277-1415S	ENGL-277
+ENGL-278		['black_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-278-1516F	ENGL-278
+ENGL-280		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-280-1516F	ENGL-280
+ENGL-281		['english', 'art', 'film']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-281-1516S	ENGL-281
+ENGL-295		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-295-1516F	ENGL-295
+ENGL-304		['english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-304-1415F	ENGL-304
+ENGL-306		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-306-1516S	ENGL-306
+ENGL-308		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-308-1516S	ENGL-308
+ENGL-316		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-316-1516S	ENGL-316
+ENGL-318		['black_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-318-1516F	ENGL-318
+ENGL-324	Requisite: ENGL 221 or the equivalent. Limited enrollment. Please consult the Creative Writing Center website for information on admission to this course.  Fall semester.  Writer-in-Residence Hall.	['english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-324-1415F	ENGL-324
+ENGL-325		['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-325-1415S	ENGL-325
+ENGL-326	Requisite: Completion of a previous course in creative writing. Limited enrollment. Please consult the Creative Writing Center website for information on admission to this course. Spring semester. Visiting Writer Gaige.	['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-326-1516S	ENGL-326
+ENGL-332		['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-332-1415S	ENGL-332
+ENGL-338		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-338-1516S	ENGL-338
+ENGL-339		['sexuality_womens_gender_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-339-1516S	ENGL-339
+ENGL-342		['english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-342-1415F	ENGL-342
+ENGL-343		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-343-1516F	ENGL-343
+ENGL-348		['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-348-1415S	ENGL-348
+ENGL-350		['english', 'american_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-350-1516F	ENGL-350
+ENGL-352		['english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-352-1415F	ENGL-352
+ENGL-358		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-358-1516F	ENGL-358
+ENGL-369		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-369-1516F	ENGL-369
+ENGL-374		['black_studies', 'english', 'film']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-374-1516S	ENGL-374
+ENGL-377		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-377-1516F	ENGL-377
+ENGL-378		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-378-1415F	ENGL-378
+ENGL-381		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-381-1516F	ENGL-381
+ENGL-382	Requisite: One 100-level or 200-level FAMS or ENGL course, or consent of the instructor. Limited to 30 students. Fall semester. Visiting Professor Guilford.	['english', 'art', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-382-1516F	ENGL-382
+ENGL-388		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-388-1516F	ENGL-388
+ENGL-395		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-395-1516S	ENGL-395
+ENGL-397	Requisite:  One English course at the 200 level or higher required.  Limited to 15 students.  Spring semester.  Visiting Lecturer Acker.	['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-397-1415S	ENGL-397
+ENGL-412		['english', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-412-1516F	ENGL-412
+ENGL-427	Requisite: ENGL 226. Recommended requisite: ENGL 326. Open to juniors and seniors. Limited enrollment. Please consult the Creative Writing Center website for information on admission to this course. Spring semester. Visiting Writer Gaige.	['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-427-1415S	ENGL-427
+ENGL-431	Requisite:  ENGL 338 (Shakespeare). Open to juniors and seniors. Limited to 15 students.  Fall semester.  Professor Bosman.	['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-431-1516F	ENGL-431
+ENGL-433		['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-433-1415S	ENGL-433
+ENGL-435		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-435-1516S	ENGL-435
+ENGL-438		['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-438-1415S	ENGL-438
+ENGL-439		['english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-439-1415F	ENGL-439
+ENGL-441		['english', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-441-1415F	ENGL-441
+ENGL-456		['black_studies', 'english', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-456-1516F	ENGL-456
+ENGL-458		['english', 'american_studies']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-458-1516S	ENGL-458
+ENGL-462	Requisite:  At least one foundational course in FAMS or ARHA.  Open to juniors and seniors.  Limited to 12 students.  Spring semester.  Visiting Professor Guilford.	['english', 'art', 'film']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-462-1516S	ENGL-462
+ENGL-471		['sexuality_womens_gender_studies', 'black_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-471-1415F	ENGL-471
+ENGL-474		['black_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-474-1516S	ENGL-474
+ENGL-475		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-475-1415F	ENGL-475
+ENGL-477	Requisite:  At least one foundational course in FAMS or equivalent introductory film course, plus any one course in cultural studies/literary theory/gender studies/race and ethnicity studies.  Open to juniors and seniors.  Limited to 18 students.  Fall semester.  Professor Rangan.	['english', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-477-1516F	ENGL-477
+ENGL-479	Requisite: Prior coursework in film and media studies courses, either at Amherst or one of the other Five Colleges. The professor will consider exceptions for advanced English majors with no previous film/media classwork. Open to juniors and seniors. Limited to 15 students. Spring semester. Professor Hastie.	['english', 'film']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-479-1516S	ENGL-479
+ENGL-480		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-480-1415S	ENGL-480
+ENGL-487		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1415F/ENGL/ENGL-487-1415F	ENGL-487
+ENGL-488		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-488-1415S	ENGL-488
+ENGL-490		['english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-490-02-1415S	ENGL-490
+ENGL-491		['black_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1415S/ENGL/ENGL-491-1415S	ENGL-491
+ENGL-496		['english']	www.amherst.edu/academiclife/departments/courses/1516F/ENGL/ENGL-496-1516F	ENGL-496
+ENGL-499		['english']	www.amherst.edu/academiclife/departments/courses/1516S/ENGL/ENGL-499-1516S	ENGL-499
+ENST-120		['environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516S/ENST/ENST-120-1516S	ENST-120
+ENST-250		['environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ENST/ENST-250-1516F	ENST-250
+ENST-260		['environmental_studies']	www.amherst.edu/academiclife/departments/courses/1415S/ENST/ENST-260-1415S	ENST-260
+ENST-310		['environmental_studies']	www.amherst.edu/academiclife/departments/courses/1415S/ENST/ENST-310-1415S	ENST-310
+ENST-320	Requisite:  ENST 120; recommended requisite:  ENST 250.  Limited to 35 students.  Spring semester.  Pick Visiting Professor Stewart.	['environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516S/ENST/ENST-320-1516S	ENST-320
+ENST-330	Requisite: ENST 120. Limited to 18 students. Fall semester. Visiting Pick Professor Stewart. 	['environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ENST/ENST-330-1516F	ENST-330
+ENST-440		['environmental_studies']	www.amherst.edu/academiclife/departments/courses/1415S/ENST/ENST-440-1415S	ENST-440
+ENST-490		['environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ENST/ENST-490-02-1516F	ENST-490
+ENST-495		['environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516F/ENST/ENST-495-1516F	ENST-495
+EUST-121		['european_studies']	www.amherst.edu/academiclife/departments/courses/1516F/EUST/EUST-121-1516F	EUST-121
+EUST-122		['european_studies']	www.amherst.edu/academiclife/departments/courses/1415S/EUST/EUST-122-1415S	EUST-122
+EUST-201		['european_studies']	www.amherst.edu/academiclife/departments/courses/1415S/EUST/EUST-201-1415S	EUST-201
+EUST-202		['european_studies']	www.amherst.edu/academiclife/departments/courses/1516S/EUST/EUST-202-1516S	EUST-202
+EUST-203		['european_studies', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1516F/EUST/EUST-203-1516F	EUST-203
+EUST-227		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415F/EUST/EUST-227-1415F	EUST-227
+EUST-235		['european_studies', 'spanish']	www.amherst.edu/academiclife/departments/courses/1415F/EUST/EUST-235-1415F	EUST-235
+EUST-259		['european_studies', 'spanish']	www.amherst.edu/academiclife/departments/courses/1516S/EUST/EUST-259-1516S	EUST-259
+EUST-265		['european_studies', 'spanish']	www.amherst.edu/academiclife/departments/courses/1415S/EUST/EUST-265-1415S	EUST-265
+EUST-303		['european_studies']	www.amherst.edu/academiclife/departments/courses/1415S/EUST/EUST-303-1415S	EUST-303
+EUST-331		['european_studies', 'spanish']	www.amherst.edu/academiclife/departments/courses/1516F/EUST/EUST-331-1516F	EUST-331
+EUST-339		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/EUST/EUST-339-1516S	EUST-339
+FAMS-213		['film']	www.amherst.edu/academiclife/departments/courses/1415F/FAMS/FAMS-213-1415F	FAMS-213
+FAMS-228		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1415S/FAMS/FAMS-228-1415S	FAMS-228
+FAMS-321		['film', 'french']	www.amherst.edu/academiclife/departments/courses/1516S/FAMS/FAMS-321-1516S	FAMS-321
+FAMS-350		['english', 'film']	www.amherst.edu/academiclife/departments/courses/1516F/FAMS/FAMS-350-1516F	FAMS-350
+FAMS-445	Requisite:  One 200-level production course or relevant experience (to be discussed with the instructor in advance of the first class).  Limited to 12 students. Spring semester. Professor Levine.	['art', 'film']	www.amherst.edu/academiclife/departments/courses/1415S/FAMS/FAMS-445-1415S	FAMS-445
+FREN-101		['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-101-1516S	FREN-101
+FREN-103	Requisite: FREN 101 or two years of secondary school French. Fall semester: Visiting Lecturer Tapley and Assistants. Spring semester: TBA.	['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-103-1516S	FREN-103
+FREN-205	Requisite: FREN 103 or three to four years of secondary school French. Fall semester: Professor de la Carrera and Rockwell.  Spring semester:  Professor de la Carrera.	['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-205-1516S	FREN-205
+FREN-207	Requisite: FREN 205, or completion of AP French, or four years of secondary school French in a strong program. Fall semester: Professor Rockwell.  Spring semester: Professors Katsaros and Rockwell.	['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-207-1516S	FREN-207
+FREN-208	Requisite: FREN 205, or completion of AP French, or four years of secondary school French in a strong program. Limited to 16 students. Fall and spring semester. Professor Sigal.	['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-208-1516S	FREN-208
+FREN-314	Requisite: FREN 207 or 208 or the equivalent. Limited to 17 students. Fall semester. Professor Katsaros.	['french']	www.amherst.edu/academiclife/departments/courses/1516F/FREN/FREN-314-1516F	FREN-314
+FREN-320	Requisite: One of the following--FREN 207, 208, 311 or equivalent. Spring semester. Professor Rockwell.	['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-320-1516S	FREN-320
+FREN-321	Requisite: One of the following--FREN 207, 208, 311, or equivalent. Spring semester. Professor Rockwell.	['french']	www.amherst.edu/academiclife/departments/courses/1415S/FREN/FREN-321-1415S	FREN-321
+FREN-330	Requisite: One of the following--FREN 207, 208, 311 or equivalent. Fall semester. Professor de la Carrera.	['french']	www.amherst.edu/academiclife/departments/courses/1516F/FREN/FREN-330-1516F	FREN-330
+FREN-339	Requisite:  One of the following--FREN 207, 208, 311, or equivalent. Spring semester. Professor de la Carrera.	['french']	www.amherst.edu/academiclife/departments/courses/1415S/FREN/FREN-339-1415S	FREN-339
+FREN-348	Requisite:  One of the following--FREN 207, 208, 311 or equivalent.  Fall semester. Visiting Professor Huet.	['french']	www.amherst.edu/academiclife/departments/courses/1415F/FREN/FREN-348-1415F	FREN-348
+FREN-352	Requisite: One of the following--FREN 207, 208, 311 or equivalent. Spring semester. Professor Sigal.	['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-352-1516S	FREN-352
+FREN-354	Requisite: One of the following--FREN 207, 208, 311, or equivalent. Fall semester. Professor Hewitt.	['european_studies', 'french']	www.amherst.edu/academiclife/departments/courses/1415F/FREN/FREN-354-1415F	FREN-354
+FREN-360		['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-360-1516S	FREN-360
+FREN-365	Requisite:  One of the following--FREN 207, 208, 311, or equivalent.  Fall semester.  Professor Caplan.	['film', 'french']	www.amherst.edu/academiclife/departments/courses/1415F/FREN/FREN-365-1415F	FREN-365
+FREN-410H	Requisite: Senior status.  Open only to French majors.	['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-410H-1516S	FREN-410H
+FREN-471	Requisite: One of the following--French 207, 311 or the equivalent. Limited to 18 students.  Spring semester.  Visiting Professor Gadjigo (Mount Holyoke College).	['french']	www.amherst.edu/academiclife/departments/courses/1415S/FREN/FREN-471-1415S	FREN-471
+FREN-472	Requisite: One of the following--FREN 207, 208, 311 or equivalent. Spring semester. Professor Caplan.	['french']	www.amherst.edu/academiclife/departments/courses/1516S/FREN/FREN-472-1516S	FREN-472
+GEOL-105		['geology']	www.amherst.edu/academiclife/departments/courses/1516S/GEOL/GEOL-105-1516S	GEOL-105
+GEOL-107		['geology']	www.amherst.edu/academiclife/departments/courses/1516F/GEOL/GEOL-107-1516F	GEOL-107
+GEOL-109		['geology']	www.amherst.edu/academiclife/departments/courses/1516F/GEOL/GEOL-109-1516F	GEOL-109
+GEOL-111		['geology']	www.amherst.edu/academiclife/departments/courses/1516S/GEOL/GEOL-111-1516S	GEOL-111
+GEOL-121	Requisite: GEOL 111 or consent of the instructor. Spring semester. Professors Martini and Medina.	['geology']	www.amherst.edu/academiclife/departments/courses/1516S/GEOL/GEOL-121-1516S	GEOL-121
+GEOL-251	Requisite:  GEOL 111.  Spring semester.  Professor Jones.	['geology']	www.amherst.edu/academiclife/departments/courses/1516S/GEOL/GEOL-251-1516S	GEOL-251
+GEOL-271		['geology']	www.amherst.edu/academiclife/departments/courses/1516F/GEOL/GEOL-271-1516F	GEOL-271
+GEOL-291	Requisite: GEOL 111. Fall semester. Professor Harms.	['geology']	www.amherst.edu/academiclife/departments/courses/1516F/GEOL/GEOL-291-1516F	GEOL-291
+GEOL-301	Requisite: GEOL 111 or consent of the instructor.  Spring semester.  Professor Martini.	['geology']	www.amherst.edu/academiclife/departments/courses/1415S/GEOL/GEOL-301-1415S	GEOL-301
+GEOL-311	Requisite: GEOL 111. Recommended requisite: GEOL 121. Fall semester. Professor Jones.	['geology']	www.amherst.edu/academiclife/departments/courses/1516F/GEOL/GEOL-311-1516F	GEOL-311
+GEOL-321	Requisite: GEOL 271. Spring semester. Professor Cheney.	['geology']	www.amherst.edu/academiclife/departments/courses/1516S/GEOL/GEOL-321-1516S	GEOL-321
+GEOL-331	 Requisite: GEOL 121 or permission of the instructor. Spring semester. Professor Medina.	['geology']	www.amherst.edu/academiclife/departments/courses/1516S/GEOL/GEOL-331-1516S	GEOL-331
+GEOL-341	Requisite: GEOL 111. Spring semester. Professor Crowley.	['geology']	www.amherst.edu/academiclife/departments/courses/1415S/GEOL/GEOL-341-1415S	GEOL-341
+GEOL-401	Requisite: GEOL 111 and two additional upper-level Geology courses. Fall semester.  Professor Harms.	['geology']	www.amherst.edu/academiclife/departments/courses/1415F/GEOL/GEOL-401-1415F	GEOL-401
+GEOL-450	Requisite: CHEM 151 or GEOL 301 or consent of the instructor.  Fall semester.  Professor Martini.	['geology']	www.amherst.edu/academiclife/departments/courses/1516F/GEOL/GEOL-450-1516F	GEOL-450
+GERM-101		['german']	www.amherst.edu/academiclife/departments/courses/1516S/GERM/GERM-101-1516S	GERM-101
+GERM-102	Requisite: GERM 101 or equivalent. Fall semester. Visiting Professor Gutzmann. Spring semester. Lecturer Schrade.	['german']	www.amherst.edu/academiclife/departments/courses/1516S/GERM/GERM-102-1516S	GERM-102
+GERM-205	Requisite: GERM 102 or two years of secondary-school German or equivalent. Fall semester. Senior Lecturer Emerita Schütz.	['german']	www.amherst.edu/academiclife/departments/courses/1516F/GERM/GERM-205-1516F	GERM-205
+GERM-210	Requisite: GERM 205 or equivalent, based on departmental placement decision. Spring semester. Professor Gilpin.	['german']	www.amherst.edu/academiclife/departments/courses/1516S/GERM/GERM-210-1516S	GERM-210
+GERM-312	Requisite: GERM 210 or equivalent. Fall semester. Lecturer Schrade.	['german']	www.amherst.edu/academiclife/departments/courses/1516F/GERM/GERM-312-1516F	GERM-312
+GERM-315	Requisite: GERM 210 or equivalent. Fall semester. Professor Rogowski.	['german']	www.amherst.edu/academiclife/departments/courses/1516F/GERM/GERM-315-1516F	GERM-315
+GERM-316	Requisite: GERM 210 or equivalent. Spring semester. Professor Brandes.	['german']	www.amherst.edu/academiclife/departments/courses/1516S/GERM/GERM-316-1516S	GERM-316
+GERM-320	Requisite: GERM 210 or equivalent. Fall semester. Visiting Professor Gutzmann.	['german']	www.amherst.edu/academiclife/departments/courses/1516F/GERM/GERM-320-1516F	GERM-320
+GERM-331	Requisite: GERM 210 or equivalent. Spring semester. Professor Brandes.	['german']	www.amherst.edu/academiclife/departments/courses/1516S/GERM/GERM-331-1516S	GERM-331
+GERM-333	Requisite: GERM 210 or equivalent. Spring semester. Professor Rogowski.	['german']	www.amherst.edu/academiclife/departments/courses/1415S/GERM/GERM-333-1415S	GERM-333
+GERM-336	Requisite: GERM 210 or equivalent. Limited to 15 students. Fall semester. Visiting Professor Gutzmann.	['german']	www.amherst.edu/academiclife/departments/courses/1415F/GERM/GERM-336-1415F	GERM-336
+GERM-347		['german', 'film']	www.amherst.edu/academiclife/departments/courses/1415S/GERM/GERM-347-1415S	GERM-347
+GERM-348		['german', 'film']	www.amherst.edu/academiclife/departments/courses/1516S/GERM/GERM-348-1516S	GERM-348
+GERM-350		['german']	www.amherst.edu/academiclife/departments/courses/1516S/GERM/GERM-350-1516S	GERM-350
+GERM-352		['german', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1415S/GERM/GERM-352-1415S	GERM-352
+GERM-363		['german', 'european_studies', 'film', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1415F/GERM/GERM-363-1415F	GERM-363
+GERM-364		['german', 'european_studies', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1516S/GERM/GERM-364-1516S	GERM-364
+GERM-368		['german', 'european_studies', 'film', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1415S/GERM/GERM-368-1415S	GERM-368
+GERM-490		['german']	www.amherst.edu/academiclife/departments/courses/1516F/GERM/GERM-490-02-1516F	GERM-490
+GREE-111		['classics']	www.amherst.edu/academiclife/departments/courses/1516S/GREE/GREE-111-1516S	GREE-111
+GREE-212	Requisite: GREE 111 or equivalent. Spring semester. Professor Griffiths.	['classics']	www.amherst.edu/academiclife/departments/courses/1516S/GREE/GREE-212-1516S	GREE-212
+GREE-215	Requisite: GREE 111 or equivalent.  Fall semester.  Professor R. Sinos.	['classics']	www.amherst.edu/academiclife/departments/courses/1516F/GREE/GREE-215-1516F	GREE-215
+GREE-217	Requisite: GREE 111 or equivalent. Fall semester. Professor D. Sinos.	['classics']	www.amherst.edu/academiclife/departments/courses/1516F/GREE/GREE-217-1516F	GREE-217
+GREE-318	Requisite: GREE 212, 215, 217 or equivalent, or consent of the instructor.  Spring semester. Professor D. Sinos. 	['classics']	www.amherst.edu/academiclife/departments/courses/1516S/GREE/GREE-318-1516S	GREE-318
+GREE-441	Requisite: A minimum of three courses numbered GREE 111 to 318 or consent of the instructor. Fall semester.  Professor R. Sinos.	['classics']	www.amherst.edu/academiclife/departments/courses/1516F/GREE/GREE-441-1516F	GREE-441
+GREE-442	Requisite: A minimum of three courses numbered GREE 111 to 318 or consent of the instructor. Spring semester. Professor D. Sinos.	['classics']	www.amherst.edu/academiclife/departments/courses/1516S/GREE/GREE-442-1516S	GREE-442
+HIST-101		['history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-101-1516S	HIST-101
+HIST-104		['history', 'environmental_studies']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-104-1415S	HIST-104
+HIST-105		['history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-105-1516F	HIST-105
+HIST-114		['history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-114-1415S	HIST-114
+HIST-123		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-123-1415S	HIST-123
+HIST-124		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-124-1516F	HIST-124
+HIST-130		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-130-1415S	HIST-130
+HIST-132		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-132-1516F	HIST-132
+HIST-144		['history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-144-1516S	HIST-144
+HIST-155		['history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-155-1415S	HIST-155
+HIST-156		['history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-156-1516F	HIST-156
+HIST-157		['history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-157-1415S	HIST-157
+HIST-172		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-172-1516F	HIST-172
+HIST-174		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-174-1415S	HIST-174
+HIST-175		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-175-1415S	HIST-175
+HIST-176		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-176-1516F	HIST-176
+HIST-181		['black_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-181-1516S	HIST-181
+HIST-191		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-191-1415S	HIST-191
+HIST-204		['history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-204-1516F	HIST-204
+HIST-208		['history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-208-1516S	HIST-208
+HIST-212		['history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-212-1516F	HIST-212
+HIST-213		['history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-213-1415S	HIST-213
+HIST-214		['history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-214-1415S	HIST-214
+HIST-220		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-220-1516S	HIST-220
+HIST-224		['sexuality_womens_gender_studies', 'european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-224-1516S	HIST-224
+HIST-225		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-225-1516S	HIST-225
+HIST-226		['art', 'european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-226-1516S	HIST-226
+HIST-228		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-228-1415S	HIST-228
+HIST-230		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415F/HIST/HIST-230-1415F	HIST-230
+HIST-231		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-231-1516S	HIST-231
+HIST-232		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-232-1415S	HIST-232
+HIST-233		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415F/HIST/HIST-233-1415F	HIST-233
+HIST-234		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-234-1516F	HIST-234
+HIST-236		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-236-1516F	HIST-236
+HIST-242		['art', 'history', 'architectural_studies']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-242-1516F	HIST-242
+HIST-246		['black_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-246-1516S	HIST-246
+HIST-251		['history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-251-1516S	HIST-251
+HIST-254		['history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-254-1516F	HIST-254
+HIST-264		['history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-264-1516S	HIST-264
+HIST-265		['history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-265-1415S	HIST-265
+HIST-266		['history']	www.amherst.edu/academiclife/departments/courses/1415F/HIST/HIST-266-1415F	HIST-266
+HIST-276		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-276-1516F	HIST-276
+HIST-283		['black_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-283-1516S	HIST-283
+HIST-294		['history']	www.amherst.edu/academiclife/departments/courses/1415F/HIST/HIST-294-1415F	HIST-294
+HIST-301		['history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-301-1516S	HIST-301
+HIST-319		['religion', 'asian', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-319-1516F	HIST-319
+HIST-321		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-321-1516F	HIST-321
+HIST-339		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-339-1516S	HIST-339
+HIST-370		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-370-1516F	HIST-370
+HIST-390		['history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-390-1415S	HIST-390
+HIST-393		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1415F/HIST/HIST-393-1415F	HIST-393
+HIST-397		['sexuality_womens_gender_studies', 'asian', 'history']	www.amherst.edu/academiclife/departments/courses/1415F/HIST/HIST-397-1415F	HIST-397
+HIST-402		['history', 'environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-402-1516S	HIST-402
+HIST-406		['sexuality_womens_gender_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-406-1415S	HIST-406
+HIST-411		['history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-411-1415S	HIST-411
+HIST-419		['history']	www.amherst.edu/academiclife/departments/courses/1516S/HIST/HIST-419-1516S	HIST-419
+HIST-432		['european_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-432-1415S	HIST-432
+HIST-453		['history']	www.amherst.edu/academiclife/departments/courses/1415F/HIST/HIST-453-1415F	HIST-453
+HIST-458		['history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-458-1415S	HIST-458
+HIST-459		['history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-459-1516F	HIST-459
+HIST-466		['history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-466-1516F	HIST-466
+HIST-476		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1415F/HIST/HIST-476-1415F	HIST-476
+HIST-477		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1415F/HIST/HIST-477-1415F	HIST-477
+HIST-488		['black_studies', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-488-1516F	HIST-488
+HIST-492		['asian', 'history']	www.amherst.edu/academiclife/departments/courses/1516F/HIST/HIST-492-1516F	HIST-492
+HIST-494		['anthropology_sociology', 'asian', 'history']	www.amherst.edu/academiclife/departments/courses/1415S/HIST/HIST-494-1415S	HIST-494
+JAPA-101		['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-101-1516S	JAPA-101
+JAPA-102	Requisite: Some Japanese instruction in high school, home, or college. Fall and spring semesters. Senior Lecturer Miyama and Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-102-1516S	JAPA-102
+JAPA-103	Requisite: JAPA 102 or equivalent. Fall and spring semesters. Senior Lecturer Miyama and Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-103-1516S	JAPA-103
+JAPA-104	Requisite: JAPA 101 or equivalent. Spring semester. Senior Lecturer Miyama and Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1415S/JAPA/JAPA-104-1415S	JAPA-104
+JAPA-201	Requisite: JAPA 103 or equivalent. Fall and spring semesters. Senior Lecturer Kayama and Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-201-1516S	JAPA-201
+JAPA-202	Requisite: JAPA 201, or equivalent. Fall and spring semesters. Senior Lecturer Kayama and Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-202-1516S	JAPA-202
+JAPA-203	Requisite: JAPA 202 or equivalent. Fall and spring semesters. Senior Lecturer Kayama and Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-203-1516S	JAPA-203
+JAPA-209H	Requisite: JAPA 103 or its equivalent. Fall and spring semesters. Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-209H-1516S	JAPA-209H
+JAPA-210H	Requisite: JAPA 103 or its equivalent. Fall and spring semester. Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-210H-1516S	JAPA-210H
+JAPA-290H		['asian']	www.amherst.edu/academiclife/departments/courses/1516F/JAPA/JAPA-290H-03-1516F	JAPA-290H
+JAPA-301	Requisite: JAPA 203 or equivalent.  Fall and spring semesters.  Five College Senior Lecturer Brown and Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-301-1516S	JAPA-301
+JAPA-302	Requisite: JAPA 301 or equivalent. Fall and spring semesters. Five College Senior Lecturer Brown and Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-302-1516S	JAPA-302
+JAPA-401	Requisite: JAPA 302 or equivalent. Fall and spring semesters. Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-401-1516S	JAPA-401
+JAPA-402	Requisite: JAPA 401 or equivalent. Fall and spring semesters. Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-402-1516S	JAPA-402
+JAPA-411	Requisite: JAPA 402 or equivalent. Fall and spring semesters.  Professor Tawa.	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-411-1516S	JAPA-411
+JAPA-412	Requisite: JAPA 411 or equivalent. Fall and spring semesters. Professor Tawa. 	['asian']	www.amherst.edu/academiclife/departments/courses/1516S/JAPA/JAPA-412-1516S	JAPA-412
+LATI-111		['classics']	www.amherst.edu/academiclife/departments/courses/1516F/LATI/LATI-111-1516F	LATI-111
+LATI-202	Requisite: LATI 111 or equivalent.  Spring semester. Professor van den Berg.	['classics']	www.amherst.edu/academiclife/departments/courses/1516S/LATI/LATI-202-1516S	LATI-202
+LATI-215	Requisite: LATI 202 or equivalent.  Fall semester. Professor Zanker.	['classics']	www.amherst.edu/academiclife/departments/courses/1516F/LATI/LATI-215-1516F	LATI-215
+LATI-316	Requisite: LATI 202, 215 or equivalent. Spring semester. Professor van den Berg.	['classics']	www.amherst.edu/academiclife/departments/courses/1516S/LATI/LATI-316-1516S	LATI-316
+LATI-441	Requisite: LATI 215 or 316 or equivalent.  Fall semester. Professor van den Berg.	['classics']	www.amherst.edu/academiclife/departments/courses/1516F/LATI/LATI-441-1516F	LATI-441
+LATI-442	Requisite: LATI 215, 316, 441 or equivalent.  Spring semester. Professor Zanker.	['classics']	www.amherst.edu/academiclife/departments/courses/1516S/LATI/LATI-442-1516S	LATI-442
+LJST-103		['ljst']	www.amherst.edu/academiclife/departments/courses/1516S/LJST/LJST-103-1516S	LJST-103
+LJST-105		['ljst', 'black_studies']	www.amherst.edu/academiclife/departments/courses/1415F/LJST/LJST-105-1415F	LJST-105
+LJST-110		['ljst']	www.amherst.edu/academiclife/departments/courses/1516F/LJST/LJST-110-1516F	LJST-110
+LJST-143		['ljst']	www.amherst.edu/academiclife/departments/courses/1516S/LJST/LJST-143-1516S	LJST-143
+LJST-206		['ljst', 'black_studies']	www.amherst.edu/academiclife/departments/courses/1415S/LJST/LJST-206-1415S	LJST-206
+LJST-207		['ljst']	www.amherst.edu/academiclife/departments/courses/1516F/LJST/LJST-207-1516F	LJST-207
+LJST-208		['ljst']	www.amherst.edu/academiclife/departments/courses/1415S/LJST/LJST-208-1415S	LJST-208
+LJST-209		['ljst']	www.amherst.edu/academiclife/departments/courses/1415F/LJST/LJST-209-1415F	LJST-209
+LJST-214		['ljst']	www.amherst.edu/academiclife/departments/courses/1516S/LJST/LJST-214-1516S	LJST-214
+LJST-218		['ljst']	www.amherst.edu/academiclife/departments/courses/1415F/LJST/LJST-218-1415F	LJST-218
+LJST-219		['sexuality_womens_gender_studies', 'ljst']	www.amherst.edu/academiclife/departments/courses/1516S/LJST/LJST-219-1516S	LJST-219
+LJST-220		['ljst']	www.amherst.edu/academiclife/departments/courses/1516F/LJST/LJST-220-1516F	LJST-220
+LJST-222		['ljst']	www.amherst.edu/academiclife/departments/courses/1415F/LJST/LJST-222-1415F	LJST-222
+LJST-223		['ljst']	www.amherst.edu/academiclife/departments/courses/1415F/LJST/LJST-223-1415F	LJST-223
+LJST-225		['ljst', 'film']	www.amherst.edu/academiclife/departments/courses/1415S/LJST/LJST-225-1415S	LJST-225
+LJST-226	Requisite: LJST 110 or consent of the instructor. Limited to 30 students. Spring semester. Senior Lecturer Delaney.	['ljst']	www.amherst.edu/academiclife/departments/courses/1415S/LJST/LJST-226-1415S	LJST-226
+LJST-227		['ljst']	www.amherst.edu/academiclife/departments/courses/1516F/LJST/LJST-227-1516F	LJST-227
+LJST-228		['ljst']	www.amherst.edu/academiclife/departments/courses/1516S/LJST/LJST-228-1516S	LJST-228
+LJST-229		['ljst']	www.amherst.edu/academiclife/departments/courses/1415F/LJST/LJST-229-1415F	LJST-229
+LJST-231		['ljst']	www.amherst.edu/academiclife/departments/courses/1415S/LJST/LJST-231-1415S	LJST-231
+LJST-232		['ljst']	www.amherst.edu/academiclife/departments/courses/1516S/LJST/LJST-232-1516S	LJST-232
+LJST-239		['ljst']	www.amherst.edu/academiclife/departments/courses/1516F/LJST/LJST-239-1516F	LJST-239
+LJST-241		['ljst']	www.amherst.edu/academiclife/departments/courses/1516S/LJST/LJST-241-1516S	LJST-241
+LJST-247		['ljst']	www.amherst.edu/academiclife/departments/courses/1516F/LJST/LJST-247-1516F	LJST-247
+LJST-341	Requisite: LJST 110 or consent of the instructor. Limited to 15 students. Spring semester.  Professor Douglas.	['ljst']	www.amherst.edu/academiclife/departments/courses/1415S/LJST/LJST-341-1415S	LJST-341
+LJST-349	Requisite: LJST 110 or consent of the instructor. Open to juniors and seniors. Limited to 15 students. Fall semester.  Professor Umphrey.	['ljst']	www.amherst.edu/academiclife/departments/courses/1516F/LJST/LJST-349-1516F	LJST-349
+LJST-350	Requisite: LJST 110 . Open to juniors and seniors. Limited to 15 students. Spring Semester.  Senior Lecturer Delaney.	['ljst']	www.amherst.edu/academiclife/departments/courses/1516S/LJST/LJST-350-1516S	LJST-350
+LJST-351		['ljst']	www.amherst.edu/academiclife/departments/courses/1415S/LJST/LJST-351-1415S	LJST-351
+LJST-353		['ljst']	www.amherst.edu/academiclife/departments/courses/1415S/LJST/LJST-353-1415S	LJST-353
+LJST-354	Requisite:  LJST 110 or consent of the instructor.  Limited to 15 students.  Fall semester.  Professor Sitze.	['ljst']	www.amherst.edu/academiclife/departments/courses/1415F/LJST/LJST-354-1415F	LJST-354
+LJST-356	Requisite: LJST 110.  Limited to 15 students.  Spring semester.  Professor Douglas.	['ljst']	www.amherst.edu/academiclife/departments/courses/1516S/LJST/LJST-356-1516S	LJST-356
+LJST-357	Requisite: LJST 110 or consent of the instructor. Limited to 15 students. Fall semester. Senior Lecturer Delaney.	['ljst']	www.amherst.edu/academiclife/departments/courses/1516F/LJST/LJST-357-1516F	LJST-357
+MATH-105		['mathematics']	www.amherst.edu/academiclife/departments/courses/1516F/MATH/MATH-105-1516F	MATH-105
+MATH-106	Requisite: MATH 105. Spring semester. Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-106-1516S	MATH-106
+MATH-111		['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-111-1516S	MATH-111
+MATH-121	Requisite: A grade of C or better in MATH 111 or consent of the Department. Limited to 35 students per section. Fall and spring semesters. Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-121-1516S	MATH-121
+MATH-135	Requisite:  MATH 111. Limited to 24 students. Fall semester. Professor Horton.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1415S/MATH/MATH-135-1415S	MATH-135
+MATH-140		['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-140-1516S	MATH-140
+MATH-211	Requisite: A grade of C or better in MATH 121 or the consent of the instructor. Limited to 35 students per section. Fall and spring semesters.  Professors TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-211-1516S	MATH-211
+MATH-220		['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-220-1516S	MATH-220
+MATH-225		['mathematics']	www.amherst.edu/academiclife/departments/courses/1415F/MATH/MATH-225-1415F	MATH-225
+MATH-240	Requisite: MATH 211 and BIOL 181 or 191, or permission of instructor.  Limited to 24 students. Spring semester. Professor Dresch.	['mathematics', 'Biology']	www.amherst.edu/academiclife/departments/courses/1415S/MATH/MATH-240-1415S	MATH-240
+MATH-250	Requisite: MATH 121 or consent of the instructor. Spring semester.  Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-250-1516S	MATH-250
+MATH-255	Requisite:  Mathematics 121.  Fall semester.  Professor Velleman	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516F/MATH/MATH-255-1516F	MATH-255
+MATH-260	Requisite: MATH 211 or consent of the instructor. Spring semester. Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-260-1516S	MATH-260
+MATH-271	Requisite: MATH 121 or consent of the instructor. This course and MATH 272 may not both be taken for credit. Fall and Spring semester. Professors TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-271-1516S	MATH-271
+MATH-272	Requisite: MATH 121 or consent of the instructor. This course and MATH 271 may not both be taken for credit. Spring semester. Professors TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-272-1516S	MATH-272
+MATH-280	Requisite:  MATH 271 or 272 or permission of instructor.  MATH 220 or other prior experience with mathematical proofs is recommended. Limited to 30 students. Professor Sosa.  Spring Semester.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-280-1516S	MATH-280
+MATH-320	Requisite: MATH 211 and 271 or 272.  Fall semester.  Professor TBA. 	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516F/MATH/MATH-320-1516F	MATH-320
+MATH-345	Requisite: MATH 211 and prior experience with mathematical proofs, or consent of the instructor. Fall semester. Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516F/MATH/MATH-345-1516F	MATH-345
+MATH-350	Requisite: MATH 271 or 272 or consent of the instructor. Students with a grade of B+ or lower in linear algebra are encouraged to take another 200-level course with proofs before taking MATH 350. Limited to 25 students fall semester. Professor TBA. No limit for spring semester. Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-350-1516S	MATH-350
+MATH-355	Requisite: MATH 211 and prior experience with mathematical proofs (MATH 271 or 272 recommended), or consent of the instructor. Students with a grade of B+ or lower in linear algebra are encouraged to take another 200-level course with proofs before taking MATH 355.  Limited of 25 students fall semester.  Professor TBA.  No limit for spring semester.  Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-355-1516S	MATH-355
+MATH-365	Requisite: MATH 360 or consent of instructor. Limited to 24 students. Spring semester.  Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-365-1516S	MATH-365
+MATH-380	Requisite: MATH 220, 271, 272, or 355, or consent of the instructor.  Fall semester.  Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516F/MATH/MATH-380-1516F	MATH-380
+MATH-385	Requisite: MATH 220, 271, 272, or 355, or consent of the instructor. Spring semester.  Professor Velleman.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1415S/MATH/MATH-385-1415S	MATH-385
+MATH-410	Requisite: MATH 350 or consent of the instructor. Spring semester. Professor Ching.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-410-1516S	MATH-410
+MATH-415	Requisite:  MATH 350.  Limited to 16 students.  Fall semester.  Professor Cox.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1415F/MATH/MATH-415-1415F	MATH-415
+MATH-450	Requisite:  MATH 355.  Spring semester.  Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/MATH/MATH-450-1516S	MATH-450
+MATH-455	Requisite: MATH 355. Spring semester.  Professor TBA.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1415S/MATH/MATH-455-1415S	MATH-455
+MUSI-101		['music', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-101-1516S	MUSI-101
+MUSI-104		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-104-1516S	MUSI-104
+MUSI-111		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-111-1516S	MUSI-111
+MUSI-112	Requisite: MUSI 111, or equivalent ability gained by playing an instrument or singing. Limited to 30 students. Spring semester. Professor Schneider.	['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-112-1516S	MUSI-112
+MUSI-113	Requisite: MUSI 111 or 112 or equivalent, or consent of the instructor. Limited to 30 students. Fall semester. Senior Lecturer Diehl.	['music']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-113-1516F	MUSI-113
+MUSI-115		['black_studies', 'music']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-115-1516F	MUSI-115
+MUSI-127		['music']	www.amherst.edu/academiclife/departments/courses/1415F/MUSI/MUSI-127-1415F	MUSI-127
+MUSI-136H		['music']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-136H-1516F	MUSI-136H
+MUSI-137H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-137H-1516S	MUSI-137H
+MUSI-138H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-138H-1516S	MUSI-138H
+MUSI-139H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-139H-1516S	MUSI-139H
+MUSI-140H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-140H-1516S	MUSI-140H
+MUSI-151H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-151H-1516S	MUSI-151H
+MUSI-152H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-152H-1516S	MUSI-152H
+MUSI-153H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-153H-1516S	MUSI-153H
+MUSI-154H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-154H-1516S	MUSI-154H
+MUSI-155H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-155H-1516S	MUSI-155H
+MUSI-156H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-156H-1516S	MUSI-156H
+MUSI-157H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-157H-1516S	MUSI-157H
+MUSI-158H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-158H-1516S	MUSI-158H
+MUSI-159H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-159H-1516S	MUSI-159H
+MUSI-160H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-160H-1516S	MUSI-160H
+MUSI-161H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-161H-1516S	MUSI-161H
+MUSI-162H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-162H-1516S	MUSI-162H
+MUSI-163H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-163H-1516S	MUSI-163H
+MUSI-164H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-164H-1516S	MUSI-164H
+MUSI-165H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-165H-1516S	MUSI-165H
+MUSI-166H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-166H-1516S	MUSI-166H
+MUSI-167H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-167H-1516S	MUSI-167H
+MUSI-168H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-168H-1516S	MUSI-168H
+MUSI-169H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-169H-1516S	MUSI-169H
+MUSI-170H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-170H-1516S	MUSI-170H
+MUSI-171H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-171H-1516S	MUSI-171H
+MUSI-172H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-172H-1516S	MUSI-172H
+MUSI-173H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-173H-1516S	MUSI-173H
+MUSI-174H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-174H-1516S	MUSI-174H
+MUSI-175H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-175H-1516S	MUSI-175H
+MUSI-176H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-176H-1516S	MUSI-176H
+MUSI-177H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-177H-1516S	MUSI-177H
+MUSI-178H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-178H-1516S	MUSI-178H
+MUSI-179H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-179H-1516S	MUSI-179H
+MUSI-180H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-180H-1516S	MUSI-180H
+MUSI-221	Requisite: MUSI 112 or consent of the instructor. Fall semester. Professor Móricz.	['music', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1415F/MUSI/MUSI-221-1415F	MUSI-221
+MUSI-222	Requisite: MUSI 111, 112, or consent of the instructor. Spring semester. Professor Kallick.	['music', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-222-1516S	MUSI-222
+MUSI-223	Requisite: MUSI 111 or 112, or consent of the instructor. Fall semester. Professor Moricz.	['music', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-223-1516F	MUSI-223
+MUSI-226		['black_studies', 'music']	www.amherst.edu/academiclife/departments/courses/1415F/MUSI/MUSI-226-1415F	MUSI-226
+MUSI-227		['black_studies', 'music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-227-1516S	MUSI-227
+MUSI-238	Requisite: MUSI 111, 112, or consent of the instructor.  Limited to 12 students. Fall semester.  Valentine Visiting Professor Mendonca.	['music', 'film']	www.amherst.edu/academiclife/departments/courses/1415F/MUSI/MUSI-238-1415F	MUSI-238
+MUSI-241	Requisite: MUSI 112 or consent of the instructor.  Fall semester: Visiting Professor Wubbels. Spring semester: Professor Sawyer. 	['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-241-1516S	MUSI-241
+MUSI-242	Requisite: MUSI 241 or consent of the instructor. Spring semester. Visiting Professor Wubbels.	['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-242-1516S	MUSI-242
+MUSI-243	Requisite: MUSI 241 or consent of the instructor. Fall semester. Professor Robinson.	['music']	www.amherst.edu/academiclife/departments/courses/1415F/MUSI/MUSI-243-1415F	MUSI-243
+MUSI-246	Requisite: MUSI 113 and/or performance experience in the jazz idiom strongly suggested. Musical literacy sufficient to follow a score. Limited to 16 students. Spring semester. Senior Lecturer Diehl.	['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-246-1516S	MUSI-246
+MUSI-247	Requisite: MUSI 113, 246 and/or performance experience in the jazz idiom strongly suggested. Musical literacy sufficient to follow a score. Admission with consent of the instructor. Spring semester. Senior Lecturer Diehl.	['music']	www.amherst.edu/academiclife/departments/courses/1415S/MUSI/MUSI-247-1415S	MUSI-247
+MUSI-265	Requisite: MUSI 241 or consent of the instructor. Limited to 10 students. Spring semester.  Visiting Lecturer S. Robinson.	['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-265-1516S	MUSI-265
+MUSI-266	Requisite: MUSI 112 or 113, or consent of the instructor. Limited to 10 students. Spring semester. Professor Robinson.	['music']	www.amherst.edu/academiclife/departments/courses/1415S/MUSI/MUSI-266-1415S	MUSI-266
+MUSI-269	Requisite: MUSI 111 or 112, and consent of the instructor. Limited to 10 students. Fall semester. Visiting Professor Wubbels.	['music']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-269-1516F	MUSI-269
+MUSI-309		['music']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-309-1516F	MUSI-309
+MUSI-310		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-310-1516S	MUSI-310
+MUSI-310H		['music']	www.amherst.edu/academiclife/departments/courses/1415S/MUSI/MUSI-310H-1415S	MUSI-310H
+MUSI-351H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-351H-1516S	MUSI-351H
+MUSI-352H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-352H-1516S	MUSI-352H
+MUSI-353H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-353H-1516S	MUSI-353H
+MUSI-354H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-354H-1516S	MUSI-354H
+MUSI-355H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-355H-1516S	MUSI-355H
+MUSI-356H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-356H-1516S	MUSI-356H
+MUSI-357H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-357H-1516S	MUSI-357H
+MUSI-358H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-358H-1516S	MUSI-358H
+MUSI-359H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-359H-1516S	MUSI-359H
+MUSI-360H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-360H-1516S	MUSI-360H
+MUSI-361H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-361H-1516S	MUSI-361H
+MUSI-362H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-362H-1516S	MUSI-362H
+MUSI-363H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-363H-1516S	MUSI-363H
+MUSI-364H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-364H-1516S	MUSI-364H
+MUSI-365H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-365H-1516S	MUSI-365H
+MUSI-366H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-366H-1516S	MUSI-366H
+MUSI-367H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-367H-1516S	MUSI-367H
+MUSI-368H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-368H-1516S	MUSI-368H
+MUSI-369H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-369H-1516S	MUSI-369H
+MUSI-370H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-370H-1516S	MUSI-370H
+MUSI-371H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-371H-1516S	MUSI-371H
+MUSI-372H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-372H-1516S	MUSI-372H
+MUSI-373H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-373H-1516S	MUSI-373H
+MUSI-374H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-374H-1516S	MUSI-374H
+MUSI-375H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-375H-1516S	MUSI-375H
+MUSI-376H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-376H-1516S	MUSI-376H
+MUSI-377H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-377H-1516S	MUSI-377H
+MUSI-378H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-378H-1516S	MUSI-378H
+MUSI-379H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-379H-1516S	MUSI-379H
+MUSI-380H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-380H-1516S	MUSI-380H
+MUSI-387	Requisite: MUSI  269 or the equivalent, and consent of the instructor. Fall semester. Professor Sawyer.	['music']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-387-1516F	MUSI-387
+MUSI-388	Requisite: MUSI 387 (formerly MUSI 371) or the equivalent and consent of the instructor. Spring semester. Professor Sawyer.	['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-388-1516S	MUSI-388
+MUSI-390H		['music']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-390H-02-1516F	MUSI-390H
+MUSI-424	Requisite: MUSI 242 or consent of the instructor. Fall semester. Professor Schneider.	['music']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-424-1516F	MUSI-424
+MUSI-429		['music']	www.amherst.edu/academiclife/departments/courses/1415S/MUSI/MUSI-429-1415S	MUSI-429
+MUSI-439	Requisite: Basic instrumental or vocal proficiency and consent of the instructor. Senior seminar. Limited to 10 students. Fall semester. Professor J. Robinson.	['music']	www.amherst.edu/academiclife/departments/courses/1516F/MUSI/MUSI-439-1516F	MUSI-439
+MUSI-443	Requisite: MUSI 241 and 242, or consent of the instructor. Spring semester. Professor Móricz.	['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-443-1516S	MUSI-443
+MUSI-444	Requisite: MUSI 241 or 242, or consent of the instructor.  Fall semester. Professor Móricz.	['music']	www.amherst.edu/academiclife/departments/courses/1415F/MUSI/MUSI-444-1415F	MUSI-444
+MUSI-451H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-451H-1516S	MUSI-451H
+MUSI-452H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-452H-1516S	MUSI-452H
+MUSI-453H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-453H-1516S	MUSI-453H
+MUSI-454H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-454H-1516S	MUSI-454H
+MUSI-455H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-455H-1516S	MUSI-455H
+MUSI-456H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-456H-1516S	MUSI-456H
+MUSI-457H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-457H-1516S	MUSI-457H
+MUSI-458H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-458H-1516S	MUSI-458H
+MUSI-459H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-459H-1516S	MUSI-459H
+MUSI-460H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-460H-1516S	MUSI-460H
+MUSI-461H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-461H-1516S	MUSI-461H
+MUSI-462H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-462H-1516S	MUSI-462H
+MUSI-463H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-463H-1516S	MUSI-463H
+MUSI-464H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-464H-1516S	MUSI-464H
+MUSI-465H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-465H-1516S	MUSI-465H
+MUSI-466H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-466H-1516S	MUSI-466H
+MUSI-467H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-467H-1516S	MUSI-467H
+MUSI-468H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-468H-1516S	MUSI-468H
+MUSI-469H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-469H-1516S	MUSI-469H
+MUSI-470H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-470H-1516S	MUSI-470H
+MUSI-471H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-471H-1516S	MUSI-471H
+MUSI-472H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-472H-1516S	MUSI-472H
+MUSI-473H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-473H-1516S	MUSI-473H
+MUSI-474H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-474H-1516S	MUSI-474H
+MUSI-475H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-475H-1516S	MUSI-475H
+MUSI-476H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-476H-1516S	MUSI-476H
+MUSI-477H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-477H-1516S	MUSI-477H
+MUSI-478H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-478H-1516S	MUSI-478H
+MUSI-479H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-479H-1516S	MUSI-479H
+MUSI-480H		['music']	www.amherst.edu/academiclife/departments/courses/1516S/MUSI/MUSI-480H-1516S	MUSI-480H
+NEUR-226	Requisite: PSYC 212 or BIOL 181 or 191. Limited to 36 students. Spring semester. Professors Turgeon and Trapani.	['psychology', 'neuroscience']	www.amherst.edu/academiclife/departments/courses/1516S/NEUR/NEUR-226-1516S	NEUR-226
+NEUR-245		['neuroscience']	www.amherst.edu/academiclife/departments/courses/1516F/NEUR/NEUR-245-1516F	NEUR-245
+NEUR-425		['neuroscience']	www.amherst.edu/academiclife/departments/courses/1415F/NEUR/NEUR-425-1415F	NEUR-425
+PHIL-111		['philosophy']	www.amherst.edu/academiclife/departments/courses/1516S/PHIL/PHIL-111-1516S	PHIL-111
+PHIL-213		['philosophy']	www.amherst.edu/academiclife/departments/courses/1516F/PHIL/PHIL-213-1516F	PHIL-213
+PHIL-217		['philosophy']	www.amherst.edu/academiclife/departments/courses/1516F/PHIL/PHIL-217-1516F	PHIL-217
+PHIL-218		['philosophy']	www.amherst.edu/academiclife/departments/courses/1516S/PHIL/PHIL-218-1516S	PHIL-218
+PHIL-223		['philosophy']	www.amherst.edu/academiclife/departments/courses/1516S/PHIL/PHIL-223-1516S	PHIL-223
+PHIL-225		['philosophy', 'environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516S/PHIL/PHIL-225-1516S	PHIL-225
+PHIL-226		['philosophy']	www.amherst.edu/academiclife/departments/courses/1516F/PHIL/PHIL-226-1516F	PHIL-226
+PHIL-227		['philosophy']	www.amherst.edu/academiclife/departments/courses/1415S/PHIL/PHIL-227-1415S	PHIL-227
+PHIL-230		['philosophy']	www.amherst.edu/academiclife/departments/courses/1415S/PHIL/PHIL-230-1415S	PHIL-230
+PHIL-231		['philosophy']	www.amherst.edu/academiclife/departments/courses/1516F/PHIL/PHIL-231-1516F	PHIL-231
+PHIL-310	Requisite: One course in Philosophy or consent of the instructor.  Limited to 25 students. Spring semester. Professors Shah and Hasan.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1516S/PHIL/PHIL-310-1516S	PHIL-310
+PHIL-311	Requisite: One course in Philosophy or consent of the instructor. Limited to 25 students. Fall semester. Visiting Professor Koltonski.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1415F/PHIL/PHIL-311-1415F	PHIL-311
+PHIL-332	Requisite: One course in philosophy. Limited to 25 students. Fall semester. Professor Vogel.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1516F/PHIL/PHIL-332-1516F	PHIL-332
+PHIL-333	Requisite: One course in Philosophy. Limited to 25 students. Fall semester. Professor Moore	['philosophy']	www.amherst.edu/academiclife/departments/courses/1415F/PHIL/PHIL-333-1415F	PHIL-333
+PHIL-341	Requisite: One course in Philosophy. Limited to 25 students. Spring semester.  Professor Shah.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1415S/PHIL/PHIL-341-1415S	PHIL-341
+PHIL-360	Requisite: One course in Philosophy. Spring semester. Professor George.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1516S/PHIL/PHIL-360-1516S	PHIL-360
+PHIL-361	Requisite: One course in Philosophy or consent of the instructor.  Limited to 25 students. Spring semester. Professor Hasan.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1516S/PHIL/PHIL-361-1516S	PHIL-361
+PHIL-364	Requisite: PHIL 218 or consent of the instructor. Fall semester. Professor Vogel.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1516F/PHIL/PHIL-364-1516F	PHIL-364
+PHIL-461	Requisite: Two courses in Philosophy or consent of the instructor. Limited to 15 students. Spring semester. Professor Vogel.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1516S/PHIL/PHIL-461-1516S	PHIL-461
+PHIL-463	Requisite: Two courses in philosophy or consent of the instructor.  Limited to 15 students. Spring semester.  Professor A. George.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1415S/PHIL/PHIL-463-1415S	PHIL-463
+PHIL-467	Requisite: Two courses in Philosophy or consent of the instructor. Limited to 15 students. Fall semester.  Professor Moore.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1415F/PHIL/PHIL-467-1415F	PHIL-467
+PHIL-472	Requisite: Two courses in Philosophy or consent of the instructor. Limited to 15 students. Spring semester. Professor Moore.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1516S/PHIL/PHIL-472-1516S	PHIL-472
+PHIL-477	Requisite:  Two courses in Philosophy or consent of the instructor.  Limited to 15 students.  Spring semester.  Visiting Professor Koltonski.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1415S/PHIL/PHIL-477-1415S	PHIL-477
+PHIL-478	Requisite: Two courses in Philosophy or consent of the instructor. Limited to 15 students. Fall semester. Professor Shah.	['philosophy']	www.amherst.edu/academiclife/departments/courses/1516F/PHIL/PHIL-478-1516F	PHIL-478
+PHYS-109	Requisite: A working knowledge of high-school algebra, geometry and trigonometry. Limited to 20 students. Spring semester. Professor Hunter.	['physics']	www.amherst.edu/academiclife/departments/courses/1516S/PHYS/PHYS-109-1516S	PHYS-109
+PHYS-114		['physics']	www.amherst.edu/academiclife/departments/courses/1415F/PHYS/PHYS-114-1415F	PHYS-114
+PHYS-116	Requisite: MATH 111.  Limited to 48 students. Fall semester: Professor Friedman. Spring semester: Professor TBA.	['physics']	www.amherst.edu/academiclife/departments/courses/1516S/PHYS/PHYS-116-1516S	PHYS-116
+PHYS-117	Requisite: PHYS 116 or 123.  Limited to 48 students. Fall semester: Professor Carter. Spring semester: Professor TBA.	['physics']	www.amherst.edu/academiclife/departments/courses/1516S/PHYS/PHYS-117-1516S	PHYS-117
+PHYS-123	Requisite: MATH 111. Limited to 24 students.  Fall semester.  Professor Hanneke.	['physics', 'astronomy']	www.amherst.edu/academiclife/departments/courses/1516F/PHYS/PHYS-123-1516F	PHYS-123
+PHYS-124	Requisite: MATH 121 and PHYS 116 or 123. Limited to 24 students.  Spring semester. Professor TBA.	['physics']	www.amherst.edu/academiclife/departments/courses/1516S/PHYS/PHYS-124-1516S	PHYS-124
+PHYS-137	Requisite:  MATH 111 or equivalent.  Although the course will cover the necessary mathematics, some prior familiarity with vectors, matrices and basic linear algebra is useful. Fall semester. Professor Jagannathan.	['physics', 'astronomy']	www.amherst.edu/academiclife/departments/courses/1516F/PHYS/PHYS-137-1516F	PHYS-137
+PHYS-225	Requisite: MATH 121 and PHYS 117 or 124.  Fall semester.  Professor Hall.	['physics', 'astronomy']	www.amherst.edu/academiclife/departments/courses/1516F/PHYS/PHYS-225-1516F	PHYS-225
+PHYS-226	Requisite: PHYS 225 or consent of the instructor. Spring semester. Professor TBA.	['physics']	www.amherst.edu/academiclife/departments/courses/1516S/PHYS/PHYS-226-1516S	PHYS-226
+PHYS-227	Requisite: MATH 121 and PHYS 117/124 or consent of the instructor. Fall semester.  Professor Loinaz.	['physics', 'astronomy']	www.amherst.edu/academiclife/departments/courses/1516F/PHYS/PHYS-227-1516F	PHYS-227
+PHYS-230	Requisite: PHYS 225 or consent of the instructor.  Spring semester.  Professor TBA.	['physics']	www.amherst.edu/academiclife/departments/courses/1516S/PHYS/PHYS-230-1516S	PHYS-230
+PHYS-343	Requisite: PHYS 227 or consent of the instructor. Fall semester.  Professor Loinaz.	['physics', 'astronomy']	www.amherst.edu/academiclife/departments/courses/1516F/PHYS/PHYS-343-1516F	PHYS-343
+PHYS-347	Requisite: PHYS 117 or 124 and PHYS 227 or consent of the instructor. Fall semester. Professor Hall.	['physics', 'astronomy']	www.amherst.edu/academiclife/departments/courses/1516F/PHYS/PHYS-347-1516F	PHYS-347
+PHYS-348	Requisite: PHYS 225 and 343 or consent of the instructor. Spring semester. Professor TBA.	['physics']	www.amherst.edu/academiclife/departments/courses/1516S/PHYS/PHYS-348-1516S	PHYS-348
+PHYS-400	Requisite: CHEM 161, PHYS 116/123, PHYS 117/124, BIOL 191 or evidence of equivalent coverage in pre-collegiate courses.  Spring semester.  Professor TBA.	['courses', 'physics', 'chemistry', 'Biology']	www.amherst.edu/academiclife/departments/courses/1516S/PHYS/PHYS-400-1516S	PHYS-400
+POSC-112		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-112-1516S	POSC-112
+POSC-117		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-117-1516F	POSC-117
+POSC-119		['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-119-1415S	POSC-119
+POSC-130		['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-130-1415S	POSC-130
+POSC-131		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-131-1516S	POSC-131
+POSC-151		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-151-1516F	POSC-151
+POSC-154		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-154-1516S	POSC-154
+POSC-206		['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-206-1415S	POSC-206
+POSC-208		['asian', 'political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-208-1516S	POSC-208
+POSC-209		['asian', 'political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-209-1516S	POSC-209
+POSC-211		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-211-1516F	POSC-211
+POSC-212		['political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-212-1415F	POSC-212
+POSC-214		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-214-1516F	POSC-214
+POSC-219		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-219-1516S	POSC-219
+POSC-231		['political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-231-1415F	POSC-231
+POSC-232		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-232-1516F	POSC-232
+POSC-241		['political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-241-1415F	POSC-241
+POSC-245	Requisite:  One course in POSC or LJST.  Spring semester.  Professor Poe.	['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-245-1415S	POSC-245
+POSC-246		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-246-1516F	POSC-246
+POSC-248		['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-248-1415S	POSC-248
+POSC-250		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-250-1516F	POSC-250
+POSC-260		['black_studies', 'political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-260-1415S	POSC-260
+POSC-300		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-300-1516S	POSC-300
+POSC-302		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-302-1516S	POSC-302
+POSC-308		['political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-308-1415F	POSC-308
+POSC-312		['history', 'political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-312-1415F	POSC-312
+POSC-313	Requisite:  the seminar is open to qualified second-semester sophomores and juniors who have taken at least six social science courses in college, including two in political science, and at least four additional courses from at minimum two 	['political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-313-1415F	POSC-313
+POSC-316	Requisite: prior coursework in Political Science.  Limited to 15 students. Spring semester.  Professor Burns.	['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-316-1415S	POSC-316
+POSC-318		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-318-1516S	POSC-318
+POSC-319	Requisite: An introductory Political Science course in IL (200 level or above) or any U.S. History course  (100 level or above) or HIST 301 or AMST 468 or LSJT 222. Limited to 25 students. Spring semester. Professor Obert.	['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-319-1516S	POSC-319
+POSC-320		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-320-1516S	POSC-320
+POSC-323	Requisite:  A previous POSC course.  Limited to 20 students. Fall semester. Visiting Professor Pleshakov.	['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-323-1516F	POSC-323
+POSC-324		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-324-1516F	POSC-324
+POSC-334		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-334-1516S	POSC-334
+POSC-346		['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-346-1415S	POSC-346
+POSC-347		['political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-347-1415F	POSC-347
+POSC-348		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-348-1516F	POSC-348
+POSC-356		['political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-356-1415F	POSC-356
+POSC-360		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-360-1516S	POSC-360
+POSC-372		['european_studies', 'political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-372-1415F	POSC-372
+POSC-380	Requisite:  A previous POSC course.  Limited to 20 students. Spring semester. Visiting Professor Pleshakov.	['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-380-1516S	POSC-380
+POSC-400	Requisite: An Introductory course in political science or its equivalent. Limited to 20 students. Spring semester. Professor Bumiller.	['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-400-1415S	POSC-400
+POSC-401	Requisite: One course in political or social theory. Limited to 15 students. Spring semester. Professor Poe.	['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-401-1415S	POSC-401
+POSC-403		['asian', 'political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-403-1516F	POSC-403
+POSC-404	Requisite: Previous course in political theory or permission of Instructor. Limited to 18 students. Spring semester. Five College Visiting Professor Xenos.	['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-404-1516S	POSC-404
+POSC-405	Requisite: An Introductory course in political science or its equivalent. Limited to 15 students. Spring semester. Professor Bumiller.	['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-405-1516S	POSC-405
+POSC-415	Requisite: Two of POSC 213, 413, 480. Limited to 15 students. Fall semester. Professor Machala.	['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-415-1516F	POSC-415
+POSC-416		['political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-416-1415F	POSC-416
+POSC-467	Requisite: Prior course work in Political Science. Not open to first-year students. Limited to 15 students.  Fall semester. Professor Basu.	['sexuality_womens_gender_studies', 'political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-467-1415F	POSC-467
+POSC-474	Requisite: One introductory Political Science course or its equivalent. Limited to 15 students. Fall semester. Professor Bumiller.	['ljst', 'political_science']	www.amherst.edu/academiclife/departments/courses/1415F/POSC/POSC-474-1415F	POSC-474
+POSC-475		['political_science']	www.amherst.edu/academiclife/departments/courses/1415S/POSC/POSC-475-1415S	POSC-475
+POSC-480		['political_science']	www.amherst.edu/academiclife/departments/courses/1516S/POSC/POSC-480-1516S	POSC-480
+POSC-482		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-482-1516F	POSC-482
+POSC-486	Requisite: POSC 213 or its equivalent. Admission with consent of the instructor. Limited to 15 students. Fall semester. Professor Corrales.	['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-486-1516F	POSC-486
+POSC-490		['political_science']	www.amherst.edu/academiclife/departments/courses/1516F/POSC/POSC-490-02-1516F	POSC-490
+PSYC-100		['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-100-1516S	PSYC-100
+PSYC-122	Requisite: PSYC 100 or consent of the instructor. Limited to 30 students. Fall semester: Professor Schulkind.  Spring semester:  Visiting Professor McCarty.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-122-1516S	PSYC-122
+PSYC-123	Requisite: PSYC 122. Limited to 20 students. Fall semester:  Professor Palmquist.  Spring semester: Professors Demorest and Holoien.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-123-1516S	PSYC-123
+PSYC-212	Requisite: PSYC 100 or consent of the instructor. Limited to 40 students. Fall semester: Professor Turgeon. Not open to five college students. Spring semseter: Professor Baird.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-212-1516S	PSYC-212
+PSYC-217	Requisite: PSYC 100 or 212, or consent of the instructor. Limited to 25 students. Fall semester. Professor Baird.	['psychology']	www.amherst.edu/academiclife/departments/courses/1415F/PSYC/PSYC-217-1415F	PSYC-217
+PSYC-220	Requisite: PSYC 100 or consent of the instructor. Preference to Amherst College students. Limited to 40 students. Fall and spring semesters.  Professor Holoien.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-220-1516S	PSYC-220
+PSYC-221	Requisite: PSYC 100 or consent of the instructor. Limited to 40 students. Fall semester. Professor Demorest.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516F/PSYC/PSYC-221-1516F	PSYC-221
+PSYC-224	Requisite: PSYC 100 and consent of instructor required. Limited to 14 students. Spring semester. Professors Aries and Hart.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-224-1516S	PSYC-224
+PSYC-227	Requisite: PSYC 100 or 212 or consent of the instructor. Limited to 40 students.  Fall semester:  Professor Palmquist. Spring semester: Visiting Professor Clemans.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-227-1516S	PSYC-227
+PSYC-228	Requisite: PSYC 100 or 212, or consent of the instructor. Not open to first-year students. Limited to 40 students. Spring semester. Professor Raskin.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-228-1516S	PSYC-228
+PSYC-233	Requisite: PSYC 100 or 212 or consent of the instructor. Limited to 40 students. Spring semester. Professor Schulkind.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-233-1516S	PSYC-233
+PSYC-234	Requisite: PSYC 100 or consent of the instructor. Limited to 25 students. Fall semester. Professor Schulkind.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516F/PSYC/PSYC-234-1516F	PSYC-234
+PSYC-235	Requisite: PSYC 100 or consent of the instructor. Open to juniors and seniors. Limited to 25 students.  Fall semester. Professor Sanderson.	['psychology']	www.amherst.edu/academiclife/departments/courses/1415F/PSYC/PSYC-235-1415F	PSYC-235
+PSYC-256	Requisite: PSYC 100 or consent of the instructor. Not open to first-year students. Preference to Amherst College students. Limited to 25 students. Fall semester.  Visiting Professor McCarty.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516F/PSYC/PSYC-256-1516F	PSYC-256
+PSYC-325	Requisite: PSYC 212 or PSYC/NEUR 226, or consent of the instructor. Limited to 22 students. (Not open to five college students.) Fall semester.  Professor Turgeon.	['psychology', 'neuroscience']	www.amherst.edu/academiclife/departments/courses/1516F/PSYC/PSYC-325-1516F	PSYC-325
+PSYC-332	Requisite: PSYC 227. Open to sophomores, juniors, and seniors. Limited to 15 students. Spring semester.  Professor Aries.	['psychology']	www.amherst.edu/academiclife/departments/courses/1415S/PSYC/PSYC-332-1415S	PSYC-332
+PSYC-337	Requisite: PSYC 100 and 220. Limited to 18 students. Fall semester. Professor Holoien.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516F/PSYC/PSYC-337-1516F	PSYC-337
+PSYC-338	Requisite: PSYC 220, 221, or permission of the instructor. Limited to 15 students. Fall semester. Professor Demorest.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516F/PSYC/PSYC-338-1516F	PSYC-338
+PSYC-353	Requisite: PSYC 221, 228, or permission of instructor. Limited to 15 students. Spring semester. Professor Demorest.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-353-1516S	PSYC-353
+PSYC-354	Requisite: PSYC 220. Open to seniors. Admission with consent of the instructor. Limited to 15 students. Spring semester. Professor Sanderson.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-354-1516S	PSYC-354
+PSYC-355	Requisite: PSYC 227 and 122 or consent of instructor. Limited to 15 students. Fall semester. Visiting Professor Clemans.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516F/PSYC/PSYC-355-1516F	PSYC-355
+PSYC-356	Requisite: PSYC 212 or 226 and consent of the instructor.  Limited to 15 students.  Spring semester.  Professor Baird.	['psychology', 'neuroscience']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-356-1516S	PSYC-356
+PSYC-357	Requisite: PSYC 212 and 228, or consent of the instructor. Limited to 15 students.  Spring semester.  Professor Raskin.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-357-1516S	PSYC-357
+PSYC-359	Requisite: PSYC 212 or NEUR 226.  Limited to 15 students.  Spring semester. Professor Turgeon.	['psychology', 'neuroscience']	www.amherst.edu/academiclife/departments/courses/1415S/PSYC/PSYC-359-1415S	PSYC-359
+PSYC-362	Requisite: PSYC 227.  Limited to 15 students. Spring semester. Professor Palmquist.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-362-1516S	PSYC-362
+PSYC-363	Requisite: PSYC 220.  Limited to 15 students.  Fall semester.  Professor Hart.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516F/PSYC/PSYC-363-1516F	PSYC-363
+PSYC-364	Requisite: PSYC 228.  Open to juniors and seniors. Limited to 15 students.  Fall semester.  Professor McQuade.	['psychology']	www.amherst.edu/academiclife/departments/courses/1415F/PSYC/PSYC-364-1415F	PSYC-364
+PSYC-366	Requisite: PSYC 233 or 234. Limited to 15 students.  Fall semester. Professor Schulkind.	['psychology']	www.amherst.edu/academiclife/departments/courses/1415F/PSYC/PSYC-366-1415F	PSYC-366
+PSYC-368	Requisite: PSYC 233 or 234. Limited to 15 students. Spring semester. Professor Schulkind.	['psychology']	www.amherst.edu/academiclife/departments/courses/1516S/PSYC/PSYC-368-1516S	PSYC-368
+RELI-111		['religion']	www.amherst.edu/academiclife/departments/courses/1516F/RELI/RELI-111-1516F	RELI-111
+RELI-123		['religion']	www.amherst.edu/academiclife/departments/courses/1415S/RELI/RELI-123-1415S	RELI-123
+RELI-131		['anthropology_sociology', 'religion']	www.amherst.edu/academiclife/departments/courses/1516F/RELI/RELI-131-1516F	RELI-131
+RELI-143		['religion', 'asian']	www.amherst.edu/academiclife/departments/courses/1415S/RELI/RELI-143-1415S	RELI-143
+RELI-152		['religion', 'asian']	www.amherst.edu/academiclife/departments/courses/1516F/RELI/RELI-152-1516F	RELI-152
+RELI-157		['religion']	www.amherst.edu/academiclife/departments/courses/1516F/RELI/RELI-157-1516F	RELI-157
+RELI-171		['religion']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-171-1516S	RELI-171
+RELI-181		['religion']	www.amherst.edu/academiclife/departments/courses/1516F/RELI/RELI-181-1516F	RELI-181
+RELI-187		['religion']	www.amherst.edu/academiclife/departments/courses/1415S/RELI/RELI-187-1415S	RELI-187
+RELI-210		['religion']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-210-1516S	RELI-210
+RELI-215		['religion']	www.amherst.edu/academiclife/departments/courses/1415F/RELI/RELI-215-1415F	RELI-215
+RELI-223		['religion']	www.amherst.edu/academiclife/departments/courses/1516F/RELI/RELI-223-1516F	RELI-223
+RELI-224		['religion']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-224-1516S	RELI-224
+RELI-236		['religion']	www.amherst.edu/academiclife/departments/courses/1516F/RELI/RELI-236-1516F	RELI-236
+RELI-237		['religion']	www.amherst.edu/academiclife/departments/courses/1415F/RELI/RELI-237-1415F	RELI-237
+RELI-238		['black_studies', 'religion']	www.amherst.edu/academiclife/departments/courses/1415F/RELI/RELI-238-1415F	RELI-238
+RELI-239		['religion']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-239-1516S	RELI-239
+RELI-253		['religion', 'asian']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-253-1516S	RELI-253
+RELI-261		['sexuality_womens_gender_studies', 'religion']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-261-1516S	RELI-261
+RELI-263		['religion']	www.amherst.edu/academiclife/departments/courses/1516F/RELI/RELI-263-1516F	RELI-263
+RELI-267		['religion']	www.amherst.edu/academiclife/departments/courses/1415S/RELI/RELI-267-1415S	RELI-267
+RELI-273		['religion']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-273-1516S	RELI-273
+RELI-283		['religion']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-283-1516S	RELI-283
+RELI-284		['religion']	www.amherst.edu/academiclife/departments/courses/1415F/RELI/RELI-284-1415F	RELI-284
+RELI-316		['philosophy', 'religion']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-316-1516S	RELI-316
+RELI-318		['philosophy', 'religion']	www.amherst.edu/academiclife/departments/courses/1415S/RELI/RELI-318-1415S	RELI-318
+RELI-323		['religion']	www.amherst.edu/academiclife/departments/courses/1415F/RELI/RELI-323-1415F	RELI-323
+RELI-352		['religion', 'asian']	www.amherst.edu/academiclife/departments/courses/1415S/RELI/RELI-352-1415S	RELI-352
+RELI-362		['religion']	www.amherst.edu/academiclife/departments/courses/1516S/RELI/RELI-362-1516S	RELI-362
+RELI-385		['religion', 'asian']	www.amherst.edu/academiclife/departments/courses/1415S/RELI/RELI-385-1415S	RELI-385
+RUSS-101		['russian']	www.amherst.edu/academiclife/departments/courses/1516F/RUSS/RUSS-101-1516F	RUSS-101
+RUSS-102	Requisite: RUSS 101 or equivalent. Limited to 15 students per section. Spring semester. The Department.	['russian']	www.amherst.edu/academiclife/departments/courses/1516S/RUSS/RUSS-102-1516S	RUSS-102
+RUSS-201	Requisite: RUSS 102 or the equivalent. This will ordinarily be the appropriate course placement for students with two to three years of high school Russian. Limited to 15 students. Fall semester. Professor Ciepiela.	['russian']	www.amherst.edu/academiclife/departments/courses/1516F/RUSS/RUSS-201-1516F	RUSS-201
+RUSS-202	Requisite: RUSS 201 or equivalent. Limited to 15 students. Spring semester. Professor Rabinowitz.	['russian']	www.amherst.edu/academiclife/departments/courses/1516S/RUSS/RUSS-202-1516S	RUSS-202
+RUSS-212		['russian']	www.amherst.edu/academiclife/departments/courses/1415S/RUSS/RUSS-212-1415S	RUSS-212
+RUSS-213		['russian']	www.amherst.edu/academiclife/departments/courses/1516S/RUSS/RUSS-213-1516S	RUSS-213
+RUSS-215		['russian', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1415F/RUSS/RUSS-215-1415F	RUSS-215
+RUSS-217		['russian']	www.amherst.edu/academiclife/departments/courses/1516F/RUSS/RUSS-217-1516F	RUSS-217
+RUSS-225		['russian']	www.amherst.edu/academiclife/departments/courses/1516S/RUSS/RUSS-225-1516S	RUSS-225
+RUSS-227		['russian']	www.amherst.edu/academiclife/departments/courses/1516F/RUSS/RUSS-227-1516F	RUSS-227
+RUSS-228		['russian']	www.amherst.edu/academiclife/departments/courses/1415S/RUSS/RUSS-228-1415S	RUSS-228
+RUSS-244		['art', 'russian']	www.amherst.edu/academiclife/departments/courses/1415S/RUSS/RUSS-244-1415S	RUSS-244
+RUSS-245		['art', 'russian', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1516F/RUSS/RUSS-245-1516F	RUSS-245
+RUSS-246		['art', 'russian', 'european_studies']	www.amherst.edu/academiclife/departments/courses/1516S/RUSS/RUSS-246-1516S	RUSS-246
+RUSS-301	Requisite: RUSS 202 or consent of instructor. First-year students with strong high school preparation (usually 4 or more years) may be ready for this course. Limited to 15 students. Fall semester. Professor Rabinowitz and Senior Lecturer Babyonyshev.	['russian']	www.amherst.edu/academiclife/departments/courses/1516F/RUSS/RUSS-301-1516F	RUSS-301
+RUSS-302	Requisite: RUSS 301 or consent of the instructor. Limited to 15 students. Spring semester. Professor Rabinowitz, with Senior Lecturer Babyonyshev.	['russian']	www.amherst.edu/academiclife/departments/courses/1415S/RUSS/RUSS-302-1415S	RUSS-302
+RUSS-303H	Requisite: RUSS 302 or consent of the instructor. Fall semester. Senior Lecturer Babyonyshev.	['russian']	www.amherst.edu/academiclife/departments/courses/1415F/RUSS/RUSS-303H-1415F	RUSS-303H
+RUSS-304H	Requisite: RUSS 301 or consent of the instructor. Spring semester. Senior Lecturer Babyonyshev.	['russian']	www.amherst.edu/academiclife/departments/courses/1516S/RUSS/RUSS-304H-1516S	RUSS-304H
+RUSS-401		['russian']	www.amherst.edu/academiclife/departments/courses/1516F/RUSS/RUSS-401-1516F	RUSS-401
+SOCI-112		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/SOCI/SOCI-112-1516F	SOCI-112
+SOCI-226		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415S/SOCI/SOCI-226-1415S	SOCI-226
+SOCI-230		['anthropology_sociology', 'asian']	www.amherst.edu/academiclife/departments/courses/1516S/SOCI/SOCI-230-1516S	SOCI-230
+SOCI-234		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/SOCI/SOCI-234-1516S	SOCI-234
+SOCI-237		['sexuality_womens_gender_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/SOCI/SOCI-237-1516F	SOCI-237
+SOCI-243		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/SOCI/SOCI-243-1516S	SOCI-243
+SOCI-315		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/SOCI/SOCI-315-1516F	SOCI-315
+SOCI-316	Requisite: ANTH/SOCI 110. Limited to 15 students. Spring semester. Professor Himmelstein.	['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/SOCI/SOCI-316-1516S	SOCI-316
+SOCI-324	Requisite: SOCI 112.  Limited to 20 students.  Admission with consent of the instructor.  Spring semester. Professors Holleman and Mun.	['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415S/SOCI/SOCI-324-1415S	SOCI-324
+SOCI-334	Requisite: SOCI 112 or equivalent. Open to juniors and seniors. Limited to 20 students. Spring semester. Professor Lembo.	['black_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415S/SOCI/SOCI-334-1415S	SOCI-334
+SOCI-337	Requisite: SOCI 112 or equivalent. Limited to 15 students. Fall semester. Professor Lembo.	['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/SOCI/SOCI-337-1516F	SOCI-337
+SOCI-341		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415F/SOCI/SOCI-341-1415F	SOCI-341
+SOCI-347		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1415F/SOCI/SOCI-347-1415F	SOCI-347
+SOCI-350		['anthropology_sociology', 'asian']	www.amherst.edu/academiclife/departments/courses/1516F/SOCI/SOCI-350-1516F	SOCI-350
+SOCI-353		['anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516S/SOCI/SOCI-353-1516S	SOCI-353
+SPAN-110		['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-110-1516S	SPAN-110
+SPAN-120	Requisite: Spanish I (SPAN-110) or Spanish Placement Exam.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-120-1516S	SPAN-120
+SPAN-125	Requisite: Spanish II (SPAN-120) or Spanish Placement Exam.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-125-1516S	SPAN-125
+SPAN-130	Requisite: Spanish III (SPAN-125) or Spanish Placement Exam.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-130-1516S	SPAN-130
+SPAN-140		['spanish']	www.amherst.edu/academiclife/departments/courses/1415S/SPAN/SPAN-140-1415S	SPAN-140
+SPAN-199	Requisite: Spanish IV (SPAN-130) or Spanish Placement Exam.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-199-1516S	SPAN-199
+SPAN-210	Requisite:  SPAN 199 or consent of the instructor.  Limited to 15 students.  Spring semester.  Lecturer Granda.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-210-1516S	SPAN-210
+SPAN-211	Requisite: SPAN-199 or consent of the instructor. A medium to high level knowledge of the Spanish language and reasonable proficiency in listening, speaking, reading, and writing in Spanish are required.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-211-1516S	SPAN-211
+SPAN-212	Requisite: SPAN-199 or SPAN-211, or consent of the instructor. A medium to high level knowledge of the Spanish language and reasonable proficiency in listening, speaking, reading, and writing in Spanish are required.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516F/SPAN/SPAN-212-1516F	SPAN-212
+SPAN-220	This course will introduce students to some of the major intellectual texts of the Spanish Caribbean from the twentieth century to the present.  Through these readings, which include essays, novels and poetry, we will examine the legacy of colonial and post-colonial prejudices and the struggles the people of Cuba, the Dominican Republic, and Puerto Rico engage as they create a unique sense of nationhood within a global context and interlace their stories into a more complicated context often called Pan-Caribbean.  We will explore the ways in which the Hispanic Caribbean countries are similar, while coming to a nuanced understanding of how recent politics and migratory histories have also rendered them vastly different.  Our analyses will cover issues of language, gender, violence, traumatic memory, dictatorship, and human resilience.  This course will be conducted in Spanish.Requisite: SPAN 199, 211 or 212 or consent of the instructor.  Limited to 15 students.  Spring semester.  Professor Suárez.	['spanish']	www.amherst.edu/academiclife/departments/courses/1415S/SPAN/SPAN-220-1415S	SPAN-220
+SPAN-222	Requisite: SPAN 199, 211 or 212 or consent of the instructor. Limited to 15 students. Spring semester. Professor Infante.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-222-1516S	SPAN-222
+SPAN-234		['european_studies', 'spanish']	www.amherst.edu/academiclife/departments/courses/1415S/SPAN/SPAN-234-1415S	SPAN-234
+SPAN-235		['anthropology_sociology', 'spanish']	www.amherst.edu/academiclife/departments/courses/1516F/SPAN/SPAN-235-1516F	SPAN-235
+SPAN-238	Requisite: SPAN 199, 211 or 212 or consent of the instructor. Limited to 15 students. Priority given to Spanish majors. Fall semester. Visiting Professor Rodriguez-Solas.	['european_studies', 'film', 'spanish']	www.amherst.edu/academiclife/departments/courses/1415F/SPAN/SPAN-238-1415F	SPAN-238
+SPAN-239		['european_studies', 'film', 'spanish']	www.amherst.edu/academiclife/departments/courses/1415S/SPAN/SPAN-239-1415S	SPAN-239
+SPAN-242	Requisite: SPAN 199, 211 or 212 or consent of the instructor. Limited to 15 students. Priority given to Spanish majors. Fall semester. Visiting Professor Rodriguez-Solas.	['theater_dance', 'spanish']	www.amherst.edu/academiclife/departments/courses/1415F/SPAN/SPAN-242-1415F	SPAN-242
+SPAN-317	Requisite: SPAN 199, 211 or 212, or consent of the instructor. Limited to 15 students. Spring semester. Professor Infante.	['sexuality_womens_gender_studies', 'european_studies', 'spanish']	www.amherst.edu/academiclife/departments/courses/1415S/SPAN/SPAN-317-1415S	SPAN-317
+SPAN-318	Requisite: SPAN 199, 211 or 212, or consent of the instructor. Limited to 15 students. Fall semester. Professor Infante.	['spanish']	www.amherst.edu/academiclife/departments/courses/1415F/SPAN/SPAN-318-1415F	SPAN-318
+SPAN-320	Requisite:  SPAN 199, 211 or 212 or consent of the instructor.  Fall semester. Professor Maraniss.	['spanish']	www.amherst.edu/academiclife/departments/courses/1415F/SPAN/SPAN-320-1415F	SPAN-320
+SPAN-345	Requisite: SPAN 199, 211 or 212 or with permission of the instructor.  Limited to 15 students.  Spring semester.  Professor Suárez.	['sexuality_womens_gender_studies', 'spanish']	www.amherst.edu/academiclife/departments/courses/1415S/SPAN/SPAN-345-1415S	SPAN-345
+SPAN-346	Requisite: SPAN 199, 211 or 212 or consent of the instructor. Limited to 15 students. Fall semester. Professor Suárez.	['spanish']	www.amherst.edu/academiclife/departments/courses/1415F/SPAN/SPAN-346-1415F	SPAN-346
+SPAN-352	Requisite: SPAN 199, 211 or 212 or consent of the instructor.  Spring semester. Professor Brenneis.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-352-1516S	SPAN-352
+SPAN-363	Requisite: SPAN 199, 211 or 212 or consent of the instructor. Limited to 25 students.  Fall semester. Professor Stavans.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516F/SPAN/SPAN-363-1516F	SPAN-363
+SPAN-374		['european_studies', 'spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-374-1516S	SPAN-374
+SPAN-376		['spanish']	www.amherst.edu/academiclife/departments/courses/1415S/SPAN/SPAN-376-1415S	SPAN-376
+SPAN-385	Requisite: SPAN 199, 211 or 212, or consent of the instructor. Limited to 18 students. Fall semester. Professor Infante.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516F/SPAN/SPAN-385-1516F	SPAN-385
+SPAN-391		['film', 'spanish']	www.amherst.edu/academiclife/departments/courses/1516F/SPAN/SPAN-391-1516F	SPAN-391
+SPAN-393	Requisite: SPAN 199, 211 or 212 or consent of the instructor. Limited to 18 students. Spring semester. Professor Infante.	['spanish']	www.amherst.edu/academiclife/departments/courses/1516S/SPAN/SPAN-393-1516S	SPAN-393
+SPAN-394		['spanish']	www.amherst.edu/academiclife/departments/courses/1415F/SPAN/SPAN-394-1415F	SPAN-394
+STAT-111		['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/STAT/STAT-111-1516S	STAT-111
+STAT-111E		['mathematics', 'environmental_studies']	www.amherst.edu/academiclife/departments/courses/1516S/STAT/STAT-111E-1516S	STAT-111E
+STAT-135	Requisite: MATH 111. Limited to 24 students. Fall and spring semesters. Lecturer Wang.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/STAT/STAT-135-1516S	STAT-135
+STAT-220		['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/STAT/STAT-220-1516S	STAT-220
+STAT-225	Requisite: STAT 111 or STAT 135 or equivalent. Spring semester.  Professor Wagaman.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1415S/STAT/STAT-225-1415S	STAT-225
+STAT-230	Requisite: STAT 111 or 135 or consent of the instructor. Limited to 24 students. Fall semester: Professor Wang.  Spring semester: Professor Kim.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/STAT/STAT-230-1516S	STAT-230
+STAT-265	Requisite: Previous 200-level statistics coursework, or any 2 courses in statistics, or permission of the instructor. Limited to 24 students. Fall semester. Visiting Professor Kim.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516F/STAT/STAT-265-1516F	STAT-265
+STAT-330	Requisite:  STAT 111 or 135.  Limited to 20 students.  Fall semester.  Professor Wagaman.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1415F/STAT/STAT-330-1415F	STAT-330
+STAT-360	Requisite: MATH 121 or consent of the instructor. Limited to 24 students. Fall semester. Professor Horton.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516F/STAT/STAT-360-1516F	STAT-360
+STAT-370	Requisite: STAT 111 or STAT 135 and STAT 360, or consent of the instructor. Spring semester.  Professor Horton.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516S/STAT/STAT-370-1516S	STAT-370
+STAT-430	Requisite: STAT 360 or consent of the instructor. Spring semester.  Professor Wagaman.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1415S/STAT/STAT-430-1415S	STAT-430
+STAT-495	Requisite:  STAT 230 (formerly MATH 230), STAT 370 (formerly MATH 430 and STAT 430) and the computer requirement; or consent of the instructor.  Limited to 20 students.  Fall semester.  Professor Wang.	['mathematics']	www.amherst.edu/academiclife/departments/courses/1516F/STAT/STAT-495-1516F	STAT-495
+SWAG-100		['sexuality_womens_gender_studies']	www.amherst.edu/academiclife/departments/courses/1516F/SWAG/SWAG-100-1516F	SWAG-100
+SWAG-105		['sexuality_womens_gender_studies']	www.amherst.edu/academiclife/departments/courses/1516S/SWAG/SWAG-105-1516S	SWAG-105
+SWAG-114		['sexuality_womens_gender_studies']	www.amherst.edu/academiclife/departments/courses/1516S/SWAG/SWAG-114-1516S	SWAG-114
+SWAG-115		['sexuality_womens_gender_studies', 'art']	www.amherst.edu/academiclife/departments/courses/1516F/SWAG/SWAG-115-1516F	SWAG-115
+SWAG-200		['sexuality_womens_gender_studies']	www.amherst.edu/academiclife/departments/courses/1516S/SWAG/SWAG-200-1516S	SWAG-200
+SWAG-202		['sexuality_womens_gender_studies', 'black_studies']	www.amherst.edu/academiclife/departments/courses/1415S/SWAG/SWAG-202-1415S	SWAG-202
+SWAG-207		['sexuality_womens_gender_studies', 'asian', 'political_science']	www.amherst.edu/academiclife/departments/courses/1516S/SWAG/SWAG-207-1516S	SWAG-207
+SWAG-208		['sexuality_womens_gender_studies', 'black_studies', 'english', 'film']	www.amherst.edu/academiclife/departments/courses/1516S/SWAG/SWAG-208-1516S	SWAG-208
+SWAG-210		['sexuality_womens_gender_studies', 'anthropology_sociology']	www.amherst.edu/academiclife/departments/courses/1516F/SWAG/SWAG-210-1516F	SWAG-210
+SWAG-279		['sexuality_womens_gender_studies', 'black_studies', 'english']	www.amherst.edu/academiclife/departments/courses/1516F/SWAG/SWAG-279-1516F	SWAG-279
+SWAG-300	Requisite: SWAG 100 or consent of the instructor. Limited to 20 students. Not open to first-year students. Fall semester. Professor Basu.	['sexuality_womens_gender_studies']	www.amherst.edu/academiclife/departments/courses/1516F/SWAG/SWAG-300-1516F	SWAG-300
+SWAG-328		['sexuality_womens_gender_studies']	www.amherst.edu/academiclife/departments/courses/1516S/SWAG/SWAG-328-1516S	SWAG-328
+SWAG-329		['sexuality_womens_gender_studies', 'black_studies']	www.amherst.edu/academiclife/departments/courses/1516F/SWAG/SWAG-329-1516F	SWAG-329
+SWAG-342	Requisite: One of the following--FREN 207, 208, 311 or equivalent. Fall semester. Professor Katsaros.	['sexuality_womens_gender_studies', 'french']	www.amherst.edu/academiclife/departments/courses/1516F/SWAG/SWAG-342-1516F	SWAG-342
+SWAG-410		['sexuality_womens_gender_studies']	www.amherst.edu/academiclife/departments/courses/1516F/SWAG/SWAG-410-1516F	SWAG-410
+SWAG-469		['sexuality_womens_gender_studies', 'film', 'asian']	www.amherst.edu/academiclife/departments/courses/1516F/SWAG/SWAG-469-1516F	SWAG-469
+THDA-111		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-111-1516S	THDA-111
+THDA-112		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-112-1516S	THDA-112
+THDA-113		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-113-1516S	THDA-113
+THDA-114		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1415S/THDA/THDA-114-1415S	THDA-114
+THDA-115H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1415S/THDA/THDA-115H-1415S	THDA-115H
+THDA-116H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1415S/THDA/THDA-116H-1415S	THDA-116H
+THDA-117H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-117H-1516S	THDA-117H
+THDA-120H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-120H-1516S	THDA-120H
+THDA-121H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516F/THDA/THDA-121H-1516F	THDA-121H
+THDA-122H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1415F/THDA/THDA-122H-1415F	THDA-122H
+THDA-125H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516F/THDA/THDA-125H-1516F	THDA-125H
+THDA-142H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516F/THDA/THDA-142H-1516F	THDA-142H
+THDA-160		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-160-1516S	THDA-160
+THDA-210		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-210-1516S	THDA-210
+THDA-216H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516F/THDA/THDA-216H-1516F	THDA-216H
+THDA-225H	Requisite:  THDA 125H.  Spring semester.  Professor Bashford.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-225H-1516S	THDA-225H
+THDA-226		['black_studies', 'theater_dance']	www.amherst.edu/academiclife/departments/courses/1516F/THDA/THDA-226-1516F	THDA-226
+THDA-227		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1415S/THDA/THDA-227-1415S	THDA-227
+THDA-230	Requisite: THDA 113. Spring semester. Visiting Resident Artist Schmitz.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-230-1516S	THDA-230
+THDA-242	Requisite: A prior college-level course in theater or permission of the instructor. Not open to first-year students. Limited to 24 students.  Fall semester. Professor Bashford. 	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516F/THDA/THDA-242-1516F	THDA-242
+THDA-251		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1415S/THDA/THDA-251-1415S	THDA-251
+THDA-253	Requisite: Previous courses in dance technique and/or composition. Limited to 15 students. Spring semester. Visiting Lecturer Cohen.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-253-1516S	THDA-253
+THDA-254	Requisite: One prior practice-of-arts course in theater and dance, music or studio art, or equivalent experience. Limited to 12 students. Spring semester. Visiting Lecturer Robinson.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1415S/THDA/THDA-254-1415S	THDA-254
+THDA-260	Requisite: THDA 112 or consent of the instructor.  Limited to 8 students.  Fall semester.  Professor Dougan.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516F/THDA/THDA-260-1516F	THDA-260
+THDA-261	Requisite: THDA 112 or consent of the instructor. Lab work in lighting technology.  Fall semester. Resident Lighting Designer Couch.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516F/THDA/THDA-261-1516F	THDA-261
+THDA-263	Requisite: THDA 112 or consent of the instructor. Limited to 8 students. Spring semester. Professor Dougan.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-263-1516S	THDA-263
+THDA-270		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-270-1516S	THDA-270
+THDA-285	Requisite: One prior college course in the arts or dramatic literature, or permission of the instructor.  Limited to 24 students. Spring semester. Professor Bashford. 	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1415S/THDA/THDA-285-1415S	THDA-285
+THDA-330	Requisite: THDA 113 or consent of the instructor. Limited to 16 students. Fall semester. Senior Resident Artist Lobdell.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1415F/THDA/THDA-330-1415F	THDA-330
+THDA-340	Requisite:  One of the following: THDA 240, 242, 252 or equivalent college-level experience with consent of the instructor. Spring semester. Professor Bashford.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-340-1516S	THDA-340
+THDA-352	Requisite: Previous experience in improvisation and/or composition in dance, theater, performance, film/video, music/sound, installation, creative writing, and/or design is required. Spring semester.  Professor Woodson. 	['art', 'music', 'film', 'theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-352-1516S	THDA-352
+THDA-353	Requisite: THDA 252 or the equivalent and consent of the instructor. Fall semester. Visiting Resident Artist Schmitz.	['film', 'theater_dance']	www.amherst.edu/academiclife/departments/courses/1516F/THDA/THDA-353-1516F	THDA-353
+THDA-360	Requisite: THDA 260, 261, 263 or consent of the instructor. Fall and spring semesters. Professor Dougan.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-360-1516S	THDA-360
+THDA-363	Requisite: THDA 260, 261, or 263 or consent of the instructor.  Fall and spring semesters. Professor Dougan.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-363-1516S	THDA-363
+THDA-370	Requisite: THDA 270 or the equivalent. Admission with consent of the instructor. Limited to 10 students. Spring semester. Playwright-in-Residence Congdon.	['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-370-1516S	THDA-370
+THDA-400H		['theater_dance']	www.amherst.edu/academiclife/departments/courses/1516S/THDA/THDA-400H-1516S	THDA-400H

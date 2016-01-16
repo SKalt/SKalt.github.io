@@ -7,38 +7,148 @@ output: html_document
 ```{r importblock}
 require(igraph)
 ```
-```{r}
-# read in the edgelist and create an igraph object
-edgelist <- read.delim('./courseEdgelist.tsv')[,c(2,3)]
-# nodeAttrs <- read.delim('./courseAttrs.tsv')
-G <- graph.data.frame(edgelist)
-
-# identify each course's main department code and level
-temp <- strsplit(V(G)$name, '-')
-tempLevel <- c()
-tempDept <- c()
-for (i in temp){
-  tempLevel <- c(tempLevel, substr(i[2], 1, 1))
-  tempDept <- c(tempDept, i[1])
+```{r functionDefinition}
+makeLayout <- function(dept){
+  # finds the addresses of the department's edgelist
+  efileStr <- paste0('./', dept, 'courseEdgelist.tsv')
+  # and nodes list
+  nfileStr <- paste0('./', dept, 'courseAttrs.tsv')
+  # reads in the graph object from the named edgelist tsv
+  edgelist <- read.delim(efileStr, stringsAsFactors = F)[,c(2,3)]
+  G <- graph.data.frame(edgelist)
+  # read in unconnected nodes from the named nodes table 
+  nodeAttrs <- read.delim(nfileStr, stringsAsFactors = F)
+  unconnectedCourses <- nodeAttrs$Id[!(nodeAttrs$Id %in% V(G)$name)]
+  G <- add.vertices(G, length(unconnectedCourses), 
+                    attr = list(name = unconnectedCourses))
+  
+  # identify each course's level, main department
+  temp <- strsplit(V(G)$name, '-')
+  tempLevel <- c()
+  tempDept <- c()
+  for (i in temp){
+    tempLevel <- c(tempLevel, substr(i[2], 1, 1))
+    tempDept <- c(tempDept, i[1])
+  }
+  V(G)$level <- unlist(as.integer(tempLevel))
+  V(G)$mainDept <- tempDept
+  # run the sugiyama layout algorithm and incrase the coordinates for future readability
+  lyt <- layout.sugiyama(G, layers = V(G)$level)
+  biggerX <- lyt$layout[,1]*100
+  biggerY <- lyt$layout[,2]*100
+  
+  # create and eport a tsv of the layout's coordinates
+  nodes <- get.data.frame(G, what = "vertices")
+  nodes["X"] <- biggerX
+  nodes["Y"] <- biggerY
+  nodes["Id"] <- nodes["name"]
+  nodes["name"] <- NULL
+  write.table(nodes, file = paste0(dept, "CourseLayout.tsv"), sep = '\t', row.names = F)
 }
-V(G)$level <- unlist(as.integer(tempLevel))
-V(G)$dept <- unlist(tempDept)
+```
 
-# run the sugiyama layout algorithm and incrase the coordinates for future readability
-lyt <- layout.sugiyama(G, layers = V(G)$level )
-biggerX <- lyt$layout[,1]*10
-biggerY <- lyt$layout[,2]*100
+```{r functionCalls}
+majors <- c('architectural_studies', 'french', 'black_studies', 'computer_science',
+            'chemistry', 'economics', 'russian', 'spanish', 'neuroscience',
+            'mathematics', 'english', 'geology', 'physics',
+            'anthropology_sociology', 'german',  'psychology',
+            'european_studies', 'sexuality_womens_gender_studies', 'ljst',
+            'political_science', 'asian', 'art', 'philosophy', 'film', 'courses',
+            'music', 'Biology', 'theater_dance', 'astronomy', 'environmental_studies',
+            'classics' 
+            # no prereqs
+            # 'american_studies', 'history', 'religion',
+            )
+for (s in majors){
+  print(s)
+  makeLayout(s)
+}
+```
 
-# create and eport a tsv of the layout's coordinates
-nodes <- get.data.frame(G, what = "vertices")
-nodes["X"] <- biggerX
-nodes["Y"] <- biggerY
-nodes["Id"] <- nodes["name"]
-nodes["name"] <- NULL
-write.table(nodes, file = "newCourseLayout.tsv", sep = '\t', row.names = F)
+```{r oldCode}
+# read in the edgelist and create an igraph object
+# edgelist <- read.delim('./courseEdgelist.tsv', stringsAsFactors = F)[,c(2,3)]
+# G <- graph.data.frame(edgelist)
+# # correct one misnamed dummy node 
+# V(G)[V(G)$name == 'courses']$name <- 'biochemistry_biophysics'
+# # identify each course's level
+# courseVids<- which(!(V(G)$name %in% majors))
+# majorVids <- which(V(G)$name %in% majors)
+# temp <- strsplit(V(G)[courseVids]$name, '-')
+# tempLevel <- c()
+# tempDept <- c()
+# for (i in temp){
+#   tempLevel <- c(tempLevel, substr(i[2], 1, 1))
+#   tempDept <- c(tempDept, i[1])
+# }
+# V(G)[courseVids]$level <- unlist(as.integer(tempLevel))
+# V(G)[majorVids]$level <- 0
+# V(G)[courseVids]$mainDept <- tempDept
+# V(G)[majorVids]$mainDept <- unlist(major2Dept[V(G)[majorVids]$name])
+# 
+# # run the sugiyama layout algorithm and incrase the coordinates for future readability
+# lyt <- layout.sugiyama(G, layers = V(G)$level)
+# biggerX <- lyt$layout[,1]*10
+# biggerY <- lyt$layout[,2]*100
+# 
+# # create and eport a tsv of the layout's coordinates
+# nodes <- get.data.frame(G, what = "vertices")
+# nodes["X"] <- biggerX
+# nodes["Y"] <- biggerY
+# nodes["Id"] <- nodes["name"]
+# nodes["name"] <- NULL
+# write.table(nodes, file = "newCourseLayout.tsv", sep = '\t', row.names = F)
+
+# # some of my layouts include majors as nodes; identify these
+#   if (ghosts){
+#     majorVids <- which(V(G)$name %in% majors)
+#     courseVids <- which(!(V(G)$name %in% majors))
+#     temp <- strsplit(V(G)[courseVids]$name, '-')
+#     V(G)[majorVids]$level <- 0
+#     V(G)[majorVids]$mainDept <- unlist(major2Dept[V(G)[majorVids]$name])
+#     
+  }
 ```
 ```{r}
-# visualize the layout to get a sense of the general structure
-lyt <- layout.sugiyama(G, layers = V(G)$level )
-plot(lyt$extd_graph, vertex.label.cex = .01)
+# # visualize the layout to get a sense of the general structure
+# lyt <- layout.sugiyama(G, layers = V(G)$level )
+# plot(lyt$extd_graph, vertex.label.cex = .01)
+```
+```{r addListsOfMajors}
+# # makes a map from the major names to their department codes
+# major2Dept <- list(architectural_studies = 'ARCH',
+#                    french = 'FREN',
+#                    black_studies = 'BLST',
+#                    computer_science = 'COSC',
+#                    chemistry = 'CHEM',
+#                    economics = 'ECON',
+#                    russian = 'RUSS',
+#                    spanish = 'SPAN',
+#                    neuroscience = 'NEUR',
+#                    mathematics = 'MATH',
+#                    english = 'ENGL',
+#                    geology = 'GEOL',
+#                    american_studies = 'AMST',
+#                    physics = 'PHYS',
+#                    anthropology_sociology = 'ANTH',
+#                    german = 'GERM',
+#                    history = 'HIST',
+#                    psychology = 'PSYC',
+#                    european_studies = 'EUST',
+#                    sexuality_womens_gender_studies = 'SWAG',
+#                    ljst = 'LJST',
+#                    political_science = 'POSC',
+#                    asian = 'ASLC',
+#                    art = 'ARHA',
+#                    philosophy = 'PHIL',
+#                    film = 'FILM',
+#                    biochemistry_biophysics = 'BCBP',
+#                    music = 'MUSI',
+#                    Biology = 'BIOL',
+#                    theater_dance = 'THDA',
+#                    astronomy = 'ASTR',
+#                    environmental_studies = 'ENST',
+#                    classics = 'CLAS',
+#                    religion = 'RELI')
+
 ```
