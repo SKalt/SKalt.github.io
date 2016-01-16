@@ -231,8 +231,9 @@ display: none;
 }
 
 #mainpanel {
-margin-top: 50px;
-margin-left: 25px;
+width: 60%;
+margin-top: 20px;
+margin-left: 10px;
 background:#fff;
 background-color:rgba(255,255,255,0.8);
 border:1px solid #ccc;
@@ -246,7 +247,7 @@ padding: 0px 0 0 0;
 }
 
 #mainpanel .col {
-width: 240px;
+width: 90%;
 padding: 18px 18px 18px 18px;
 margin: 0;
 
