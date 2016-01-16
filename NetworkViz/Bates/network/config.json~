@@ -8,7 +8,7 @@
     "link": ""
   },
   "text": {
-    "title": "Bates College Course Requirements",
+    "title": "Amherst College Course Requirements",
     "more": "This is a visualization of which classes are required by which other classes at Bates College. \n Each link represents a requirement of a higher-level course by a lower-level course. Some courses have substitutable requirements,\n in wich case both requirements are shown.\nTry selecting a class by clicking on it or searching it in the search bar to view the course\u0027s basic information.  \nSome courses might belong to multiple departments, in which case they will be colored by their main department.  \n\n",
     "intro": "Which courses require which others at Bates College. It is worth verifying these relations in the course catalog."
   },
