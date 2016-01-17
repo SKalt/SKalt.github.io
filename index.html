@@ -17,15 +17,17 @@
         <h2 class="project-tagline">A website to showcase my projects</h2>
     </section>
     <section class="main-content">
-        <h3>
-	<a id="quick-bio" class="anchor" href="http://skalt.github.io/#quick-bio" aria-hidden="true"><span class="octicon octicon-link"></span></a>About Me</h3>
+        <h2>
+	<a id="quick-bio" class="anchor" href="http://skalt.github.io/#quick-bio" aria-hidden="true"><span class="octicon octicon-link"></span></a>About Me</h2>
         <p>I am a senior at Amherst College, interested in network analysis, economic modelling, environmental policy, and programming. This page showcases my most recent work.</p>
-        <h3>
+        <h2>
 	<a id="projects-list" class="anchor" href="http://skalt.github.io/#projects-list" aria-hidden="true"><span class="octicon octicon-link">
 		</span>
-		</a>List of Projects</h3>
-        <li> <a href="https://www3.amherst.edu/~skalt16"> Detection and visualisation of patent thickets</a></li>
-        <section>
+		</a>List of Projects</h2>
+        <li><a href="#Courses">Mapping Amherst College course requirements</a></li>
+        <li> <a href="#Patents">Detection and visualisation of patent thickets</a></li>
+        <li><a href = "#Liaisons">Visualising the liaisons in <i>Les Liaisons Dangereuses</i></a></li>
+        <section id="Courses">
             <h2>Planning for Majors: Automatic Visualization of the Prerequisites Network at Amherst College</h2>
             <p>I scraped Amherst College's well-formatted departmental course catalogs to create interactive maps of which courses are required by which others at Amherst College.</p>
             <p>As a senior who has completed both my majors, I was inspired to start this project as a christmas present for my brother, who is navigating Bates college &#40;<a href='http://www3.amherst.edu/~skalt16/Bates/BIO/index.html'>example here</a>&#41;. I hope this will be useful to those at my alma mater as well. </p>
@@ -92,7 +94,7 @@
             <p> Click and drag to pan, scroll to zoom, and click on course nodes to view their descriptions, their neighbors, and links to their most recent course description pages.</p>
             <p> Please report any bugs on <a href='https://github.com/SKalt/AmherstGraph'>my Github repo</a>. This project was done in Python using igraph to generate the layouts, then passing them as json files to the Oxford Internet Institute's excellent <a href='https://github.com/oxfordinternetinstitute/InteractiveVis/'>network visualization template</a>.</p>
         </section>
-        <section>
+        <section id="Patents">
             <h2> Patent Litigation Visualizations </h2>
             <p>Patents have been among the dominant forms of intellectual property internationally since the signing of the Patent Cooperation Treaty in 1970. For a patent to be 'valid,' a device or techniqe must be novel, useful, and nonobvious. In theory, patents provide an incentive to innovate by giving the patent holder a monopoly over the technology for a limited time (20 years after the filing of the patent application in the US). However, it is difficult to verify if a patent is valid. As a result, the patent system is notoriously inefficient, with an enormous backlog and numerous issuances of invalid patents. This means groups of patent holders find themselves holding patents with overlapping claims that may or may not be valid. In some cases, the patent holders behave and compete within the market. Other times, they assert their patents against each other, preventing products from coming to market altogether. If too many entities hold overlapping patent rights to set of foundational technologies, it becomes nearly impossible to negotiate licenses to build those technologies. This is called a patent thicket</p>
             <p>My senior project involved researching possible patent thickets in renewable energy technologies (check out my formal work <a href="https://github.com/SKalt/RenewableEnergyPatentThicketDetection">here</a>. However, I did a more general search for patent thickets by scraping all the US patent litigation from 1980-2005 at <a href="https://patents.justia.com">patents.justia.com</a>, which is allowed under their robots.txt. I coded each lawsuit as a link in a network, known as an "edge" in graph theory, and each entity as a node in that network. Then, I looked for groups that traded lawsuits among themselves mor than others. These groups are more likely to own sets of overlapping patents, and so constitute patent thickets. To do this, I used the modularity-class community detection algorithm. The result is the image below.</p>
@@ -105,7 +107,7 @@
             <p> In both, drag to pan, scroll to zoom, and click on a node to view its name, neighborhood, and network statistics. Node size is proportional to the number of lawsuits related to an entity, and the warmth of a node's color is related to the fraction of a node's neighbors that sue each other</p>
             <p>Unfortunately, my scraper code is too messy to put up at this time. However, here's the general recipe: I used <a href="https://www.kimonolabs.com/">Kimono</a> to build a scraper, used the python JSON and Pandas packages to make an edgelist of who sued whom. I ran them through <a href="https://gephi.org/">Gephi</a>, an open-source network analysis program, to do the rest.</p>
         </section>
-        <section>
+        <section id="Liaisons">
             <h2> Visualizing the Network of Correspondence in <i>Les Liaisons dangereuses</i></h2>
             <p><i>Les Liaisons dangereuses</i> is an epistolatory novel: it is composed entirely of letters between its main characters. Thus, the letters between them trace the evolution of their relations, and what the reader knows of the characters' relations. I wrote a python script to scrape an ordered list of senders and recipients from <a href="https://fr.wikisource.org/wiki/Les_Liaisons_dangereuses"><i>Les Liaisons dangereuses</i> on wikisource</a>, and then used the NDTV package in R to visualize how the dangerous relations evolve.</p>
             <p>You can view the interactive video <a href="https://www3.amherst.edu/~skalt16/LiaisonsNetwork.html"> here </a>. Each node is a character and each arrow represents that one character has sent a letter to the other. The first number of the time at the bottom of the screen is the letter number, which you can use to look up what is going on.</p>
@@ -113,7 +115,6 @@
             </p>
             <p>You can view my code at <a href="https://github.com/SKalt/LiaisonsViz">SKalt/LiaisonsViz</a></p>
         </section>
-
         <footer class="site-footer">
             <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
         </footer>
