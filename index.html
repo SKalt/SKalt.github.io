@@ -30,7 +30,7 @@
         <section id="Courses">
             <h2>Planning for Majors: Automatic Visualization of the Prerequisites Network at Amherst College</h2>
             <p>I scraped Amherst College's well-formatted departmental course catalogs to create interactive maps of which courses are required by which others at Amherst College.</p>
-            <p>As a senior who has completed both my majors, I was inspired to start this project as a christmas present for my brother, who is navigating Bates college &#40;<a href='http://www3.amherst.edu/~skalt16/Bates/BIO/index.html'>example here</a>&#41;. I hope this will be useful to those at my alma mater as well. </p>
+            <p>As a senior who has completed both my majors, I was inspired to start this project as a christmas present for my brother, who is navigating Bates college &#40;<a href='https://www3.amherst.edu/~skalt16/Bates/BIO/index.html'>example here</a>&#41;. I hope this will be useful to those at my alma mater as well. </p>
             <h3> Links to departmental maps </h3>
             <table style="width:100%">
                 <tr>
@@ -101,8 +101,8 @@
             <p><img src="./thicket.png"></p>
             <p> Above, only the giant weakly connected component is shown: you can get to any of the entities traviling backwards or forwards along lawsuits. Litigating entities are closer if they sue each other more based on the Yifan Hu force-directed graph layout algorithm. Litigating entities are larger based on the number of times they sued or were sued. Each 'community' of litigants is colored differently. There are three main groups of litigants: the central ball with its dark purple nucleus (computers and technology), and the green blob and the blue lump (both pharmaceuticals and chemicals). There are several nodes with plumes billowing outwards: these are 'patent trolls' that over-aggressively sue many others for profit, rather than by pure neccessity. To explore the structure of the groups of litigants, I used <a href="http://blogs.oii.ox.ac.uk/vis/2012/11/15/build-your-own-interactive-network/">Gephi's Sigma.js exporter plugin</a> to make interactive maps of who sued whom. </p>
             <p>
-                <li><a href="www3.amherst.edu/~skalt16/network/patentball1.html">Interactive visualization of a pharmaceutical patent thicket </a></li>
-                <li><a href="www3.amherst.edu/~skalt16/network2/patentball2.html">Interactive visualization of a software patent thicket</a></li>
+                <li><a href="https://www3.amherst.edu/~skalt16/network/patentball1.html">Interactive visualization of a pharmaceutical patent thicket </a></li>
+                <li><a href="https://www3.amherst.edu/~skalt16/network2/patentball2.html">Interactive visualization of a software patent thicket</a></li>
             </p>
             <p> In both, drag to pan, scroll to zoom, and click on a node to view its name, neighborhood, and network statistics. Node size is proportional to the number of lawsuits related to an entity, and the warmth of a node's color is related to the fraction of a node's neighbors that sue each other</p>
             <p>Unfortunately, my scraper code is too messy to put up at this time. However, here's the general recipe: I used <a href="https://www.kimonolabs.com/">Kimono</a> to build a scraper, used the python JSON and Pandas packages to make an edgelist of who sued whom. I ran them through <a href="https://gephi.org/">Gephi</a>, an open-source network analysis program, to do the rest.</p>
