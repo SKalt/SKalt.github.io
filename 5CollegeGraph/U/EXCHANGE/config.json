@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "Steven Kalt",
+    "file": "",
+    "link": ""
+  },
+  "text": {
+    "title": "Amherst College Course Requirements",
+    "more": "This is a visualization of which classes are required by which other classes at Amherst College. \n Each link represents a requirement of a higher-level course by a lower-level course. Some courses have substitutable requirements,\n in wich case both requirements are shown.\nTry selecting a class by clicking on it or searching it in the search bar to view the course\u0027s basic information.  \nSome courses might belong to multiple departments, in which case they will be colored by their main department.  \n\n",
+    "intro": "Which courses require which others at Amherst College. It is worth verifying these relations in the course catalog."
+  },
+  "legend": {
+    "edgeLabel": "class A is required by Class B",
+    "colorLabel": "Department",
+    "nodeLabel": "Class"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "false",
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "imageAttribute": false,
+    "groupByEdgeDirection": true
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 7,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
