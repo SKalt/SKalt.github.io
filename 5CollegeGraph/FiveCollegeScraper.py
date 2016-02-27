@@ -1,19 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Feb 26 16:21:27 2016
-
-@author: steven
-"""
-
-# -*- coding: utf-8 -*-
-"""
-This module defines and runs functions which scrape the Amherst College
-departmental course catalogs to create a file, data.json, which plugs
+This module defines and runs functions which scrape the 5 College course
+catalogs to create a file, data.json, which plugs
 into the Oxford Internet Institute's interactive network viewer.  This
 file contains the node and edge attributes of the network of prerequisites
 at Amherst College: which courses are required by which.
 
-Created on Mon Jan 11 13:26:45 2016
+Created on Fri Feb 26 16:21:27 2016
 
 @author: steven
 """
@@ -61,18 +54,18 @@ from collections import OrderedDict
 #    tree = html.parse(io.BytesIO(data))
 #    return(tree)
 #%%
-def get_institution_course_urls(institution_course_codes = None,
-                                semester = 'S',
-                                year = 2016):
+def get_institution_course_urls(institution_course_codes=None,
+                                semester='S',
+                                year=2016):
     """
-    This function returns a list of institutions' current course 
+    This function returns a list of institutions' current course
     offerings' course page urls as current_catalog_urls, a list
     Args:
         institution_course_codes : a dict mapping each institution code to
             to their course codes, which in turn map to the courses' details
-        semester: the semester whose courses are to be appended to 
+        semester: the semester whose courses are to be appended to
             institution_course_codes
-        year: the year whose courses are to be appended to 
+        year: the year whose courses are to be appended to
             institution_course_codes
 
     Returns:
@@ -106,7 +99,7 @@ def get_institution_course_urls(institution_course_codes = None,
     'table["views-table sticky-enabled cols-7 ' + \
     'tableheader-processed sticky-table"]/tbody/tr'
     # define the dict to be returned
-    
+
     institution_queries = [
         "U", # umass
         "M", # MHC
@@ -115,9 +108,9 @@ def get_institution_course_urls(institution_course_codes = None,
         "S"] # smith
     # get all catalog pages' info
     for institution in institution_queries:
-        url = query_url.format(semester = semester,
-                               year = year,
-                               institution = institution)
+        url = query_url.format(semester=semester,
+                               year=year,
+                               institution=institution)
         data = HTTP.request("GET", url).data
         tree = html.parse(io.BytesIO(data))
         last_page = False # in fact this is the first page when set
@@ -129,7 +122,7 @@ def get_institution_course_urls(institution_course_codes = None,
             course_rows = tree.xpath(courses_table_row_xpath)
             for course_row in course_rows:
                 row_elements = [i.text for i in course_row]
-                dept = row_elements[0].strip() 
+                dept = row_elements[0].strip()
                 num = row_elements[1].strip()
                 code = dept + '-' + num
                 course_rows = tree.xpath(courses_table_row_xpath)
@@ -141,18 +134,18 @@ def get_institution_course_urls(institution_course_codes = None,
                     tmp["times"] = row_elements[6].strip()
                     tmp["date"] = '{}{}'.format(year, semester)
                     tmp["date_checked"] = str(date.today())
-                    institution_course_codes[institution][code] = tmp 
+                    institution_course_codes[institution][code] = tmp
             data = HTTP.request("GET", next_url).data
             tree = html.parse(io.BytesIO(data))
     return institution_course_codes
 #%%
 def get_course_description(institutions):
     """
-    This function adds course description information to the dict 
+    This function adds course description information to the dict
     institution_course_codes
     Args:
-        institutions : a dict mapping each institution to codes, 
-            which in turn map to dicts of course details.  
+        institutions : a dict mapping each institution to codes,
+            which in turn map to dicts of course details.
     Returns:
         institution_course_codes: as above, with added course details
     """
@@ -169,9 +162,9 @@ def get_course_description(institutions):
                 tmp = tree.xpath('//*[@class="field-item even"]/text()')
                 tmp = '\n'.join(tmp)
                 prereqs = []
-                for s in tmp:
-                  if 'requisite' or 'or consent of professor' in s:
-                      prereqs.append(s)
+                for sentence in tmp:
+                    if 'requisite' or 'or consent of professor' in sentence:
+                        prereqs.append(sentence)
                 institutions[institution][course]["description"] = tmp
                 institutions[institution][course]["prereqs"] = prereqs
             if (left - counter) % 100 == 0:
@@ -183,7 +176,7 @@ def get_prereqs(catalog_dict):
     This function creates a dictionary, prereqs, mapping each course code to
     the required courses it names in its  online course description.
     Args:
-        catalog_dict: a dict mapping all the codes in a university's course 
+        catalog_dict: a dict mapping all the codes in a university's course
             catalog to course details
         marker: a list of strings marking the starting point of the sentence in
           a course's description containing the codes of the course's prereqs.
@@ -193,7 +186,8 @@ def get_prereqs(catalog_dict):
     """
     prereqs = []
     depts = [i.split('-')[0].upper() for i in catalog_dict.keys()]
-    nums = [i.split('-')[1].upper() for i in catalog_dict.keys() if i.split('-')[1][0].isnumeric()]
+    nums = [i.split('-')[1].upper() for i in catalog_dict.keys()
+                if i.split('-')[1][0].isnumeric()]
     # search the line describing requirements for course codes
     for k in catalog_dict.keys():
         desc = catalog_dict[k]["description"] # a string
@@ -203,7 +197,7 @@ def get_prereqs(catalog_dict):
             sentences = [i for i in re.split('\n|\.', desc)]
             for i in sentences:
                 if 'requisite' or 'or consent of professor' in i.lower():
-                    req_line +=  i + ' '
+                    req_line += i + ' '
             words = re.split(' |-|,|/|;|\.', req_line)
             current_dept = k.split('-')[0]
             # ^ assume a course is most likely to require another in its own
@@ -245,7 +239,7 @@ def make_course_graph(course_details, prereqs_edgelist):
     Args:
         course_details: a dict mapping course numbers AT AN INSTITUTION to a
             dict of its details
-        prereqs_edgelist: a list of edge tuples mapping course numbers AT AN 
+        prereqs_edgelist: a list of edge tuples mapping course numbers AT AN
             INSTITUTION to the codes of its prerequisites
     Returns:
         a directed acyclic igraph object representing all the requirement
@@ -255,11 +249,11 @@ def make_course_graph(course_details, prereqs_edgelist):
     all_courses = itertools.chain(*prereqs_edgelist)
     extra_courses = [c for c in all_courses if c not in course_details.keys()]
     number_of_courses = len(extra_courses) + len(course_details)
-    
+
     # create an empty graph with all the courses as nodes, then add prereq
     # relations from the prereqs edgelist
     names_of_courses = list(course_details.keys()) + extra_courses
-    complete_course_graph = igraph.Graph(number_of_courses, directed = True)
+    complete_course_graph = igraph.Graph(number_of_courses, directed=True)
     complete_course_graph.vs["name"] = names_of_courses
     complete_course_graph.add_edges(prereqs_edgelist)
     return(complete_course_graph)
@@ -271,12 +265,13 @@ def make_subgraph(dept_string, prereqs_edgelist, course_graph):
     courses and their relationships.
     Args:
         dept_string: a string specifying a department code
-        prereqs_edgelist: a list of tuples mapping course codes to the codes 
+        prereqs_edgelist: a list of tuples mapping course codes to the codes
             of their prerequisites at an institution
-        complete_course_graph: an igraph object of all the prerequisite 
+        complete_course_graph: an igraph object of all the prerequisite
             relations at that institution
     Returns:
-        the same 
+        all courses in the department and their prereqs/the courses that
+        require them
     """
     # get a list of courses relevant to the department
         
@@ -294,7 +289,7 @@ def get_sugiyama_layout(subgraph):
     classes, then returns the x and y positions of each node in that layout
     Args:
         subgraph: a graph of course prerequisite relations with course codes as
-            vertex names 
+            vertex names
     Returns:
         a list of tuples specifying x and y coordinates of each node in the
         graph in a sugiyama layout for directed acyclic graphs.
@@ -343,15 +338,15 @@ def make_json(dept_string, course_details, complete_course_graph):
         dept_string: a string specifying a department at an institution
         course_details: a dict mapping course codes to course details at an
             institution
-        complete_course_graph: a directed igraph object containing all the 
-            courses at the institution as nodes and all the requirements of 
+        complete_course_graph: a directed igraph object containing all the
+            courses at the institution as nodes and all the requirements of
             each course as the first-order in-neigbhors of the course
     Returns:
         data: a  JSON file specifying the nodes and edges to be drawn by
             sigma.js and the information about nodes to display.
     """
     data = {"edges":[], "nodes":[]}
-    
+
     #get the subgraph, node positions
     subgraph = make_subgraph(dept_string, \
                              course_details, \
@@ -367,12 +362,12 @@ def make_json(dept_string, course_details, complete_course_graph):
             node_output["label"] = node
             node_output["x"] = sugiyama_layout[node[0]][0]
             node_output["y"] = sugiyama_layout[node[0]][1]
-            node_output["id"] = str(node)
-            
+            node_output["id"] = str(node[0])
+
             attrs = OrderedDict()
             attrs["Title"] = course_details[\
                 node[1]]["title"]
-            attrs["Description"] = course_details[node[1]]["description"]                
+            attrs["Description"] = course_details[node[1]]["description"]
             attrs["Department Code"] = node[1][0:4]
             attrs["Course Site"] = \
                 "<a href= '" + \
@@ -383,7 +378,7 @@ def make_json(dept_string, course_details, complete_course_graph):
 
             node_output["color"] = 'rgb' + \
                 str(department_colors[node[1].split('-')[0]])
-            node_output["size"] = 10.0 
+            node_output["size"] = 10.0
         # if the course has no retrieved details:
         else:
             node_output = OrderedDict()
@@ -398,7 +393,8 @@ def make_json(dept_string, course_details, complete_course_graph):
             node_output["attributes"]["Department Code"] = node[1].split('-')[0]
             node_output["attributes"]["Course Site"] = ""
             node_output["attributes"]["Requisite"] = ''
-            node_output["color"] = 'rgb' + str(department_colors[node[1].split('-')[0]])
+            node_output["color"] = 'rgb' + \
+                str(department_colors[node[1].split('-')[0]])
             node_output["size"] = 10.0
         data["nodes"].append(node_output)
 
@@ -457,9 +453,9 @@ def export_json(inst_code, dept_string, course_details, complete_course_graph):
 
 #%% run the code
 if __name__ == "__main__":
-#    T = open('temp')  # for temp
-#    INST = json.loads(T.read())
-#    T.close()
+    T = open('temp')  # for temp
+    INST = json.loads(T.read())
+    T.close()
     # this will have to be modified to update the years to scrape.  For now,
     # I'm loading the pre-scraped version
 #    INST = get_institution_course_urls()
@@ -472,7 +468,7 @@ if __name__ == "__main__":
 #    print(1)
 #    INST = get_course_description(INST)
     print('Nearly there...')
-    for i in ['S', 'U','M','H']: # I've got A covered at the moment
+    for i in ['S', 'U', 'M', 'H']: # I've got A covered at the moment
         DEPTS = list(set([k.split('-')[0] for k in INST[i].keys()]))
         PREREQS = get_prereqs(INST[i])
         test_prereqs(PREREQS, INST[i])
