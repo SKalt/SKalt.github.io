@@ -359,7 +359,7 @@ def make_json(dept_string, course_details, complete_course_graph):
     for node in enumerate(subgraph.vs["name"]):
         if node[1] in course_details.keys():
             node_output = OrderedDict()
-            node_output["label"] = node
+            node_output["label"] = node[1]
             node_output["x"] = sugiyama_layout[node[0]][0]
             node_output["y"] = sugiyama_layout[node[0]][1]
             node_output["id"] = str(node[0])
@@ -368,7 +368,7 @@ def make_json(dept_string, course_details, complete_course_graph):
             attrs["Title"] = course_details[\
                 node[1]]["title"]
             attrs["Description"] = course_details[node[1]]["description"]
-            attrs["Department Code"] = node[1][0:4]
+            attrs["Department Code"] = node[1].split('-')[0]
             attrs["Course Site"] = \
                 "<a href= '" + \
                 course_details[node[1]]["url"] + \
@@ -382,12 +382,12 @@ def make_json(dept_string, course_details, complete_course_graph):
         # if the course has no retrieved details:
         else:
             node_output = OrderedDict()
-            node_output["label"] = node
+            node_output["label"] = node[1]
             node_output["x"] = sugiyama_layout[node[0]][0]
             node_output["y"] = sugiyama_layout[node[0]][1]
-            node_output["id"] = str(node)
+            node_output["id"] = str(node[0])
             node_output["attributes"] = OrderedDict()
-            node_output["attributes"]["Title"] = node
+            node_output["attributes"]["Title"] = node[1]
             node_output["attributes"]["Description"] = 'not offered in the' + \
                 " last 4 semesters"
             node_output["attributes"]["Department Code"] = node[1].split('-')[0]
@@ -481,19 +481,3 @@ if __name__ == "__main__":
 #    T.write(json.dumps(INST, separators=(',', ':')))
 #    T.close()
 print(""" That's all folks! """)
-#%% temp manual debugging section
-#CURRENT_CATALOG_URLS = get_catalog_urls()
-#CATALOG_URLS = get_date(CURRENT_CATALOG_URLS)
-#COURSE_URLS = get_courses(CATALOG_URLS)
-#UNIQUE_RECENT_URLS = get_most_recent_course_urls(COURSE_URLS)
-#COURSE_DETAILS = get_course_info(UNIQUE_RECENT_URLS, COURSE_URLS)
-#PREREQS = get_prereqs(COURSE_DETAILS)
-#test_prereqs(PREREQS, COURSE_DETAILS)
-#COMPLETE_COURSE_GRAPH = make_course_graph(COURSE_DETAILS, PREREQS)
-#for temp_dept_string in DEPT_CODES.keys():
-#    subgraph = make_subgraph(temp_dept_string, COURSE_DETAILS, \
-#                               COMPLETE_COURSE_GRAPH)
-#    print(temp_dept_string)
-#    print(subgraph.ecount())
-#    export_json(temp_dept_string, COURSE_DETAILS, COMPLETE_COURSE_GRAPH)
-#    print(temp_dept_string + ' done')
