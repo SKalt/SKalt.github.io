@@ -1,3 +1,6 @@
 [submodule "AmherstGraph"]
 	path = AmherstGraph
 	url = https://github.com/SKalt/AmherstGraph.git
+[submodule "BatesGraph"]
+	path = BatesGraph
+	url = https://github.com/SKalt/BatesGraph.git
