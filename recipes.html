@@ -1,0 +1,640 @@
+<html>
+    <head>
+	<style id="mainstyle">
+	 span:not(.time):not(.servings):not(.measure):not(.ingredient) {
+	     background-color: rgba(100, 149, 237, .5);
+	     border-radius: .2rem;
+	 }
+	 
+	 .note {
+	     background-color: rgba(100, 149, 237, .5);
+	     border-radius: .2rem;
+	 }
+	 
+	 #recipes {
+	     margin: 2rem;
+	     border:2px solid #6495ed; /*this is a fight club reference.*/
+	     border-radius:1em;
+	     padding:.5em;
+	     }
+	 li {    
+	     margin: 1rem 1rem 1rem 1rem;
+	     padding: .3rem .3rem .3rem .3rem;
+	     font-family:Arial;
+	     border-radius: .5rem;
+	 }
+	 
+	 .recipe {
+	     border:2px solid #6495ed; /*this is a fight club reference.*/
+	     border-radius:1em;
+	     padding:.5em;
+	 }
+	 
+	 .recipeGroup {
+	     border:2px solid #6495ed; /*this is a fight club reference.*/
+	     border-radius:1em;
+	     padding:.5em;
+	 }
+	 
+	 .ingredientGroup{
+	     border:2px solid #6495ed;
+	     border-radius:1em;
+	     padding:.5em;
+	 }
+	 
+	 .ingredients{
+	     border:2px solid #6495ed;
+	     border-radius:1em;
+	     padding:.5em;
+	 }
+	 .directions{
+	     border:2px solid #6495ed;
+	     border-radius:1em;
+	     padding:.5em;
+	 }
+	     
+	 ul li:nth-child(odd) {
+	     background: #CCC;
+	     border: 0px solid white;
+	 }
+	 ol li:nth-child(odd){
+	     background: #CCC;
+	     border: 0px solid white;
+	     }
+	 
+	 div#YogurtBread .censored {
+	     background-color: black
+	 }
+	</style>
+    </head>
+    <body>
+        <div id="card">
+            <h1>Merry Christmas!</h1>
+            <p>
+		As a recent graduate, I've staked out cooking as an adult skill that I wanted to <span title="I haven't yet; see 'eggs' section for proof">master</span>.  As an unconventional christmas card, enjoy some of my favorite recipes! <span title="Check out comments, spans with hover like this one, and the javascript for the rest of the card!">*</span>
+            </p>
+        </div>
+        <div id="recipes">
+	    <h2>Recipes</h2>
+	    <div class="recipeGroup" id="BEANS">
+		<h2><span title="You could say I am full of them.  Cheap, protien-heavy, and effort-light, beans are a staple of the underpaid intern, which I was for the last like 6 months">Beans:</h2>
+		<div class="recipe" id="OptimalLentilStirfry">
+                    <h2 class="recipe_title"><span title="This is a family recipe, and the best lentil recipe I know.">Optimal Lentil Stir Fry</span></h2>
+                    <div class="details">
+			<span class="time">time: 1 hr</span>
+			<span class="servings">servings: 6</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+			<li class="ingredient">
+                            <span class="measure">1 cup</span>
+                            <span class="ingredient"><span title="Red or brown work. Red are quicker but mushier.">lentils</span></span>
+			</li>
+                        <li class="ingredient">
+			    <span class="measure">6 cups</span>
+                            <span class="ingredient">boiling water</span>
+			</li>
+                        <li class="ingredient">
+                            <span class="measure">4 tsp</span>
+                            <span class="ingredient"><span title="That I used an empty siracha bottle to squirt olive oil onto pretty much everything should tell you all you need to know about me, really">butter/oil</span></span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">1 whole</span>
+                            <span class="ingredient">onion</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">3 whole</span>
+                            <span class="ingredient">pimentos, chopped fine</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">2 cups</span>
+                            <span class="ingredient">tomatoes, diced</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">1 whole</span>
+                            <span class="ingredient">green pepper diced</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">to taste</span>
+                            <span class="ingredient">salt, pepper, soy sauce, hot sauce</span>
+                        </li>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Rinse, drain lentils</li>
+			<li class="step"><span title="Dicing vegetables with a sharp knife is one of my favorite things to do."> Chop</span>, sauté vegetables with butter/oil</li>
+                        <li class="step">let simmer with water for 45 minutes</li>
+                    </ol>
+		</div>
+                <div id="RedLentilCurry" class="recipe">
+                    <h2 class="recipe_title">Red Lentil Curry</h2>
+                    <div class="details">
+                        <span class="time">time: 40 min</span>
+                        <span class="servings">servings: 4</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <div class="ingredientGroup">
+			    <h3>First</h3>
+                            <li class="ingredient">
+				<span class="measure">1 cup</span>
+				<span class="ingredient">red lentils</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">1/2 large</span>
+				<span class="ingredient">onion, diced</span>
+                            </li>
+			</div>
+                        <div class="ingredientGroup">
+			    <h3>Second: spices</h3>
+                            <li class="ingredient">
+				<span class="measure">1.5 tsp</span>
+				<span class="ingredient">vegetable oil</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">1 tbsp</span>
+				<span class="ingredient">red curry paste</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">1.5 tsp</span>
+				<span class="ingredient">curry powder</span>
+                            </li>
+                            <li class="ingredient" optional=true>
+				<span class="measure">.5 tsp</span>
+				<span class="ingredient">ground tumeric</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">.5 tsp</span>
+				<span class="ingredient">ground cumin</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">.5 tsp</span>
+				<span class="ingredient">chili powder</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">.5 tsp</span>
+				<span class="ingredient">sugar</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">.5 tsp</span>
+				<span class="ingredient">minced garlic</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">.5 tsp</span>
+				<span class="ingredient">fresh ginger, minced</span>
+                            </li>
+			</div>
+                        <div class="ingredientGroup">
+                            <h3>Final</h3>
+			    <li class="ingredient">
+				<span class="measure">8 oz</span>
+				<span class="ingredient">tomato purée</span>
+                            </li>
+                        </div>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Wash the lentils in cold water until the water runs clear. Put lentils in a pot with enough water to cover; bring to a boil, place a cover on the pot, reduce heat to medium-low, and simmer, adding water during cooking as needed to keep covered, until tender, 15 to 20 minutes. Drain.
+                        </li>
+                        <li class="step">
+			    Heat vegetable oil in a large skillet over medium heat; cook and stir onions in hot oil until caramelized, about 20 minutes.
+                        </li>
+                        <li class="step">
+			    <span title="To my climbing friends and possibly to my coworkers: I am so, so sorry if I smelled like a construction worker.  This recipe is mostly to blame.">Stir spices into the onions. Increase heat to high and cook, stirring constantly, until fragrant, 1 to 2 minutes.</span>
+                        </li>
+                        <li class="step">
+			    Stir the tomato puree into the spices, remove from heat and stir into the lentils.
+			</li>
+                    </ol>
+                </div>
+	    </div>
+	    <div class="recipeGroup" id="vegetables">
+                <h2><span title="Turns out when I live on my own, I tend to eat overly healthy.  Hope these explain why.">Vegetables:</span></h2>
+                <div id="RoastedBruss" class="recipe">
+                    <h2 class="recipe_title"><span title="I first fell in love with roasted brussels sprouts at Quarters, a barcade off route 9 in Hadley before watching Star Wars: The Force awakens. I've been baking them as potluck contributions ever since.  I hope they live up to the memories.">Roasted Brussels Sprouts</span>/Butternut Squash</h2>
+                    <div class="details">
+                        <span class="time">time: 50 minutes</span>
+                        <span class="servings">servings: <span title="going on infinity. I like them a lot, and tend to make a lot.  Consider halving the recipe">4</span></span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <li class="ingredient">
+                            <span class="measure">1 lb</span>
+                            <span class="ingredient">brussels sprouts and/or butternut squash</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">2 tbsp</span>
+                            <span class="ingredient">olive oil</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">.75 tsp</span>
+                            <span class="ingredient">salt</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">.25 tsp <!-- go heavy on this --></span>
+                            <span class="ingredient">black pepper</span>
+                        </li>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Prep: preheat the oven to 400 F and cover a large baking sheet with baking parchment. If you're doing butternut squash, cut it into 1-cm cubes</li>
+                        <li class="step">half-fill medium tupperware with your vegetable(s) of choice.</li>
+                        <li class="step">Douse with <span title="go heavy on this">olive oil</span>, <span title="go light on this and add more.">salt </span>, <span title="go heavy on this">pepper</span></li>
+                        <li class="step">shake it<!-- the tupperware --> like a polaroid picture to coat vegetables with salt, oil, and pepper</li>
+                        <li class="step">place the coated vegetables on the baking sheet; <span title="if the brussels sprouts burn or blacken, that's fine; they're best crispy.">cook for 40 mins.</span></li>
+                    </ol>
+                </div>
+                <div id="Ratatouille" class="recipe">
+                    <h2 class="recipe_title"><span title="the movie was ok. so is this recipe. coincidence?">Ratatouille</span></h2>
+                    <div class="details">
+                        <span class="time">time: 1h</span>
+                        <span class="servings">servings: 4</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <div class="ingredientGroup" >
+			    <h3>Chop/Sautee First</h3>
+			    <li class="ingredient">
+				<span class="measure">2 tbsp</span>
+				<span class="ingredient">olive oil</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">3 cloves</span>
+				<span class="ingredient">garlic, minced</span>
+                            </li>
+                            <li class="ingredient" optional=true>
+				<span class="measure">2 tsp</span>
+				<span class="ingredient">dried parseley</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">1 medium</span>
+				<span class="ingredient">eggplant, 1cm cubes</span>
+                            </li>
+                        </div>
+                        <div class="ingredientGroup" >
+			    <h3>Chop/Layer second</h3>
+			    <li class="ingredient">
+				<span class="measure">1 large</span>
+				<span class="ingredient">onion, sliced into rings</span>
+                            </li>
+			    <li class="ingredient">
+				<span class="measure">2 medium</span>
+				<span class="ingredient">zucchini, <span title="imperial units are for suckers"sliced 2mm</span></span>
+                            </li>
+			    <li class="ingredient">
+				<span class="measure">2 cups</span>
+				<span class="ingredient">mushrooms, sliced</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">1 whole</span>
+				<span class="ingredient">green bell pepper, sliced</span>
+                            </li>
+			</div>
+                        <div class="ingredientGroup">
+			    <h3>Add Last</h3>
+			    <li class="ingredient">
+				<span class="measure">to taste</span>
+				<span class="ingredient">salt</span>
+                            </li>
+                            <li class="ingredient">
+				<span class="measure">1 cup</span>
+				<span class="ingredient">parmesan cheese, grated</span>
+                            </li>
+			    <li class="ingredient">
+				<span class="measure">2 large</span>
+				<span class="ingredient">tomatoes, sliced or diced<!-- you can totally use canned here.Hell, you could even use purée. --></span>
+                            </li>
+                        </div>     
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Preheat oven to 350 F. Coat bottom and sides of a 1 1/2 quart casserole dish with 1 tablespoon olive oil.</li>
+                        <li class="step">Heat remaining 1 tablespoon olive oil in a medium skillet over medium heat. Cook and stir garlic until lightly browned. Mix in parsley and eggplant. Cook and stir until eggplant is soft, about 10 minutes. Season with salt to taste.</li>
+                        <li class="step">Spread eggplant mixture evenly across bottom of prepared casserole dish. Sprinkle with a few tablespoons of Parmesan cheese. Spread zucchini in an even layer over top. Lightly salt and sprinkle with a little more cheese. Continue layering in this fashion, with onion, mushrooms, bell pepper, and tomatoes, covering each layer with a sprinkling of salt and cheese.</li>
+                        <li class="step">Bake in preheated oven for 45 minutes.</li>
+                    </ol>
+                </div>
+	    </div>
+	    <div class="recipeGroup">
+		<h2><span title="I may have exaggerated eating healthy">Carbs:</span></h2>
+                <div id="YogurtBread" class="recipe">
+		    <h2 class="recipe_title">Family Secret <span class="censored">Yogurt <span title="I've also fallen in love with my bread machie">Bread</span></span></h2>
+		    <div class="details">
+                        <span class="time">time:<span class="censored"> 1h 45min</span></span>
+                        <span class="servings">servings: <span class="censored">1 medium loaf</span></span>
+		    </div>
+		    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <div class="ingredientGroup">
+			    <h3>Start together</h3>
+			    <li class="ingredient">
+				<span class="measure">1 <span class="censored">cups</span></span>
+				<span class="ingredient"><span class="censored">warm water</span> (<span class="censored">like 90 F</span>)</span>
+			    </li>
+			    <li class="ingredient">
+				<span class="measure"><span class="censored">1</span> tbsp<!-- go heavy on this --></span>
+				<span class="ingredient"><span class="censored">honey</span></span>
+			    </li>
+			</div>
+                        <div class="ingredientGroup">
+			    <h3>Then add</h3>
+			    <li class="ingredient">
+				<span class="measure"><span class="censored">1 cup</span></span>
+				<span class="ingredient">yogurt <!-- my ruthless experimentation showed that using greek, normal lowfat, or whole plain yogurt works --></span>
+			    </li>
+			    <li class="ingredient">
+				<span class="measure">.5 tbsp</span>
+				<span class="ingredient"><span class="censored">salt</span></span>
+			    </li>
+			</div>
+                        <div class="ingredientGroup">
+			    <h3>Mix into</h3>
+			    <li class="ingredeint">
+                                <span class="measure">3.75 <span class="censored">cups</span></span>
+                                <span class="ingredient">bread <span class="censored">flour</span></span>
+			    </li>
+                        </div>
+		    </ul>
+		    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Mix <span class="censored">water, yeast,</span> and <span class="censored">honey.  <span class="censored">Let</span> sit <span class="censored">5 min.</span></li>
+			    <li class="step">Add <span class="censored">salt</span> and <span class="censored">yogurt</span>. <span class="censored">Sift</span> in<span class="censored"> flour and <span title="use a spoon to knead. This stuff sticks. Add extra flour as needed.">knead.</span></span><!--  --></li>
+			    <li class="step">Form <span class="censored"">a loaf</span>, <span class="censored">add to a</span> (greased) <span class="censored">bread pan, let rise 45 mins</span>.</li>
+			    <li class="step censored"><span class="censored">preheat oven to 350 F</span></li>
+			    <li class="step censored"><span class="censored">Bake at 350 F for 40 mins</span></li>
+		    </ol>
+                </div>
+                <div id="Crepes" class="recipe">
+                    <h2 class="recipe_title"><span title="easy to remember: 1 unit of each ingredient">Unit Vector</span> Crêpes</h2>
+                    <div class="details">
+                        <span class="time">30m</span>
+                        <span class="servings">2-3</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <li class="ingredient">
+                            <span class="measure">1 cup</span>
+                            <span class="ingredient">bread or <span title="bread flour is preferable">all-purpose flour</span></span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">1 cup</span>
+                            <span class="ingredient">milk</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">1 large</span>
+                            <span class="ingredient">egg</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">1 tsp</span>
+                            <span class="ingredient">salt</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">1 tbsp</span>
+                            <span class="ingredient">oil/butter</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure"><span title="This is also a recipe I learned from my Dad">Whatever</span></span>
+                            <span class="ingredient">you want to put onto the crèpes</span>
+                        </li>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step"><span title="If you do not **slowly** mix these ingredeints, the flour will form balls or bubbles that will become ugly, tasteless surprises in your crêpes.">Slowly stir milk into flour </span></li>
+                        <li class="step">Add, whisk in eggs and salt.</li>
+                        <li class="step">Grease and heat a nonstick or smooth cast-iron pan until water flicked onto it sizzles.</li>
+                        <li class="step">Pour around .25 cups of batter on and quickly twirl the pan to form a circle</li>
+                        <li class="step">When the edges of the crepe begin turning up, flip it.  <span title="BONUS from the recipes I retained from my semester in Paris: if you want a crępe salée, crack an egg onto the cooking crẽpe and spread it around with a fork.  Add cheese (cambert preferably) an fold in half, flip twice to make sure the egg cooks through.">Wait another minute</span> and serve</li>
+                    </ol>
+                </div>
+                <div id="oatmeal" class="recipe">
+                    <h2 class="recipe_title">Oatmeal</h2>
+                    <div class="details">
+                        <span class="time">3 minutes</span>
+                        <span class="servings">1</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <li class="ingredient">
+                            <span class="measure">.25-.5 cups</span>
+                            <span class="ingredient">dry oatmeal</span>
+                        </li>
+                        <li class="ingredient">
+                            <span class="measure">.5-1 cup</span>
+                            <span class="ingredient">water, or to taste</span>
+                        </li>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Cover oatmeal with water in bowl.</li>
+                        <li class="step">Microwave for 2 minutes<!-- and hope it doesn't overflow --></li>
+                        <li class="step">Eat with whatever toppings you can find to convince yourself this isn't gruel</li>
+                        <li class="step">Wish you had <span title="Working in two startups with free coffee has made me into a complete addict in a way that even senior year of college never did.  I tend to dislike spending money on my own coffee, though, since I can usually wait for work.">coffee</span></li>
+                    </ol>
+                </div>
+	    </div>
+            <div class="recipeGroup">
+                <h2><span title="Eggs are a major food group for those learning to cook.">Eggs:</span></h2>
+                <div id="FriedEggs" class="recipe">
+                    <h2 class="recipe_title">Fried Eggs</h2>
+                    <div class="details">
+                        <span class="time">10m</span>
+                        <span class="servings">1</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <li class="ingredient">
+                            <span class="measure">2</span>
+                            <span class="ingredient">eggs</span>
+                        </li>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">grease, heat <span title="Now that I'm living at home for the winter, I get to use my Dad's cast-iron skillet and it is AMAZING. Future gift-buyers, take note."> a cast-iron skillet</span>.  Fry eggs.</li>
+                    </ol>
+                </div>
+                <div id="SunnySideUp" class="recipe">
+                    <h2 class="recipe_title">Sunny Side Up Eggs</h2>
+                    <div class="details">
+                        <span class="time">10m</span>
+                        <span class="servings">1</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <li class="ingredient">
+                            <span class="measure">same</span>
+                            <span class="ingredient">as fried eggs</span>
+                        </li>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Forget you were frying eggs. Manage to remember before you burn everything.</li>
+                    </ol>
+                </div>
+                <div id="bipimbap" class="recipe">
+                    <h2 class="recipe_title">Vegetarian "<span title="To all my korean friends, should you see this, this probably isn't near the real deal.  Please send me whatever authentic recipes you have. Real bipimbap is dope.">Bibimbap</span>"</h2>
+		    <!--  -->
+                    <div class="details">
+                        <span class="time">time:50m</span>
+                        <span class="servings">3</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <div class="group">
+			    <h3>Stir Fry</h3>
+			    <li class="ingredeint">
+                                <span class="measure">2 tbsp</span>
+                                <span class="ingredient"> sesame oil</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">1 cup</span>
+                                <span class="ingredient">carrot matchsticks </span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">1 cup</span>
+                                <span class="ingredient">zucchini matchsticks</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">1 cup packed</span>
+                                <span class="ingredient">bean sprouts</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">6 oz</span>
+                                <span class="ingredient">ounces canned bamboo shoots, drained</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">.5 cup packed</span>
+                                <span class="ingredient">sliced mushrooms</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">1/3 cup</span>
+                                <span class="ingredient">sliced green onions</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">to taste</span>
+                                <span class="ingredient">salt</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">2 tbsp</span>
+                                <span class="ingredient">soy sauce </span>
+			    </li>
+                        </div>
+                        <div class="group" group="Other stuff">
+			    <h3>Other stuff</h3>
+			    <li class="ingredeint">
+                                <span class="measure">2 cups</span>
+                                <span class="ingredient">cooked and cooled rice </span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">1 tbsp</span>
+                                <span class="ingredient">butter/oil</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">3</span>
+                                <span class="ingredient">eggs</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">.25 tsp</span>
+                                <span class="ingredient"> ground black pepper</span>
+			    </li>
+			    <li class="ingredeint">
+                                <span class="measure">3 tsp</span>
+                                <span class="ingredient"><span title="siracha is what I had, siracha is what I used."> sweet red chili sauce <!--  -->, or to taste</span>
+			    </li>				
+                        </div>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Chop vegetables into thin sticks.</li>
+                        <li class="step">Stir fry vegetables. Cook rice for 20min</li>
+                        <li class="step">Stir cooked rice, soy sauce, and black pepper in the same skillet until the rice is hot. In a separate skillet over medium heat, melt butter and gently fry eggs, turning once, until the yolks are still slightly runny but the egg whites are firm, about 3 minutes per egg. [see <a href="#FriedEggs">Fried Eggs</a> if you do not know how to fry eggs.]</li>
+                        <li class="step"> divide servings, top rice with eggs and stir fry. Add hot sauce to taste.</li>
+                    </ol>
+                </div>
+		<div id="Scrambled" class="recipe">
+                    <h2 class="recipe_title">Scrambled Eggs</h2>
+                    <div class="details">
+                        <span class="time">10m</span>
+                        <span class="servings">1</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+                        <li class="ingredient">
+                            <span class="measure">same</span>
+                            <span class="ingredient">as fried eggs</span>
+                        </li>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Fuck up the eggs you were frying. Pretend this is what you meant.</li>
+                        <li class="step">Serve with cheese and toast.</li>
+                    </ol>
+                </div>
+	    </div>
+            <div class="recipeGroup">
+                <h2><span title="definitely exaggerated the healthy eating">Dessert:</span></h2>
+                <div id="HotChocolate" class="recipe">
+                    <h2 class="recipe_title"><span title="For the uninitiated: the Creamery on the way to Notchview reservation in Windsor, MA, has the best hot chocolate in the state. This is pretty close to their recipe, minus some butter (no joke).  I'm planning on initiating the skiers I coach to the experience as soon as possible.">Creamery</span> Hot Chocolate</h2>
+                    <div class="details">
+                        <span class="time">time: 10m</span>
+                        <span class="servings">servings: 1</span>
+                    </div>
+                    <ul class="ingredients">
+			<h3>Ingredients</h3>
+			<li class="ingredeint">
+                            <span class="measure">1 cup</span>
+                            <span class="ingredient">whole milk</span>
+                        </li>
+			<li class="ingredeint">
+                            <span class="measure">1.5</span>
+                            <span class="ingredient">teaspoons brown sugar, or to taste</span>
+                        </li>
+			<li class="ingredeint">
+                            <span class="measure">2 oz solid or 6 tbsp powder and 1 tbsp cream</span>
+                            <span class="ingredient">dark chocolate (such as Moser Roth® 85% Dark Chocolate), or to taste</span>
+                        </li>
+			<li class="ingredeint">
+                            <span class="measure">1 tbsp</span>
+                            <span class="ingredient">heavy whipping cream, or more to taste</span>
+                        </li>
+			<li class="ingredeint">
+                            <span class="measure">1 pinch</span>
+                            <span class="ingredient">ground cinnamon, or more to taste</span>
+                        </li>
+                    </ul>
+                    <ol class="directions">
+			<h3>Directions</h3>
+                        <li class="step">Heat milk for 3-4 minutes, then slowly stir in chocolate and sugar. Finish with cream to cool it for drinking</li>
+                    </ol>
+                </div>
+            </div>
+	</div>
+        </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script id="mainscript">
+	 // writing this in jquery so you can use it on safari / mobile.
+	 //TODO: alt text
+	 
+	 $('.recipeGroup, .ingredients, .ingredientGroup, .recipe, .directions, #recipes').click(
+	     function(event) { 
+		 $(this).children(':not(:first)').slideToggle();
+		 event.stopPropagation();
+		 }
+	     )
+
+	 alert('Wrapping present(s)...');
+	  $(document).ready( 
+	    function() {
+		$('.ingredientGroup, .directions, .ingredients, .recipe, .recipeGroup, #recipes').each(
+		    function(){
+			$(this).children(':not(:first)').slideToggle();
+		    }
+		)
+	    }
+	  )
+	 
+	 function declassify() {
+	     $('#YogurtBread *').css('background-color', 'white');
+	     }
+	</script>
+    </body>
+</html>
