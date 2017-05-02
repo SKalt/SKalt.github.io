@@ -1,0 +1,33 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#headshot {
+    display: block;
+    margin: auto;
+}
+
+#gml-target {
+    width: 100%;
+}
+
+.portfolio-toggle {
+    border: 1px solid #e7e7e7;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+.portfolio-item {
+    display: none;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+button {
+    margin-bottom: .5em;
+}
+
+.my-blurb {
+    font-size: 2em;
+        background-color: white
+}
