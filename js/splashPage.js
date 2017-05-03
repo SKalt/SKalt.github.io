@@ -1,11 +1,11 @@
 /* toggles */
 $('.portfolio-toggle').on('click', function () {
     $(this).next('.portfolio-item').slideToggle(300);
-})
+    // TODO: ensure the toggled item is in view
+});
 
 /* Geojson -> GML example */
 //TODO: use webpack to manage imports instead of copying/pasting
-
 
 /* DISCLAIMER: gml 2.1.2-compliant only
 This hack only supports GML simple features.
@@ -220,6 +220,17 @@ function formatXml(xml) {
     return formatted;
 }
 
-
 /* redirect on landing */
-$(window.location.hash).parents('.portfolio-item').css('display', 'block')
+$(window.location.hash).parents('.portfolio-item').css('display', 'block');
+$('a').on("click", function(){
+let href = $(this).attr('href');
+if (href[0] == '#'){
+ $(href).parents('.portfolio-item').css('display', 'block');
+}
+}
+);
+
+$('a.link-right').on("click", function(e){
+e.stopPropagation();
+}
+);

@@ -24,17 +24,21 @@ fs.readdirSync('./src/portfolio-items').forEach(
 		}
 	    }
 	);
-	portfolioContext[item] = {demo, blurb, title, hasDemo:(demo?true:false)};
+	portfolioContext[item] = {
+	    item, demo, blurb, title, hasDemo:(demo?true:false)
+	};
 	//
     }
 );
 portfolioContext['geojson-to-gml'].glyphicon = 'map-marker';
 portfolioContext['wfst-2-examples'].glyphicon = 'globe';
 portfolioContext['UDR'].glyphicon = 'refresh';
+portfolioContext['about-me'].glyphicon = 'user';
 portfolioContext = [
     'geojson-to-gml',
     'wfst-2-examples',
-    'UDR'
+    'UDR',
+    'about-me'
 ].map((e)=>portfolioContext[e]);
 console.log(portfolioContext);
 

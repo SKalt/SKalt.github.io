@@ -17,6 +17,15 @@ body {
     border-radius: 2px;
 }
 
+.link-right {
+display:none;
+}
+
+.portfolio-toggle:hover .link-right {
+display:inline;
+font-size: .8em;
+}
+
 .portfolio-item {
     display: none;
     margin-right: 2em;
