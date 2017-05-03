@@ -1,9 +1,3 @@
-[submodule "AmherstGraph"]
-	path = AmherstGraph
-	url = https://github.com/SKalt/AmherstGraph.git
-[submodule "BatesGraph"]
-	path = BatesGraph
-	url = https://github.com/SKalt/BatesGraph.git
-[submodule "5CollegeGraph"]
-	path = 5CollegeGraph
-	url = https://github.com/SKalt/5CollegeGraph.git
+[submodule "src/univariate_distribution_relationships"]
+	path = src/univariate_distribution_relationships
+	url = https://github.com/SKalt/univariate_distribution_relationships.git
