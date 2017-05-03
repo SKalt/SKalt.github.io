@@ -1,16 +1,19 @@
 const handlebars = require('handlebars');
 const fs = require('fs');
 
-
-let template = (filePath) => handlebars.compile(fs.readFileSync(path));
+let template = (filePath) => handlebars.compile(fs.readFileSync(filePath, {encoding:'utf8'}));
 // init
-var context = {};
-fs.readdirSync('/src/portfolio-items').forEach(
+var  portfolioContext = {};
+fs.readdirSync('./src/portfolio-items').forEach(
     function(item){
+	console.log(item);
 	var demo, blurb, title;
-	var _path = 'src/portfolio-items/' + item;
+	var _path = './src/portfolio-items/' + item;
 	fs.readdirSync(_path).forEach(
 	    function(f){
+		if (/~|#/.exec(f)){
+		    return;
+		}
 		const getFile = ()=>fs.readFileSync(_path + '/' + f);
 		if (/demo/i.exec(f)){
 		    demo = getFile();
@@ -21,13 +24,24 @@ fs.readdirSync('/src/portfolio-items').forEach(
 		}
 	    }
 	);
-	context[item] = {demo, blurb, title, hasDemo:(demo?true:false)};
+	portfolioContext[item] = {demo, blurb, title, hasDemo:(demo?true:false)};
 	//
     }
 );
-	
-// init template
+portfolioContext['geojson-to-gml'].glyphicon = 'map-marker';
+portfolioContext['wfst-2-examples'].glyphicon = 'globe';
+portfolioContext['UDR'].glyphicon = 'refresh';
+portfolioContext = [
+    'geojson-to-gml',
+    'wfst-2-examples',
+    'UDR'
+].map((e)=>portfolioContext[e]);
+console.log(portfolioContext);
 
+var mainTemplate = template('main.handlebars', {encoding:'utf8'});
+console.log(mainTemplate({"portfolio-item":portfolioContext}));
+
+fs.writeFileSync('index.html', mainTemplate({"portfolio-item":portfolioContext}));
 
 console.log('built');
 

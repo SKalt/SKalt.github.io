@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SKalt.GitHub.io</title>
+    <title>skalt.gitHub.io</title>
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
@@ -16,8 +16,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Portfolio</a></li>
-                <!-- make dropdown -->
+                <li class="active"><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#about">About Me</a></li>
             </ul>
         </div>
@@ -28,17 +27,16 @@
         <div id="portfolio">
             <div class="col-lg-12">
                 <div class="row portfolio-toggle">
-                    <!-- toggle -->
                     <div class="col-xs-1">
                         <h2><span class="glyphicon glyphicon-map-marker"></span></h2>
                     </div>
                     <div class="col-xs-11">
-                        <h2>Geojson to GML translator</h2>
+                        <h2>GeoJSON to GML Conversion</h2>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-xs-12" id="portfolio-geojson">
                             <p>GeoJSON works: it succinctly describes geometric features in a way both humans and machines can understand. As a consequence, GeoJSON has become one of the leading data formats in GIS, and since it is a species of JSON, it naturally rules online GIS visualization. However, the <abbr title="Open Geospatial Consortium">OGC</abbr> has mainatined another standard, <abbr title="Geography Markup Language">GML</abbr> since the '90s [<a href="https://en.wikipedia.org/wiki/Geography_Markup_Language#History">citation</a>]. I wrote a javascript module to translate GeoJSON to GML to allow web GIS technologies to better talk to older tools that rely on OGC GML, i.e. <a href="http://geoserver.org/">Geoserver</a>.</p>
                             <p><a href="https://openlayers.org/">OpenLayers</a> and <a hre="http://flexberry.github.io/Leaflet-WFST/">Leaflet-WFST</a> can translate GeoJSON to GML. Both are full-fledged web GIS tools. This is only a string formatting library to translate GeoJSON to GML so that it should plug-and-play in any context.</p>
                             <span><a href="https://github.com/SKalt/geojson-to-gml.git">Git Repo</a></span>
@@ -64,94 +62,54 @@
                                     <pre><code id="gml-target"></code></pre>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="row portfolio-toggle">
-                    <!-- toggle -->
                     <div class="col-xs-1">
                         <h2><span class="glyphicon glyphicon-globe"></span></h2>
                     </div>
                     <div class="col-xs-11">
-                        <h2>WFS-T 2 examples</h2>
+                        <h2>WFS-T 2 Examples</h2>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-xs-12" id="portfolio-wfst-examples">
                             <p>Geoserver's documentation on WFS-T is excellent for WFS-T 1 and somewhat lacking for WFS-T 2. I've compiled my notes on the newer OGC standard <a href="https://gist.github.com/SKalt/0f4b757209687331c8a1d40aecbf69f9">here</a>.</p>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-12">
-            <div class="row portfolio-toggle">
-                <!-- toggle -->
-                <div class="col-xs-1">
-                    <h2><span class="glyphicon glyphicon-stats"></span></h2>
-                </div>
-                <div class="col-xs-11">
-                    <h2>Relationships between Univariate Probability Distributions</h2>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="row">
-                    <div class="col-xs-12">
-
+            <div class="col-lg-12">
+                <div class="row portfolio-toggle">
+                    <div class="col-xs-1">
+                        <h2><span class="glyphicon glyphicon-refresh"></span></h2>
+                    </div>
+                    <div class="col-xs-11">
+                        <h2>Relationships between Univariate Probability Distributions</h2>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-lg-12">
-            <div class="row portfolio-toggle">
-                <!-- toggle -->
-                <div class="col-xs-1">
-                    <h2><span class="glyphicon glyphicon-user"></span></h2>
-                </div>
-                <div class="col-xs-11">
-                    <h2>About me</h2>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="row">
-                    <div class="col-xs-4 col-md-4 col-lg-4">
-                        <img id="headshot" src="img/me3.jpg " class="img-circle ">
-                    </div>
-                    <div class="col-xs-9 col-md-8 my-blurb">
-                        <p>I'm a contracting full-stack engineer who graduated from Amherst College in 2016. I'm interested in GIS, network analysis, education, statistics, and economics.</p>
-                        <div class="col-xs-12 ">
-                            <a href="https://www.linkedin.com/in/steven-kalt-74739374/">
-                                <img src="img/In-2CRev-34px-R.png">
-                            </a>
-                            <a href="https://github.com/SKalt">
-                                <img src="img/GitHub-Mark-32px.png">
-                            </a>
+                <div class="portfolio-item">
+                    <div class="row">
+                        <div class="col-xs-12" id="portfolio-udr">
+                            <p>In 1985, Leemis and McQueston published an article "<a href="http://www.tandfonline.com/doi/abs/10.1080/00031305.1986.10475379" target="blank">Univariate Distribution Relationships</a>" in the American Statistician, an <a href="http://www.tandfonline.com/doi/abs/10.1198/000313008X270448" target="blank">update</a> in 2008, and in 2012 they published an interactive version of the chart using <code>area</code> tags. In 2017, I wrote a short python script to scrape the data contained in the <code>area</code> tags and produce a reuseable and extendable dataset. The properties of relationships and links I had to copy out by hand. The result is below.</p>
+                            <p>Leemis, his collaborators, and I have collective put decades into creating this. I've contributed my day or so because I hope building tools that allow students to explore the relationships behind mathematical objects is the best way to retain them. </p>
+                            <!-- TODO: write well -->
+                            <p class="citation"> Leemis, Lawrence M, and Jacquelyn T McQueston. 2008. “Univariate Distribution Relationships.” The American Statistician 62 (1): 45–53. doi:10.1198/000313008X270448.</p>
+                        </div>
+                        <div id="udr-demo">
+                            <iframe src="src/univariate_distribution_relationships/visualize/udr_visualization.html"></iframe>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-
             </div>
         </div>
     </div>
-
-
-    <!-- contact info -->
-
-    <!-- Articles [max 5] -->
-
-    <!-- geojson/gml examples -->
-    <!-- mapbox example: ? -->
-    <!-- leemis -->
-    <!-- Xpress -->
-    <!-- ?? -->
-    <!-- pagination: use params.json -->
-
     <script src="js/splashPage.js"></script>
 </body>
 

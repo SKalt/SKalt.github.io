@@ -29,5 +29,17 @@ button {
 
 .my-blurb {
     font-size: 2em;
-        background-color: white
+    background-color: white
+}
+
+#udr-demo {
+    width: 960px;
+    height: 600px;
+    margin: auto;
+}
+
+iframe {
+    width: 960px;
+    height: 600px;
+    margin: auto;
 }

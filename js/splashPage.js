@@ -1,6 +1,5 @@
 /* toggles */
 $('.portfolio-toggle').on('click', function () {
-    console.log('registered');
     $(this).next('.portfolio-item').slideToggle(300);
 })
 
@@ -115,9 +114,7 @@ var converter = {
      * @throws {} TODO******
      */
     '_multi': function (geom, name, srsName, memberPrefix = '') {
-        let multi = `<gml:${name}${(srsName ? `
-        srsName = "${srsName}"
-        ` : '')}>`;
+        let multi = `<gml:${name} ${(srsName ? `srsName = "${srsName}"` : '')}>`;
         for (let member of geom) {
             var _memberPrefix = '';
             if (member.type) {
