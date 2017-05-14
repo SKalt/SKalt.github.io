@@ -10,7 +10,6 @@ $('.portfolio-toggle').on('click', function () {
 /* DISCLAIMER: gml 2.1.2-compliant only
 This hack only supports GML simple features.
 GML models from https://docs.oracle.com/cd/E11882_01/appdev.112/e11829/oracle/spatial/util/GML.html
-
  */
 /**
  * returns a string with the first letter capitalized.
@@ -221,16 +220,12 @@ function formatXml(xml) {
 }
 
 /* redirect on landing */
-$(window.location.hash).parents('.portfolio-item').css('display', 'block');
-$('a').on("click", function(){
-let href = $(this).attr('href');
-if (href[0] == '#'){
- $(href).parents('.portfolio-item').css('display', 'block');
-}
-}
-);
+$(document).ready(()=>$(window.location.hash).show());
 
-$('a.link-right').on("click", function(e){
-e.stopPropagation();
-}
+$('a.link-right').on(
+    "click",
+    function(e){
+	$($(this).attr('href')).show();
+	e.stopPropagation();
+    }
 );
