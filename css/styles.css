@@ -22,8 +22,21 @@ display:none;
 }
 
 .portfolio-toggle:hover .link-right {
-display:inline;
-font-size: .8em;
+    display:inline;
+    font-size: .8em;
+}
+
+.portfolio-toggle:hover .section-icon {
+    display:none;
+}
+
+.section-icon {
+    display:inline;
+    font-size: .8em;
+}
+
+.portfolio-toggle:hover {
+    border: 2px solid #000;
 }
 
 .portfolio-item {
