@@ -12,13 +12,13 @@ body {
 }
 
 .portfolio-toggle {
-    border: 1px solid #e7e7e7;
+    border: 2px solid #e7e7e7;
     margin: 2px;
     border-radius: 2px;
 }
 
-.link-right {
-display:none;
+.portfolio-toggle:hover {
+    border: 2px solid #000;
 }
 
 .portfolio-toggle:hover .link-right {
@@ -30,13 +30,13 @@ display:none;
     display:none;
 }
 
+.link-right {
+display:none;
+}
+
 .section-icon {
     display:inline;
     font-size: .8em;
-}
-
-.portfolio-toggle:hover {
-    border: 2px solid #000;
 }
 
 .portfolio-item {
