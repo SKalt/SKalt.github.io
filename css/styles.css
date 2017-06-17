@@ -5,6 +5,8 @@ body {
 #headshot {
     display: block;
     margin: auto;
+    width:100%;
+    max-width:300px;
 }
 
 #gml-target {
