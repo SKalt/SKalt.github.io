@@ -1,20 +1,37 @@
 import { geomToGml } from 'geojson-to-gml-3';
+import {Transaction, Insert} from 'geojson-to-wfs-t-2'; // More later, I guess
 /* toggles */
 $('.portfolio-toggle').on('click', function () {
     $(this).next('.portfolio-item').slideToggle(300);
     // TODO: ensure the toggled item is in view
 });
 
+/* translation function */
+function translator(button, from, to, translatorCb){
+  $(button).click(()=>{
+    const toTranslate = JSON.parse($(from).text() || $(from).val());
+    try {
+      const translated = formatXml(translatorCb(toTranslate));
+      try {
+	$(to).text(translated);
+      } catch (err){
+	$(to).val(translated);
+      }
+    } catch (err){
+      alert(err);
+    }
+  });
+}
+
 /* Geojson -> GML example */
-
-$('#translate-geojson').on('click', function () {
-    console.log('clicked');
-
-    console.log('clicked');
-    var geojson = JSON.parse($('#geojson-sample').text());
-    $('#gml-target').text(formatXml(geomToGml(geojson).replace('\n', ' ')));
-});
-
+translator(
+  '#translate-geojson', '#geojson-sample', '#gml-target',
+  geomToGml
+);
+translator(
+  '#translate-geojson', '#geojson-sample', '#gml-target',
+  (x)=>Transaction(Insert(x))
+);
 function formatXml(xml) {
     var formatted = '';
     var reg = /(>)(<)(\/*)/g;

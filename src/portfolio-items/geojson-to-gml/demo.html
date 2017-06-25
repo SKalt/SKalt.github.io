@@ -1,7 +1,7 @@
-<div id="geojson-demo">
+<div id="geojson-to-gml-demo">
     <h3>Demo</h3>
-    <div id="geojson-div" class="col-md-6">
-        <pre><code id="geojson-sample" class="language-javascript">{ "type": "GeometryCollection",
+    <div class="geojson-div col-md-6">
+        <pre><code class="geojson-sample language-javascript" contenteditable>{ "type": "GeometryCollection",
     "geometries": [
     { "type": "Point",
               "coordinates": [100.0, 0.0]
@@ -10,7 +10,7 @@
           "coordinates": [ [101.0, 0.0], [102.0, 1.0] ]
         }
     ]
-}</code></pre>
+}</code></pre><!-- TODO: MVC this; the JSON should come from JS to this and be fed to the translator -->
         <button id="translate-geojson" type="button" class="btn btn-secondary">Translate</button>
         <br/>
         <br/>

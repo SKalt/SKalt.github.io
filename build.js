@@ -5,40 +5,42 @@ let template = (filePath) => handlebars.compile(fs.readFileSync(filePath, {encod
 // init
 var  portfolioContext = {};
 fs.readdirSync('./src/portfolio-items').forEach(
-    function(item){
-	console.log(item);
-	var demo, blurb, title;
-	var _path = './src/portfolio-items/' + item;
-	fs.readdirSync(_path).forEach(
-	    function(f){
-		if (/~|#/.exec(f)){
-		    return;
-		}
-		const getFile = ()=>fs.readFileSync(_path + '/' + f);
-		if (/demo/i.exec(f)){
-		    demo = getFile();
-		} else if (/blurb/i.exec(f)){
-		    blurb = getFile();
-		} else if (/title/i.exec(f)){
-		    title = getFile();
-		}
-	    }
-	);
-	portfolioContext[item] = {
-	    item, demo, blurb, title, hasDemo:(demo?true:false)
-	};
-	//
-    }
+  function(item){
+    console.log(item);
+    var demo, blurb, title;
+    var _path = './src/portfolio-items/' + item;
+    fs.readdirSync(_path).forEach(
+      function(f){
+	if (/~|#/.exec(f)){
+	  return;
+	}
+	const getFile = ()=>fs.readFileSync(_path + '/' + f);
+	if (/demo/i.exec(f)){
+	  demo = getFile();
+	} else if (/blurb/i.exec(f)){
+	  blurb = getFile();
+	} else if (/title/i.exec(f)){
+	  title = getFile();
+	}
+      }
+    );
+    portfolioContext[item] = {
+      item, demo, blurb, title, hasDemo:(demo ? true : false)
+    };
+    //
+  }
 );
 portfolioContext['geojson-to-gml'].glyphicon = 'map-marker';
 portfolioContext['wfst-2-examples'].glyphicon = 'globe';
 portfolioContext['UDR'].glyphicon = 'refresh';
 portfolioContext['about-me'].glyphicon = 'user';
+portfolioContext['about-me'].glyphicon = 'file';
 portfolioContext = [
-    'geojson-to-gml',
-    'wfst-2-examples',
-    'UDR',
-    'about-me'
+  'geojson-to-gml',
+  'wfst-2-examples',
+  'UDR',
+  'pdf-hardlinkr',
+  'about-me'
 ].map((e)=>portfolioContext[e]);
 console.log(portfolioContext);
 
