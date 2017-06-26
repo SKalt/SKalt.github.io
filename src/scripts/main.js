@@ -1,4 +1,5 @@
-import { geomToGml } from 'geojson-to-gml-3';
+import { geomToGml as gml2 } from 'geojson-to-gml-2';
+import { geomToGml as gml3 } from 'geojson-to-gml-3';
 import {Transaction, Insert} from 'geojson-to-wfs-t-2'; // More later, I guess
 /* toggles */
 $('.portfolio-toggle').on('click', function () {
@@ -8,9 +9,10 @@ $('.portfolio-toggle').on('click', function () {
 
 /* translation function */
 function translator(button, from, to, translatorCb){
-  $(button).click(()=>{
-    const toTranslate = JSON.parse($(from).text() || $(from).val());
+  $(button).mouseup((e)=>{
     try {
+      debugger;
+      const toTranslate = JSON.parse($(from).text());
       const translated = formatXml(translatorCb(toTranslate));
       try {
 	$(to).text(translated);
@@ -25,12 +27,16 @@ function translator(button, from, to, translatorCb){
 
 /* Geojson -> GML example */
 translator(
-  '#translate-geojson', '#geojson-sample', '#gml-target',
-  geomToGml
+  '#translate-geojson-gml-2', '#geojson-sample-gml', '#gml-target',
+  (toTranslate) => gml2(toTranslate)
 );
 translator(
-  '#translate-geojson', '#geojson-sample', '#gml-target',
-  (x)=>Transaction(Insert(x))
+  '#translate-geojson-gml-3', '#geojson-sample-gml', '#gml-target',
+  (toTranslate) => gml3(toTranslate)
+);
+translator(
+  '#translate-geojson-wfst', '#geojson-sample-wfs', '#gml-target',
+  (toTranslate)=>Transaction(Insert(toTranslate))
 );
 function formatXml(xml) {
     var formatted = '';

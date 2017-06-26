@@ -1,41 +1,45 @@
-<p>
-    PDF documents are everywhere since 'PDF' lives up to its name: Portable
-    Digital Format.  It can combine raster and vector data in a while preserving
-    the publisher's layout in a cartesian system<sup><a class=".sup" href="#sup-1">1</a></sup>.
-    PFS may be easy on the eye, but to machines they are much less tractable.
-    Unlike HTML, selecting words, images, and blocks of text in PDFs is based on
-    spatial coordinates and some embedded "fragment identifier" bookmarks. Still,
-    identifying and linking to portions of PDFs is possibe.
-</p>
-<p>
-    Sometime between 2005-2007, Adobe introduced "PDF Open Parameters" to allow users
-    (machine and otherwise) to identify and link to sections of PDFs. The
-    general syntax is <code>[URL]#parameter_1=value&parameter2=list,values</code>.
-    The best-known and most widely implemented pdf open parameter is
-    <code>#page=num</code>.  You may not have known you may specify <code>zoom=percent,x,y</code>
-    where x and y are coordinates from the top-left of the page, or <code>highlight=x0,y0,x1,y1</code>
-    describing a rectangle to highlight on open. <a href="http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/pdf_open_parameters.pdf#page=7">Adobe lists</a>
-    even more open parameters and a method for combining multiple parameters with
-    ampersands.  However, few of these open parameters aside from page and zoom
-    are implemented in the browser.  Mozilla, is working to implement
-    pdf open parameters, but
-    <a href="https://github.com/mozilla/pdf.js/issues/2757">
-	the features seem to have been on the back burner since 2014.</a>
-</p>
-<p>
-    That's why I built pdf-hardlinkr, which you can try out
-    <a href="./src/pdf-hardlinkr/">here</a>.  It uses a <code>svg</code> overlay
-    on top of <a href="https://github.com/mozilla/pdf.js">PDF.js</a>'s
-    <code>canvas</code> to highlight a urlencoded point.
-</p>
-<img src="./img/pdf-hardlinkr-example.png" alt="pdf-hardlinkr example: red is linked-to">
-<p>This a nonstandard
-    feature and so uses nonstandard urlencoding syntax, but in the future I hope
-    to implement further standard PDF Open parameters in a more complete version
-    of the PDF.js viewer.
-    <!-- TODO: form to try out the pdf open parameters -->
-</p>
-<p>
-    <a id="sup-1"></a>Since PDF relies on cartesian coordinates, you might be
-    able to hack together GIS tools to display and query data in pdfs.
-</p>
+<div class="col-md-6">
+    <p>
+	PDF documents are everywhere since 'PDF' lives up to its name: Portable
+	Digital Format.  It can combine raster and vector data in a while preserving
+	the publisher's layout in a cartesian system<sup><a class=".sup" href="#sup-1">1</a></sup>.
+	PFS may be easy on the eye, but to machines they are much less tractable.
+	Unlike HTML, selecting words, images, and blocks of text in PDFs is based on
+	spatial coordinates and some embedded "fragment identifier" bookmarks. Still,
+	identifying and linking to portions of PDFs is possibe.
+    </p>
+    <p>
+	Sometime between 2005-2007, Adobe introduced "PDF Open Parameters" to allow users
+	(machine and otherwise) to identify and link to sections of PDFs. The
+	general syntax is <code>[URL]#parameter_1=value&parameter2=list,values</code>.
+	The best-known and most widely implemented pdf open parameter is
+	<code>#page=num</code>.  You may not have known you may specify <code>zoom=percent,x,y</code>
+	where x and y are coordinates from the top-left of the page, or <code>highlight=x0,y0,x1,y1</code>
+	describing a rectangle to highlight on open. <a href="http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/pdf_open_parameters.pdf#page=7">Adobe lists</a>
+	even more open parameters and a method for combining multiple parameters with
+	ampersands.  However, few of these open parameters aside from page and zoom
+	are implemented in the browser.  Mozilla, is working to implement
+	pdf open parameters, but
+	<a href="https://github.com/mozilla/pdf.js/issues/2757">
+	    the features seem to have been on the back burner since 2014.</a>
+    </p>
+    <p>
+	That's why I built pdf-hardlinkr, which you can try out
+	<a href="./src/pdf-hardlinkr/">here</a>.  It uses a <code>svg</code> overlay
+	on top of <a href="https://github.com/mozilla/pdf.js">PDF.js</a>'s
+	<code>canvas</code> to highlight a urlencoded point.
+    </p>
+</div>
+<div class="col-md-6">
+    <img src="./img/pdf-hardlinkr-example.png" alt="pdf-hardlinkr example: red is linked-to">
+    <p>This a nonstandard
+	feature and so uses nonstandard urlencoding syntax, but in the future I hope
+	to implement further standard PDF Open parameters in a more complete version
+	of the PDF.js viewer.
+	<!-- TODO: form to try out the pdf open parameters -->
+    </p>
+    <p>
+	<a id="sup-1">1</a>Since PDF relies on cartesian coordinates, you might be
+	able to hack together GIS tools to display and query data in pdfs.
+    </p>
+</div>

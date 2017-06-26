@@ -34,13 +34,14 @@ portfolioContext['geojson-to-gml'].glyphicon = 'map-marker';
 portfolioContext['wfst-2-examples'].glyphicon = 'globe';
 portfolioContext['UDR'].glyphicon = 'refresh';
 portfolioContext['about-me'].glyphicon = 'user';
-portfolioContext['about-me'].glyphicon = 'file';
+portfolioContext['pdf-hardlinkr'].glyphicon = 'file';
 portfolioContext = [
+  'about-me',
+  // 'geojson-to-wfs-t-2'
   'geojson-to-gml',
   'wfst-2-examples',
   'UDR',
-  'pdf-hardlinkr',
-  'about-me'
+  'pdf-hardlinkr'
 ].map((e)=>portfolioContext[e]);
 console.log(portfolioContext);
 
