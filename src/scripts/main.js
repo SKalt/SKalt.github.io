@@ -68,12 +68,11 @@ function formatXml(xml) {
 
     return formatted;
 }
+
 //TODO: GeoJSON -> WFS-T
 
-
-
 /* redirect on landing */
-$(document).ready(()=>$(window.location.hash).show());
+$(document).ready(()=>$(window.location.hash || '#about-me').show());
 
 $('a.link-right').on(
     "click",
