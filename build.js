@@ -34,14 +34,17 @@ portfolioContext['geojson-to-gml'].glyphicon = 'map-marker';
 portfolioContext['wfst-2-examples'].glyphicon = 'globe';
 portfolioContext['UDR'].glyphicon = 'refresh';
 portfolioContext['about-me'].glyphicon = 'user';
-portfolioContext['pdf-hardlinkr'].glyphicon = 'file';
+// portfolioContext['pdf-hardlinkr'].glyphicon = 'file';
+portfolioContext['maki-choice'].glyphicon = 'info-sign';
+
 portfolioContext = [
   'about-me',
   // 'geojson-to-wfs-t-2'
   'geojson-to-gml',
   'wfst-2-examples',
+  'maki-choice',
   'UDR',
-  'pdf-hardlinkr'
+  // 'pdf-hardlinkr',
 ].map((e)=>portfolioContext[e]);
 console.log(portfolioContext);
 
@@ -51,4 +54,3 @@ console.log(mainTemplate({"portfolio-item":portfolioContext}));
 fs.writeFileSync('index.html', mainTemplate({"portfolio-item":portfolioContext}));
 
 console.log('built');
-
