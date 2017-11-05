@@ -1,6 +1,0 @@
-[submodule "src/univariate_distribution_relationships"]
-	path = src/univariate_distribution_relationships
-	url = https://github.com/SKalt/univariate_distribution_relationships.git
-[submodule "src/pdf-hardlinkr"]
-	path = src/pdf-hardlinkr
-	url = https://github.com/SKalt/pdf-hardlinkr.git
