@@ -2,10 +2,30 @@ import { geomToGml as gml2 } from 'geojson-to-gml-2';
 import { geomToGml as gml3 } from 'geojson-to-gml-3';
 import {Transaction, Insert} from 'geojson-to-wfs-t-2'; // More later, I guess
 /* toggles */
-$('.portfolio-toggle').on('click', function () {
-    $(this).next('.portfolio-item').slideToggle(300);
-    // TODO: ensure the toggled item is in view
-});
+class PortfolioItem {
+
+  constructor(toggleElement){
+    debugger;
+    this.shown = false;
+    this.item = $(toggleElement).next('.portfolio-item')[0];
+    this.id = this.item.id;
+    const toggle = ()=>{
+      $(this.item).slideToggle(300);
+      this.shown = !this.shown;
+      window.location.hash = (this.shown && this.id) || getFirstExpandedItem();
+    }
+    toggleElement.addEventListener('click', toggle);
+    this.item.toggle = toggle;
+  }
+}
+
+const portfolioItems = [...document.querySelectorAll('.portfolio-toggle')]
+  .map(el => new PortfolioItem(el));
+
+function getFirstExpandedItem(){
+  return (portfolioItems.filter(item => item.shown)[0]||{}).id || '';
+}
+
 
 /* translation function */
 function translator(button, from, to, translatorCb){
@@ -72,12 +92,22 @@ function formatXml(xml) {
 //TODO: GeoJSON -> WFS-T
 
 /* redirect on landing */
-$(document).ready(()=>$(window.location.hash || '#about-me').show());
-
-$('a.link-right').on(
-    "click",
-    function(e){
-	$($(this).attr('href')).show();
-	e.stopPropagation();
+$(document).ready(
+  ()=>{
+    const id = (window.location.hash || '#about-me').slice(1);
+    const el = document.getElementById(id);
+    if (el && el.toggle ){
+      el.toggle();
+    } else {
+      document.getElementById('about-me').toggle();
     }
+  }
 );
+
+// $('a.link-right').on(
+//     'click',
+//     function(e){
+// 	$($(this).attr('href')).show();
+// 	e.stopPropagation();
+//     }
+// );
