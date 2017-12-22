@@ -5,6 +5,10 @@ img {
     display: block;
     margin: auto;
 }
+img.icon {
+  max-width: 32px;
+  max-height: 32px;
+}
 #headshot {
     width:100%;
     max-width:300px;
