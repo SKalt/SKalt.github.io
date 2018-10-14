@@ -1,0 +1,31 @@
+.section {
+  width:100%;
+  margin: 15px;
+  font-size: 24px;
+}
+.section > summary > a {
+  text-decoration: none;
+}
+details.section > div {
+  margin: 7.5px 30px;
+  font-size: 12pt;
+}
+.section-icon {
+  color: transparent;
+  /* background-color: #ec2930; */
+  text-shadow: 0 0 0 #000;
+  margin-right: 1em;
+  /* filter: grayscale(100%) saturate(1); */
+}
+
+.section-icon:hover {
+  color: transparent;
+  text-shadow: 0 0 #ccc;
+}
+
+a.account-link {
+  text-decoration: none;
+  margin-right: 1em;
+  min-width: 32px;
+  min-height: 32px;
+}

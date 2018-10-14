@@ -1,0 +1,37 @@
+{
+  "name": "SKalt.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKalt/SKalt.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/SKalt/SKalt.github.io/issues"
+  },
+  "homepage": "https://skalt.github.io",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "parcel": "^1.10.3"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "usebuiltins": "entry"
+        }
+      ]
+    ]
+  },
+  "browserslist": "since 2017"
+}
