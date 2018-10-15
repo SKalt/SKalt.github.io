@@ -40,7 +40,13 @@
         </a>
       </summary>
       <div>
-        <a href="https://github.com/SKalt/store-mvt">the github repo</a>
+        I wrote <a rel="_noreferrer" target="_blank" href="https://github.com/SKalt/store-mvt">a tool</a>
+        that transforms geojson to filesystem pyramids of mapbox
+        vector tiles (<span class="sh">.mby</span>). This involves tranforming
+        geojson -> protobufs -> serialized pbf (now .mvt) arranged as directory/x/y/z.
+        The benefit to using this over other tools is that it doesn't require
+        leaving node.js.  In the future, I'd like to allow it to produce complete
+        <span class="sh">.mbtiles</span> entirely within the browser.
       </div>
     </details>
     <details id="geojson-to-gml" class="section">
@@ -69,10 +75,30 @@
         should plug-and-play in any context.
       </div>
       <div>
-        <span><a href="https://github.com/SKalt/geojson-to-gml-2.1.2#readme">GeoJSON to GML-2 Git Repo</a>, and </span>
-        <span><a href="https://www.npmjs.com/package/geojson-to-gml-2">NPM package</a>;</span>
-        <span><a href="https://github.com/SKalt/geojson-to-gml-3.2.1#readme">GeoJSON to GML-3 Git Repo</a>, and </span>
-        <span><a href="https://www.npmjs.com/package/geojson-to-gml-3">NPM package</a>.</span>
+        <table>
+          <tr>
+            <td>
+              GeoJSON to GML-2
+            </td>
+            <td>
+              <a href="//github.com/SKalt/geojson-to-gml-2.1.2#readme" rel="noreferrer" target="_blank">Git Repo</a>
+            </td>
+            <td>
+              <a href="//npmjs.com/package/geojson-to-gml-2" rel="noreferrer" target="_blank">NPM package</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              GeoJSON to GML-3
+            </td>
+            <td>
+              <a href="//github.com/SKalt/geojson-to-gml-3.2.1#readme" rel="noreferrer" target="_blank">Git Repo</a>
+            </td>
+            <td>
+              <a href="//npmjs.com/package/geojson-to-gml-3" rel="noreferrer" target="_blank">NPM package</a>
+            </td>
+          </tr>
+        </table>
       </div>
     </details>
     <details id="maki-choice" class="section">
@@ -117,6 +143,36 @@
           and the full script and data may be retrieved and reused from <a href="https://github.com/SKalt/univariate_distribution_relationships" target="_blank"> this github repo</a>.  If you do reuse the data, please use the citation below for Leemis et al.'s 2008 or 2012 paper and avoid running the scraper unless neccessary</p>.
           <!-- <p>Leemis, his collaborators, and I have collective put decades into creating this. I've contributed my day or so because I hope building tools that allow students to explore the relationships behind mathematical objects is the best way to retain them. In the future, I may write some script to import the graph to neo4j, though using the rneo4j packagge with the csvs should be workable</p> -->
           <p class="citation"> Leemis, Lawrence M, and Jacquelyn T McQueston. 2008. “Univariate Distribution Relationships.” The American Statistician 62 (1): 45–53. doi:10.1198/000313008X270448.</p>
+      </div>
+    </details>
+    <details id="my-tools" class="section">
+      <summary class="section-header">
+        <a href="#my-tools">
+          <span class="section-icon sh">><span>_</span></span>Development environment
+        </a>
+      </summary>
+      <div>
+        To save time, I maintain my preferred configuration files in
+        <a
+          href="//github.com/skalt/my_tools"
+          rel="_noreferrer"
+          target="_blank">
+          this repo</a>.  The ones I use the most are:
+        <ul>
+          <li>
+            <a class="sh" href="//github.com/skalt/my_tools/blob/master/.bashrc" rel="_noreferrer" target="_blank">.bashrc
+            </a>
+          </li>
+          <li>
+            <a class="sh" href="//github.com/skalt/my_tools/blob/master/git" rel="_noreferrer" target="_blank">.gitconfig</a>
+          </li>
+          <li>
+            <a class="sh" href="//github.com/skalt/my_tools/blob/master/js/.eslintrc.yml" rel="_noreferrer" target="_blank">.eslintrc</a>
+          </li>
+        </ul>
+        More recently, I built a docker image containing my preferred tools.  To
+        take it for a spin, check it out on docker hub:
+        <a href="//hub.docker.com/r/skalt/dev-env/" rel="noreferrer" target="_blank">[link].</a>
       </div>
     </details>
   </div>

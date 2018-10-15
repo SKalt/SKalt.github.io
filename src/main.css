@@ -29,3 +29,38 @@ a.account-link {
   min-width: 32px;
   min-height: 32px;
 }
+
+/* @keyframes blink {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes blink {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+} */
+
+.sh {
+  font-family: monospace;
+}
+/* .sh *:first-child {
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+} */
+@media (min-width: 900px) {
+  #main {
+    margin: 0% 25%;
+  }
+}
