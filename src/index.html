@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="./assets/favicon.png" />
-  <!-- style goes here -->
   <link rel="stylesheet" type="text/css" href="./main.css"></link>
 </head>
 <body>
@@ -176,6 +175,43 @@
         <a href="//hub.docker.com/r/skalt/dev-env/" rel="noreferrer" target="_blank">[link]</a>.
       </div>
     </details>
+    <details id="mdn-compat-scraper" class="section">
+     <summary class="section-header">
+       <a href="#mdn-compat-scraper">
+         <span class="section-icon">🔖&#xFE0E;</span>Scraping Mozilla Developer Network compatibility tables
+       </a>
+     </summary>
+     <div>
+       I wrote a
+       <a href="javascript:(%0A%20%20(%0A%20%20%20%20()%3D%3E%7B%0A%20%20%20%20%20%20const%20script%20%3D%20document.createElement('script')%3B%0A%20%20%20%20%20%20script.src%20%3D%20'%2F%2Fskalt.github.io%2Fmdn-compat-table-scraper%2Fmain.js'%3B%0A%20%20%20%20%20%20document.body.appendChild(script)%3B%0A%20%20%20%20%7D%0A%20%20)()%0A)%3B">bookmarklet</a>
+       to scrape MDN's old browser compatibility tables. To use it:
+       <ol>
+         <li>
+           save it by (chrome) tragging it to your bookmarks bar or
+           (firefox) right-clicking > clicking "bookmark this link".
+         </li>
+         <li>
+           On a MDN documentation page which needs modernization, click the bookmarklet in your bookmarks menu/bar.
+         </li>
+         <li>
+           Check the scraped dat in the JS console, including where you should
+           submit it as a PR.
+         </li>
+       </ol>
+     </div>
+   </details>
+    <!-- new section template
+     <details id="" class="section">
+      <summary class="section-header">
+        <a href="#">
+          <span class="section-icon"></span>
+        </a>
+      </summary>
+      <div>
+
+      </div>
+    </details>
+  -->
   </div>
   <script src="./main.js"></script>
 </body>
