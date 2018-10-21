@@ -25,11 +25,19 @@ details.section > div {
 
 a.account-link {
   text-decoration: none;
-  margin-right: 1em;
+  margin-right: 32px;
   min-width: 32px;
   min-height: 32px;
 }
-
+.citation {
+    background-color: #ddd;
+    padding: 1em;
+    font-size: smaller;
+}
+.centering {
+  display: flex;
+  justify-content: center;
+}
 /* @keyframes blink {
   0%   { opacity:1; }
   50%  { opacity:0; }
@@ -51,7 +59,7 @@ a.account-link {
   100% { opacity:1; }
 } */
 
-.sh {
+.sh, .citation {
   font-family: monospace;
 }
 /* .sh *:first-child {
