@@ -1,26 +1,24 @@
 function toggleSection(id){
   const el = document.getElementById(id)
   if (!el) return
-  return el.open = !el.open
+  return (location.hash = (el.open = !el.open) ? id : '')
 }
 function closestHref(e) {
-  return e.href || closestHref(e.parentElement)
+  return e.href || e.id || closestHref(e.parentElement)
 }
-function handle(ev = {}) {
-  const {type} = ev
-  if (!type || type === 'hashchange') {
-    toggleSection(location.hash.slice(1))
-  } else if (type === 'click') {
-    ev.preventDefault()
-    ev.stopPropagation()
-    let id = closestHref(ev.target).split('#')[1]
-    if (location.hash !== `#${id}`) return location.hash = id
-    toggleSection(id)
+function handle(e) {
+  if (e.target === this && e.target.tagName.match(/(a|summary)/i)){
+    e.preventDefault()
   }
+  let id = closestHref(e.target)
+  if (id) id = id.split('#').pop() // get the last part of the split
+  if (location.hash !== `#${id}`) return location.hash = id
+  toggleSection(id)
 }
 
-handle()
-addEventListener('hashchange', handle)
+const update = () => toggleSection(location.hash.slice(1))
+update()
+addEventListener('hashchange', update)
 document
-  .querySelectorAll('.section-icon, .section-header a')
+  .querySelectorAll('.section-icon, .section-header a, summary')
   .forEach((el) => el.addEventListener('click', handle))

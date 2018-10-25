@@ -13,7 +13,7 @@ details.section > div {
 .section-icon {
   color: transparent;
   /* background-color: #ec2930; */
-  text-shadow: 0 0 0 #000;
+  text-shadow: 0 0 0 #000000cc;
   margin-right: 1em;
   /* filter: grayscale(100%) saturate(1); */
 }
