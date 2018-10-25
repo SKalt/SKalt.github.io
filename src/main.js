@@ -10,6 +10,8 @@ function handle(e) {
   if (e.target === this && e.target.tagName.match(/(a|summary)/i)){
     e.preventDefault()
   }
+  if (e.done) return
+  e.done = true
   let id = closestHref(e.target)
   if (id) id = id.split('#').pop() // get the last part of the split
   if (location.hash !== `#${id}`) return location.hash = id
