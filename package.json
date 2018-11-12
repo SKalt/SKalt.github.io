@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "deploy": "SITE_VERSION=$(git describe --tag HEAD 2>/dev/null || git rev-parse --short HEAD); rm ./dist/* && yarn run build && cd dist && git add . && git commit -m \"deploying $SITE_VERSION\" && git push && cd .. && git add ./dist && git commit -m 'submodule sync'",
+    "deploy": "SITE_VERSION=$(git describe --tag HEAD 2>/dev/null || git rev-parse --short HEAD); rm ./dist/* && yarn run build && cd dist && git add . && git commit -m \"deploying $SITE_VERSION\" && git push && cd .. && git add ./dist && git commit -m 'submodule sync' && git push",
     "postversion": "yarn run deploy"
   },
   "repository": {
