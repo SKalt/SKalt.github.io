@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "parcel serve src/index.html",
     "build": "parcel build src/index.html",
     "deploy": "SITE_VERSION=$(git describe --tag HEAD 2>/dev/null || git rev-parse --short HEAD); rm ./dist/* && yarn run build && cd dist && git add . && git commit -m \"deploying $SITE_VERSION\" && git push && cd .. && git add ./dist && git commit -m 'submodule sync' && git push",
     "postversion": "yarn run deploy"
@@ -23,7 +23,8 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "parcel": "^1.10.3"
+    "parcel": "^1.10.3",
+    "sass": "^1.17.2"
   },
   "babel": {
     "presets": [
