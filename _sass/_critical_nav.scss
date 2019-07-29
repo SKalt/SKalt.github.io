@@ -1,15 +1,15 @@
 nav {
   & li {
-    &::marker {
-      content: '';
+    &.selected {
+      &::marker { content: '➣'; }
     }
-    & a {
-      text-decoration: none;
-      &:not(:hover){
-        color: #000;
-      }
-      &.selected {
-        text-decoration: underline;
+    &:not(.selected) {
+      &::marker { content: ''; }
+      & a {
+        text-decoration: none;
+        &:not(:hover) {
+          color: #000;
+        }
       }
     }
   }
