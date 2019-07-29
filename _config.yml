@@ -5,10 +5,11 @@ title: Steven Kalt # site.title
 collections_dir: content
 collections:
   # implicit: _posts, _drafts
-  - recipes
-  - reading
   - projects
-  
+  # TODO:
+  # - recipes
+  # - reading
+
 # https://help.github.com/en/articles/configuring-jekyll-plugins
 plugins:
   # > Default plugins are enabled by default and cannot be disabled.

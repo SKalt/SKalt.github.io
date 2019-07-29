@@ -1,4 +1,25 @@
-nav {
+header {
+  @media(max-width: 1000px) {
+    & {
+      position: relative;
+    }
+    & ul {
+      margin: auto;
+      padding: 2ch;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        display: inline-flex;
+        padding: 2ch;
+      }
+    }
+  }
+  @media(min-width: 1001px) {
+    & {
+      position: fixed;
+      top: 20px;
+    }
+  }
   & li {
     &.selected {
       &::marker { content: '➣'; }
