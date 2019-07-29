@@ -1,4 +1,7 @@
-<svg preserveAspectRatio="xMinYMin meet" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="32" height="32"
+  preserveAspectRatio="xMinYMin meet"
+>
   <g style="fill-opacity: 1">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <g transform="scale(0.69565217391)">

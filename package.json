@@ -1,13 +1,12 @@
 {
   "name": "SKalt.github.io",
   "version": "2.3.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A personal blog",
+  "private": true,
   "scripts": {
-    "start": "parcel serve src/index.html",
-    "build": "parcel build src/index.html",
-    "deploy": "SITE_VERSION=$(git describe --tag HEAD 2>/dev/null || git rev-parse --short HEAD); rm ./dist/* && yarn run build && cd dist && git add . && git commit -m \"deploying $SITE_VERSION\" && git push && cd .. && git add ./dist && git commit -m 'submodule sync' && git push",
-    "postversion": "yarn run deploy"
+    "build": "bash ./scripts/build.sh",
+    "bundle_update": "bash ./scripts/gem-update.sh",
+    "serve": "bash ./scripts/serve.sh"
   },
   "repository": {
     "type": "git",
@@ -15,24 +14,20 @@
   },
   "keywords": [],
   "author": "",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/SKalt/SKalt.github.io/issues"
-  },
+  "license": "UNLICENSED",
+  "bugs": {"url": "https://github.com/SKalt/SKalt.github.io/issues"},
   "homepage": "https://skalt.github.io",
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "parcel": "^1.10.3",
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.4.2",
     "sass": "^1.17.2"
   },
   "babel": {
     "presets": [
       [
         "@babel/preset-env",
-        {
-          "usebuiltins": "entry"
-        }
+        {"usebuiltins": "entry"}
       ]
     ]
   },

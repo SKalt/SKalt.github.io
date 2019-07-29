@@ -1,0 +1,16 @@
+nav {
+  & li {
+    &::marker {
+      content: '';
+    }
+    & a {
+      text-decoration: none;
+      &:not(:hover){
+        color: #000;
+      }
+      &.selected {
+        text-decoration: underline;
+      }
+    }
+  }
+}

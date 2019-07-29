@@ -1,0 +1,6 @@
+<style>
+  {% capture critical_scss %}
+    {% include {{ include.content }} %}
+  {% endcapture  %}
+  {{ critical_scss | scssify }}
+</style>

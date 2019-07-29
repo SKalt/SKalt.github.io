@@ -1,3 +1,8 @@
+.grid-container {
+  display: grid;
+  grid-column-gap: 1em;
+  grid-template-columns: 1em 1fr;
+}
 
 .section {
   width:100%;
