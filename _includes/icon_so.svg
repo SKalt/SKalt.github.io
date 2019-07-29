@@ -3,9 +3,9 @@
    viewBox="0 0 32 32"
 >
   <g transform="scale(2.28571429)">
-    <path d="M2 1h8a2 2 0 0 1 2 2H0c0-1.1.9-2 2-2z" fill="#000"></path>
-    <path d="M0 10h12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm7 2v3l3-3z" fill="#000"></path>
-    <path fill="#000" d="M0 4h12v2H0z"></path>
-    <path fill="#000" d="M0 7h12v2H0z"></path>
+    <path d="M2 1h8a2 2 0 0 1 2 2H0c0-1.1.9-2 2-2z" class="solid"></path>
+    <path d="M0 10h12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm7 2v3l3-3z" class="solid"></path>
+    <path class="solid" d="M0 4h12v2H0z"></path>
+    <path class="solid" d="M0 7h12v2H0z"></path>
   </g>
 </svg>

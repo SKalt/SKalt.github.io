@@ -2,32 +2,34 @@
 layout: default
 title: 'about'
 permalink: /about
+accounts:
+  - href: github.com/skalt
+    logo: gh
+  - href: www.linkedin.com/in/steven-kalt-74739374/
+    logo: ln
+  - href: //stackexchange.com/users/7834322/steven-kalt?tab=top
+    logo: so
 ---
+{% include style.html content="about_page.scss" %}
 <h1>About me</h1>
+
 <div>
  I am full-stack engineer working in in data science, renewable energy, and
  GIS. I graduated from Amherst College with a degree in Environmental
  Studies (economics/policy focus) and French in 2016. In my spare time,
  I'm an avid climber, runner, and cross-country skier.
 </div>
+
 <div class="centering">
-  <a class="account-link" href="//github.com/skalt" rel="noreferrer" target="_blank">
-    {% include icon_gh.svg%}
-  </a>
-
+  {% for account in page.accounts %}
   <a
     class="account-link"
-    href="//www.linkedin.com/in/steven-kalt-74739374/"
+    href="{{ href }}"
     rel="noreferrer"
-    target="_blank">
-    {% include icon_ln.svg%}
+    target="_blank"
+  >
+    {% include icon_{{ account.logo }}.svg %}
   </a>
+  {% endfor %}
 
-  <a
-    class="account-link"
-    href="//stackexchange.com/users/7834322/steven-kalt?tab=top"
-    rel="noreferrer"
-    target="_blank">
-    {% include icon_so.svg %}
-  </a>
 </div>
