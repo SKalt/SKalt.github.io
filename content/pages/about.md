@@ -11,12 +11,14 @@ accounts:
     logo: so
 ---
 {% include style.html content="about_page.scss" %}
-<p>
- I am full-stack engineer working in in data science, renewable energy, and
- GIS. I graduated from Amherst College with a degree in Environmental
- Studies (economics/policy focus) and French in 2016. In my spare time,
- I'm an avid climber, runner, and cross-country skier.
-</p>
+
+
+I am full-stack engineer working in in data science, renewable energy, and
+GIS. I graduated from Amherst College with a degree in Environmental
+Studies (economics/policy focus) and French in 2016. In my spare time,
+I'm an avid climber, runner, and cross-country skier.
+
+<br>
 
 <div class="centering">
   {% for account in page.accounts %}

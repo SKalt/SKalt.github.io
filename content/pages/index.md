@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: main
 title: 'Steven Kalt'
+permalink: /
 ---
-# Hello Jekyll!
+
 <!-- TODO: fwd to project list | about -->
 {%for collection in site.collections %}
   {{collection.label}} {{collection}}
