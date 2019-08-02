@@ -6,7 +6,7 @@ link: *repo
 is_code: true
 date: 2019-01-01
 ---
-I wrote <a rel="_noreferrer" target="_blank" href="{{ link }}">a tool</a>
+I wrote <a rel="\_noreferrer" target="\_blank" href="{{ link }}">a tool</a>
 that transforms geojson to filesystem pyramids of mapbox
 vector tiles (`.mbt`). This involves tranforming
 geojson → sliced JSON tiles → protobuf (.pbf) → serialized pbf (now .mvt) arranged as directory/x/y/z.
