@@ -1,6 +1,6 @@
 ---
 id: my-tools
-title: Development environment
+title: development environment
 repo: &repo https://github.com/skalt/my_tools
 link: *repo
 ---
@@ -8,9 +8,8 @@ To save time, I maintain my preferred configuration files in
 <a
   href="//github.com/skalt/my_tools"
   rel="\_noreferrer"
-  target="\_blank">
-  this repo
-</a>.  The ones I use the most are:
+  target="\_blank">this repo</a>.
+The ones I use the most are:
 - <a
     href="//github.com/skalt/my_tools/tree/master/bash"
     rel="\_noreferrer"

@@ -27,3 +27,7 @@ body {
   background-color: $color_0;
   color: $color_1;
 }
+a {
+  &:link {color: $color_4; }
+  &:visited { color: $color_5; }
+}
