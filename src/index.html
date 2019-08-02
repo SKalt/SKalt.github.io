@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    if (location.protocol !== 'https:') location.protocol = 'https:'
+  </script>
+  <title>Steven Kalt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="./main.scss"></link>
+</head>
+<body>
+  <div id="main">
+    <details id="about-me" class="section">
+      <summary class="section-header">
+        <a href="#about-me">
+          <span class="section-icon">👤&#xFE0E;</span>About me
+        </a>
+      </summary>
+      <div>
+        I am full-stack engineer working in in data science, renewable energy, and
+        GIS. I graduated from Amherst College with a degree in Environmental
+        Studies (economics/policy focus) and French in 2016. In my spare time,
+        I'm an avid climber, runner, and cross-country skier.
+      </div>
+      <div class="centering">
+        <a class="account-link" href="//github.com/skalt" rel="noreferrer" target="_blank">
+          <img alt="github" src="./assets/gh.svg" />
+        </a>
+        <a class="account-link" href="//www.linkedin.com/in/steven-kalt-74739374/" rel="noreferrer" target="_blank">
+          <img alt="linkedin" src="./assets/ln.svg" />
+        </a>
+        <a class="account-link" href="//stackexchange.com/users/7834322/steven-kalt?tab=top" rel="noreferrer" target="_blank">
+          <img alt="stack exchange" src="./assets/so.svg" />
+        </a>
+      </div>
+    </details>
+    <details id="vector-tiles" class="section">
+      <summary class="section-header">
+        <a href="#vector-tiles">
+          <span class="section-icon">⊞&#xFE0E;</span>Geojson to mapbox vector tiles
+        </a>
+      </summary>
+      <div>
+        I wrote <a rel="_noreferrer" target="_blank" href="https://github.com/SKalt/store-mvt">a tool</a>
+        that transforms geojson to filesystem pyramids of mapbox
+        vector tiles (<span class="sh">.mbt</span>). This involves tranforming
+        geojson → sliced JSON tiles → protobuf (.pbf) → serialized pbf (now .mvt) arranged as directory/x/y/z.
+        The benefit to using this over other tools is that it doesn't require
+        leaving node.js.  In the future, I'd like to allow it to produce complete
+        <span class="sh">.mbtiles</span> entirely within the browser.
+      </div>
+    </details>
+    <details id="geojson-to-gml" class="section">
+      <summary class="section-header">
+        <a href="#geojson-to-gml">
+          <span class="section-icon">🌐&#xFE0E;</span>GeoJSON to GML converter
+        </a>
+      </summary>
+      <div>
+        GeoJSON works: it succinctly describes geometric features in a way both
+        humans and machines can understand. As a consequence, GeoJSON has become
+        one of the leading data formats in GIS, and since it is a species of
+        JSON, it naturally rules online GIS visualization. However, the
+        <abbr title="Open Geospatial Consortium">OGC</abbr> has mainatined
+        another standard, <abbr title="Geography Markup Language">GML</abbr>
+        since the '90s [<a href="https://en.wikipedia.org/wiki/Geography_Markup_Language#History">citation</a>].
+        I wrote a javascript module to translate GeoJSON to GML to allow web
+        GIS technologies to better talk to older tools that rely on OGC GML,
+        i.e. <a href="http://geoserver.org/">Geoserver</a>.
+      </div>
+      <div>
+        <a href="https://openlayers.org/">OpenLayers</a> and
+        <a hre="http://flexberry.github.io/Leaflet-WFST/">Leaflet-WFST</a> can
+        translate GeoJSON to GML. Both are full-fledged web GIS tools. This is
+        only a string formatting library to translate GeoJSON to GML so that it
+        should plug-and-play in any context.
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td>
+              GeoJSON to GML-2
+            </td>
+            <td>
+              <a href="//github.com/SKalt/geojson-to-gml-2.1.2#readme" rel="noreferrer" target="_blank">Git Repo</a>
+            </td>
+            <td>
+              <a href="//npmjs.com/package/geojson-to-gml-2" rel="noreferrer" target="_blank">NPM package</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              GeoJSON to GML-3
+            </td>
+            <td>
+              <a href="//github.com/SKalt/geojson-to-gml-3.2.1#readme" rel="noreferrer" target="_blank">Git Repo</a>
+            </td>
+            <td>
+              <a href="//npmjs.com/package/geojson-to-gml-3" rel="noreferrer" target="_blank">NPM package</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </details>
+    <details id="maki-choice" class="section">
+      <summary class="section-header">
+        <a href="#maki-choice">
+          <span class="section-icon">🔍&#xFE0E;</span>Maki-choice: a maki icon picker
+        </a>
+      </summary>
+      <div>
+        <p>
+          Mapbox provides an excellent selection of symbols for map-making with its
+          Maki icon set. Unfortunately,
+          <a href="https://www.mapbox.com/maki-icons/">their page</a> doesn't provide
+          a search function.
+          That's why I built a quick Vue app, <a href="./maki-choice/">Maki-Choice</a>
+          to help me search and select icons for mapmaking.
+        </p>
+      </div>
+    </details>
+    <details id="univariate-distribution-relations" class="section">
+      <summary class="section-header">
+        <a href="#univariate-distribution-relations">
+          <span class="section-icon">μσ</span>Relationships between univariate
+          probability distributions
+        </a>
+      </summary>
+      <div>
+        <p>
+          In 1985, Leemis and McQueston published an article
+          "<a href="http://www.tandfonline.com/doi/abs/10.1080/00031305.1986.10475379" target="_blank" rel="noreferrer">Univariate Distribution Relationships</a>" in the American
+          Statistician, an
+          <a href="http://www.tandfonline.com/doi/abs/10.1198/000313008X270448" target="_blank" rel="noreferrer">update</a>
+          in 2008, and in 2012 they published an interactive version of the
+          chart using <code>area</code> tags.  In 2017, I wrote a short python
+          script to scrape the data contained in the <code>area</code> tags
+          and produce a reuseable and extendable dataset.  The result is
+          <a href="#udr-demo">below.</a>
+        </p>
+        <p>
+          The full visualization can be viewed <a href="//univariate_distribution_relationships/visualize/udr_visualization.html" target="_blank" rel="noreferrer">here</a>
+          and the full script and data may be retrieved and reused from <a href="https://github.com/SKalt/univariate_distribution_relationships" target="_blank"> this github repo</a>.  If you do reuse the data, please use the citation below for Leemis et al.'s 2008 or 2012 paper and avoid running the scraper unless neccessary.</p>
+          <!-- <p>Leemis, his collaborators, and I have collective put decades into creating this. I've contributed my day or so because I hope building tools that allow students to explore the relationships behind mathematical objects is the best way to retain them. In the future, I may write some script to import the graph to neo4j, though using the rneo4j packagge with the csvs should be workable</p> -->
+          <p class="citation"> Leemis, Lawrence M, and Jacquelyn T McQueston. 2008. “Univariate Distribution Relationships.” The American Statistician 62 (1): 45–53. doi:10.1198/000313008X270448.</p>
+      </div>
+    </details>
+    <details id="my-tools" class="section">
+      <summary class="section-header">
+        <a href="#my-tools">
+          <span class="section-icon sh">><span>_</span></span>Development environment
+        </a>
+      </summary>
+      <div>
+        To save time, I maintain my preferred configuration files in
+        <a
+          href="//github.com/skalt/my_tools"
+          rel="_noreferrer"
+          target="_blank">
+          this repo</a>.  The ones I use the most are:
+        <ul>
+          <li>
+            <a href="//github.com/skalt/my_tools/tree/master/bash" rel="_noreferrer" target="_blank"><span class="sh">.bashrc</span> components
+            </a>
+          </li>
+          <li>
+            <a class="sh" href="//github.com/skalt/my_tools/blob/master/git" rel="_noreferrer" target="_blank">.gitconfig</a>
+          </li>
+          <li>
+            <a class="sh" href="//github.com/skalt/my_tools/blob/master/js/.eslintrc.yml" rel="_noreferrer" target="_blank">.eslintrc</a>
+          </li>
+        </ul>
+        More recently, I built a docker image containing my preferred tools.  To
+        take it for a spin, check it out on docker hub:
+        <a href="//hub.docker.com/r/skalt/dev-env/" rel="noreferrer" target="_blank">[link]</a>.
+      </div>
+    </details>
+    <details id="mdn-compat-scraper" class="section">
+     <summary class="section-header">
+       <a href="#mdn-compat-scraper">
+         <span class="section-icon">📓&#xFE0E;</span>Scraping Mozilla Developer Network compatibility tables
+       </a>
+     </summary>
+     <div>
+       I wrote a
+       <a href="javascript:(%0A%20%20(%0A%20%20%20%20()%3D%3E%7B%0A%20%20%20%20%20%20const%20script%20%3D%20document.createElement('script')%3B%0A%20%20%20%20%20%20script.src%20%3D%20'%2F%2Fskalt.github.io%2Fmdn-compat-table-scraper%2Fmain.js'%3B%0A%20%20%20%20%20%20document.body.appendChild(script)%3B%0A%20%20%20%20%7D%0A%20%20)()%0A)%3B">bookmarklet</a>
+       to scrape MDN's old browser compatibility tables. To use it:
+       <ol>
+         <li>
+           Save it by (chrome) dragging it to your bookmarks bar or
+           (firefox) right-clicking > clicking "bookmark this link".
+         </li>
+         <li>
+           On a MDN documentation page which needs modernization, click the bookmarklet in your bookmarks menu/bar.
+         </li>
+         <li>
+           Check the scraped data in the JS console, including where you should
+           submit it as a PR.
+         </li>
+       </ol>
+     </div>
+   </details>
+    <!-- new section template
+     <details id="" class="section">
+      <summary class="section-header">
+        <a href="#">
+          <span class="section-icon"></span>
+        </a>
+      </summary>
+      <div>
+
+      </div>
+    </details>
+  -->
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

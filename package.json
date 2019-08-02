@@ -1,0 +1,36 @@
+{
+  "name": "SKalt.github.io",
+  "version": "2.3.0",
+  "description": "A personal blog",
+  "private": true,
+  "scripts": {
+    "build": "bash ./scripts/build.sh",
+    "bundle_update": "bash ./scripts/gem-update.sh",
+    "serve": "bash ./scripts/serve.sh",
+    "import_repos_json": "bash ./scripts/import_repos_json.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKalt/SKalt.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {"url": "https://github.com/SKalt/SKalt.github.io/issues"},
+  "homepage": "https://skalt.github.io",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.4.2",
+    "sass": "^1.17.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {"usebuiltins": "entry"}
+      ]
+    ]
+  },
+  "browserslist": "since 2017"
+}

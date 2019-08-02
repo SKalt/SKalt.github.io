@@ -1,0 +1,11 @@
+:root {
+ --mono-font:San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+ --sans-font:-apple-system,BlinkMacSystemFont,'avenir next',avenir,helvetica,'helvetica neue',ubuntu,roboto,noto,'segoe ui',arial,sans-serif
+}
+
+body {
+  font-family: var(--sans-font);
+}
+code {
+  font-family: var(--mono-font);
+}

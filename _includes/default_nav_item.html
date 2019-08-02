@@ -1,0 +1,22 @@
+{% assign current_url = page.url | relative_url %}
+{% assign included_url = include.url | relative_url %}
+{% assign title_url = include.title | relative_url %}
+
+{% if current_url == included_url or current_url == title_url %}
+
+<li class="selected">
+  <a href=".">{{ include.title }}</a>
+</li>
+{% else %}
+<li>
+  <a
+    {% if include.url %}
+      href="{{ included_url }}"
+    {% elsif include.title %}
+      href="{{ title_url }}"
+    {% endif %}
+  >
+    {{ include.title }}
+  </a>
+</li>
+{% endif %}
