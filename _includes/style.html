@@ -1,6 +1,11 @@
 <style>
-  {% capture critical_scss %}
-    {% include {{ include.content }} %}
-  {% endcapture  %}
-  {{ critical_scss | scssify }}
+  {% if include.import %}
+    {% capture critical_scss %}
+      {% include {{ include.import }} %}
+    {% endcapture  %}
+    {{ critical_scss | scssify }}
+  {% endif %}
+  {% if include.content %}
+    {{ include.content | scssify }}
+  {% endif %}
 </style>

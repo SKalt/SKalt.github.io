@@ -1,3 +1,5 @@
+@import 'critical_color.scss';
+
 header {
   @media(max-width: 1000px) {
     & {
@@ -10,7 +12,7 @@ header {
       flex-wrap: wrap;
       li {
         display: inline-flex;
-        padding: 2ch;
+        padding-right: 2ch;
       }
     }
   }
@@ -22,14 +24,18 @@ header {
   }
   & li {
     &.selected {
+      & a {
+        color: $color_2;
+      }
       &::marker { content: '➣'; }
     }
     &:not(.selected) {
       &::marker { content: ''; }
       & a {
+        color: $color_1;
         text-decoration: none;
         &:not(:hover) {
-          color: #000;
+          //
         }
       }
     }

@@ -67,6 +67,8 @@ kramdown:
 future: true
 jailed: false
 gfm_quirks: paragraph_end
+github:
+  - metadata
 ## https://help.github.com/en/articles/configuring-jekyll#configuration-settings-you-cannot-change
 ## including these
 lsi: false
