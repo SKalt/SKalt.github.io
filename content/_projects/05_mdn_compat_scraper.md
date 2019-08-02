@@ -10,6 +10,7 @@ Coming into 2018-19, Mozilla Developer Network (MDN) had crowdsourced HTML table
 </details>
 
 I wrote a [bookmarklet]({{ page.link }}) to scrape MDN's old browser compatibility tables. To use it,
+
 1. go to a MDN documentation page which needs modernization
 2. click the bookmarklet in your bookmarks menu/bar.
 3. Check the scraped data in the JS console, including where you should submit it as a PR.

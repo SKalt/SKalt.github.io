@@ -1,7 +1,7 @@
-@import 'critical_color.scss';
+@import "critical_color.scss";
 
 header {
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     & {
       position: relative;
     }
@@ -16,7 +16,7 @@ header {
       }
     }
   }
-  @media(min-width: 1001px) {
+  @media (min-width: 1001px) {
     & {
       position: fixed;
       top: 20px;
@@ -27,10 +27,14 @@ header {
       & a {
         color: $color_2;
       }
-      &::marker { content: '➣'; }
+      &::marker {
+        content: "➣";
+      }
     }
     &:not(.selected) {
-      &::marker { content: ''; }
+      &::marker {
+        content: "";
+      }
       & a {
         color: $color_1;
         text-decoration: none;

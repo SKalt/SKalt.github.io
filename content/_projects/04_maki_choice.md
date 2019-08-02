@@ -1,7 +1,7 @@
 ---
 id: &id maki-choice
 title: *id
-repo: 'https://github.com/skalt/maki-choice'
+repo: "https://github.com/skalt/maki-choice"
 link: https://skalt.github.io/maki-choice/
 is_code: true
 ---

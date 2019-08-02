@@ -1,9 +1,9 @@
-$color_0: #002B36;
+$color_0: #002b36;
 $color_1: #839496;
-$color_2: #4E9A06;
-$color_3: #C4A000;
-$color_4: #3465A4;
-$color_5: #75507B;
+$color_2: #4e9a06;
+$color_3: #c4a000;
+$color_4: #3465a4;
+$color_5: #75507b;
 
 /*
 $color-0: rgb(0,0,0);
@@ -28,6 +28,10 @@ body {
   color: $color_1;
 }
 a {
-  &:link {color: $color_4; }
-  &:visited { color: $color_5; }
+  &:link {
+    color: $color_4;
+  }
+  &:visited {
+    color: $color_5;
+  }
 }

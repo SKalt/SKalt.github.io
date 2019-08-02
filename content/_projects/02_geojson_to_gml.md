@@ -1,8 +1,9 @@
 ---
 id: geojson-to-gml
-title: 'geojson-to-gml-(3|2)'
+title: "geojson-to-gml-(3|2)"
 link: https://github.com/SKalt/geojson-to-gml-3
 ---
+
 GeoJSON works: it succinctly describes geometric features in a way both
 humans and machines can understand. As a consequence, GeoJSON has become
 one of the leading data formats in GIS, and since it is a species of
