@@ -5,6 +5,7 @@ docker run --rm \
   --volume="$GIT_ROOT_DIR/vendor/bundle:/usr/local/bundle" \
   --volume="$GIT_ROOT_DIR/node_modules/:/srv/jekyll/node_modules" \
   -p 4000:4000 \
+  --name jekyll \
   -it jekyll/jekyll:$JEKYLL_VERSION \
   "$@"
 

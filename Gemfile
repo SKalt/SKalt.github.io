@@ -6,7 +6,6 @@ group :jekyll_plugins do
   # gem 'github-pages' # has too low of a jekyll version'
   gem 'jekyll-coffeescript'
   gem 'jekyll-gist'
-  gem 'jekyll-github-metadata'
   gem 'jekyll-paginate'
   gem 'jekyll-relative-links'
   gem 'jekyll-optional-front-matter'

@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "bash ./scripts/build.sh",
-    "bundle_update": "bash ./scripts/gem-update.sh",
+    "bundle_update": "bash ./scripts/bundle_update.sh",
     "serve": "bash ./scripts/serve.sh",
     "import_repos_json": "bash ./scripts/import_repos_json.sh",
     "lint": "bash ./scripts/lint.sh"
