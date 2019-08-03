@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-gem 'jekyll', '3.8'
+gem 'jekyll', '3.8.4'
 group :jekyll_plugins do
   # gem 'github-pages' # has too low of a jekyll version'
   gem 'jekyll-coffeescript'
