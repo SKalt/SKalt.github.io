@@ -11,7 +11,7 @@ sections:
   label: Posts
   create: all
 - type: directory
-  path: _projects
+  path: content/_projects
   label: Projects
   create: all
   match: "**/*"
