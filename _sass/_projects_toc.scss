@@ -4,5 +4,9 @@
   .project-list__header {
     text-decoration: none;
     color: $color_1;
+    font-size: larger;
+  }
+  .project-list__content {
+    margin-left: 2ch;
   }
 }

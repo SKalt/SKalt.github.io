@@ -37,9 +37,8 @@ header {
       }
       & a {
         color: $color_1;
-        text-decoration: none;
         &:not(:hover) {
-          //
+          text-decoration: none;
         }
       }
     }
