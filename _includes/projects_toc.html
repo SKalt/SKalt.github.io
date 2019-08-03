@@ -1,6 +1,7 @@
 {% include style.html content="@import '_projects_toc.scss';" %}
 <ul class="project-list">
-  {% for project in site.projects %}
+  {% assign projects = site.projects | sort:"date" %}
+  {% for project in projects reversed %}
     <li>
       <details id="{{ project.identifier }}">
         <summary class="project-list__header">
