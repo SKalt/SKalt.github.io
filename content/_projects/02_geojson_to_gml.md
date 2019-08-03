@@ -1,5 +1,5 @@
 ---
-id: geojson-to-gml
+identifier: geojson-to-gml
 title: "geojson-to-gml-(3|2)"
 link: https://github.com/SKalt/geojson-to-gml-3
 ---

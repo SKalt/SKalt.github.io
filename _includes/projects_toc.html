@@ -1,18 +1,16 @@
 {% include style.html content="@import '_projects_toc.scss';" %}
 <ul class="project-list">
   {% for project in site.projects %}
-    {% assign identifier = project.id or project.name %}
-      <li>
-        <details id="{{ identifier }}">
-          <summary>
-            <a href="#{{ identifier }}" class="project-list__header">
-              {{ project.title }}
-            </a>
-          </summary>
-          <div>
-            {{ project.content }}
-          </div>
-        </details>
-      </li>
+    <li>
+      <details id="{{ project.identifier }}">
+        <summary class="project-list__header">
+          {{ project.title }}
+        </summary>
+        <div class="project-list__content">
+          {{ project.content }}
+        </div>
+      </details>
+    </li>
   {% endfor %}
 </ul>
+<script src="/assets/toggle_project_toc.js" async defer></script>

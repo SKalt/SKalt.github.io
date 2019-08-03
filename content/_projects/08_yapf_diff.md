@@ -1,5 +1,5 @@
 ---
-id: yapf-diff
+identifier: yapf-diff
 link: https://github.com/luxresearch/yapf-diff
 title: <code>yapf-diff</code>
 is_code: true

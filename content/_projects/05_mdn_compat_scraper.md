@@ -1,5 +1,5 @@
 ---
-id: mdn-compat-scraper
+identifier: mdn-compat-scraper
 title: Scraping Mozilla Developer Network compatibility tables
 link: https://skalt.github.io/mdn-compat-table-scraper/
 repo: https://github.com/skalt/mdn-compat-table-scraper/

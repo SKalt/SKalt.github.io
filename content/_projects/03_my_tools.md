@@ -1,5 +1,5 @@
 ---
-id: my-tools
+identifier: my-tools
 title: development environment
 repo: &repo https://github.com/skalt/my_tools
 link: *repo
