@@ -17,19 +17,24 @@
   "keywords": [],
   "author": "",
   "license": "UNLICENSED",
-  "bugs": {"url": "https://github.com/SKalt/SKalt.github.io/issues"},
+  "bugs": {
+    "url": "https://github.com/SKalt/SKalt.github.io/issues"
+  },
   "homepage": "https://skalt.github.io",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
     "@babel/preset-env": "^7.4.2",
+    "js-yaml": "^3.13.1",
     "sass": "^1.17.2"
   },
   "babel": {
     "presets": [
       [
         "@babel/preset-env",
-        {"usebuiltins": "entry"}
+        {
+          "usebuiltins": "entry"
+        }
       ]
     ]
   },
