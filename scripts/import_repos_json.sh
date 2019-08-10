@@ -14,7 +14,7 @@ console.log(
           description: repo.description,
           link:        repo.homepage,
           repo:        repo.html_url,
-          created_at:  repo.created_at.slice(0, 10),
+          date:  repo.created_at.slice(0, 10),
           updated_at:  repo.updated_at.slice(0, 10),
           archived:    repo.archived
         })
