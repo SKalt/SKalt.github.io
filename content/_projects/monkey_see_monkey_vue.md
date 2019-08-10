@@ -1,4 +1,5 @@
 ---
+identifier: monkey-see-monkey-vue
 title: Monkey testing Vue.js applications
 repo: &repo https://github.com/SKalt/monkey-see-monkey-vue/commits/master
 link: *repo
