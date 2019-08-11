@@ -23,12 +23,13 @@ header {
     }
   }
   & li {
+    list-style: none;
     &.selected {
-      & a {
-        color: $color_2;
-      }
       &::marker {
         content: "➣";
+      }
+      & a {
+        color: $color_2;
       }
     }
     &:not(.selected) {
