@@ -8,9 +8,12 @@
 
 {
   const syncHash = ([mutation]) => {
-    const hash = `#${mutation.target.id}`
-    if (hash === location.hash) location.hash = ''
-    else location.hash = hash
+    const {target} = mutation, {id, open} = target, loc = location.hash
+    return location.hash = open
+      ? `#${id}`
+      : document.querySelector(loc) === target
+        ? ''
+        : loc
   }
   const observer = new MutationObserver(syncHash)
   const config = {attributes: true, attributeFilter: ['open']}
