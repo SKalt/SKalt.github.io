@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-prettier prettier --write \
+prettier --write \
   'content/**/*.{md,html,yml}' \
-  '_*/*.{html,md,css,scss,yml,json}'
+  '_{data,includes,sass}/*.{html,md,css,scss,yml,json}' \
+  './README.md'

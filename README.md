@@ -1,4 +1,5 @@
 # Personal blog
+
 ## conventions
 
 <details open><summary>File naming</summary>
@@ -7,7 +8,6 @@
 - `_prefixed.file` indicates that a file is intended to be included in something else, rather than being intended to be consumed publicly.
 
 </details>
-
 
 <details><summary>Directory layout</summary>
 
@@ -73,12 +73,12 @@ This blog follows a _mostly_ standard jekyll layout.
 </details>
 
 Of note:
+
 - I'm using a `Dockerfile` as a thin wrapper around the [`jekyll/jekyll:latest` docker image](https://hub.docker.com/r/jekyll/jekyll/tags). The image pins the jekyll version and stabilizes my ruby and node environments.
 - all automation tasks are to be run on the CLI through `yarn run $script_name`, which is a call through `bash scripts/_docker.sh <...command>`.
 - I've used a custom collections directory, `/content`, to gather my writing.
 
 </details>
-
 
 <!--
 <details open><summary></summary>

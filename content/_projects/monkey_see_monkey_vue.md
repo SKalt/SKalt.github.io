@@ -8,6 +8,6 @@ tags:
   - WIP
 ---
 
-[`monkey-see-monkey-vue`]({{ page.link }}) exposes methods for finding events that Vue.js will react to.  It's still a work in progress.
+[`monkey-see-monkey-vue`]({{ page.link }}) exposes methods for finding events that Vue.js will react to. It's still a work in progress.
 
 Inspired by the excellent [`gremlins.js`]() and [_Generating Software Tests_ by Zeller et al.](https://www.fuzzingbook.org/).

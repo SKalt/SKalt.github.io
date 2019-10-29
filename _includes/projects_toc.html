@@ -1,17 +1,13 @@
 {% include style.html content="@import '_projects_toc.scss';" %}
 <ul class="project-list">
-  {% assign projects = site.projects | sort:"date" %}
-  {% for project in projects reversed %}
-    <li>
-      <details id="{{ project.identifier }}">
-        <summary class="project-list__header">
-          {{ project.title }}
-        </summary>
-        <div class="project-list__content">
-          {{ project.content }}
-        </div>
-      </details>
-    </li>
+  {% assign projects = site.projects | sort:"date" %} {% for project in projects
+  reversed %}
+  <li>
+    <details id="{{ project.identifier }}">
+      <summary class="project-list__header"> {{ project.title }} </summary>
+      <div class="project-list__content">{{ project.content }}</div>
+    </details>
+  </li>
   {% endfor %}
 </ul>
 <script src="/assets/toggle_project_toc.js" async defer></script>

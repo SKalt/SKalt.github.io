@@ -1,27 +1,20 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>
-    {% if page.title and page.title != site.title %}
-      {{ page.title }} |
-    {% endif %}
-    {{ site.title }}
+    {% if page.title and page.title != site.title %} {{ page.title }} | {% endif
+    %} {{ site.title }}
   </title>
-  <link
-    rel="icon" type="image/png"
-    href="{{ "favicon.png" | relative_url }}"
-  />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="{{ "favicon.png" | relative_url }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% include style.html import="critical.scss"%}
-  <style>
-  </style>
+  <style></style>
 </head>
 <body>
-  <header>
-    {% include default_nav.html %}
-  </header>
+  <header>{% include default_nav.html %}</header>
   {{ content }}
 </body>
