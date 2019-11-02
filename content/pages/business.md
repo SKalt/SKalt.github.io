@@ -18,7 +18,7 @@ I offer the following projects under the Parity Public License 6.0:
 
 {% for project in page.l0_projects %}
 
-- [`{{ project.name }}`]({{ project.repo }}) : [![licensezero.com pricing]({{ project.store }}/badge.svg)]({{ project.store }})
+- [`{{ project.name }}`]({{ project.repo }}) : a set of jekyll `_includes` that allow you to use hashed assets from webpack or another asset wrangler in Jekyll without a plugin.  Since Github pages don't allow custom plugins, this is the closest you'll get to using `rails-webpacker` in Jekyll.  Get a license on [License Zero: ![licensezero.com pricing]({{ project.store }}/badge.svg)]({{ project.store }})
 
 {% endfor %}
 
@@ -26,5 +26,7 @@ I offer the following projects under the Parity Public License 6.0:
 ul > li > a > img {
   height: 1.5em;
   vertical-align: bottom;
+  position: relative;
+  top: 2px;
 }
 </style>
