@@ -1,3 +1,3 @@
 #! /usr/bin/env bash
 # shellcheck source=scripts/_common.sh
-bash ./scripts/_docker.sh bundle update
+docker-compose run jekyll bundle update

@@ -1,0 +1,71 @@
+{% comment %}
+  Use hashed assets from webpack/another asset wrangler in Jekyll without a plugin
+  v1.0.0
+  https://skalt.github.io/jekyll_asset_map
+  © 2019–2020 Steven Kalt
+  Parity public license 6.0.0
+{% endcomment %}{% capture result %}
+  {% if include.entrypoints %}
+    {% assign sep = include.sep | default: "," %}
+    {% assign entrypoints = include.entrypoints | split: sep %}
+    {% assign asset_map_name = include.map | default: "manifest" %}
+    {% assign asset_map = site.data[asset_map_name] %}
+    {% assign asset_key = include.asset_key | default: "js" %}
+    {% if asset_map %}
+      {% assign entrypoint_key = include.entrypoint_key | default: "entrypoints" %}
+      {% assign entrypoint_map = asset_map[entrypoint_key] %}
+      {% if entrypoint_map %}
+        {% assign chunks = "" | split: "" %}
+        {% for entrypoint in entrypoints %}{%
+          assign _entrypoint = entrypoint_map[entrypoint] %}{%
+          assign _entrypoint = _entrypoint[asset_key] | default: _entrypoint %}{%
+          for chunk in _entrypoint %}{%
+            assign src = chunk.path
+              | default: chunk.src
+              | default: chunk.href
+              | default: chunk.asset
+              | default: chunk %}{%
+            if src %}{%
+              if src contains ".js" %}{%
+                unless chunks contains src %}{%
+                  assign chunks = chunks | push: src %}{%
+                  assign bools = "async,defer,nomodule" | split: "," %}{%
+                  assign echoed = "type,crossorigin,referrerpolicy" | split: ","
+                  %}<script src="{{ src }}"{%
+                  if chunk.integrity and chunk.integrity != ""
+                    %} integrity="{{ chunk.integrity }}"{%
+                  endif %}{%
+                  for attr in echoed %}{%
+                    if include[attr] %} {{ attr }}="{{ include[attr] }}"{% endif %}{%
+                  endfor %}{%
+                  for attr in bools %}{%
+                    if include[attr] %} {{ attr }}{% endif %}{%
+                  endfor %}></script>{%
+                endunless %}{%
+              endif %}{%
+            else %}{%
+              capture message
+                %}WARNING! no useable source for chunk {{ chunk }}{%
+              endcapture %}{%
+              include asset_map/error message=message error=include.error %}{%
+            endif %}{%
+          endfor %}{%
+        endfor %}
+      {% else %}
+        {%
+          include asset_map/error
+            message="Error! No entrypoint map found"
+            error=include.error
+        %}
+      {% endif %}
+    {% else %}
+      {% capture message %}WARNING! no asset map named {{ asset_map_name }}{% endcapture %}
+      {% include asset_map/error message=message error=include.error %}
+    {% endif %}
+  {% else %}
+    {% include asset_map/error
+      message="WARNING: no entrypoints supplied"
+      error=include.error
+    %}
+  {% endif %}
+{% endcapture %}{{ result | strip }}{{ _entrypoints }}

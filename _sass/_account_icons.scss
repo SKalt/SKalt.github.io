@@ -1,6 +1,14 @@
-svg .solid {
-  fill: #839496;
+@import "critical_color";
+
+a {
+  svg .solid {
+    fill: $color_1;
+  }
+  &:hover svg .solid {
+    fill: $color_2;
+  }
 }
+
 .account-link {
   text-decoration: none;
   margin-right: 32px;

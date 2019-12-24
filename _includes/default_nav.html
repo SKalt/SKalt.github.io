@@ -3,9 +3,14 @@
     <li>
       <a href="/"><b>Steven Kalt</b></a>
     </li>
-    {% include default_nav_item.html title='home' url='/' %} {% for collection
-    in site.collections %} {% include default_nav_item.html
-    title=collection.label %} {% endfor %}
-    {% include default_nav_item.html title='commercial' url='/commercial' %}
+    {% include default_nav_item.html title='home' url='/' %}{% for collection in
+    site.collections %}{% include default_nav_item.html title=collection.label
+    %}{% endfor %}{% include default_nav_item.html title='commercial'
+    url='/commercial' %}
+    <li>
+      <a href="/feed.xml">
+        {% include icon_rss.svg %}
+      </a>
+    </li>
   </ul>
 </nav>

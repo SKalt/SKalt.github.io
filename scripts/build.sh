@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-bash ./scripts/_docker.sh jekyll build
+docker-compose run jekyll jekyll build

@@ -3,3 +3,6 @@ node_modules/
 _site/
 .jekyll-metadata
 vendor/bundle/
+dist
+.ash_history
+.node_repl_history
