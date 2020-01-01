@@ -2,7 +2,7 @@
 include.url | relative_url %} {% assign title_url = include.title | relative_url
 %} {% if current_url == included_url or current_url == title_url or current_url
 contains include.title %}
-<li class="selected"><a href=".">{{ include.title }}</a></li>
+<li class="selected"><a>{{ include.title }}</a></li>
 {% else %}
 <li>
   <a

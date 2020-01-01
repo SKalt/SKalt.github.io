@@ -3,7 +3,7 @@ permalink: /posts
 layout: main
 ---
 
-{% include style.html content="@import 'posts_toc.scss'" %}
+{% include style.html content="@import 'posts_toc.scss';" %}
 
 <ol class="posts_toc">
   {% for post in site.posts %}
