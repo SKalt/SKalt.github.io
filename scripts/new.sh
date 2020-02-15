@@ -2,7 +2,7 @@
 here="${BASH_SOURCE[0]%/*}";
 
 function usage() {
-  echo "${BASH_SOURCE[0]%*/} [--post|--project]"
+  echo "${BASH_SOURCE[0]%*/} [--post|post|--project|project]"
 }
 
 path_to_content="$(realpath "$here/../content")"
@@ -41,14 +41,6 @@ function new-project() {
   echo "results: $dl"
   cat "$dl"
   echo "created $file_path"
-  # local file=""
-  # ---
-  # identifier: ascii-art
-  # title: "Converting images to ascii art in the browser"
-  # link: https://skalt.github.io/browser-ascii-art-converter
-  # repo: https://github.com/SKalt/browser-ascii-art-converter
-  # date: 2018-06-19
-  # ---
 }
 
 function main() {
