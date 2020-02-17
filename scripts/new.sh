@@ -21,6 +21,11 @@ function new-post() {
   } > "$file_path"
 }
 
+function lookup() {
+  local dl="$1";
+  local query="$2";
+  node -e "console.log(JSON.parse(fs.readFileSync('$dl'))[0]['$query'])"
+}
 
 function new-project() {
   local title="$*"
@@ -34,8 +39,10 @@ function new-project() {
     echo "---"
     echo "identifier: $identifier"
     echo "title: $title"
-    (grep -e 'link' "$dl" || echo "link:") | sed -e 's/^[[:space:]]*//'
-    (grep -e 'repo' "$dl" || echo "repo:") | sed -e 's/^[[:space:]]*//'
+    # TODO: handle cases where multiple repos are matched
+    echo "link: $(lookup "$dl" 'link')" 
+    echo "repo: $(lookup "$dl" 'repo')" 
+    echo "date: $(lookup "$dl" 'date')"
     echo "---"
   } > "$file_path"
   echo "results: $dl"

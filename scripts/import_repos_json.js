@@ -2,6 +2,7 @@
 // const fs = require("fs");
 const https = require("https");
 const process = require("process");
+const toStdout = str => process.stdout.write(str);
 let searches = process.argv
   .slice(process.argv.findIndex(arg => arg.includes("github.io")) + 1)
   .map(s => new RegExp(s, "ig"));
@@ -46,4 +47,4 @@ get(url)
         archived: repo.archived
       }))
   )
-  .then(console.log);
+  .then(str => toStdout(JSON.stringify(str, null, 2)));
