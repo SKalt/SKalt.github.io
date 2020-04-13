@@ -64,6 +64,7 @@ kramdown:
  hard_wrap: false
  math_engine: mathjax # <- can't change
  syntax_highlighter: rouge # <- can't change
+highlighter: rouge
 future: true
 jailed: false
 gfm_quirks: paragraph_end

@@ -1,6 +1,17 @@
 // TODO: css grid
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 main {
+  flex: 1 0 auto;
   max-width: 70ch;
   padding: 2ch;
   margin: auto;
+}
+footer {
+  flex-shrink: 0;
 }
