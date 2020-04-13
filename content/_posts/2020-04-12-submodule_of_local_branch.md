@@ -124,3 +124,5 @@ Who knows! Hope you have fun with this.
 [orphan-branch-docs]: https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt---orphanltnewbranchgt
 [git-lfs-docs]: https://git-lfs.github.com/
 [commit-with-submodule-setup]: https://github.com/SKalt/SKalt.github.io/tree/f0f9eb6026e6b64522d27c4872b2aaa334b481d4
+
+{% include style.html content="@import '_code_highlight.scss';" %}
