@@ -23,6 +23,8 @@ green     #859900  operators, other keywords
 .highlight table {
   // background-color: #002b36;
   color: #93a1a1;
+  max-width: 90vw;
+  overflow-x: scroll;
 }
 .highlight {
   .c {
