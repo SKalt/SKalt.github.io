@@ -23,9 +23,16 @@ $color-13: rgb(173,127,168);
 $color-14: rgb(52,226,226);
 $color-15: rgb(238,238,236);
  */
+
 body {
-  background-color: $color_0;
+  background-color: #000;
   color: $color_1;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fdf6e3;
+  }
 }
 a {
   &:link {
