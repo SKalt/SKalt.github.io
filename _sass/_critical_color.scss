@@ -29,6 +29,11 @@ body {
   color: $color_1;
 }
 
+blockquote {
+  border-left: 2px solid gray;
+  padding-left: 2ch;
+}
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: #fdf6e3;
