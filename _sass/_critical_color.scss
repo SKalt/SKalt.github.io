@@ -1,3 +1,4 @@
+// :root {} 
 $color_0: #002b36;
 $color_1: #839496;
 $color_2: #4e9a06;
@@ -22,7 +23,7 @@ $color-12: rgb(114,159,207);
 $color-13: rgb(173,127,168);
 $color-14: rgb(52,226,226);
 $color-15: rgb(238,238,236);
- */
+*/
 
 body {
   background-color: #000;
@@ -34,9 +35,29 @@ blockquote {
   padding-left: 2ch;
 }
 
+div.highlighter-rouge, code.highlighter-rouge {
+  border-radius: 2px;
+  padding: 0px 5px;
+  border: 1px solid rgba(150,150,150, .5);
+  margin: .25ch;
+}
+div.highlighter-rouge { padding: 5px 5px; }
+
+// TODO: consider adding code-headers, maybe line numbers.
+// // https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers
+// $rouge_langs:  ("sh": "sh", "py": "Python", "ts": "TypeScript");
+// @each $lang, $content in $rouge_langs {
+  
+//   div.highlighter-rouge.language-#{$lang} > div.highlight::before {
+//     content: $content;
+//     position: absolute;
+//     font-size: x-small;
+//     // top: -1em;
+//   }
+// }
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #fdf6e3;
+    background-color: rgb(253, 246, 227);
   }
 }
 a {
