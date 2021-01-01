@@ -3,7 +3,6 @@ identifier: store-mvt
 title: Slicing geojson into <code>.mvt</code>
 repo: &repo https://github.com/SKalt/store-mvt
 link: *repo
-is_code: true
 date: 2017-12-09
 ---
 

@@ -1,9 +1,8 @@
 ---
-identifier: &identifier maki-choice
+identifier: maki-choice
 title: Searching for the right mapbox icon
 repo: https://github.com/skalt/maki-choice
 link: https://skalt.github.io/maki-choice/
-is_code: true
 date: 2017-10-21
 ---
 

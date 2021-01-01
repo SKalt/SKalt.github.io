@@ -3,7 +3,6 @@ identifier: &identifier geojson-to-wfs-t-2
 title: Writing a WFS-T library in 2.6kb min+gz of js
 repo: &repo https://github.com/SKalt/geojson-to-wfs-t-2
 link: *repo
-is_code: true
 date: 2017-06-07
 ---
 

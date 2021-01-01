@@ -3,7 +3,6 @@ identifier: history-of-man
 title: prebuilt HTML man pages for each version of the linux man pages
 repo: https://github.com/skalt/history-of-man
 link: https://github.com/skalt/history-of-man
-is_code: true
 date: 2020-04-10
 ---
 

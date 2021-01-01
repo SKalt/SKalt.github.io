@@ -1,7 +1,6 @@
 ---
 identifier: udr-relationships
 title: Relationships between univariate probability distributions
-is_code: false
 link: https://skalt.github.io/univariate_distribution_relationships/visualize/udr_visualization.html
 repo: https://github.com/SKalt/univariate_distribution_relationships
 date: 2017-04-03
