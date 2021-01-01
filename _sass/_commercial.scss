@@ -1,0 +1,21 @@
+a.hover-link {
+  display: none;
+}
+h2:hover > a.hover-link {
+  display: inline;
+  font-size: smaller;
+}
+a.commercial-project--repo-link {
+  margin-right: 1ch;
+  text-decoration: none;
+}
+a > svg {
+  vertical-align: sub;
+  max-width: 2ch;
+}
+a > svg > use.hoverable {
+  fill: #839496; /*color_1*/ 
+}
+a:hover > svg > use.hoverable {
+  fill: #4e9a06; /*color_2*/
+}

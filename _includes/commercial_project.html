@@ -1,0 +1,27 @@
+<section class="commercial-project">
+  <h2 id="{{ include.slug }}">
+    {{ include.title }}
+    <a class="hover-link" href="#{{ include.slug }}">#</a>
+  </h2>
+  
+  {{ include.content | markdownify }}
+  <div>
+    {% if include.repo %}
+    <a class="commercial-project--repo-link" href="{{ include.repo }}">
+      <svg
+        height="20" width="20"
+        viewBox="0 0 16 16"
+      
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <title>GitHub repo for {{ include.identifier }}</title>
+        <use xlink:href="#icon-gh" class="hoverable" /> 
+      </svg>
+    </a>
+    {% endif %}
+    {% if include.link %}
+    <a href="{{ include.link }}">Project site</a>
+    {% endif %}
+  </div>
+</section>
