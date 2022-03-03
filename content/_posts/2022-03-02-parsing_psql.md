@@ -1,5 +1,5 @@
 ---
-title: "parsing" psql
+title: parsing psql
 layout: main
 categories:
   - posts
