@@ -1,5 +1,5 @@
-.PHONY: post dev-server
-post:
-	bash -c "touch ./content/_posts/$(date -I)-$(title)";
+.PHONY: new-post dev-server
+new-post:
+	./scripts/new_post.sh;
 dev-server:
 	./scripts/serve.sh
