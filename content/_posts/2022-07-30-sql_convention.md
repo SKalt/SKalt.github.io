@@ -1,5 +1,5 @@
 ---
-title: sql spec truther
+title: SQL is a convention
 layout: main
 categories:
   - posts

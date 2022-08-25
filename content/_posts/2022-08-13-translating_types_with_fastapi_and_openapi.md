@@ -37,7 +37,8 @@ An OpenAPI v3 schema includes all the information necessary to create an API cli
 
 ## Example
 
-<details open><summary>First, set up a new python project:</summary>
+<details open markdown="block"><summary>First, set up a new python project:</summary>
+
 
 ```sh
 poetry new --name api fastapi_typescript_ex && cd $_
@@ -46,9 +47,11 @@ poetry add --dev mypy black flake8
 mkdir -p server && touch server/__init__.py
 mkdir -p scripts && touch scripts/__init__.py
 ```
+
+
 </details>
 
-<details open><summary>Then, write a simple API:</summary>
+<details open markdown="block"><summary>Then, write a simple API:</summary>
 
 ```py
 # ./server/api.py
@@ -85,17 +88,24 @@ def greet(to_greet: str) -> Response[str]:
     return Response[str](data=f"hello {to_greet}")
 
 
-@api.get("/api/blog/posts", response_model=Response[List[BlogPost]])
+@api.get(
+    "/api/blog/posts",
+    response_model=Response[List[BlogPost]]
+)
 async def get_blog_posts() -> Response[List[BlogPost]]:
     "Serve up some _original content_"
     return Response[List[BlogPost]](data=[
-        {  # you can pass dicts, which are validated at runtime
+        {
+            # you can pass dicts, which are
+            # validated at runtime
             "title": "foo",
-            "content": "foo was just for SEO, this is about bar",
+            "content": "title was SEO, this is about bar",
             "author": "baz",
             "published": datetime.now()
         },
-        BlogPost( # alternately, mypy can validate this statically
+        BlogPost(
+            # alternately, mypy can validate
+            # that a BlogPost is a BlogPost statically
             title="foo 2",
             content="a repost of foo, now with more bar",
             author="baz",
@@ -103,9 +113,10 @@ async def get_blog_posts() -> Response[List[BlogPost]]:
         )
     ])
 ```
+
 </details>
 
-<details open><summary>Add a CLI to run a development server or print the OpenAPI spec:</summary>
+<details open markdown="block"><summary>Add a CLI to run a development server or print the OpenAPI spec:</summary>
 
 ```py
 # ./server/__main__.py
@@ -118,10 +129,15 @@ import uvicorn
 from .api import api
 
 cli = typer.Typer(name="server")
-host_opt = typer.Option("127.0.0.1", help="on what IP to host the server")
+host_opt = typer.Option(
+    "127.0.0.1", help="on what IP to host the server"
+)
 
 
-@cli.command("develop", help="run a development server with livereload")
+@cli.command(
+    "develop",
+    help="run a development server with livereload"
+)
 def dev_server(*, host=host_opt):
     uvicorn.run("server.api:api", host=host)
 
@@ -131,8 +147,15 @@ class Format(enum.Enum):
     yaml = "yaml"
 
 
-@cli.command("print-openapi", help="write the openapi spec as JSON to STDOUT")
-def print_api_spec(format: Format = typer.Option(Format.json.value, help="...")):
+@cli.command(
+    "print-openapi",
+    help="write the openapi spec as JSON to STDOUT"
+)
+def print_api_spec(
+    format: Format = typer.Option(
+        Format.json.value,
+        help="how to format the OpenAPI spec",
+    )):
     openapi = api.openapi()
     if format == Format.json:
         print(json.dumps(openapi, sort_keys=True, indent=2))
@@ -143,10 +166,11 @@ def print_api_spec(format: Format = typer.Option(Format.json.value, help="..."))
 if __name__ == "__main__":
     cli()
 ```
+
 </details>
 
 
-<details open><summary>Add a script to generate the api client:</summary>
+<details open markdown="block"><summary>Add a script to generate the api client:</summary>
 
 ```py
 # scripts/generate_client.py
@@ -164,23 +188,35 @@ api_spec = Path(repo_root, "server/openapi.yaml")
 
 def main(
     *,
-    input_spec: Path = typer.Option(api_spec, help="the openapi v3 spec for the api"),
+    input_spec: Path = typer.Option(
+        api_spec,
+        help="the openapi v3 spec for the api"
+    ),
     client_generator: str = typer.Option(
         "typescript-fetch",
-        help="the runtime for the api client; see https://openapi-generator.tech/docs/generators",
+        help=(
+            "the runtime for the api client; see"
+            " https://openapi-generator.tech/docs/generators"
+        ),
     ),
     output_dir: Path = typer.Option(
-        client_dir, help="where to place the generated api client"
+        client_dir,
+        help="where to place the generated api client"
     ),
     dry_run: bool = typer.Option(
         False,
-        help="Print the subcommand that would be run instead of actually running it",
+        help=(
+          "Print the subcommand that would be run "
+          "instead of actually running it"
+        ),
     ),
 ) -> None:
     "generate an api client from the"
     relative_path_to_spec = input_spec.relative_to(os.getcwd())
-    assert input_spec.exists(), f"{relative_path_to_spec} does not exist"
-    assert input_spec.is_file(), f"{relative_path_to_spec} is not a file"
+    assert input_spec.exists(), \
+      f"{relative_path_to_spec} does not exist"
+    assert input_spec.is_file(), \
+      f"{relative_path_to_spec} is not a file"
 
     assert (
         output_dir.is_dir() or not output_dir.exists()
@@ -211,9 +247,10 @@ def main(
 if __name__ == "__main__":
     typer.run(main)
 ```
+
 </details>
 
-<details open><summary>Add a build script to perform all the steps:</summary>
+<details open markdown="block"><summary>Add a build script to perform all the steps:</summary>
 
 ```make
 # Makefile
@@ -234,11 +271,14 @@ client: ./client/index.ts
 
 openapi-spec: ./server/openapi.yaml
 ./server/openapi.yaml: ./server/api.py
-	poetry run python3 -m server print-openapi --format yaml > ./server/openapi.yaml
+	poetry run python3 -m server \
+		print-openapi --format yaml \
+		> ./server/openapi.yaml
 
 clean:
 	rm -rf ./client ./server/openapi.yaml
 ```
+
 </details>
 
 This means I can guarantee my api client is up-to-date by running `make`.
