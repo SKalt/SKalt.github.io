@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-gem 'jekyll', '3.8.4'
+gem 'jekyll', '4.2.2'
 group :jekyll_plugins do
   # gem 'github-pages' # has too low of a jekyll version'
   gem 'jekyll-coffeescript'
@@ -24,3 +24,5 @@ end
 # group :test do
 #   gem 'jekyll-test'
 # end
+
+gem "webrick", "~> 1.7"
