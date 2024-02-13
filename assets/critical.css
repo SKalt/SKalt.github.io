@@ -1,0 +1,96 @@
+:root {
+  --mono-font: San Francisco Mono, Monaco, "Consolas", "Lucida Console",
+    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+  --sans-font: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+  --font-color: #000;
+  --background: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color: #fff;
+    --background: #000;
+  }
+}
+body {
+  font-family: var(--sans-font);
+  font-size: large;
+  color: var(--font-color);
+  background-color: var(--background);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav > * {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+main {
+  flex: 1 0 auto;
+  flex-grow: 1;
+  max-width: 70ch;
+  padding: 2ch;
+  margin: auto;
+}
+footer {
+  flex-shrink: 0;
+}
+
+pre {
+  padding: 0.25em 0.5em;
+  overflow-x: scroll;
+}
+div.highlight:hover {
+  position: relative;
+  /* TODO: add a border */
+}
+.copy-on-click {
+  display: none;
+}
+.highlight > pre {
+  padding-bottom: 0.75em; /* to make room for a lateral scrollbar */
+}
+div.highlight:hover > .copy-on-click {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0px;
+  right: 0px;
+  height: 1em;
+}
+
+code {
+  font-family: var(--mono-font);
+  border-radius: 2px;
+  border: 1px solid rgba(150, 150, 150, 0.5);
+}
+pre code {
+  border: none;
+}
+
+a > img[src] {
+  max-height: 1em;
+  min-height: 1em;
+  vertical-align: middle;
+}
+footer {
+  flex-shrink: 0;
+}
+li.flex {
+  display: flex;
+}
+li.flex > a:first-child {
+  padding-right: 1em;
+}

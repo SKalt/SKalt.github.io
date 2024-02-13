@@ -1,0 +1,39 @@
+baseurl = 'https://skalt.github.io/'
+title = 'Steven Kalt'
+enableGitInfo = true
+copyright = 'CC BY-NC-SA 4.0'
+languageCode = 'en-us'
+
+[outputs]
+  home = ['html', 'json', 'rss']
+[params]
+  AuthorName = 'Steven Kalt'
+  GitHubUser = 'skalt'
+
+[frontmatter]
+    lastmod = [':git', 'lastmod', 'date', 'publishDate']
+    publishDate = ['publishDate', 'date']
+    date = [':filename']
+
+[markup]
+  [markup.highlight]
+    # see https://gohugo.io/getting-started/configuration-markup/#highlight
+    noclasses = false
+
+[build]
+  noJSConfigInAssets = true
+
+[permalinks]
+  posts = '/:year/:month/:day/'
+
+[module]
+  [[module.mounts]]
+    source = '.'
+    target = 'content'
+    includeFiles = ['20**/**/*', 'search*']
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+
+[security.funcs]
+  getenv = ['^HUGO_', '^CI$', '^PWD$']
