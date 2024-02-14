@@ -4,6 +4,8 @@
     
     <span class="bg-info">Published on <time>{{ .Date | time.Format "2006-01-02" }}</time></span>
 
+    {{ .TableOfContents }}
+    
     {{ .Content }}
   </main>
 {{ end }}

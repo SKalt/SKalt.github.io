@@ -1,4 +1,4 @@
-baseurl = 'https://skalt.github.io/'
+baseurl = '/'
 title = 'Steven Kalt'
 enableGitInfo = true
 copyright = '© Steven Kalt; This work is licensed as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-NC-SA 4.0</a>'
@@ -19,6 +19,11 @@ enableRobotsTXT = true
   [markup.highlight]
     # see https://gohugo.io/getting-started/configuration-markup/#highlight
     noclasses = false
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
 
 [build]
   noJSConfigInAssets = true
