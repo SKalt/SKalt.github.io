@@ -1,11 +1,11 @@
 baseurl = 'https://skalt.github.io/'
 title = 'Steven Kalt'
 enableGitInfo = true
-copyright = 'CC BY-NC-SA 4.0'
+copyright = '© Steven Kalt; This work is licensed as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-NC-SA 4.0</a>'
 languageCode = 'en-us'
 
 [outputs]
-  home = ['html', 'json', 'rss']
+  home = ['html', 'rss']
 [params]
   AuthorName = 'Steven Kalt'
   GitHubUser = 'skalt'
@@ -24,16 +24,8 @@ languageCode = 'en-us'
   noJSConfigInAssets = true
 
 [permalinks]
-  posts = '/:year/:month/:day/'
-
-[module]
-  [[module.mounts]]
-    source = '.'
-    target = 'content'
-    includeFiles = ['20**/**/*', 'search*']
-  [[module.mounts]]
-    source = 'layouts'
-    target = 'layouts'
+  posts = '/:year/:month/:day/:slug'
+  # TODO: - => _
 
 [security.funcs]
   getenv = ['^HUGO_', '^CI$', '^PWD$']

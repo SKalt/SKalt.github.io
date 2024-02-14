@@ -1,0 +1,59 @@
+{{- $critical_css := resources.Get "critical.css"
+    | resources.Minify
+    | resources.Fingerprint -}}
+{{- $syntax_light := resources.Get "syntax-light.css"
+    | resources.Minify
+    | resources.Fingerprint -}}
+{{- $syntax_dark  := resources.Get "syntax-dark.css"
+    | resources.Minify
+    | resources.Fingerprint -}}
+{{- $clipboard :=  resources.Get "copy_on_click.ts"
+  | js.Build (dict
+      "minify" true
+      "format" "iife"
+    )
+  | resources.Fingerprint
+-}}
+{{- $favicon := resources.Get "favicon.png" | resources.Fingerprint -}}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    
+    {{ with .OutputFormats.Get "rss" -}}
+      <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+    {{ end -}}
+
+    <!-- TODO: subresource integrity? -->
+    <link rel="stylesheet" href="{{ $critical_css.Permalink }}">
+    <!-- each are around 1.5 KiB -->
+    <style>
+      @import url("{{ $syntax_light.Permalink | safeCSS }}");
+      @import url("{{ $syntax_dark.Permalink | safeCSS }}");
+    </style>
+    <link rel="icon" type="image/png" href="{{ $favicon.Permalink }}">
+    <script src="{{ $clipboard.Permalink }}" integrity="{{ $clipboard.Data.Integrity }}" defer></script>
+    {{ block "head" . }}{{ end }}
+  </head>
+  <body>
+    {{ block "header" . }}
+      <header>
+        {{ partial "partials/nav.html" . }}
+      </header>
+    {{ end }}
+
+    {{ block "main" . }}
+      <main>
+        {{ .Content }}
+      </main>
+    {{ end }}
+
+    {{ block "footer" . }}
+      <footer>
+          {{ partial "footer.html" . }}
+        </footer>
+    {{ end }}
+  </body>
+</html>

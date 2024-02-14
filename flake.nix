@@ -16,7 +16,8 @@
       rec {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
-            nodejs_20 # for running scripts
+            # nodejs_20 # for running scripts
+            pagefind
             nixpkgs-fmt
             nil
             hugo

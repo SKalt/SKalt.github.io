@@ -1,0 +1,25 @@
+
+{{- $gh := resources.Get "icon_gh.svg" | resources.Minify | resources.Fingerprint -}}
+<nav>
+  <!-- <a href="{{ absURL "tags" }}">tags</a> -->
+  <!-- <a href="{{ absURL "search" }}">search</a> -->
+  <ul>
+    <!-- <li><a href="/posts">posts</a></li>
+    <li><a href="https://github.com/skalt/skalt.github.io">
+      <img alt="repo" title="repo" src="{{ $gh.Permalink }}">
+    </a></li>
+    {{ with .OutputFormats.Get "rss" -}}
+    <li>
+      <a href="{{ .Permalink }}">
+        <img alt="rss" title="rss" src="{{(resources.Get "icon_rss.svg" | resources.Fingerprint).Permalink}}"></a>
+      </a>
+    </li>
+    {{ end -}} -->
+
+    {{ range $.Site.Sections -}}
+    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+    {{ end -}}
+  </ul>
+  <!-- TODO: /til -->
+  <!-- TODO: /bookmarklets -->
+</nav>

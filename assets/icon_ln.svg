@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg"
   width="32" height="32"
   preserveAspectRatio="xMinYMin meet"
+  viewBox="0 0 32.5 32.5"
 >
   <title>LinkedIn</title>
   <g style="fill-opacity: 1">
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g stroke-width="1" fill-rule="evenodd">
       <g transform="scale(0.67)">
         <!-- <rect class="foreground" x="1" y="1" width="46" height="46" rx="4"></rect> -->
         <path

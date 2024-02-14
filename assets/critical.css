@@ -4,21 +4,11 @@
   --sans-font: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
     helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
     sans-serif;
-  --font-color: #000;
-  --background: #fff;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --font-color: #fff;
-    --background: #000;
-  }
+  color-scheme: light dark;
 }
 body {
   font-family: var(--sans-font);
   font-size: large;
-  color: var(--font-color);
-  background-color: var(--background);
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -26,9 +16,11 @@ body {
 }
 
 header {
+  position: relative;
   margin: auto;
 }
 nav {
+  position: sticky;
   display: flex;
   justify-content: center;
 }

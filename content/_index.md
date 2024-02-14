@@ -1,8 +1,9 @@
 ---
-draft: false
-publishDate: 2016-01-01
+title: Steven Kalt
+date: 2017-03-23
+publishdate: 2017-03-24
 ---
-{{ block "main" .}}
-# Ojk
-Hello?
-{{ end }}
+
+# Steven Kalt
+
+All opinions on this site are my own.
