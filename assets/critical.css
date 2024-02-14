@@ -1,13 +1,10 @@
 :root {
-  --mono-font: San Francisco Mono, Monaco, "Consolas", "Lucida Console",
-    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
-  --sans-font: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
-    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
-    sans-serif;
   color-scheme: light dark;
 }
 body {
-  font-family: var(--sans-font);
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
   font-size: large;
   display: flex;
   flex-direction: column;
@@ -19,16 +16,40 @@ header {
   position: relative;
   margin: auto;
 }
-nav {
-  position: sticky;
-  display: flex;
-  justify-content: center;
+
+/* navbar header */
+header {
+  position: fixed;
+  top: 20px;
 }
-nav > * {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
+header ul {
+  margin: auto;
+  padding: 2ch;
 }
+header li {
+  list-style: none;
+  display: block;
+}
+header li.selected::marker {
+  content: "➣";
+}
+header li:not(.selected)::marker {
+  content: "";
+}
+@media (max-width: 1000px) {
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  header ul>li {
+    display: inline-flex;
+    padding-right: 2ch;
+  }
+}
+
+
 main {
   flex: 1 0 auto;
   flex-grow: 1;
@@ -63,8 +84,12 @@ div.highlight:hover > .copy-on-click {
   height: 1em;
 }
 
+pre, code {
+  font-family: San Francisco Mono, Monaco, "Consolas", "Lucida Console",
+    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+  background-color: #c0c0c0;
+}
 code {
-  font-family: var(--mono-font);
   border-radius: 2px;
   border: 1px solid rgba(150, 150, 150, 0.5);
 }

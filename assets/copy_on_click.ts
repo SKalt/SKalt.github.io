@@ -8,7 +8,7 @@ const post = {
   icon: "✅",
   title: "copied",
 };
-buttonTemplate.innerHTML = `<span class="copy-on-click" title="${pre.title}">${pre.icon}</span>`;
+buttonTemplate.innerHTML = `<button class="copy-on-click" title="${pre.title}">${pre.icon}</button>`;
 const _copyElement = (e: MouseEvent) => {
   const button = e.target as HTMLElement;
   const parent = button.parentElement as HTMLElement;
@@ -23,7 +23,7 @@ const _copyElement = (e: MouseEvent) => {
   });
 };
 document.querySelectorAll(".highlight").forEach((el) => {
-  const button = buttonTemplate.content.cloneNode(true);
-  el.prepend(button);
-  el.querySelector(".copy-on-click")?.addEventListener("click", _copyElement);
+  el.prepend(buttonTemplate.content.cloneNode(true));
+  (el.querySelector(".copy-on-click")! as HTMLButtonElement)
+    .addEventListener("click", _copyElement);
 });

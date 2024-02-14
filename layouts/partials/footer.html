@@ -1,9 +1,3 @@
-<span style="font-size: smaller;">
-  <!-- &copy; Steven Kalt.
-  This work is licensed under a
-  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="cc-by-sa-4.0">
-    Creative Commons Attribution-ShareAlike 4.0 International License.
-  </a> -->
-  {{ $.Site.Copyright | safeHTML }}
-</span>
+<span>{{ $.Site.Copyright | safeHTML }}</span>
+<!-- TODO: float edit info right -->
 {{ partial "edit.html" . }}
