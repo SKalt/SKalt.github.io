@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <style>
+    li {
+      display: grid;
+      grid-template-columns: 1fr min-content;
+      grid-column-gap: 1ch;
+      grid-row-gap: 1ch;
+    }
+  </style>
+  <main>
+    <ol>
+      {{ range .Pages }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <time>{{ .Date | time.Format "2006-01-02" }}</time>
+    </li>
+      {{ end }}
+    </ol>
+  </main>
+{{ end }}

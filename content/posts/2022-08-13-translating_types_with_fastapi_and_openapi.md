@@ -1,8 +1,7 @@
 ---
 title: translating types with fastapi and openapi
 layout: main
-categories:
-  - posts
+date: 2022-08-13
 ---
 
 TL;DR: Using [`mypy`][mypy], [`pydantic`][pydantic], and [`FastAPI`][fastapi], I generate an `openapi.yaml`, then I use [`openapi-generator`][openapi-generator] to create a typescript API client.

@@ -1,22 +1,18 @@
 <span style="float: right">
-{{ with .File }}
-  {{ if eq hugo.Environment "development" -}}
-    {{ $projectPath := or (os.Getenv "HUGO_PROJECT_PATH" ) (os.Getenv "PWD") -}}
-    <a href="vscode://file/{{ $projectPath }}/content/{{ .File.Path }}" class="button">
-      Edit this Page
-    </a>
-  {{- else -}}
-    <a href="https://github.com/skalt/skalt.github.io/edit/master/{{ .File.Path }}" }}>
-      Edit this Page
-    </a>
-  {{- end }}
-{{ end }}
-{{ with .GitInfo }}
-<span>
-  Last edited on {{ $.Lastmod | time.Format "2006-01-02" }} in commit
-  <a href="https://github.com/skalt/skalt.github.io/commit/{{ .AbbreviatedHash }}">
-    {{ .AbbreviatedHash }}
-  </a>
-</span>
-{{ end }}
+  {{ with .GitInfo }}
+    <span>
+      Last edited on {{ $.Lastmod | time.Format "2006-01-02" }} in commit
+      <a href="https://github.com/skalt/skalt.github.io/commit/{{ .AbbreviatedHash }}">{{
+        .AbbreviatedHash
+      }}</a>.
+    </span>
+  {{ end }}
+  {{ with .File }}
+    {{ if eq hugo.Environment "development" -}}
+      {{ $projectPath := or (os.Getenv "HUGO_PROJECT_PATH" ) (os.Getenv "PWD") -}}
+      <a href="vscode://file/{{ $projectPath }}/content/{{ .File.Path }}" class="button">Edit this Page</a>
+    {{- else -}}
+      <a href="https://github.com/skalt/skalt.github.io/edit/master/{{ .File.Path }}">Edit this Page</a>
+    {{- end }}
+  {{ end }}
 </span>

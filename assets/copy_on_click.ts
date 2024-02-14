@@ -8,7 +8,7 @@ const post = {
   icon: "✅",
   title: "copied",
 };
-buttonTemplate.innerHTML = `<button class="copy-on-click" title="${pre.title}">${pre.icon}</button>`;
+buttonTemplate.innerHTML = `<button class="copy-on-click" style="border: none; background: none" title="${pre.title}">${pre.icon}</button>`;
 const _copyElement = (e: MouseEvent) => {
   const button = e.target as HTMLElement;
   const parent = button.parentElement as HTMLElement;

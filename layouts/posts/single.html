@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <main>
+    <h1> {{ .Title }} </h1>
+    
+    <span class="bg-info">Published on <time>{{ .Date | time.Format "2006-01-02" }}</time></span>
+
+    {{ .Content }}
+  </main>
+{{ end }}

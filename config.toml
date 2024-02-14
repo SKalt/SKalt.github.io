@@ -3,7 +3,7 @@ title = 'Steven Kalt'
 enableGitInfo = true
 copyright = '© Steven Kalt; This work is licensed as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-NC-SA 4.0</a>'
 languageCode = 'en-us'
-
+enableRobotsTXT = true
 [outputs]
   home = ['html', 'rss']
 [params]

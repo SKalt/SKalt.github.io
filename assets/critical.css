@@ -1,5 +1,11 @@
 :root {
   color-scheme: light dark;
+  --code-bg: #00000016;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --code-bg: #ffffff16;
+  }
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
@@ -12,15 +18,19 @@ body {
   margin: 0;
 }
 
-header {
-  position: relative;
-  margin: auto;
+.bg-info {
+  color: GrayText;
+  font-size: smaller;
 }
 
 /* navbar header */
 header {
   position: fixed;
-  top: 20px;
+  padding: .5em 1em;
+  top: 0;
+  margin: auto;
+  background: Canvas;
+  /* border: ButtonBorder solid 1px; */
 }
 header ul {
   margin: auto;
@@ -87,7 +97,7 @@ div.highlight:hover > .copy-on-click {
 pre, code {
   font-family: San Francisco Mono, Monaco, "Consolas", "Lucida Console",
     "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
-  background-color: #c0c0c0;
+  background-color: var(--code-bg);
 }
 code {
   border-radius: 2px;

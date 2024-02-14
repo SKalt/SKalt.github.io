@@ -4,21 +4,16 @@
   <!-- <a href="{{ absURL "tags" }}">tags</a> -->
   <!-- <a href="{{ absURL "search" }}">search</a> -->
   <ul>
-    
+    <li><a href="{{ absURL "" }}">Home</a></li>
     {{ range $.Site.Sections -}}
     <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
     {{ end -}}
     
-    <li><a href="https://github.com/skalt/skalt.github.io">
-      <img alt="repo" title="repo" src="{{ $gh.Permalink }}">
-    </a></li>
-    {{ with .OutputFormats.Get "rss" -}}
-    <li>
-      <a href="{{ .Permalink }}">
-        <img alt="rss" title="rss" src="{{(resources.Get "icon_rss.svg" | resources.Fingerprint).Permalink}}"></a>
-      </a>
-    </li>
+    <li><a href="https://github.com/skalt"><img alt="GitHub" title="GitHub" src="{{ $gh.Permalink }}"></a>
+    {{- with $.OutputFormats.Get "rss" -}}
+      <a href="{{ .Permalink }}" style="margin-left: 1ch;"><img alt="rss" title="rss" src="{{(resources.Get "icon_rss.svg" | resources.Fingerprint).Permalink}}"></a>
     {{ end -}}
+    </li>
   </ul>
   <!-- TODO: /til -->
   <!-- TODO: /bookmarklets -->
