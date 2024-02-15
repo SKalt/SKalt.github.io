@@ -1,6 +1,6 @@
 ---
 identifier: geojson-to-gml
-title: 'geojson-to-gml-(3|2)'
+title: "geojson-to-gml-(3|2)"
 link: https://github.com/SKalt/geojson-to-gml-3.2.1
 date: 2017-05-15
 ---

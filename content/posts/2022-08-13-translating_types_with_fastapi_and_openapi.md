@@ -25,6 +25,7 @@ Here's where `FastAPI` comes in.
 `FastAPI` uses type annotations and `pydantic` models to validate request and response types at runtime. as well as for generating an OpenAPI v3 schema document.
 `FastAPI` can generate an OpenAPI v3 schema from the same information it uses for validation.
 An OpenAPI v3 schema includes all the information necessary to create an API client:
+
 - request methods
 - request paths
 - parameter names and types
@@ -38,7 +39,6 @@ An OpenAPI v3 schema includes all the information necessary to create an API cli
 
 <details open markdown="block"><summary>First, set up a new python project:</summary>
 
-
 ```sh
 poetry new --name api fastapi_typescript_ex && cd $_
 poetry add fastapi uvicorn typer PyYAML
@@ -46,7 +46,6 @@ poetry add --dev mypy black flake8
 mkdir -p server && touch server/__init__.py
 mkdir -p scripts && touch scripts/__init__.py
 ```
-
 
 </details>
 
@@ -167,7 +166,6 @@ if __name__ == "__main__":
 ```
 
 </details>
-
 
 <details open markdown="block"><summary>Add a script to generate the api client:</summary>
 

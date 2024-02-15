@@ -26,7 +26,7 @@ body {
 /* navbar header */
 header {
   position: fixed;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   top: 0;
   margin: auto;
   background: Canvas;
@@ -53,12 +53,11 @@ header li:not(.selected)::marker {
     justify-content: center;
     padding: 0;
   }
-  header ul>li {
+  header ul > li {
     display: inline-flex;
     padding-right: 2ch;
   }
 }
-
 
 main {
   flex: 1 0 auto;
@@ -94,9 +93,16 @@ div.highlight:hover > .copy-on-click {
   height: 1em;
 }
 
-pre, code {
-  font-family: San Francisco Mono, Monaco, "Consolas", "Lucida Console",
-    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+pre,
+code {
+  font-family:
+    San Francisco Mono,
+    Monaco,
+    "Consolas",
+    "Lucida Console",
+    "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono",
+    monospace;
   background-color: var(--code-bg);
 }
 code {

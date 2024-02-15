@@ -18,11 +18,11 @@
           buildInputs = with pkgs; [
             nodejs_20
             nodePackages.pnpm 
-            pagefind
             nixpkgs-fmt
             nil
             hugo
             lychee
+            shellcheck
           ];
         };
       }

@@ -15,14 +15,13 @@ I'd like to see more cross-RDBMS comparisons and collections of tests to make de
 To that end, I've started [a project comparing `information_schema` implementations][i.s.compat.table] and another project collecting [sql parser tests][sql_parser_tests].
 Feel free to send me links to sample databases and other permissively-copyrighted SQL test suites!
 
-
 [iso-9075]: https://blog.ansi.org/2018/10/sql-standard-iso-iec-9075-2016-ansi-x3-135/
 [standardization-history]: https://en.wikipedia.org/wiki/SQL#Standardization_history
 [i.s.compat.table]: https://github.com/i-s-compat-table/
 [sql_parser_tests]: https://github.com/SKalt/sql_parser_tests
 [nist-artifact]: https://github.com/apache/derby/tree/cc457a99b575db678e490cfb1c916100bae31dd7/java/org.apache.derby.tests/org/apache/derbyTesting/functionTests/tests/nist
 
-<!-- 
+<!--
 [tpc-h]: https://www.tpc.org/tpch/
 [nist-form]: https://www.itl.nist.gov/div897/ctg/sql_form.htm
 [nist-news]: https://www.hpcwire.com/1996/09/06/nist-will-cease-creating-new-sql-tests-by-1997/
@@ -33,4 +32,3 @@ https://docs.pingcap.com/tidb/stable/overview#key-features
 https://github.com/sqlparser-rs/sqlparser-rs#sql-compliance
 https://github.com/elliotchance/sqltest
 -->
-

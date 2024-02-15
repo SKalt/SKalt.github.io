@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
-prettier --write \
+set -eu;
+prettier --check               \
   'content/**/*.{md,html,yml}' \
-  '_{data,includes,sass}/*.{html,md,css,scss,yml,json}' \
+  'assets/*.css'               \
+  'assets/**/*.{js,ts}'        \
   './README.md'
+
+cspell \
+  ./README.md              \
+  ./**/*.md                \
+  ./assets/*.svg           \
+  ./assets/critical.css    \
+  ./assets/**/*.{ts,js}
+
+shellcheck

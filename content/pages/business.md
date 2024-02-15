@@ -13,8 +13,6 @@ I offer some software under commercial licenses as an experiment in financially 
 I'm currently trying out [strictEq](https://stricteq.com/).
 I experimented with [License Zero](https://licensezero.com/) through 2020.
 
-<!-- I'm also vaguely interacting with the folks @ otechie ... more on that later, I hope -->
-
 {% assign commercial_projects = site.projects | sort: "date" | reverse  | where: "commercial", true %}
 
 {% for project in commercial_projects %}

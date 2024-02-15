@@ -15,6 +15,7 @@ Here's how you can use that workflow too ([though you probably shouldn't](#this-
 ## An experiment
 
 First, the setup: you're in a repo which places its builds into the `./dist` directory.
+
 ```sh
 set -xe # echo back all commands, exit on any failure
 
@@ -28,10 +29,11 @@ rm -rf temp &&
         ' > ./build.sh &&
   chmod +x ./build.sh &&
   git add . &&
-  git commit -m "initial commit";      
+  git commit -m "initial commit";
 ```
 
 Second, you create an empty branch (such as `gh-pages`) to hold your built files:
+
 ```sh
 DIST_BRANCH="${DIST_BRANCH:-gh-pages}"
 
@@ -42,9 +44,11 @@ git checkout --orphan "$DIST_BRANCH" &&
   git commit -m "initial dist commit" &&
   git checkout --force master
 ```
+
 This [`orphan`ed][orphan-branch-docs] branch holds nothing except an empty `.gitkeep` file, and shares no history with your other branches.
 
 Third, add the current repo as a submodule.
+
 ```sh
 CURRENT_REPO="${CURRENT_REPO:-./}"
 
@@ -66,6 +70,7 @@ git remote get-url "$REMOTE"
 ```
 
 If you look around in your submodule, you'll see the contents you checked into your orphaned branch.
+
 ```sh
 cd dist
 ls -a
@@ -83,6 +88,7 @@ cd -
 ```
 
 If you used a path as your origin, when you push in the submodule, you'll be pushing to the `$DIST_BRANCH` in your **local** repo.
+
 ```sh
 git push # in the submodule
 # Enumerating objects: 4, done.
@@ -94,9 +100,11 @@ git push # in the submodule
 # To /path/to/your/repo/temp/
 #    b3e7faf..41f2001  gh-pages -> gh-pages
 ```
+
 You may need to re-push to an actually remote origin.
 
 For this experiment, don't forget to clean up:
+
 ```sh
 cd ../../ && rm -rf temp
 ```
@@ -105,22 +113,24 @@ cd ../../ && rm -rf temp
 
 Like most hacks, using a same-repo submodule might not be the best way to track your build artifacts.
 Tracking many large build artifacts can become cumbersome, slowing down `git clone`s.
-If you want to track your build artifacts using git syntax, you might look at [`git lfs`][git-lfs-docs], which is designed to manage large non-source-code files. 
+If you want to track your build artifacts using git syntax, you might look at [`git lfs`][git-lfs-docs], which is designed to manage large non-source-code files.
 Alternately, you might prefer reproducing your build artifacts using your source code.
 
 Still, having an isolated copy of the repo opens up some cool possibilities.
 What if you used a self-subrepos to:
+
 - run a CI tool on itself
 - have a parser parse itself
 - push a branch of built frontend assets to the newest free hosting service without having to figure out yet another build process
 - For security by specificity, in your CI pipeline you could
-  1. dump the passed build artifacts into a special branch in the subrepo 
+  1. dump the passed build artifacts into a special branch in the subrepo
   1. have the CI agent assume a special identity with a CI-specific GPG key
   1. commit and sign the build artifacts
 
 Who knows! Hope you have fun with this.
 
 <!-- references -->
+
 [orphan-branch-docs]: https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt---orphanltnewbranchgt
 [git-lfs-docs]: https://git-lfs.github.com/
 [commit-with-submodule-setup]: https://github.com/SKalt/SKalt.github.io/tree/f0f9eb6026e6b64522d27c4872b2aaa334b481d4

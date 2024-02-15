@@ -24,6 +24,8 @@ const _copyElement = (e: MouseEvent) => {
 };
 document.querySelectorAll(".highlight").forEach((el) => {
   el.prepend(buttonTemplate.content.cloneNode(true));
-  (el.querySelector(".copy-on-click")! as HTMLButtonElement)
-    .addEventListener("click", _copyElement);
+  (el.querySelector(".copy-on-click")! as HTMLButtonElement).addEventListener(
+    "click",
+    _copyElement,
+  );
 });

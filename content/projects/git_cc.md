@@ -1,6 +1,6 @@
 ---
 identifier: git-cc
-title: '`git-cc`: a TUI for creating conventional commits'
+title: "`git-cc`: a TUI for creating conventional commits"
 repo: https://github.com/skalt/git-cc
 link: https://skalt.github.io/git-cc
 date: 2020-11-25
@@ -15,4 +15,3 @@ commercial: true
 - respects `$EDITOR` and the editor configured for `git-commit`
 
 While it's free for personal use, you can get a license for commercial use for $5 via [GitHub Sponsors](https://github.com/sponsors/skalt/sponsorships?tier_id=365645).
-
