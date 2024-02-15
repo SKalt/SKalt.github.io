@@ -1,8 +1,7 @@
 ---
 identifier: git-cc
 title: "`git-cc`"
-repo: https://github.com/skalt/git-cc
-link: https://skalt.github.io/git-cc
+repo: skalt/git-cc
 date: 2020-11-25
 commercial: true
 ---

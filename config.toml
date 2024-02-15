@@ -1,5 +1,5 @@
 baseurl           = '/'
-copyright         = '© Steven Kalt; This work is licensed as [CC-BY-NC-SA 4.0]("http://creativecommons.org/licenses/by-sa/4.0/")'
+copyright         = '© Steven Kalt; This work is licensed as [CC-BY-NC-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)'
 disableKinds      = ['taxonomy', 'term']
 enableGitInfo     = true
 enableRobotsTXT   = true

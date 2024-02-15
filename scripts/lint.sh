@@ -13,4 +13,6 @@ cspell \
   ./assets/critical.css    \
   ./assets/**/*.{ts,js}
 
+lychee --insecure ./content
+
 shellcheck

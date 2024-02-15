@@ -1,7 +1,7 @@
 ---
 identifier: jekyll_asset_map
 title: "`jekyll_asset_map`"
-repo: https://github.com/skalt/jekyll_asset_map
+repo: skalt/jekyll_asset_map
 link: https://skalt.github.io/jekyll_asset_map
 date: 2019-09-19
 commercial: true

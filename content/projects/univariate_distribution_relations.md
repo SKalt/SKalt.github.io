@@ -1,7 +1,7 @@
 ---
 title: Visualizing relationships between univariate probability distributions
 link: https://skalt.github.io/univariate_distribution_relationships/visualize/udr_visualization.html
-repo: https://github.com/SKalt/univariate_distribution_relationships
+repo: skalt/univariate_distribution_relationships
 date: 2017-04-03
 tags:
   - stats
@@ -16,7 +16,7 @@ In 1985, Leemis and McQueston published an article
 ["Univariate Distribution Relationships"][orig] in the American Statistician, an [update][update] in 2008, and in 2012 they published an interactive version of the chart using `area` tags.
 In 2017, I wrote a short python script to scrape the data contained in the `area` tags and produce a reuseable and extendable dataset.
 
-You can see the result [here][viz] and the full script and data may be retrieved and reused from [this github repo](https://github.com/SKalt/univariate_distribution_relationships).
+You can see the result [here][viz] and the full script and data may be retrieved and reused from [this github repo](https://github.com/skalt/univariate_distribution_relationships).
 If you do reuse the data, please use the citation below for Leemis et al.'s 2008 or 2012 paper and avoid running the scraper unless necessary.
 
 <!--

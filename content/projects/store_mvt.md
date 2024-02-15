@@ -1,7 +1,7 @@
 ---
 identifier: store-mvt
 title: "Slicing geojson into `.mvt`"
-repo: &repo https://github.com/SKalt/store-mvt
+repo: skalt/store-mvt
 link: https://www.npmjs.com/package/store-mvt
 date: 2017-12-09
 ---

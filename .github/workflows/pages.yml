@@ -49,12 +49,22 @@ jobs:
 
       - name: Build
         run: hugo --gc --minify # TODO: cache build?
-      - run: ls -al public
       - name: Pagefind
         run: |
           ./node_modules/.bin/pagefind \
             --site ./public \
             --root-selector main
+      - name: Check content links
+        uses: lycheeverse/lychee-action@v1.9.0
+        with:
+          fail: true
+          args: ./content --verbose --no-progress --insecure
+
+      - name: Check output links
+        uses: lycheeverse/lychee-action@v1.9.0
+        with:
+          fail: true
+          args: ./content --verbose --no-progress --insecure
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3 # This will automatically upload an artifact from the '/_site' directory

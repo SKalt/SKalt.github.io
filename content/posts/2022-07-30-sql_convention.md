@@ -18,7 +18,7 @@ Feel free to send me links to sample databases and other permissively-copyrighte
 [iso-9075]: https://blog.ansi.org/2018/10/sql-standard-iso-iec-9075-2016-ansi-x3-135/
 [standardization-history]: https://en.wikipedia.org/wiki/SQL#Standardization_history
 [i.s.compat.table]: https://github.com/i-s-compat-table/
-[sql_parser_tests]: https://github.com/SKalt/sql_parser_tests
+[sql_parser_tests]: https://github.com/skalt/sql_parser_tests
 [nist-artifact]: https://github.com/apache/derby/tree/cc457a99b575db678e490cfb1c916100bae31dd7/java/org.apache.derby.tests/org/apache/derbyTesting/functionTests/tests/nist
 
 <!--

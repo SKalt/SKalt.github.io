@@ -1,8 +1,8 @@
 ---
 identifier: history-of-man
 title: building HTML for each version of the linux man pages
-repo: https://github.com/skalt/history-of-man
-link: https://github.com/SKalt/history-of-man/commits/history/
+repo: skalt/history-of-man
+link: https://github.com/skalt/history-of-man/commits/history/
 date: 2020-04-10
 tags:
   - cursed

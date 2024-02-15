@@ -2,7 +2,7 @@
 identifier: ascii-art
 title: "Converting images to ascii art in the browser"
 link: https://skalt.github.io/browser-ascii-art-converter
-repo: https://github.com/SKalt/browser-ascii-art-converter
+repo: skalt/browser-ascii-art-converter
 date: 2018-06-19
 ---
 

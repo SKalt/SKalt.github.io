@@ -1,6 +1,6 @@
 ---
 title: "`yapf-diff`"
-repo: https://github.com/luxresearch/yapf-diff
+repo: luxresearch/yapf-diff
 date: 2019-02-22
 ---
 

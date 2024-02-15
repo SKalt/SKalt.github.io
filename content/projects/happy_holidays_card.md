@@ -1,7 +1,7 @@
 ---
 identifier: holiday-card-2018
 title: "Parallax snow globe"
-repo: https://github.com/SKalt/card
+repo: skalt/card
 link: https://happy-holidays.now.sh/
 date: 2018-12-08
 tags:

@@ -288,4 +288,4 @@ You can see a live example of this code [here][example-repo].
 [pydantic]: https://pydantic-docs.helpmanual.io/
 [mypy]: http://mypy-lang.org/
 [generators]: https://openapi-generator.tech/docs/generators
-[example-repo]: https://github.com/SKalt/fastapi-example
+[example-repo]: https://github.com/skalt/fastapi-example
