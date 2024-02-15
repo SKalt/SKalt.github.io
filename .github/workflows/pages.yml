@@ -1,5 +1,5 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages
+# workflow for building and deploying a static site to GitHub Pages
+name: Deploy static site to Pages
 
 on:
   # Runs on pushes targeting the default branch
