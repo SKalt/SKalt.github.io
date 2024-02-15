@@ -1,6 +1,6 @@
 ---
 identifier: holiday-card-2018
-title: a SVG+SCSS holday card [2018]
+title: "2018 holiday card: a SVG+SCSS"
 repo: https://github.com/SKalt/card
 link: https://happy-holidays.now.sh/
 date: 2018-12-08

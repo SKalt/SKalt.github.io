@@ -1,6 +1,6 @@
 ---
 identifier: flask-webpack
-title: <code class="highlighter-rouge">flask-webpack</code>
+title: "`flask-webpack`"
 repo: &repo https://github.com/SKalt/flask-webpack
 link: *repo
 date: 2018-09-14

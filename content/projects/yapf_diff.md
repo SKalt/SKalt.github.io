@@ -1,7 +1,7 @@
 ---
 identifier: yapf-diff
 link: https://github.com/luxresearch/yapf-diff
-title: <code class="highlighter-rouge">yapf-diff</code>
+title: "`yapf-diff`"
 date: 2019-02-22
 ---
 

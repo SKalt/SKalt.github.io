@@ -1,0 +1,17 @@
+{
+  "dictionaries": ["python", "sh", "blog", "names"],
+  "dictionaryDefinitions": [
+    {
+      "name": "blog",
+      "path": "./dictionaries/blog.txt",
+      "type": "S",
+    },
+    {
+      "name": "names",
+      "path": "./dictionaries/names.txt",
+    }
+  ],
+  "overrides": [
+    
+  ],
+}

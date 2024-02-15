@@ -1,7 +1,7 @@
 ---
 title: Steven Kalt
 date: 2017-03-23
-publishdate: 2017-03-24
+publishDate: 2017-03-24
 ---
 
 # Steven Kalt

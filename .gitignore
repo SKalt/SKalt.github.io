@@ -11,3 +11,4 @@ result
 .hugo*
 public
 resources
+node_modules

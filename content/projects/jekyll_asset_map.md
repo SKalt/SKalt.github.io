@@ -1,6 +1,6 @@
 ---
 identifier: jekyll_asset_map
-title: <code class="highlighter-rouge">jekyll_asset_map</code>
+title: "`jekyll_asset_map`"
 repo: https://github.com/skalt/jekyll_asset_map
 link: https://skalt.github.io/jekyll_asset_map
 date: 2019-09-19

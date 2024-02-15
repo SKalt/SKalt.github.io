@@ -1,0 +1,8 @@
+{
+  "description": "skalt.github.io",
+  "author": "Steven Kalt",
+  "license": "CC-BY-SA-4.0",
+  "dependencies": {
+    "cspell": "^8.3.2"
+  }
+}
