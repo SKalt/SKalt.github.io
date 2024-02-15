@@ -68,6 +68,7 @@ main {
 }
 footer {
   flex-shrink: 0;
+  margin: 0 1ch;
 }
 
 pre {
