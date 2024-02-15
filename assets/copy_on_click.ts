@@ -22,7 +22,7 @@ const _copyElement = (e: MouseEvent) => {
     }, 1000);
   });
 };
-document.querySelectorAll(".highlight").forEach((el) => {
+document.querySelectorAll(".highlight, citation").forEach((el) => {
   el.prepend(buttonTemplate.content.cloneNode(true));
   (el.querySelector(".copy-on-click")! as HTMLButtonElement).addEventListener(
     "click",
