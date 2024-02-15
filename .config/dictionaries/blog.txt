@@ -38,3 +38,5 @@ webpacker
 evenodd
 avenir
 Bitstream
+pagefind
+markdownify

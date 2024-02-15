@@ -27,9 +27,39 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      # TODO: use hugo
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3 # see https://github.com/pnpm/action-setup
+        with:
+          version: 8
+      - name: Setup node.js
+        uses: actions/setup-node@v4 # see https://github.com/actions/setup-node/
+        with:
+          node-version: 20
+          cache: "pnpm"
+          cache-dependency-path: ./pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - name: spellcheck
+        run: |
+          ./node_modules/.bin/cspell \
+            **/*.md                  \
+            ./assets/*.{svg,css}     \
+            ./assets/**/*.{ts,js}
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build
+        run: hugo --minify
+      
+      - name: Pagefind
+        run: |
+          ./node_modules/.bin/pagefind ./public
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1 # This will automatically upload an artifact from the '/_site' directory
+        uses: actions/upload-pages-artifact@v3 # This will automatically upload an artifact from the '/_site' directory
+        with:
+          path: public
 
   # Deployment job
   deploy:
