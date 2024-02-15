@@ -1,7 +1,6 @@
 .PHONY: new-post dev-server all
 all: ./assets/syntax-light.css ./assets/syntax-dark.css
-new-post:
-	./scripts/new_post.sh;
+
 dev-server:
 	./scripts/serve.sh
 
