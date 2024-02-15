@@ -41,8 +41,10 @@ jobs:
       - name: spellcheck
         run: |
           ./node_modules/.bin/cspell \
-            **/*.md                  \
-            ./assets/*.{svg,css}     \
+            ./README.md              \
+            ./**/*.md                \
+            ./assets/*.svg           \
+            ./assets/critical.css    \
             ./assets/**/*.{ts,js}
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -50,7 +52,7 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build
-        run: hugo --minify
+        run: hugo --gc --minify # TODO: cache build?
       
       - name: Pagefind
         run: |
