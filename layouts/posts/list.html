@@ -9,7 +9,7 @@
   </style>
   <main>
     <ol>
-      {{ range .Pages }}
+      {{ range .Pages.ByDate.Reverse }}
       <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
         <time>{{ .Date | time.Format "2006-01-02" }}</time>

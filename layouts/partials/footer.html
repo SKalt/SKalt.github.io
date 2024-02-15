@@ -1,3 +1,3 @@
-<span>{{ $.Site.Copyright | safeHTML }}</span>
+<span>{{ $.Site.Copyright | markdownify }}</span>
 <!-- TODO: float edit info right -->
 {{ partial "edit.html" . }}

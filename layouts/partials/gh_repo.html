@@ -1,0 +1,3 @@
+<!-- TODO: variant with a generic git icon -->
+{{- $gh := resources.Get "icon_gh.svg" | resources.Minify | resources.Fingerprint -}}
+<a href="https://github.com/{{ . }}" title="GitHub repo"><img src="{{ $gh.Permalink }}" alt="GitHub repo" title="GitHub repo"></a>

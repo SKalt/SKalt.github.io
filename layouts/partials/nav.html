@@ -5,9 +5,11 @@
   <!-- <a href="{{ absURL "search" }}">search</a> -->
   <ul>
     <li><a href="{{ absURL "" }}">Home</a></li>
-    {{ range $.Site.Sections -}}
-    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-    {{ end -}}
+    <li><a href="{{ absURL "search" }}">Search</a></li>
+
+    {{- range $.Site.Sections -}}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+    {{- end -}}
     
     <li><a href="https://github.com/skalt"><img alt="GitHub" title="GitHub" src="{{ $gh.Permalink }}"></a>
     {{- with $.OutputFormats.Get "rss" -}}

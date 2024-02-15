@@ -1,9 +1,10 @@
-baseurl = '/'
-title = 'Steven Kalt'
-enableGitInfo = true
-copyright = '© Steven Kalt; This work is licensed as <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-NC-SA 4.0</a>'
-languageCode = 'en-us'
+baseurl         = '/'
+copyright       = '© Steven Kalt; This work is licensed as [CC-BY-NC-SA 4.0]("http://creativecommons.org/licenses/by-sa/4.0/")'
+disableKinds    = ['taxonomy', 'term']
+enableGitInfo   = true
 enableRobotsTXT = true
+languageCode    = 'en-us'
+title           = 'Steven Kalt'
 [outputs]
   home = ['html', 'rss']
 [params]
@@ -11,26 +12,26 @@ enableRobotsTXT = true
   GitHubUser = 'skalt'
 
 [frontmatter]
-    lastmod = [':git', 'lastmod', 'date', 'publishDate']
-    publishDate = ['publishDate', 'date']
-    date = [':filename']
+  date        = [':filename', 'date', 'publishDate']
+  lastmod     = [':git', 'date', 'lastmod', 'publishDate']
+  publishDate = ['date', 'publishDate']
 
 [markup]
   [markup.highlight]
     # see https://gohugo.io/getting-started/configuration-markup/#highlight
     noclasses = false
   [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
+    endLevel   = 3
+    ordered    = false
     startLevel = 2
-
+  [markup.goldmark.renderer]
+    unsafe = true
 
 [build]
   noJSConfigInAssets = true
 
 [permalinks]
-  posts = '/:year/:month/:day/:slug'
-  # TODO: - => _
+  posts = '/posts/:year/:month/:day/:slug'
 
 [security.funcs]
-  getenv = ['^HUGO_', '^CI$', '^PWD$']
+  getenv = ['^CI$', '^HUGO_', '^PWD$']

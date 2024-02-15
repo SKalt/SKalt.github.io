@@ -6,4 +6,6 @@ repo: https://github.com/SKalt/browser-ascii-art-converter
 date: 2018-06-19
 ---
 
-Based on [Jonathan Petitcolas' work](https://github.com/jpetitcolas/ascii-art-converter), this project adds typescript support and vue-based controls.
+A tone-based image to ascii art tool. This project extends [Jonathan Petitcolas' work](https://github.com/jpetitcolas/ascii-art-converter) with typescript support and vue-based controls.
+
+<!--more-->

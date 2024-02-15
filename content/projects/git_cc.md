@@ -1,11 +1,15 @@
 ---
 identifier: git-cc
-title: "`git-cc`: a TUI for creating conventional commits"
+title: "`git-cc`"
 repo: https://github.com/skalt/git-cc
 link: https://skalt.github.io/git-cc
 date: 2020-11-25
 commercial: true
 ---
+
+a <abbr title="Terminal User Interface">TUI</abbr> for creating conventional commits.
+
+<!--more-->
 
 `git-cc` helps write conventional commits inside your existing workflow:
 

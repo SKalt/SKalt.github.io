@@ -29,7 +29,7 @@ I might have felt more at ease if I wrote more ruby, but not taking the time to 
 
 I could use nested `include`s or layouts to compose my html snippets, but that requires some initial head-scratching (see above: directory structure, Liquid templating language). This did make me appreciate how idiomatic `<template>` and `<slot>` are in Vue and Svelte.
 
-While dealing with Jekyll's differences made me give up some chances to <abbr title="don't repeat yourself">DRY</abbr>, I did find myself writing smaller, simpler HTML. I had been reading about the merits of [<abbr title="Plain Old Semantic HTML">POSH</abbr>](http://microformats.org/wiki/posh), so I'd say this was a win.
+While dealing with Jekyll's differences made me give up some chances to <abbr title="Don't Repeat Yourself">DRY</abbr>, I did find myself writing smaller, simpler HTML. I had been reading about the merits of [<abbr title="Plain Old Semantic HTML">POSH</abbr>](http://microformats.org/wiki/posh), so I'd say this was a win.
 
 ## Other things I picked up
 

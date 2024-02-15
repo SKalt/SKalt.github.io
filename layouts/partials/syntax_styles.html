@@ -1,0 +1,4 @@
+{{- $syntax_light := resources.Get "syntax-light.css" | resources.Minify | resources.Fingerprint -}}
+{{- $syntax_dark  := resources.Get "syntax-dark.css" | resources.Minify | resources.Fingerprint -}}
+<link rel="stylesheet" href="{{ $syntax_light.Permalink }}">
+<link rel="stylesheet" href="{{ $syntax_dark.Permalink }}" media="(prefers-color-scheme: dark)">

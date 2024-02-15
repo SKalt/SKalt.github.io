@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <main>
+    {{ range .Pages.ByDate.Reverse }}
+      {{- if not .Params.archived -}}
+        <article>
+          <div class="article-line">
+            {{- if compare.Ne .Summary (chomp .Content) -}}
+              <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+            {{- else -}}
+              <span>{{ .Title | markdownify }}</span>
+            {{- end -}}
+            <span class="bg-info">
+              <time >{{ .Date | time.Format "2006-01-02" }}</time>
+              {{- with .Params.repo -}}
+                {{- partial "partials/gh_repo.html" . -}}
+              {{- end -}}
+              {{- with .Params.link -}}
+                <a href="{{ . }}">↗</a>
+              {{- end -}}
+            </span>
+          </div>
+          <div>{{ .Summary }}</div>
+        </article>
+      {{- end -}}
+    {{ end }}
+  </main>
+  <style>
+    article {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    article >div:nth-child(2) {
+      margin-left: 1em;
+      font-size: smaller
+    }
+    .article-line {
+      margin: .5em 0;
+      width: 100%;
+    }
+    .article-line>*:first-child {
+      font-size: larger;
+      font-weight: bolder;
+    }
+    .bg-info > * {
+      margin: 0 0.5ch;
+    }
+  </style>
+{{ end }}
