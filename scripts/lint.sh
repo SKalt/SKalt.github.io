@@ -15,4 +15,4 @@ cspell \
 
 lychee --insecure ./content
 
-shellcheck
+shellcheck ./scripts/*.sh
