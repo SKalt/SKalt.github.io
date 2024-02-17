@@ -1,7 +1,9 @@
- <svg xmlns="http://www.w3.org/2000/svg"
-   width="32" height="32"
-   viewBox="-1 0 35 35"
->
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="-1 0 35 35">
+  <style>
+    path {
+      fill: currentColor;
+    }
+  </style>
   <title>Stack Overflow</title>
   <g transform="scale(2.28571429)">
     <path d="M2 1h8a2 2 0 0 1 2 2H0c0-1.1.9-2 2-2z"></path>

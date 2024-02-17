@@ -1,5 +1,5 @@
 ---
-title: "`yapf-diff`"
+title: "`yapf-diff`: Incremental python formatting"
 repo: luxresearch/yapf-diff
 date: 2019-02-22
 ---

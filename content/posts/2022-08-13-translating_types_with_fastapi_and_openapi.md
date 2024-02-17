@@ -1,5 +1,5 @@
 ---
-title: translating types with fastapi and openapi
+title: "translating types with `FastAPI` and `OpenAPI`"
 layout: main
 date: 2022-08-13
 ---

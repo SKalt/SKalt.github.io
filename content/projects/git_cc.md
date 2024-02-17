@@ -1,6 +1,6 @@
 ---
 identifier: git-cc
-title: "`git-cc`"
+title: "`git-cc`: a TUI for conventional commits"
 repo: skalt/git-cc
 date: 2020-11-25
 commercial: true

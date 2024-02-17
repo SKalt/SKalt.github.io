@@ -6,12 +6,15 @@
       grid-column-gap: 1ch;
       grid-row-gap: 1ch;
     }
+    time {
+      color: GrayText;
+    }
   </style>
   <main>
     <ol>
       {{ range .Pages.ByDate.Reverse }}
       <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
         <time>{{ .Date | time.Format "2006-01-02" }}</time>
     </li>
       {{ end }}

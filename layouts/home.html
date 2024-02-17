@@ -1,7 +1,10 @@
+
+{{- define "head" -}}
+{{- end -}}
 {{- define "main" -}}
-  {{- $gh := resources.Get "icon_gh.svg" | resources.Minify | resources.Fingerprint -}}
-  {{- $li := resources.Get "icon_li.svg" | resources.Minify | resources.Fingerprint -}}
-  {{- $so := resources.Get "icon_so.svg" | resources.Minify | resources.Fingerprint -}}
+  {{- $gh := resources.Get "icon_gh.svg" | resources.Minify -}}
+  {{- $li := resources.Get "icon_li.svg" | resources.Minify -}}
+  {{- $so := resources.Get "icon_so.svg" | resources.Minify -}}
   <style>
     /* centered */
     .centered {
@@ -12,17 +15,18 @@
       text-decoration: none;
     }
   </style>
+  
   <main>
     <h1 class="centered">{{ .Title }}</h1>
     <div class="centered">
       <a href="https://github.com/skalt" target="gh">
-        <img src="{{ $gh.Permalink }}" alt="GitHub profile" title="GitHub profile">
+        {{ $gh.Content | safeHTML }}
       </a>
       <a href="https://linkedin.com/in/steven-kalt" target="li">
-        <img src="{{ $li.Permalink }}" alt="LinkedIn profile" title="LinkedIn profile">
+        {{ $li.Content | safeHTML }}
       </a>
       <a href="https://stackoverflow.com/users/1234567" target="so">
-        <img src="{{ $so.Permalink }}" alt="Stack Overflow profile" title="Stack Overflow profile">
+        {{ $so.Content | safeHTML }}
       </a>
     </div>
     {{- .Content -}}

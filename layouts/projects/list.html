@@ -1,48 +1,41 @@
 {{ define "main" }}
+  {{ $gh := resources.Get "icon_gh.svg" | resources.Minify }}
+  <div style="display: none;">
+    {{ $gh.Content | safeHTML }}
+  </div>
   <main>
     {{ range .Pages.ByDate.Reverse }}
       {{- if not .Params.archived -}}
         <article>
-          <div class="article-line">
-            {{- if compare.Ne .Summary (chomp .Content) -}}
-              <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+          <a class="project_title" href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+          <time>{{ .Date | time.Format "2006-01-02" }}</time>
+          {{- with .Params.link -}}
+            <a class="link" href="{{ . }}">↗</a>
             {{- else -}}
-              <span>{{ .Title | markdownify }}</span>
-            {{- end -}}
-            <span class="bg-info">
-              <time >{{ .Date | time.Format "2006-01-02" }}</time>
-              {{- with .Params.repo -}}
-                {{- partial "partials/gh_repo.html" . -}}
-              {{- end -}}
-              {{- with .Params.link -}}
-                <a href="{{ . }}">↗</a>
-              {{- end -}}
-            </span>
-          </div>
-          <div>{{ .Summary }}</div>
+            <span class="link bg-info"></span>
+          {{- end -}}
+          {{- with .Params.repo -}}
+            {{- partial "partials/gh_repo.html" . -}}
+            {{- else -}}
+            <span class="gh_repo"></span>
+          {{- end -}}
         </article>
       {{- end -}}
     {{ end }}
   </main>
   <style>
     article {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    article >div:nth-child(2) {
-      margin-left: 1em;
-      font-size: smaller
-    }
-    .article-line {
+      display: grid;
+      grid-template-columns: 1fr min-content 1em 1em;
       margin: .5em 0;
       width: 100%;
+      column-gap: 1ch;
     }
-    .article-line>*:first-child {
-      font-size: larger;
-      font-weight: bolder;
+    time {
+      color: GrayText;
     }
-    .bg-info > * {
-      margin: 0 0.5ch;
-    }
+    /* .link {
+      font-size: smaller;
+    } */
   </style>
 {{ end }}
