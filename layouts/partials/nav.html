@@ -1,21 +1,21 @@
 
 {{- $gh := resources.Get "icon_gh.svg" | resources.Minify | resources.Fingerprint -}}
 <nav>
-  <!-- <a href="{{ absURL "tags" }}">tags</a> -->
-  <!-- <a href="{{ absURL "search" }}">search</a> -->
+
   <ul>
     <li><a href="{{ absURL "" }}">Home</a></li>
     <li><a href="{{ absURL "search" }}">Search</a></li>
-
+    
     {{- range $.Site.Sections -}}
       <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
     {{- end -}}
-    
+
+    <li><a href="/til">TIL</a></li>
+    <li><a href="/bookmarklets">Bookmarklets</a></li>
+
     {{- with $.OutputFormats.Get "rss" -}}
       <a href="{{ .Permalink }}"><img alt="rss" title="rss" src="{{(resources.Get "icon_rss.svg" | resources.Fingerprint).Permalink}}"></a>
     {{ end -}}
     </li>
   </ul>
-  <!-- TODO: /til -->
-  <!-- TODO: /bookmarklets -->
 </nav>
