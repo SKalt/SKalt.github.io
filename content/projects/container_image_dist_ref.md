@@ -1,6 +1,6 @@
 ---
 title: "Parsing docker image references for fun and 0 profit"
-draft: true
+date: 2024-03-10
 link: https://docs.rs/container_image_dist_ref/latest/container_image_dist_ref/
 repo: skalt/container_image_dist_ref
 ---
@@ -9,12 +9,12 @@ repo: skalt/container_image_dist_ref
 
 I wanted to parse docker-style container image references for a personal project I was writing in rust.
 Ideally, I'd use the authoritative parser, [`distribution/reference`][ref], which is written in Go.
-<abbr title="Foreign Function Interface">FFI</abbr> between Go and rust is nontrivial; the examples of rust-go FFI I found involved [a custom `build.rs` with C bindings][cgo_blog], [bundling <abbr title="WebAssembly">WASM</abbr>][wasm], or [custom][hooking_rust_from_go] [assembly][rustgo].
-I decided to take the opportunity to have some fun and <abbr title="Rewrite It In Rust">RiiR</abbr> rather than deal with FFI.
+<abbr title="Foreign Function Interface">FFI</abbr> between Go and rust is nontrivial; the examples I found involved [a custom `build.rs` with C bindings][cgo_blog], [custom][hooking_rust_from_go] [assembly][rustgo], or [embedding <abbr title="WebAssembly">WASM</abbr>][wasm] into your binary.
+Rather than deal with any of those options, I decided to take the opportunity to have some fun and <abbr title="Rewrite It In Rust">RiiR</abbr>.
 
 ## Optimizing for fun
 
-I set out with the clear intention of optimizing for fun, not for efficiency.
+I set out with the clear intention of optimizing for fun.
 Rewriting already-good software isn't an efficient use of time.
 Nor is optimizing a a container image reference parser: the overhead of handling container images would bury any time or memory savings I could produce.
 However, writing software just to see how fast it can go _is_ fun, so I dove into the task.
@@ -23,13 +23,13 @@ However, writing software just to see how fast it can go _is_ fun, so I dove int
 
 ### 0 dependencies
 
-I avoided using any dependencies to keep the library size small and keep control of all of the logic.
+I avoided using any dependencies to keep the library size small and keep control of all of the parsing logic.
 The most notable absence is the excellent [`regex` crate][rust-regex].
-`regex` is ergonomic, lightweight, and [`#[no_std]`][no_std], and using it would let me do a more literal port of `distribution/reference`'s use of golang regular expressions.
+`regex` is ergonomic, lightweight, [`#[no_std]`][no_std], and using it would keep my port similar to `distribution/reference`, which uses golang regular expressions extensively.
 
 However, hand-writing a parser lets me avoid compiling regular expressions.
 Compiling regular expressions is a one-time cost that's quickly amortized if you re-use the resulting automata.
-However, re-using compiled regular expressions introduces small problems of storing and [sharing them across threads][regex_cross_thread].
+However, re-using compiled regular expressions introduces the problems of storing and [sharing the compiled regular expressions across threads][regex_cross_thread].
 Writing parsers as pure functions ensures each parse only uses stack-allocated memory, which means I can avoid linking `alloc` altogether.
 
 Hand-writing a parser also let me store smaller offset sizes.
@@ -38,8 +38,8 @@ If you know a way to get `regex` to use custom match sizes, please let me know i
 
 ### Parsing ascii bytes rather than unicode characters
 
-This library takes an input ascii string and parses the lengths of each of the sections of an image reference.
-Since ascii characters are one byte each, I could iterate over the individual bytes in the input string rather than unicode characters (`char`s) which have a fixed size of 4 bytes.
+Since image references must contain only ascii characters, I could avoid using unicode characters.
+Unicode characters (`char`s) have a fixed size of 4 bytes ([docs](https://doc.rust-lang.org/std/primitive.char.html#representation), [playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=546f4194ea2186ad2c1571181e2cc053)) compared to ascii characters, which are each one byte.
 
 I learned this optimization from the `regex` crate's default settings!
 
@@ -63,7 +63,7 @@ struct ImgRef<'a> {
 Each `&str` is made of 2 pointers: a pointer to the underlying data and a pointer-sized length.
 If each `&str` segment is pointing to the same underlying data, this means the `ImgRef` struct includes 3 unneeded pointers!
 
-Keeping hold of the source `&str` representing each part of an image reference as a length of a source string led to some nice savings:
+Representing each part of an image reference as a length of the source string led to some nice savings:
 
 ```rs
 struct ImgRef<'a> {
@@ -74,22 +74,9 @@ struct ImgRef<'a> {
   digest: usize,
 } // size = 48 (0x30), align = 0x8
   // savings = 24 bytes!
-
-impl <'_> ImgRef<'_> {
-  pub fn domain(&self) -> &str {
-    todo!()
-  }
-  pub fn path(&self) -> &str {
-    todo!()
-  }
-  pub fn tag(&self) -> &str {
-    todo!()
-  }
-  pub fn digest(&self) -> &str {
-    todo!()
-  }
-}
 ```
+
+This did lead to more complicated accessor functions.
 
 ### Store short lengths
 
@@ -106,7 +93,7 @@ path/img
 my.registry.io:1234/path/to/img
 ```
 
-Replacing `usize`s lengths with appropriately-sized unsigned integers saves another 16 bytes:
+Replacing `usize` lengths with appropriately-sized unsigned integers saves another 16 bytes:
 
 ```rs
 struct ImgRef<'a> {
@@ -131,10 +118,10 @@ For context, 1024 digest characters could fit 8 hex-encoded `sha512`s!
 ```rs
 struct ImgRef<'a> {
   src: &'a str,
-  domain: u8, // max 255 characters
-  path: u8,   // max 255 characters
-  tag: u8,    // max 128 characters
-  digest: u16,
+  domain: u8,  // max 255 characters
+  path: u8,    // max 255 characters
+  tag: u8,     // max 128 characters
+  digest: u16, // max 1024 characters
 } // size = 24 (0x18), align = 0x8
   // savings = 8 bytes!
 ```
@@ -164,7 +151,7 @@ struct ImgRef<'a> {
 ```
 
 Since all lengths can be 0, we can undo this regression by treating 0 as the `None` value rather than using extra space for an `Option<Length>`.
-Rather than sprinkling `if len == 0` checks throughout the codebase, we can use rust's built-in `NonZero*` types to use `Option`s:
+To avoid sprinkling `if len == 0` checks throughout the codebase, we can use rust's built-in `NonZero*` types to use `Option`s:
 
 ```rs
 use core::num::{NonZeroU16, NonZeroU8};
@@ -176,7 +163,7 @@ struct ImgRef<'a> {
   tag: Option<NonZeroU8>,
   digest: Option<NonZeroU16>,
 } // size = 24 (0x20), align = 0x8
-  // savings = 8 bytes again
+  // savings = 8 bytes again!
 ```
 
 This optimization shows a nifty feature of rust's enums: Rust will reclaim unused bit patterns to optimize enum layouts. For example, `NonZeroU8` will never be represented as `0b00000000`, so Rust will represent `Option<NonZeroU8>::None` as `0`!
@@ -184,7 +171,7 @@ For a more detailed explanation of enum optimization and niches, see https://mcy
 
 ### Retaining information to avoid re-parsing segments
 
-`distribution/reference`'s grammar includes a notable ambiguity: at the start of a reference, `example.com:1234` could be an image name and tag or a host and port number depending on what comes after.
+`distribution/reference`'s grammar includes a notable ambiguity: at the start of a reference, `example.com:1234` could either be an image name and tag or a host and port number depending on what comes after.
 The most complicated parsing code in my library handles parsing these ambiguous segments and then deciding what the ensemble means.
 Unfortunately, I think that section is essential complexity.
 
@@ -227,8 +214,7 @@ This cost a few extra bytes in my `ImgRef` struct, but I figured the improved AP
 ### The result
 
 As the saying goes, "there are lies, damned lies, and benchmarks".
-`distribution/reference` is already fast.
-I benchmarked parsing all 45 test cases in the test suite:
+Still, I couldn't resist the temptation to do a comparison of parsing all 45 test cases in the test suite:
 
 ```
 goos: linux
@@ -239,10 +225,10 @@ BenchmarkOracleEntireTestSuite-8   	    9973	    145470 ns/op
 BenchmarkJustIteration-8           	89256811	        12.81 ns/op
 PASS
 ok  	github.com/skalt/container_image_dist_ref/internal/reference_oracle	3.474s
-
 ```
 
-Which is around 3400 ns/test case with some hand-waving for the nanoseconds cost by iterating over each of the 45 test cases.
+`distribution/reference` is already fast.
+145470ns / 45 test cases is around 3400 ns/test case.
 
 ```
   Running benches/basic_benchmark.rs (target/release/deps/basic_benchmark-ea70c6cafa492ad4)
@@ -255,7 +241,7 @@ Found 10 outliers among 100 measurements (10.00%)
 ```
 
 5.7756 µs \* 1000 ns/µs / 45 test cases is roughly 128 ns per test case, which is a cool 25x speedup that will make save exactly $0 ever.
-I intend to spend every nanoseconds I saved patting myself on the back and giving myself high-fives.
+I intend to spend every nanosecond I saved patting myself on the back and giving myself high-fives.
 
 ## Testing for fidelity
 
