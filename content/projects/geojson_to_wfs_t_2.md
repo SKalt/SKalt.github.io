@@ -6,6 +6,6 @@ link: https://www.npmjs.com/package/geojson-to-wfs-t-2
 date: 2017-06-07
 ---
 
-A [lightweight](https://bundlephobia.com/result?p=geojson-to-wfs-t-2) javascript module to format WFS-T-2 statements from GeoJSON features.
+A lightweight javascript module to format WFS-T-2 statements from GeoJSON features.
 
 <!--more-->
