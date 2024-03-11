@@ -10,7 +10,7 @@
   {{ with .File }}
     {{ if eq hugo.Environment "development" -}}
       {{ $projectPath := or (os.Getenv "HUGO_PROJECT_PATH" ) (os.Getenv "PWD") -}}
-      <a href="vscode://file/{{ $projectPath }}/content/{{ .File.Path }}" class="button">Edit this Page</a>
+      <a href="vscode://file/{{ $projectPath }}/content/{{ .Path }}" class="button">Edit this Page</a>
     {{- else -}}
       <a href="https://github.com/skalt/skalt.github.io/edit/master/{{ .Path }}">Edit this Page</a>
     {{- end }}
