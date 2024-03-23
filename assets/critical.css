@@ -62,9 +62,9 @@ header li:not(.selected)::marker {
 main {
   flex: 1 0 auto;
   flex-grow: 1;
-  max-width: 70ch;
+  max-width: min(70ch, 100vw);
   padding: 2ch;
-  margin: auto;
+  margin: 2em auto;
 }
 footer {
   flex-shrink: 0;
