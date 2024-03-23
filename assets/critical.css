@@ -128,3 +128,8 @@ li.flex {
 li.flex > a:first-child {
   padding-right: 1em;
 }
+blockquote {
+  margin: 0;
+  padding-left: 1em;
+  border-left: 1px solid #ccc;
+}
