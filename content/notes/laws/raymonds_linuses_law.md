@@ -13,4 +13,3 @@ In _The Cathedral and the Bazaar_, Eric S. Raymond wrote:
 > or, less formally, "Given enough eyeballs, all bugs are shallow."
 >
 > I dub this: "Linus's Law"
-

@@ -34,4 +34,4 @@ One point I was surprised this paper made is
 I agree that the "single source of truth" principle avoids errors.
 However, normalizing mutable data creates a new problem: maintaining referential integrity.
 
-Still, I tend to normalize data in structs-of-arrays for reasons laid out in ["Practical Data-Oriented Design"](../practical_data_oriented_design)
+Still, I tend to normalize data in structs-of-arrays for reasons laid out in ["Practical Data-Oriented Design"](./practical_data_oriented_design.md)
