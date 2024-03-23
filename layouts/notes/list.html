@@ -1,0 +1,32 @@
+{{ define "main" }}
+<style>
+  time, span.info {
+    color: GrayText;
+  }
+</style>
+<main>
+  {{ .Content }}
+  <!-- management, communication, and culture -->
+  <!-- deep dives -->
+  <!-- humor -->
+  {{- range .Sections -}}
+    <h2>{{ .Title }}</h2>
+    <ul>
+      {{- range .Pages.ByDate.Reverse }}
+        {{- $url := urls.Parse .Params.link }}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+            <span class="info">(
+              {{- if strings.HasPrefix $url.Host "www." }}
+                {{- strings.SliceString $url.Host 4 }}
+              {{- else -}}
+                {{- $url.Host -}}
+              {{- end }},
+              <time>{{ .Date | time.Format "2006" }})</time>
+            </span>
+          </li>
+      {{- end }}
+    </ul>
+  {{- end -}}
+</main>
+{{ end }}

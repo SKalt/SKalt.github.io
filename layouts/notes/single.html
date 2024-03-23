@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{- $url := urls.Parse .Params.link -}}
+  <main>
+    <h1>{{.Title}}</h1>
+    <!-- TODO: tags -->
+    <div>
+      <a href="{{.Params.link}}" target="_blank">
+        {{- if strings.HasPrefix $url.Host "www." -}}
+          {{- strings.SliceString $url.Host 4 -}}
+        {{- else -}}
+          {{- $url.Host -}}
+        {{- end -}}
+      </a>,
+      <time>{{ .Date | time.Format "2006" }}</time>
+    </div>
+    <article>
+      {{- .Content -}}
+    </article>
+  </main>
+{{- end -}}
