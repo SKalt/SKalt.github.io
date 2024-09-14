@@ -1,10 +1,10 @@
 :root {
   color-scheme: light dark;
-  --code-bg: #00000016;
+  --code-bg: #eee;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --code-bg: #ffffff16;
+    --code-bg: #444;
   }
 }
 body {
@@ -108,7 +108,7 @@ code {
 }
 code {
   border-radius: 2px;
-  border: 1px solid rgba(150, 150, 150, 0.5);
+  border: 1px solid rgba(150, 150, 150, 1);
 }
 pre code {
   border: none;
