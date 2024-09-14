@@ -1,8 +1,5 @@
 ---
 title: Rewriting this site with Jekyll
-layout: main
-categories:
-  - posts
 ---
 
 ## Why bother?

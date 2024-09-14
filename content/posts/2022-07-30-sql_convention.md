@@ -17,15 +17,3 @@ Feel free to send me links to sample databases and other permissively-copyrighte
 [i.s.compat.table]: https://github.com/i-s-compat-table/
 [sql_parser_tests]: https://github.com/skalt/sql_parser_tests
 [nist-artifact]: https://github.com/apache/derby/tree/cc457a99b575db678e490cfb1c916100bae31dd7/java/org.apache.derby.tests/org/apache/derbyTesting/functionTests/tests/nist
-
-<!--
-[tpc-h]: https://www.tpc.org/tpch/
-[nist-form]: https://www.itl.nist.gov/div897/ctg/sql_form.htm
-[nist-news]: https://www.hpcwire.com/1996/09/06/nist-will-cease-creating-new-sql-tests-by-1997/
-https://www.iso.org/standard/63555.html
-https://www.scattered-thoughts.net/writing/against-sql/
-https://www.cockroachlabs.com/docs/stable/frequently-asked-questions.html#why-does-cockroachdb-use-the-postgresql-wire-protocol-instead-of-the-mysql-protocol
-https://docs.pingcap.com/tidb/stable/overview#key-features
-https://github.com/sqlparser-rs/sqlparser-rs#sql-compliance
-https://github.com/elliotchance/sqltest
--->

@@ -1,6 +1,8 @@
+alloc
 avenir
 Bitstream
 crowdsourced
+ebnf
 endfor
 endraw
 evenodd
@@ -21,6 +23,7 @@ mypy
 Neo4j
 Nuxt
 openapitools
+opencontainers
 pagefind
 pathlib
 POSIX

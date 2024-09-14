@@ -1,5 +1,4 @@
 import { copyToClipboard } from "./lib/copy";
-const buttonTemplate = document.createElement("template");
 const pre = {
   icon: "📋",
   title: "click to copy",
@@ -8,6 +7,7 @@ const post = {
   icon: "✅",
   title: "copied",
 };
+const buttonTemplate = document.createElement("template");
 buttonTemplate.innerHTML = `<button class="copy-on-click" style="border: none; background: none" title="${pre.title}">${pre.icon}</button>`;
 const _copyElement = (e: MouseEvent) => {
   const button = e.target as HTMLElement;

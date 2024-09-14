@@ -1,8 +1,8 @@
 ---
 title: parsing psql
-layout: main
-categories:
-  - posts
+tags:
+  - parsing
+  - sql
 ---
 
 TL;DR: I wrote a bad [`psql`][psql-docs] meta-command parser so you don't have to. Get it at https://github.com/skalt/psql_splitter.

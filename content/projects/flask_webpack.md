@@ -1,8 +1,6 @@
 ---
-identifier: flask-webpack
 title: "`flask-webpack`"
 repo: &repo skalt/flask-webpack
-link: *repo
 date: 2018-09-14
 archived: true
 ---

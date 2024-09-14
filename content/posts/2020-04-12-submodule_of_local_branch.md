@@ -1,8 +1,8 @@
 ---
 title: submodule of a local branch
-layout: main
-categories:
-  - posts
+tags:
+  - git
+  - shell
 ---
 
 Ever wanted to check in your build artifacts into a build-specific branch?
