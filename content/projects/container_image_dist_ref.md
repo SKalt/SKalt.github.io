@@ -3,6 +3,9 @@ title: "Parsing docker image references for fun and 0 profit"
 date: 2024-03-10
 link: https://docs.rs/container_image_dist_ref/latest/container_image_dist_ref/
 repo: skalt/container_image_dist_ref
+tags:
+  - parsing
+  - perf
 ---
 
 ## The problem

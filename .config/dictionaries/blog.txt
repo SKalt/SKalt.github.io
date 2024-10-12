@@ -38,6 +38,7 @@ repost
 subrepo
 subrepos
 templating
+typeof
 typer
 uvicorn
 webpacker
