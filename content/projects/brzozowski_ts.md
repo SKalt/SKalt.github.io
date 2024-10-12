@@ -13,8 +13,11 @@ tags:
 
 ## Demo
 
+<!-- prettier-ignore -->
 ```ts
-import type { Compile, Exec, Recognize } from "brzozowski-ts/src";
+import type {
+  Compile, Exec, Recognize
+} from "brzozowski-ts/src";
 
 type HexStrRE = Compile<"(?<hex>[0-9A-Fa-f]{5,})">;
 type Match = Exec<HexStrRE, "abc123">;
@@ -22,9 +25,12 @@ const captures: Match["captures"] = ["abc123"];
 const groups: Match["groups"] = { hex: "abc123" };
 
 type HexStr<S extends string> = Recognize<HexStrRE, S>;
-type NominalHex = string & { readonly isHex: unique symbol };
+type NominalHex = string &
+  { readonly isHex: unique symbol };
 
-function castSpell<S extends string>(hex: HexStr<S> | NominalHex) {
+function castSpell<S extends string>(
+  hex: HexStr<S> | NominalHex
+) {
   return hex;
 }
 
@@ -55,16 +61,20 @@ castSpell("asdf" as Hex); // ok!
 
 I could even use [type predicates][type-predicates] to narrow a general string down to a branded hex string:
 
+<!-- prettier-ignore -->
 ```ts
-const isHex = (str: string): str is Hex => /[0-9a-fA-F]/.test(str);
+const isHex = (str: string): str is Hex =>
+  /[0-9a-fA-F]/.test(str);
 
 const mustBeHex = (str: string): Hex => {
   if (isHex(str)) return str;
-  else throw new Error(`'${str}' is not a hex string`);
+  else throw new Error(
+    `'${str}' is not a hex string`
+  );
 };
 ```
 
-[[playground link](#todo)]
+[[playground link](#https://www.typescriptlang.org/play/?#code/C4TwDgpgBAEhAeUC8UDOwBOBLAdgcygDIoBvAKCigwgEMATAexwBsQotU54AuKAVxxYAjn2ioQAWwBGDZgG4yAXwUIwDDMCgBjJum010AZUjNmyKAAoAFgl5cAlMgB8pClAD0AKigSaeLFpQnu5KCmRaBsDGEKYWAEQGdABmcVAGsAj2ch7uUAwA1gCEZOG6mhxc5hboGLw1uHj2dZjsqBmISE5u7gDaAAwAtACcNANJAIIDAGIAuu4AdMAQ6NWYWSU6OHoSfOgAQhCVKKu1aJgNTe3OrpRYSZYVCCf2jtTAfBg4ZxgKlDGo0GAVgwDAA7lAcBBwQBRDAgjAWNyUAAGAHIACQkGqKVGtCEMTQ0KA2RD1fDItzrZRAA)]
 
 My options so far for guaranteeing that only valid hex strings are passed to `castSpell` are:
 
@@ -77,7 +87,7 @@ My options so far for guaranteeing that only valid hex strings are passed to `ca
    - pro: always right
    - con: check happens at runtime
 
-These two options are good enough for pretty much every practical use-case.
+These two options are [good enough for pretty much every practical use-case][regex-validated-str-issue].
 
 But what if I wanted to check the validity of hex strings automatically at compile time?
 
@@ -247,13 +257,17 @@ An error type stuffed with context makes debugging much easier than using `never
 
 I started out using `never` to handle cases I expected never to encounter, like
 
+<!-- prettier-ignore -->
 ```ts
 type MyType<T> =
-  OtherType<T> extends ThingItMustBe<infer U> ? DoMoreStuff<U> : never;
+  OtherType<T> extends ThingItMustBe<infer U> 
+    ? DoMoreStuff<U>
+    : never;
 ```
 
 After debugging why a deeply nested type was unexpectedly inferring `never` for the nth time, I started using
 
+<!-- prettier-ignore -->
 ```ts
 type MyType<T> =
   OtherType<T> extends ThingItMustBe<infer U>
@@ -274,13 +288,12 @@ const oops: never extends string ? true : false = true;
 
 #### Write test-cases as you develop
 
-You can put the test cases next to your type-under-construction using block-scoped types:
+You can put the test cases next to your type-under-construction using block scopes to avoid polluting your module's namespace:
 
+<!-- prettier-ignore -->
 ```ts
 type MyType<T> = T extends "example" ? "expected" : never;
-{
-  const _: MyType<"example"> = "expected";
-}
+{ const _: MyType<"example"> = "expected"; }
 ```
 
 With fast on-hover/inline type hints from your Typescript language server, you can obtain a REPL-like development experience.

@@ -57,6 +57,9 @@ header li:not(.selected)::marker {
     display: inline-flex;
     padding-right: 2ch;
   }
+  pre {
+    font-size: smaller;
+  }
 }
 
 main {
