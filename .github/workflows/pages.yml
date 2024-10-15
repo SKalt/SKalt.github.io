@@ -44,12 +44,35 @@ jobs:
             ./assets/*.svg           \
             ./assets/critical.css    \
             ./assets/**/*.{ts,js}
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: "latest"
+      # - name: Setup Hugo
+      #   uses: peaceiris/actions-hugo@v2
+      #   with:
+      #     hugo-version: "latest"
 
-      - name: Build
+      # patched hugo with upgraded chroma:
+      - name: Setup go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "^1.22.6"
+      - uses: actions/cache@v4
+        id: cache-hugo
+        with:
+          path: bin
+          key: hugo-build-${{ runner.os }}-${{ hashFiles('tmp/hugo/go.mod', 'tmp/hugo/go.sum') }}
+      - name: build patched hugo
+        if: steps.cache-hugo.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p tmp bin
+          repo_root=$(pwd)
+          git clone \
+            --depth 1 \
+            --branch upgrade-chroma \
+            https://github.com/SKalt/hugo.git tmp/hugo
+          cd tmp/hugo
+          go build -o "${repo_root}/bin/hugo"
+          cd "$repo_root"
+      - run: echo "$PWD/bin" >> "$GITHUB_PATH"
+      - name: Build the site
         run: hugo --gc --minify # TODO: cache build?
       - name: Pagefind
         run: |
