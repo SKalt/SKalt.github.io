@@ -4,7 +4,7 @@
   "license": "CC-BY-SA-4.0",
   "dependencies": {
     "cspell": "^8.3.2",
-    "pagefind": "^1.0.4",
+    "pagefind": "^1.1.1",
     "prettier": "^3.2.5"
   }
 }
