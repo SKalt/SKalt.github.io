@@ -1,8 +1,32 @@
 {{ define "main" }}
+{{ $gh := resources.Get "icon_gh.svg" | resources.Minify }}
+<div style="display: none;">
+  {{ $gh.Content | safeHTML }}
+</div>
 <main>
   <h1> {{ .Title | markdownify }} </h1>
 
-  <span class="bg-info">Published on <time>{{ .Date | time.Format "2006-01-02" }}</time></span>
+  <div>
+    <span class="bg-info">Published on <time>{{ .Date | time.Format "2006-01-02" }}</time>
+    </span>
+    {{- with .Params.link -}}
+      &nbsp; {{/* TODO: not this */}}
+      <a class="link" href="{{ . }}">↗</a>
+      {{- else -}}
+      <span class="link bg-info"></span>
+    {{- end -}}
+    {{- with .Params.repo -}}
+      &nbsp; {{/* TODO: not this */}}
+      <span style="position: relative; top: .125em; padding-left: .25em;">
+        {{ $gh.Content | safeHTML }}
+      </span>
+      <a href="https://github.com/{{.}}" target="_blank" title="GitHub repo">
+        <span style="font-family: monospace">{{ . }}</span>
+      </a>
+    {{- else -}}
+      <span class="gh_repo"></span>
+    {{- end -}}
+  </div>
 
   {{ .TableOfContents }}
 
