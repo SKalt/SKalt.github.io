@@ -216,13 +216,13 @@ If you're checking if a string is part of a set of:
 
 Though I'm not sure how much -- benchmarking is a TODO.
 I developed on an 8-core, 32-GB linux x86_64 machine.
-I experienced responsive incremental compilation in VSCode, and running [the test suite]() took ~2.4s.
+I experienced responsive incremental compilation in VSCode, and running [the test suite](https://github.com/SKalt/brzozowski-ts/tree/main/test) took ~2.4s.
 
 #### It's alpha quality
 
 The RegExp parsing and evaluation hasn't yet been extensively fuzzed.
 There are almost certainly bugs in the implementation.
-It also does naive string matching with backtracking, so it's certainly vulnerable to [ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS), albeit ReDoS of your compile times and not your server.
+It also does naive string matching with backtracking, so it's certainly vulnerable to [RegEx Denial of Service (ReDoS)](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS), albeit ReDoS of your compile times and not your server.
 
 #### It's a alpha release
 
