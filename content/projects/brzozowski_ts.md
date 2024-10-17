@@ -180,6 +180,7 @@ Misinterpreting the estimated cost of what I wrote as its estimated worth always
 - you can write a RegEx that correctly describes your impractically-large-string-set.
 - you want to provide fast feedback to your users about the validity of string constants.
 - you _also_ use nominal types to validate dynamic strings.
+- you want to find out the number of captures and/or names of capture groups a RegEx would produce
 
 Possible use-cases include:
 
@@ -187,12 +188,12 @@ Possible use-cases include:
 - strings that have a maximum length (e.g. resource names)
 - paths and routing paths (note: `brzozowski_ts` supports group extraction!)
 - urls, email addresses
-- hex strings
+- hex/base64 strings
 
 The main use, however, is seeing how well compile-time regex works in practice.
-I'm hoping that `brzozowski_ts` will push the discussion about RegEx-validated types in TypeScript forward.
-As that discussion progresses, this library might go through a few more iterations.
+As I learn more, this library might go through a few more iterations.
 However, I don't intend to bring up to production quality.
+I'm hoping that experiments using `brzozowski_ts` will eventually contribute to discussion about compile-time RegEx validation in TypeScript.
 
 ### You probably shouldn't use my code
 
