@@ -1,2 +1,4 @@
 external-sources=true
 source-path=SCRIPTDIR
+disable=SC2002
+# ^ ignore useless cat

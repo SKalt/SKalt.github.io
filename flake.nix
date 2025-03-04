@@ -23,6 +23,7 @@
             hugo
             lychee
             shellcheck
+            pagefind
           ];
         };
       }

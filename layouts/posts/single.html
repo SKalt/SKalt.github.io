@@ -1,11 +1,16 @@
 {{ define "main" }}
-  <main>
-    <h1> {{ .Title }} </h1>
-    
-    <span class="bg-info">Published on <time>{{ .Date | time.Format "2006-01-02" }}</time></span>
+<main>
+  <h1> {{ .Title }} </h1>
 
+  <span class="bg-info">Published on <time>{{ .Date | time.Format "2006-01-02" }}</time></span>
+
+  {{ if isset .Params "toc" }}
+    {{ if .Params.toc }}
+      {{ .TableOfContents }}
+    {{ end }}
+  {{ else }}
     {{ .TableOfContents }}
-    
-    {{ .Content }}
-  </main>
+  {{ end }}
+  {{ .Content }}
+</main>
 {{ end }}
