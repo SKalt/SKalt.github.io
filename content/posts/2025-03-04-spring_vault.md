@@ -22,9 +22,7 @@ If you're a fan of [12-factor apps][12factor], you might draw the app configurat
 Alternately, you might be drawing credentials from your cloud vendor's secrets manager.
 In any case, **you're probably using credentials that need to be accessible when the server starts and valid until the server shuts down**.
 
-Long-lived credentials are usually good enough. You don't often need to rotate your servers' database credentials for your servers, and when you do, you can probably figure out a way to do so without downtime.
-
-Things could be better, though.
+There's a better way.
 
 ## Vault can help
 
