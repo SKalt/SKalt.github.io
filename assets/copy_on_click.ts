@@ -25,5 +25,5 @@ const _copyElement = (e: MouseEvent) => {
 document.querySelectorAll(".highlight, cite").forEach((el) => {
   const button = buttonTemplate.content.cloneNode(true);
   el.prepend(button);
-  el.querySelector(".copy-on-click")?.addEventListener("click", _copyElement);
+  (el.querySelector(".copy-on-click") as HTMLSpanElement | undefined)?.addEventListener("click", _copyElement);
 });
