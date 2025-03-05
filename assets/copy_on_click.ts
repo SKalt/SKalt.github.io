@@ -1,4 +1,5 @@
 import { copyToClipboard } from "./lib/copy";
+const buttonTemplate = document.createElement("template");
 const pre = {
   icon: "📋",
   title: "click to copy",
@@ -7,8 +8,7 @@ const post = {
   icon: "✅",
   title: "copied",
 };
-const buttonTemplate = document.createElement("template");
-buttonTemplate.innerHTML = `<button class="copy-on-click" style="border: none; background: none" title="${pre.title}">${pre.icon}</button>`;
+buttonTemplate.innerHTML = `<span class="copy-on-click" title="${pre.title}">${pre.icon}</span>`;
 const _copyElement = (e: MouseEvent) => {
   const button = e.target as HTMLElement;
   const parent = button.parentElement as HTMLElement;
@@ -22,10 +22,8 @@ const _copyElement = (e: MouseEvent) => {
     }, 1000);
   });
 };
-document.querySelectorAll(".highlight, citation").forEach((el) => {
-  el.prepend(buttonTemplate.content.cloneNode(true));
-  (el.querySelector(".copy-on-click")! as HTMLButtonElement).addEventListener(
-    "click",
-    _copyElement,
-  );
+document.querySelectorAll(".highlight, cite").forEach((el) => {
+  const button = buttonTemplate.content.cloneNode(true);
+  el.prepend(button);
+  el.querySelector(".copy-on-click")?.addEventListener("click", _copyElement);
 });

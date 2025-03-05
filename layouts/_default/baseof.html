@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="{{ $critical_css.Permalink }}">
     <!-- each are around 1.5 KiB -->
     <link rel="icon" type="image/png" href="{{ $favicon.Permalink }}">
+    <script src="{{ $clipboard.Permalink }}" integrity="{{ $clipboard.Data.Integrity }}" defer></script>
     {{ block "head" . }}
       {{- partial "partials/syntax_styles.html" . -}}
     {{ end }}
