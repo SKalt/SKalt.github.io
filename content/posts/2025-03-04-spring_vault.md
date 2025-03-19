@@ -62,25 +62,13 @@ First, set up a Vault instance for local development using `docker compose`:
 +      timeout: 30s
 +      retries: 10
 +      start_period: 1s
-+  vault-init:
-+    image: docker.io/hashicorp/vault:latest
-+    depends_on: 
-+      vault: {condition: service_healthy}
-+      mysql: {condition: service_healthy}
-+    environment:
-+      - MYSQL_ROOT_PASSWORD=my_password
-+      - VAULT_TOKEN=my-vault-root-token
-+      - VAULT_ADDR=http://vault:8200
-+    volumes:
-+      - ./scripts/vault-init.sh:/vault-init.sh
-+    command: sh /vault-init.sh
    app:
      build: .
      ports: [ "8080:8080" ]
 ```
 </details>
 
-Then add a script to [configure the MySQL secrets engine in Vault][vault-mysql] using Vault's built-in database credential management plugins:
+Once Vault is up and running, add a script to [configure the MySQL secrets engine in Vault][vault-mysql] using Vault's built-in database credential management plugins:
 
 <details open><summary><code>scripts/vault-init.sh</code></summary>
 
@@ -116,6 +104,38 @@ vault write database/roles/$ROLE_NAME \
 </details>
 
 Note that this Vault database role has no `max_ttl` so that `spring-cloud-vault` can refresh its dynamic database credentials indefinitely.
+
+You can use docker-compose to ensure run this script runs before your server boots:
+<details open><summary><code>compose.yaml</code></summary>
+
+```diff
+--- a/compose.yaml
++++ b/compose.yaml
+@@ -11,6 +11,33 @@ vault:
+      timeout: 30s
+      retries: 10
+      start_period: 1s
++  vault-init:
++    image: docker.io/hashicorp/vault:latest
++    depends_on: 
++      vault: {condition: service_healthy}
++      mysql: {condition: service_healthy}
++    environment:
++      - MYSQL_ROOT_PASSWORD=my_password
++      - VAULT_TOKEN=my-vault-root-token # for demo only
++      - VAULT_ADDR=http://vault:8200
++    volumes:
++      - ./scripts/vault-init.sh:/vault-init.sh
++    command: sh /vault-init.sh
+   app:
+     build: .
+     ports: [ "8080:8080" ]
+       mysql: {condition: service_healthy}
++      vault: {condition: service_healthy}
++      vault-init: {condition: service_completed_successfully}
+     volumes:
+```
+</details>
 
 <!-- https://github.com/rptcloud/spring-cloud-vault-demo/commit/f8537658836bf0945be57c8cc68e8ec8433f814a -->
 
@@ -200,10 +220,10 @@ Also, in this demo, the Spring Boot app needs a `$VAULT_TOKEN` to authenticate:
      ports: [ "8080:8080" ]
      depends_on: 
        mysql: {condition: service_healthy}
-+      vault: {condition: service_healthy}
-+      vault-init: {condition: service_completed_successfully}
+       vault: {condition: service_healthy}
+       vault-init: {condition: service_completed_successfully}
 +    environment:
-+      - VAULT_TOKEN=my-vault-root-token
++      - VAULT_TOKEN=my-vault-root-token # for demo only
      volumes:
        - ./config/application.yaml:/opt/app/config/application.yaml:ro
        # mount an external config file in a location that Spring Boot will check
@@ -212,12 +232,8 @@ Also, in this demo, the Spring Boot app needs a `$VAULT_TOKEN` to authenticate:
 
 </details>
 
-<aside>
-
-(This example uses the Vault root token that we configured when setting up Vault.
-In anything more than a demo you should probably use one of Vault's many supported [authentication methods][vault-auth-methods] to use identity providers such as AWS, Azure, or Kubernetes to authenticate to Vault.)
-
-</aside>
+Note that this example app uses Vault's root token to authenticate to Vault for demonstration purposes only.
+In production you should authenticate to Vault using a trusted identity from AWS, Azure, Kubernetes, or one of Vault's other [authentication methods][vault-auth-methods].
 
 
 Now if you start your app, it should successfully initialize:
