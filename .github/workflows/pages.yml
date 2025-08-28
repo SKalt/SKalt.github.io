@@ -56,13 +56,13 @@ jobs:
             --site ./public \
             --root-selector main
       - name: Check content links
-        uses: lycheeverse/lychee-action@v1.10.0
+        uses: lycheeverse/lychee-action@v2.0.2
         with:
           fail: true
           args: ./content --verbose --no-progress --insecure --accept 429,403
 
       - name: Check output links
-        uses: lycheeverse/lychee-action@v1.10.0
+        uses: lycheeverse/lychee-action@v2.0.2
         with:
           fail: true
 
