@@ -63,7 +63,7 @@ struct ImgRef<'a> {
 
 64 bytes is a bit much! Reading the [docs on `&str`](https://doc.rust-lang.org/std/primitive.str.html#representation) pointed out the problem.
 
-Each `&str` is made of 2 pointers: a pointer to the underlying data and a pointer-sized length.
+Each `&str` costs 2 pointers' worth of memory: a pointer to the underlying data and a pointer-sized length.
 If each `&str` segment is pointing to the same underlying data, this means the `ImgRef` struct includes 3 unneeded pointers!
 
 Representing each part of an image reference as a length of the source string led to some nice savings:

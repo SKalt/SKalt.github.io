@@ -30,4 +30,4 @@ Leemis, his collaborators, and I have collective put decades into creating this.
 [viz]: https://skalt.github.io/univariate_distribution_relationships/visualize/udr_visualization.html
 [orig]: http://www.tandfonline.com/doi/abs/10.1080/00031305.1986.10475379
 [update]: http://www.tandfonline.com/doi/abs/10.1198/000313008X270448
-[interactive]: https://www.math.wm.edu/~leemis/chart/UDR/UDR.html
+[interactive]: https://web.archive.org/web/20250501011807/https://www.math.wm.edu/~leemis/chart/UDR/UDR.html 
