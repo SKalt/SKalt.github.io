@@ -232,7 +232,7 @@ Also, in this demo, the Spring Boot app needs a `$VAULT_TOKEN` to authenticate:
 
 </details>
 
-Note that this example app uses Vault's root token to authenticate to Vault for demonstration purposes only.
+This example app uses Vault's root token to authenticate to Vault for demonstration purposes only.
 In production you should authenticate to Vault using a trusted identity from AWS, Azure, Kubernetes, or one of Vault's other [authentication methods][vault-auth-methods].
 
 
